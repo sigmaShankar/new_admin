@@ -1,0 +1,12 @@
+.auth-container {
+    margin-top: 7rem;
+    height: auto;
+    background-color: #F7F7F7;
+}
+
+
+@media(max-width: 840px) {
+    .auth-container{
+        margin-top: 5rem;
+    }
+}

@@ -1,0 +1,38 @@
+.apply-container {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    /* background-color: red; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.9rem;
+    cursor: pointer;
+}
+
+.apply-container a {
+    color: white;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.apply-container a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.even-colour {
+    background-color: #47684D;
+}
+
+.odd-colour {
+    background-color: #A6A54F;
+}
+
+@media(max-width: 900px) {
+    .apply-container a {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,27 @@
+.secondary-teacher {
+    padding: 3rem;
+    padding-top: 0;
+}
+
+.secondary-teacher p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.secondary-teacher .header {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.skill li {
+    margin-bottom: 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+@media(max-width: 500px) {
+    .secondary-teacher {
+        padding: 0;
+    }
+}

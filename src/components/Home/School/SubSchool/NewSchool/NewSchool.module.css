@@ -1,0 +1,49 @@
+.services {
+    width: 100%;
+    padding: 0.9rem;
+    padding-left: 2rem;
+    color: white;
+    background-color: #47684D;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container > p {
+    flex: 0.5;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.services {
+    flex: 0.4;
+    justify-self: flex-start;
+}
+
+.new-schools {
+    padding: 3rem;
+    padding-top: 0;
+}
+
+.services li {
+    margin-top: 0.9rem;
+}
+
+@media(max-width: 700px) {
+    .container {
+        display: block;
+    }
+}
+
+@media(max-width: 500px) {
+    .is-padding {
+        padding-left: 2rem;
+    }
+
+    .new-schools {
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,8 @@
+.apply-container {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+}

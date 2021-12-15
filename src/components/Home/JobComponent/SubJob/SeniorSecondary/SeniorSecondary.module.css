@@ -1,0 +1,27 @@
+.senior-secondary-teacher {
+    padding-top: 0;
+    padding: 3rem;
+}
+
+.senior-secondary-teacher p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.senior-secondary-teacher .header {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.senior-secondary-teacher .subject {
+    /* font-size: 0.9rem; */
+    font-weight: 400;
+    margin: 0;
+}
+
+@media(max-width: 500px) {
+    .senior-secondary-teacher {
+        padding: 0;
+    }
+}

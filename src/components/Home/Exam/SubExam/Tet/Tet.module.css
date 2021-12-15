@@ -1,0 +1,51 @@
+.tet-container {
+    padding: 3rem;
+    padding-top: 0
+}
+
+.tet-container strong {
+    font-weight: 400;
+}
+
+.tet-container p,
+.tet-container li {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.tet-container li {
+    margin: 0.5rem;
+}
+
+.program-overview {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0.9rem;
+    padding-left: 2rem;
+    color: white;
+    background-color: #47684D;
+}
+
+.register {
+    background-color: #CBC917;
+    max-width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 400;
+    color: black;
+    min-width: 15rem;
+    height: 3rem;
+    width: auto;
+    text-align: center;
+}
+
+@media(max-width:500px) {
+    .tet-container {
+        padding: 0;
+    }
+}

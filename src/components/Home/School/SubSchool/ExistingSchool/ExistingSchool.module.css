@@ -1,0 +1,109 @@
+.existing-schools {
+    padding: 2rem;
+    padding-left: 4rem;
+}
+
+.existing-schools p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.content {
+    max-height: 0;
+    min-height: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #F5F5F5;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.support {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    line-height: 26px;
+    text-transform: none;
+}
+
+.content p {
+    height: auto;
+    font-weight: 300;
+    font-size: 0.9rem;
+    /* padding: 2rem; */
+    /* margin-bottom: 0.3rem; */
+    width: 100%;
+}
+
+.expand {
+    min-height: 10rem;
+    max-height: 50rem;
+}
+
+.toggler {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    width: 2rem;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.toggle-bar {
+    height: 3rem; 
+    width: 100%;
+    background-color: #E7E4CC;
+    margin: 0.3rem;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-open {
+    color: white;
+    background-color: #A6A54F;
+}
+
+.toggle-bar h3 {
+    margin: 0;
+    width: auto;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.content li {
+    margin-top: 0.5rem;
+}
+
+.tooge-main {
+    height: auto; 
+    width: 90%
+}
+
+
+@media(max-width: 500px) {
+    .existing-schools {
+        padding-left: 2rem;
+    }
+
+    .tooge-main {
+        width: 100%;
+    }
+}
+
+@media(max-width: 550px) {
+    .toggle-bar h3 {
+        font-size: 0.8rem;
+    }
+
+    .toggler {
+        margin-right: 1rem;
+    }
+}

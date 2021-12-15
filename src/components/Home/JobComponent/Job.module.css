@@ -1,0 +1,64 @@
+.job-container {
+    width: 100%;
+    margin-top: 7rem;
+}
+
+.register-container {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.even-colour {
+    background-color: #47684D;
+}
+
+.odd-colour {
+    background-color: #A6A54F;
+}
+
+.button-list {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-list button {
+    width: 100%;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 0.3rem;
+    max-width: 15rem;
+    /* max-width: ; */
+    border: none;
+    height: 2.2rem;
+    border-radius: 5px;
+}
+
+@media(min-width: 600px) {
+    .button-list {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        max-height: 8rem;
+        width: 100%;
+    }   
+
+    .button-list button {
+        width: 16rem;
+    }
+}
+
+
+@media(max-width: 840px) {
+    .job-container{
+        margin-top: 5rem;
+    }
+}

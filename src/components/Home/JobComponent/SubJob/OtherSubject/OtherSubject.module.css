@@ -1,0 +1,27 @@
+.other-subject {
+    padding: 3rem;
+    padding-top: 0;
+}
+
+.other-subject p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.other-subject .header {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.subject {
+    margin-bottom: 0.8rem; 
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+@media(max-width: 500px) {
+    .other-subject {
+        padding: 0;
+    }
+}

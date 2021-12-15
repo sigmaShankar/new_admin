@@ -1,0 +1,106 @@
+{
+  "pillar_overallscore": 0.75,
+  "risk": [
+    {
+      "pillar": "ethics",
+      "ids": 1,
+      "name": "Bias towards African American people that is disproportionate to default rate",
+      "impact": "Critical",
+      "date": "14-Apr-2021 07:30",
+      "mitigations": [
+        {
+          "name": "Optimized Preprocessing",
+          "scope": "Dataset",
+          "pillar_score": "89% (+4%)",
+          "protected_score": "83% (+3.5%)",
+          "overall": "92% (+8%)"
+        },
+        {
+          "name": "Gerry Fair Classifier",
+          "scope": "In Training",
+          "pillar_score": "86% (+1%)",
+          "protected_score": "82.5% (+2.5%)",
+          "overall": "90% (-2.5%)"
+        },
+        {
+          "name": "Equal Odd Postprocessing",
+          "scope": "Post Training",
+          "pillar_score": "87% (+2%)",
+          "protected_score": "86% (+6.5%)",
+          "overall": "93% (+0.25%)"
+        }
+      ]
+    },
+    {
+      "pillar": "ethics",
+      "ids": 1,
+      "name": "Accuracy on the latest samples appear to be lower than general rate",
+      "impact": "High",
+      "date": "14-Apr-2021 02:50"
+    },
+    {
+      "pillar": "ethics",
+      "ids": 1,
+      "name": "Bias regarding caucasian women disproportionate to default rate",
+      "impact": "Low",
+      "date": "20-Apr-2021 17:10"
+    }
+
+  ],
+  "mitigation": [
+    {
+      "name": "Reject_Option_Classifier",
+      "impact": "Medium",
+      "score": 0.53125,
+      "OverAll_Acc": 0.6563395659888085,
+      "Biased_Group_Acc": 0.10601738075092437,
+      "Mitigation_Rating": 5.0,
+      "date": "2021-02-18 07:35:05.186079"
+    },
+    {
+      "name": "Reweighing",
+      "impact": "Medium",
+      "score": 0.5625,
+      "OverAll_Acc": 0.6813156817251262,
+      "Biased_Group_Acc": 0.025030311999750143,
+      "Mitigation_Rating": 6.0,
+      "date": "2021-02-18 07:35:05.187755"
+    },
+    {
+      "name": "Disparate_Impact_Remover",
+      "impact": "Medium",
+      "score": 0.546875,
+      "OverAll_Acc": 0.6751740139211136,
+      "Biased_Group_Acc": 0.036974671111375756,
+      "Mitigation_Rating": 5.0,
+      "date": "2021-02-18 07:35:05.189252"
+    },
+    {
+      "name": "CallibratedEquiOdds",
+      "impact": "Low",
+      "score": 0.25,
+      "OverAll_Acc": 0.7611573631772894,
+      "Biased_Group_Acc": -0.18496293554503007,
+      "Mitigation_Rating": 2.0,
+      "date": "2021-02-18 07:35:05.190782"
+    },
+    {
+      "name": "PrejudiceRemover",
+      "impact": "Low",
+      "score": 0.34375,
+      "OverAll_Acc": 0.8094718165688549,
+      "Biased_Group_Acc": -0.1358272983990344,
+      "Mitigation_Rating": 3.0,
+      "date": "2021-02-18 07:35:05.192282"
+    },
+    {
+      "name": "GerryClassifier",
+      "impact": "Low",
+      "score": 0.296875,
+      "OverAll_Acc": 0.7073836495154906,
+      "Biased_Group_Acc": -0.2537132630636676,
+      "Mitigation_Rating": 3.0,
+      "date": "2021-02-18 07:35:05.193781"
+    }
+  ]
+}

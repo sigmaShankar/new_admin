@@ -1,0 +1,10 @@
+.home-container {
+    width: 100%;
+    background-color: white;
+}
+
+@media(min-width:1600px) {
+    .main {
+        margin: auto;
+    }
+}

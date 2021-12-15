@@ -1,0 +1,52 @@
+.syllabus-container {
+    padding: 1.5rem;
+    width: 100%;
+    color: white;
+    height: 12rem;
+    max-width: 360px;
+    min-width: 260px;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+}
+
+.syllabus-container h5 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    font-weight: 500;
+}
+
+.syllabus-container a,
+.syllabus-container a:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.syllabus-container p {
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.even-colour {
+    background-color: #47684D;
+}
+
+.odd-colour {
+    background-color: #A6A54F;
+}
+
+.link {
+    position: absolute;
+    bottom: 15px;
+}
+
+@media(min-width: 700px) {
+    .syllabus-container {
+        margin: 0.9rem;
+        /* width: 20%; */
+        flex: 0.25;
+    }
+}

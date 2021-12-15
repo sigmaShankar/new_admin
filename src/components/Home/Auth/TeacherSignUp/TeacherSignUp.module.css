@@ -1,0 +1,166 @@
+.sign-up-container{
+    height: auto;
+    min-height: 30rem;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #F7F7F7;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.sign-up-container h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: 3rem;
+    color: #017533;
+}
+
+.sign-up-container form {
+    width: 100%;
+    text-align: center;
+    max-width: 550px;
+}
+
+.sign-up-container input:focus {
+    outline: none;
+}
+
+.sign-up-container .input-container,
+.submit,
+.description{
+    width: 100%;
+    margin-top: 0.9rem;
+    height: 2.5rem;
+}
+
+.sign-up-container input,
+.sign-up-container .age,
+.sign-up-container select {
+    border: 1px solid gray;
+    padding-left: 0.9rem;
+    width: 100%;
+    background-color: white;
+    height: 100%;
+}
+
+.sign-up-container .age {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sign-up-container .age p{
+    color: gray;
+    margin: 0
+}
+
+/* .submit {
+    background-color: #CECC17;
+    border: none;
+    color: #434242;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 40%;
+    min-width: 160px;
+    margin-top: 1rem;
+} */
+
+.submit {
+    background-color: #CECC17;
+    border: none;
+    color: #434242;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    cursor: pointer;
+    width: 40%;
+    min-width: 160px;
+    margin-top: 1.5rem;
+}
+
+.sign-up-container input[type="submit"]:hover {
+    color: white;
+}
+
+.forgot-password {
+    margin: 0.9rem;
+}
+
+.forgot-password a,
+.register-link a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #434242;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.9rem;
+}
+
+.register p {
+    margin: 0;
+}
+
+.register-link {
+    margin-left: 0.5rem;
+}
+
+.description {
+    height: 7rem;
+}
+
+.description textarea {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+}
+
+.sign-up-container h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+textarea.invalid,
+input.invalid {
+    border: 1px solid red
+}
+
+.margin {
+    margin-bottom: 0.5rem;
+}
+
+@media(min-width: 600px) {
+    .basic-info {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .basic-info .input-container {
+        width: 45%;
+    }
+
+    .sign-up-container h3 {
+        margin-bottom: 0;
+    }
+}
+
+
+@media(max-width: 840px) {
+    .sign-up-container{
+        margin-top: 5rem;
+    }
+}

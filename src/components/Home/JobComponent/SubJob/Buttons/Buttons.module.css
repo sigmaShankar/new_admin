@@ -1,0 +1,42 @@
+.buttons:first-of-type {
+    margin-left: 0;
+}
+
+.buttons {
+    width: 70%;
+    max-width: 16rem;
+    margin-top: 0.9rem;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-size: 0.9rem;
+    border: none;
+    background-color: #47684D;
+    /* font-size: 0.5rem; */
+}
+
+.odd-color {
+    background-color: #A6A54F;
+}
+
+.button-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:700px) {
+    .buttons {
+        margin: 0.5rem;
+        margin-left: 3rem;
+    }
+
+    .button-list {    
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+}

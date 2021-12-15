@@ -1,0 +1,102 @@
+.principal {
+    padding: 3rem;
+    padding-top: 0;
+    padding-bottom: 0.9rem;
+}
+
+.administrative {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.skill li {
+    margin-bottom: 0.9rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.apply {
+    margin: 2rem;
+    margin-top: 0;
+    margin-bottom: 5rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.apply > div {
+    flex: 0.5;
+    padding: 2rem;
+    padding-top: 0.9rem;  
+    color: white;
+    max-width: 380px;
+    background-color: #47684D ;
+}
+
+.apply > div a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #47684D;
+}
+
+.apply > div p {
+    margin-bottom: 2rem;
+}
+
+.link {
+    height: 2rem;
+    background-color: white;
+    min-width: 6rem;
+    max-width: 12rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.article-container p {
+    font-weight: 300;
+    font-size: 0.9;
+}
+
+.article-container .header {
+    font-weight: 400;
+}
+
+@media(min-width: 700px) {
+    .administrative {
+        flex-direction: row;
+    }
+    
+    .article-container {
+        flex: 0.7;
+    }
+    
+    .apply {
+        flex: 0.3;
+        max-height: 220px;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .principal {
+        padding: 0;
+    }
+
+    .apply {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}

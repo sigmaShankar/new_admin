@@ -1,0 +1,140 @@
+.backdrop {
+    position: fixed;
+    background-color:rgb(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* display: none; */
+}
+
+.verify {
+    height: 40px;
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    max-width: 300px;
+    cursor: pointer;
+    color: white;
+    /* box-shadow: 0 1px 10px 0 lightgray; */
+}
+
+.user-preference-container h2 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.user-preference-container {
+    height: 80%;
+    max-height: 800px;
+    background-color: white;
+    position: relative;
+    padding: 2rem;
+    width: 90%;
+    max-width: 1000px;
+    overflow-y: scroll;
+    border-radius: 3px;
+}
+
+.user-preference-container input,
+.user-preference-container select {
+    height: 2.3rem;
+    padding: 0.5rem;
+    margin-top: 0.9rem;
+    width: 100%;
+    border: none;
+    font-size: 0.7rem;
+    background-color: #d3d3d330;
+    color: gray;
+    box-shadow: 0 1px 5px 0 lightgray;
+    border-radius: 5px;
+}
+
+.description textarea {
+    height: 4rem;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+}
+
+
+.certificates-form label {
+    display: block;
+}
+
+.map input {
+    margin-top: 0;
+}
+
+.input-container,
+.description {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 0.9rem;
+    height: auto;
+}
+
+.user-preference-container h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.skip {
+    position: absolute;
+    bottom: 2%;
+    margin: 0;
+    cursor: pointer;
+    right: 5%;
+}
+
+.map-buttons {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+    height: 40px;
+    justify-content: space-around;
+}
+
+.locations {
+    width: 100%;
+    max-width: 500px; 
+    margin: auto; 
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.locations:hover {
+    box-shadow: 0 1px 10px 0 lightgray;
+}
+
+.map-button,
+.map-button-inst {
+    width: 100px;
+    height: 80%;
+    background-color: blue;
+    color: white;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.map-button-inst {
+    height: 30px;
+    margin: auto;
+    margin-top: 4rem;
+}

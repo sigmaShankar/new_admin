@@ -1,0 +1,60 @@
+.about-container {
+    color: white;
+    padding: 2rem;
+    /* padding-bottom: 1.5rem; */
+    width: 100%;
+    text-transform: uppercase;
+    height: auto;
+    max-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+
+.about-container h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.95rem;
+    font-weight: 500;
+    color: #35742d;
+    text-align: center;
+}
+
+.about-container article {
+    margin: 1.5rem;
+    font-size: 0.9rem;
+    text-transform: none;
+    font-weight: 300;
+    width: 75%;
+    text-align: center;
+    color: #666;
+}
+
+article.last-article {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-bottom: 1rem;
+}
+
+.under-line {
+    width: 18px;
+    background-color: #CCCC00;
+    height: 5px;
+}
+
+@media(max-width: 800px) {
+
+    .about-container {
+        max-height: none;
+        padding: 2rem;
+    }
+
+    .about-container article {
+        margin: 1.5rem;
+        font-size: 0.9rem;
+        width: 80%;
+        text-align: center;
+        color: black;
+    }
+}

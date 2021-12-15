@@ -1,0 +1,151 @@
+.sign-up-container{
+    height: auto;
+    min-height: 30rem;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #F7F7F7;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+
+.sign-up-container h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: 3rem;
+    color: #017533;
+}
+
+.sign-up-container form {
+    width: 100%;
+    text-align: center;
+    max-width: 550px;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+.sign-up-container .input-container,
+.submit, .description {
+    width: 100%;
+    margin-top: 0.9rem;
+    height: 2.5rem;
+}
+
+.sign-up-container input,
+.sign-up-container select {
+    border: 1px solid gray;
+    padding-left: 0.9rem;
+    width: 100%;
+    background-color: white;
+    height: 100%;
+}
+
+.sign-up-container input[type="submit"] {
+    /* #CECC17 */
+    background-color: #CECC17;
+    border: none;
+    color: #434242;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 40%;
+    min-width: 160px;
+    margin-top: 1rem;
+}
+
+.sign-up-container input[type="submit"]:hover {
+    color: white;
+}
+
+.submit {
+    margin-top: 1.5rem;
+}
+
+.forgot-password {
+    margin: 0.9rem;
+}
+
+.forgot-password a,
+.register-link a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #434242;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.9rem;
+}
+
+.register p {
+    margin: 0;
+}
+
+.register-link {
+    margin-left: 0.5rem;
+}
+
+.description {
+    height: 7rem;
+}
+
+input[type="file"] {
+    margin-top: 0.5rem;
+    border: 0px;
+    padding: 0;
+    background-color: inherit;
+    /* padding: 0.9rem; */
+}
+.description textarea {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+}
+
+.sign-up-container h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: left;
+    
+}
+
+textarea.invalid,
+input.invalid {
+    border: 1px solid red
+}
+
+.input-container p {
+    display: block;
+    color: red;
+    margin-bottom: 0;
+} 
+
+
+@media(max-width: 840px) {
+    .sign-up-container{
+        margin-top: 5rem;
+    }
+}
+
+.submit {
+    background-color: #CECC17;
+    border: none;
+    color: #434242;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    cursor: pointer;
+    width: 40%;
+    min-width: 160px;
+    margin-top: 2rem;
+}

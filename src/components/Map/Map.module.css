@@ -1,0 +1,28 @@
+.user-preference-container input { 
+    height: 2.3rem;
+    padding: 0.5rem;
+    margin-top: 0.9rem;
+    width: 100% !important;
+    max-width: 500px;
+    border: none;
+    font-size: 0.7rem;
+    color: gray;
+    background-color: #d3d3d330;
+    box-shadow: 0 1px 10px 0 lightgray;
+    border-radius: 5px;
+    margin: auto;
+    /* margin-top: 40px; */
+}
+
+.user-preference-container {
+    height: auto;
+    max-height: 800px;
+    background-color: white;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.user-preference-container h2 {
+    font-size: 1.5rem;
+}

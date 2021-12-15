@@ -1,0 +1,38 @@
+.teachers-container {
+    width: 100%;
+    margin-top: 7rem;
+    background-color: white;
+}
+
+.sub-teacher-container {
+    /* padding: 2rem; */
+}
+
+.sub-teacher-container  p > span {
+    font-size: 2rem;
+}
+
+.sub-teacher-container  > p  {
+    padding-left: 3rem;
+}
+
+.imaginative {
+    color: #A6A54F;
+}
+
+.innovative {
+    font-weight: bold;
+    color: #47684D;
+}
+
+@media(max-width: 600px) {
+    .sub-teacher-container {
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 840px) {
+    .teachers-container{
+        margin-top: 5rem;
+    }
+}

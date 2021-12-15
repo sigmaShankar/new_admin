@@ -1,0 +1,63 @@
+.basic-details-form-container h2 {
+    height: auto;
+}
+
+.basic-details-form-container h2 {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    display: inline-block;
+    border-bottom: 1px solid gray;
+}
+
+.basic-details-form-container label {
+    display: block;
+}
+
+.basic-details-form-container input,
+.basic-details-form-container textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 0.5px solid gray;
+    height: 2rem;
+    font-size: 0.9rem;
+}
+
+.basic-details-form-container  label {
+    text-align: left;
+}
+
+.basic-details-form-container textarea {
+    height: 6rem;
+    /* font-size: 1rem; */
+}
+
+.basic-details-form-container input:focus,
+.basic-details-form-container textarea:focus {
+    outline: none
+}
+
+.input-block {
+    margin-bottom: 0.5rem;
+}
+
+input.submit {
+    height: 2.2rem;
+    float: right;
+    margin-top: 0.9rem;
+    width: 10rem;
+    font-weight: bold;
+    color: black;
+    background-color: #B4B314;
+    border: none;
+}
+
+.basic-details-form-container {
+    margin-top: 2rem;
+}
+
+@media(min-width: 750px) {
+    .basic-details-form-container {
+        flex: 0.5;
+        max-width: 500px;
+    }
+}

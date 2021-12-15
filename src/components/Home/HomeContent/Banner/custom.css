@@ -1,0 +1,21 @@
+.carousel .thumbs {
+    display: none;
+}
+
+.carousel.slider-wrapper {
+    height: 40rem;
+}
+
+.carousel-root {
+    /* margin-top: 7rem; */
+    height: 100%;
+}
+
+.carousel.carousel-slider,
+.slider-wrapper.axis-horizontal,
+.slider.animated,
+.slider.animated div,
+.carousel .slide img {
+    /* margin-top: 7rem; */
+    height: 100%;
+}

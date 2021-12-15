@@ -1,0 +1,11 @@
+.sub-home-container {
+    width: 100%;
+    margin-top: 7rem;
+}
+
+
+@media(max-width: 840px) {
+    .sub-home-container{
+        margin-top: 5rem;
+    }
+}

@@ -1,0 +1,266 @@
+*, html, body {
+    font-family: Roboto, sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+button:focus {
+    outline: none!important
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.MuiFormControl-root textarea {
+    box-shadow: 0 0 0 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+/* 
+.MuiIconButton-label svg {
+    display: none !important
+} */
+
+.MUIDataTableToolbarSelect-deleteIcon-1509 {
+    display: none !important;
+} 
+
+#programs .MuiTableRow-root.MuiTableRow-head {
+    display: none !important;
+}
+
+.MuiPaper-root table {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+/* changed */
+.MuiDrawer-paper {
+    z-index: 100 !important;
+    background-color: #23284a!important;
+}
+
+
+
+
+
+
+
+
+
+/* .makeStyles-paper-350,.makeStyles-paper-360,.makeStyles-paper-550{
+    flex-direction: inherit!important;
+} */
+/* .MuiPaper-elevation1{
+    flex-direction: inherit!important;
+} */
+/* .makeStyles-dotBase-406{
+    background-color: red!important;
+}
+.makeStyles-linkIcon-48{
+    color: #fff!important;
+}
+.makeStyles-linkIconActive-49{
+    color:#b92926!important;
+}
+.makeStyles-linkText-50{
+    color: #fff!important;
+}
+.makeStyles-linkActive-163{
+    color: #23284a!important;
+}
+.makeStyles-linkTextActive-51{
+    color: #b92926!important;
+}
+.makeStyles-drawerClose-142{
+    width: 77px!important;
+    background-color: #23284a!important;
+} */
+.iconCol{
+    color: #23284a!important;
+}
+* {
+    transition: all 0.1s ease-out;
+  }
+  
+/* .makeStyles-headerIcon-22,.iconCol{
+    color: #23284a!important;
+} */
+.makeStyles-toolbar-7,.MuiToolbar-regular{
+    background-color: white;
+}
+.MuiList-root{
+    background-color: #23284a;
+}
+/* .makeStyles-drawerOpen-40,.makeStyles-drawerClose-41{
+    background-color: #23284a!important;
+}
+.makeStyles-link-45:hover{
+    background-color: #98a2e496!important;
+} */
+.tttt{
+    width: 100%;
+    overflow: auto;
+   
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+
+
+  /* transaction */
+
+  .testimotionals {
+    /* width:350px; */
+    width: 100%;
+     display:inline-block;
+      /* margin-left:50px;
+      margin-top:50px */
+      min-height: 20vh;
+      
+    }
+    
+    
+    .testimotionals .card {
+      min-height: 22vh;
+      position:relative;
+      overflow:hidden;
+      /* width:350px; */
+      margin:0 auto;
+      background:rgb(255, 255, 255);
+      padding:20px;
+      box-sizing:border-box;
+      text-align:center;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+    .testimotionals .card .layer {
+      z-index:1;
+      position:absolute;
+      top:calc(100% - 2px);
+      height:100%;
+      width:100%;
+      left:0;
+      background:linear-gradient(to left , orange, tomato);
+      transition:0.5s;
+      
+    }
+    
+    .testimotionals .card .content {
+      z-index:2; 
+      position:relative;
+    }
+    
+    .testimotionals .card:hover  .layer{
+      top:0;
+    }
+    
+    .testimotionals .card .content Typography {
+      font-size:14px;
+      line-height:24px;
+      color:black;
+      
+    }
+    .testimotionals .card .content .image {
+      width:100px; height:100px;
+      margin:0 auto;
+      border-radius:50%;
+      overflow:hidden;
+      border: 4px solid white;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      
+    }
+    
+    .testimotionals .card .conte nt .details h2 {
+    font-size:18px;
+    color:white;
+    }
+    .testimotionals .card .content .details h2 span {
+    font-size:20px;
+    color:purple;
+      transition:0.5s;
+    }
+    .testimotionals .card:hover .content .details h2 span {
+      color:white;
+      position:relative
+    }
+    
+    body{
+      margin-bottom:20px
+    }
+
+  /* transaction-end */
+
+
+  
+.makeStyles-appBar-6,
+.makeStyles-appBar-663{
+    z-index: 501 !important;
+}
+
+.teachersList th {
+    text-align: center;
+}
+
+/* button {
+    background: green;
+} */
+
+button:disabled {
+    background: lightgray !important;
+}
+
+.MuiList-root.MuiList-padding p {
+    font-weight: bold;
+}
+
+.map-button {
+    height: 100%;
+    width: 100px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+h2.MuiTypography-root {
+    color: gray;
+    font-weight: 300 !important;
+} 
+
+.addTeacher > div {
+    height: 100%;
+    width: 100%
+}
+
+.centre table th {
+    width: 5px !important
+}
+
+.backdrop-common {
+    position: fixed;
+    background-color:rgb(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* display: none; */
+}
