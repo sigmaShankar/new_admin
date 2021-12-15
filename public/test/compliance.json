@@ -1,9 +1,9 @@
 {
-    "Data Accountability and Transparency Act 2020.": {
+    "Data Accountability and Transparency Act 2020": {
         "regulatation": [
   
             {
-                "name": "PROHIBITION ON DISCRIMINATION IN PUBLIC ACCOMMODATIONS.—",
+                "name": "PROHIBITION ON DISCRIMINATION IN PUBLIC ACCOMMODATIONS.",
                 "details": [
                     "<pre> (1) IN GENERAL.—It is unlawful for a data aggregator to collect, use, or share personal data in a manner that segregates, discriminates in, or otherwise makes unavailable the goods, services, facilities, privileges, advantages, or accommodations of any place of public accommodation on the basis of a protected class.<br />      (1.a) BURDEN OF PROOF.—The burden of proof for disparate impact cases set forth in subsection <br/>      (2.a) Applies to cases with respect to this subsection.<br /> (3) INTERFERENCE WITH RIGHTS AND PRIVILEGES.—It is unlawful for a data aggregator to—<br />      (2.a) withhold, deny, deprive, or attempt to withhold, deny, or deprive any individual of any right or privilege secured by this subsection;(B) intimidate, threaten, or coerce, or attempt to intimidate, threaten, or coerce any individual with the purpose of interfering with any right or privilege secured by this subsection; or <br /> (C) punish or attempt to punish any individual for exercising or attempting to exercise any right or privilege secured by this subsection. </pre>"
                 ]
@@ -32,6 +32,73 @@
                     "<pre> For any automated decision system data aggregator shall provide the Agency—  (1) an automated decision system risk assessment— (A) within 90 days for any automated decision system currently in use;  (B) prior to the deployment of any new automated decision system; or  (C) as determined by the Director. (2) an automated decision system impact evaluation on a periodic basis as determined by the Director, but no less than annually.</pre>"
                 ]
             }
+        ]
+    },
+
+
+"European AI Regulations": {
+        "regulatation": [
+            {
+                "name": "Article 5.— PROHIBITED ARTIFICIAL INTELLIGENCE PRACTICES",
+                "details": [
+                    "<pre> c)The placing on the market,putting into service or use of AI systems by public authorities or on their behalf for the evaluation or classification of the trustworthiness of natural persons over a certain period of time based on their social behaviour or known or predicted personal or personality characteristics, with the social score leading to either or both of the following:<br />  (i) Detrimental or unfavourable treatment of certain natural persons or whole groups thereof in social contexts which are unrelated to the contexts in which the data was originally generated or collected; <br/>  (ii) Detrimental or unfavourable treatment of certain natural persons or whole groups thereof that is unjustified or disproportionate to their social behaviour or its gravity; <br/> </pre>"
+                ]
+            },
+            {
+                "name": "Article 9- RISK MANAGEMENT SYSTEM.",
+                "details": [
+                    "<pre> 7.  The testing of the high-risk AI systems shall be performed, as appropriate, at any point in time throughout the development process, and, in any event, prior to the placing on the market or the putting into service. Testing shall be made against preliminarily defined metrics and probabilistic thresholds that are appropriate to the intended purpose of the high-risk AI system.</pre>"
+                ]
+            },
+            {
+                "name": "Article 10 - DATA AND DATA GOVERNANCE.",
+                "details": [
+                    "<pre> 1.High-risk AI systems which make use of techniques involving the training of models with data shall be developed on the basis of training, validation and testing data sets that meet the quality criteria referred to in paragraphs 2 to 5. <br/>  2.Training, validation and testing data sets shall be subject to appropriate data governance and management practices. Those practices shall concern in particular,<br/>  a) the relevant design choices;<br/>  b) data collection;<br/>  c) relevant data preparation processing operations, such as annotation, labelling,cleaning, enrichment and aggregation;<br/>  d) the formulation of relevant assumptions, notably with respect to the information that the data are supposed to measure and represent; <br/>  e) a prior assessment of the availability, quantity and suitability of the data sets that are needed;<br/>  f) examination in view of possible biases;<br/>  g) the identification of any possible data gaps or shortcomings, and how those gaps and shortcomings can be addressed.<br/>  3. Training, validation and testing data sets shall be relevant, representative, free of errors and complete. They shall have the appropriate statistical properties, including, where applicable, as regards the persons or groups of persons on which the high-risk AI system is intended to be used. These characteristics of the data sets may be met at the level of individual data sets or a combination thereof.<br/>  4. Training, validation and testing data sets shall take into account, to the extent required by the intended purpose, the characteristics or elements that are particular to the specific geographical, behavioural or functional setting within which the high-risk AI system is intended to be used. <br/>  5. To the extent that it is strictly necessary for the purposes of ensuring bias monitoring, detection and correction in relation to the high-risk AI systems, the providers of such systems may process special categories of personal data referred to in Article 9(1) of Regulation (EU) 2016/679, Article 10 of Directive (EU) 2016/680 and Article 10(1) of Regulation (EU) 2018/1725, subject to appropriate safeguards for the fundamental rights and freedoms of natural persons, including technical limitations on the re-use and use of state-of-the-art security and privacy-preserving measures, such as pseudonymisation, or encryption where anonymisation may significantly affect the purpose pursued. <br/>  6. Appropriate data governance and management practices shall apply for the development of high-risk AI systems other than those which make use of techniques involving the training of models in order to ensure that those high-risk AI systems comply with paragraph 2. <br/></pre>"
+                ]
+            },
+            {
+                "name": "Article 12 - RECORD KEEPING.",
+                "details": [
+                    "<pre> 1. High-risk AI systems shall be designed and developed with capabilities enabling the automatic recording of events (‘logs’) while the high-risk AI systems is operating. Those logging capabilities shall conform to recognised standards or common specifications. <br/>  2. The logging capabilities shall ensure a level of traceability of the AI system’s functioning throughout its lifecycle that is appropriate to the intended purpose of the system. <br/>   3. In particular, logging capabilities shall enable the monitoring of the operation of the high-risk AI system with respect to the occurrence of situations that may result in the AI system presenting a risk within the meaning of Article 65(1) or lead to a substantial modification, and facilitate the post-market monitoring referred to in Article 61. <br/>  4. For high-risk AI systems referred to in paragraph 1, point (a) of Annex III, the logging capabilities shall provide, at a minimum: <br/>  a) recording of the period of each use of the system (start date and time and end date and time of each use); <br/>  b) the reference database against which input data has been checked by the system; <br/>  c) the input data for which the search has led to a match; <br/>  d) the identification of the natural persons involved in the verification of the results, as referred to in Article 14 (5). <br/> </pre>"
+                ]
+            },
+            {
+                "name": "Article 13 - TRANSPARENCY AND PROVISION OF INFORMATION TO USERS.",
+                "details": [
+                    "<pre> High-risk AI systems shall be designed and developed in such a way to ensure that their operation is sufficiently transparent to enable users to interpret the system’s output and use it appropriately. An appropriate type and degree of transparency shall be ensured, with a view to achieving compliance with the relevant obligations of the user and of the provider set out in Chapter 3 of this Title. <br/></pre>"
+                ]
+            },
+            {
+                "name": "Article 15 - ACCURACY, ROBUSTNESS AND CYBERSECURITY.",
+                "details": [
+                    "<pre> 1. High-risk AI systems shall be designed and developed in such a way that they achieve, in the light of their intended purpose, an appropriate level of accuracy, robustness and cybersecurity, and perform consistently in those respects throughout their lifecycle. <br/>  2.The levels of accuracy and the relevant accuracy metrics of high-risk AI systems shall be declared in the accompanying instructions of use. <br/>  3. High-risk AI systems shall be resilient as regards errors, faults or inconsistencies that may occur within the system or the environment in which the system operates, in particular due to their interaction with natural persons or other systems. The robustness of high-risk AI systems may be achieved through technical redundancy solutions, which may include backup or fail-safe plans. High-risk AI systems that continue to learn after being placed on the market or put into service shall be developed in such a way to ensure that possibly biased outputs due to outputs used as an input for future operations (‘feedback loops’) are duly addressed with appropriate mitigation measures. <br/>  4. High-risk AI systems shall be resilient as regards attempts by unauthorised third parties to alter their use or performance by exploiting the system vulnerabilities.The technical solutions aimed at ensuring the cybersecurity of high-risk AI systems shall be appropriate to the relevant circumstances and the risks. The technical solutions to address AI specific vulnerabilities shall include, where appropriate, measures to prevent and control for attacks trying to manipulate the training dataset (‘data poisoning’), inputs designed to cause the model to make a mistake (‘adversarial examples’), or model flaws. <br/></pre>"
+                ]
+            },
+            {
+                "name": "Article 52- TRANSPARENCY OBLIGATIONS FOR CERTAIN AI SYSTEMS.",
+                "details": [
+                    "<pre> 1.Providers shall ensure that AI systems intended to interact with natural persons are designed and developed in such a way that natural persons are informed that they are interacting with an AI system, unless this is obvious from the circumstances and the context of use. This obligation shall not apply to AI systems authorised by law to detect, prevent, investigate and prosecute criminal offences, unless those systems are available for the public to report a criminal offence. <br/>  2. Users of an emotion recognition system or a biometric categorisation system shall inform of the operation of the system the natural persons exposed thereto. This obligation shall not apply to AI systems used for biometric categorisation, which are permitted by law to detect, prevent and investigate criminal offences. <br/>  3. Users of an AI system that generates or manipulates image, audio or video content that appreciably resembles existing persons, objects, places or other entities or events and would falsely appear to a person to be authentic or truthful (‘deep fake’), shall disclose that the content has been artificially generated or manipulated. However, the first subparagraph shall not apply where the use is authorised by law to detect, prevent, investigate and prosecute criminal offences or it is necessary for the exercise of the right to freedom of expression and the right to freedom of the arts and sciences guaranteed in the Charter of Fundamental Rights of the EU, and subject to appropriate safeguards for the rights and freedoms of third parties. <br/>  4. Paragraphs 1,2 and 3 shall not affect the requirements and obligations set out in Title III of this Regulation. </br> </pre>"
+                ]
+            }
+        ]
+    },
+
+"Algorithmic Accountability Act Of 2019": {
+        "regulatation": [
+  
+            {
+                "name": "SEC. 2. DEFINITIONS :- AUTOMATED DECISION SYSTEM IMPACT ASSESSMENT.",
+                "details": [
+                    "<pre> The term ‘‘automated decision system impact assessment’’ means a study evaluating an automated decision system and the automated decision system’s development process, including the design and training data of the automated decision system, for impacts on accuracy, fairness, bias, discrimination, privacy, and security that includes, at a minimum—    (A) a detailed description of the automated decision system, its design, its training, data, and its purpose<br/>  (B) an assessment of the relative benefits and costs of the automated decision system in light of its purpose, taking into account relevant factors, including— <br/>  (i) data minimization practices <br/>  (ii) the duration for which personal information and the results of the automated decision system are stored;<br/>  (iii) what information about the automated decision system is available to consumers; <br/>  (iv) the extent to which consumers have access to the results of the automated decision system and may correct or object to its results; <br/>  (v) the recipients of the results of the automated decision system; <br/>  (C) an assessment of the risks posed by the automated decision system to the privacy or security of personal information of consumers and the risks that the automated decision system may result in or contribute to inaccurate, unfair, biased, or discriminatory decisions impacting consumers; <br/>  (D) the measures the covered entity will employ to minimize the risks described in subparagraph (C), including technological and physical safeguards. </pre>"
+                ]
+            },
+            {
+                "name": "Sec. 2 Definations :- HIGH-RISK AUTOMATED DECISION SYSTEM.",
+                "details": [
+                    "<pre> The term ‘‘high-risk automated decision system’’ means an automated decision system that <br/>  (A)  taking into account the novelty of the technology used and the nature, scope, context, and purpose of the automated decision system, poses a significant risk <br/>  (i) to the privacy or security of personal information of consumers; or <br/>  (ii) of resulting in or contributing to inaccurate, unfair, biased, or discriminatory decisions impacting consumers <br/>  (B) makes decisions, or facilitates human decision making, based on systematic and extensive evaluations of consumers,                 including attempts to analyze or predict sensitive aspects of                    their lives, such as their work performance, economic   situation, health, personal preferences, interests, behaviour, location, or movements, that— <br/>  (i) alter legal rights of consumers; or <br/>  (ii) otherwise significantly impact consumers; <br/>  (C) involves the personal information of a significant number of consumers regarding race, color, national origin, political opinions, religion, trade union membership, genetic data, biometric data, health, gender, gender identity, sexuality, sexual orientation, criminal convictions, or arrests; <br/>  (8) HIGH-RISK INFORMATION SYSTEM.—The term ‘‘high-risk information system’’ means an information system that— <br/>  (A) taking into account the novelty of the technology used and the nature, scope, context, and purpose of the information system, poses a significant risk to the privacy or security of personal information of consumers; <br/>  (B) involves the personal information of a significant number of consumers regarding race, color, national origin, political opinions, religion, trade union membership, genetic data, biometric data, health, gender, gender identity, sexuality, sexual orientation, criminal convictions, or arrests; </pre>"
+                ]
+            }
+       
         ]
     }
 }

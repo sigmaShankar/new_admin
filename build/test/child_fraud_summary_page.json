@@ -23,7 +23,7 @@
     ],
     "Trans_Ip_Name": {
         "Name": "Bias Evaluation Using Explainability",
-        "actual":0.074,
+        "Actual": 0.074,
         "Mitigated": -0.013,
         "Acceptable Range": "-0.01 to 0.01",
         "description": "Privilege Score, our proprietary metric, is used to evaluate the model's bias. A higher privilege score indicates that the model is highly biased"

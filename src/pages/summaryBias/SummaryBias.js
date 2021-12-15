@@ -131,7 +131,7 @@ export default function SummaryBias(props) {
   const columns_metrics = [
     {
       name: "metrics_name",
-      label: "Metrics Name",
+      label: "Metric Name",
       options: {
         filter: true,
         sort: true,
@@ -139,7 +139,7 @@ export default function SummaryBias(props) {
     },
     {
       name: "metrics_value",
-      label: "Metrics Value",
+      label: "Metric Value",
       options: {
         filter: true,
         sort: false,
@@ -147,7 +147,7 @@ export default function SummaryBias(props) {
     },
     {
       name: "normal_range",
-      label: "Range",
+      label: "Normal Range",
       options: {
         filter: true,
         sort: false,
@@ -526,7 +526,7 @@ export default function SummaryBias(props) {
           <Grid item xs={12} >
 
             <MUIDataTable
-              title={"Metrics Table"}
+              title={"Table Of Metrics"}
               data={modelData['Metrics_Table']}
               columns={columns_metrics}
               options={{

@@ -43,21 +43,21 @@
         "Medium": 1,
         "Low": 0,
         "Fairness": [
-            {
-                "Date": "05-Oct-21",
-                "Accuracy": 68,
-                "Fainess_Score": 65
-            },
-            {
-                "Date": "23-Oct-21",
-                "Accuracy": 64,
-                "Fainess_Score": 71
-            },
-            {
-                "Date": "15-Nov-21",
-                "Accuracy": 78,
-                "Fainess_Score": 70
-            }
+           {
+            "Date": "05-Oct-21",
+            "Accuracy": 78,
+            "Fainess_Score": 83
+        },
+        {
+            "Date": "23-Oct-21",
+            "Accuracy": 73,
+            "Fainess_Score": 85
+        },
+        {
+            "Date": "15-Nov-21",
+            "Accuracy": 78,
+            "Fainess_Score": 91.07
+        }
         ],
         "Fairness_Metrics": [
             {
@@ -177,14 +177,14 @@
             "date": "2021-11-15"
         },
         {
-            "pillar": "Monitoring",
+            "pillar": "Robustness",
             "ids": 2,
             "name": "Model is having high false positive rates",
             "impact": "High",
             "date": "2021-11-08"
         },
         {
-            "pillar": "Monitoring",
+            "pillar": "Robustness",
             "ids": 3,
             "name": "Accuracy on the latest samples appear to be lower than general rate",
             "impact": "High",
