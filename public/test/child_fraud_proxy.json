@@ -47,7 +47,7 @@
                     "proxy": -0.29,
                     "mitigated": -0.01
                 },
-                "false ommision rate difference": {
+                "false omission rate difference": {
                     "normal": 0.02,
                     "proxy": 0.02,
                     "mitigated": 0.07
@@ -67,7 +67,7 @@
                     "proxy": 0.24,
                     "mitigated": 0.88
                 },
-                "false ommision rate ratio": {
+                "false omission rate ratio": {
                     "normal": 1.38,
                     "proxy": 1.21,
                     "mitigated": 3.09
@@ -152,7 +152,7 @@
                     "proxy": 0.7,
                     "mitigated": 0.66
                 },
-                "false ommision rate": {
+                "false omission rate": {
                     "normal": 0.09,
                     "proxy": 0.08,
                     "mitigated": 0.07
@@ -216,7 +216,7 @@
                     "proxy": -0.29,
                     "mitigated": -0.01
                 },
-                "false ommision rate difference": {
+                "false omission rate difference": {
                     "normal": 0.02,
                     "proxy": 0.02,
                     "mitigated": 0.07
@@ -236,7 +236,7 @@
                     "proxy": 0.24,
                     "mitigated": 0.88
                 },
-                "false ommision rate ratio": {
+                "false omission rate ratio": {
                     "normal": 1.38,
                     "proxy": 1.21,
                     "mitigated": 3.09
@@ -321,7 +321,7 @@
                     "proxy": 0.7,
                     "mitigated": 0.66
                 },
-                "false ommision rate": {
+                "false omission rate": {
                     "normal": 0.09,
                     "proxy": 0.08,
                     "mitigated": 0.07

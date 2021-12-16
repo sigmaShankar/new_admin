@@ -453,7 +453,7 @@ export default function SummaryBias(props) {
                   variant="h7"
                   className={classes.serverOverviewElementText}
                 >
-                  Normal
+                  Actual Value
                 </Typography></b>
                 <div className={classes.serverOverviewElementChartWrapper}>
                   <ResponsiveContainer width="99%">
@@ -477,7 +477,7 @@ export default function SummaryBias(props) {
                   variant="h7"
                   className={classes.serverOverviewElementText}
                 >
-                  Mitigated
+                  Mitigated Value
                 </Typography></b>
                 <div className={classes.serverOverviewElementChartWrapper}>
                   <ResponsiveContainer width="99%">
@@ -526,7 +526,7 @@ export default function SummaryBias(props) {
           <Grid item xs={12} >
 
             <MUIDataTable
-              title={"Table Of Metrics"}
+              title={"Table of Metrics"}
               data={modelData['Metrics_Table']}
               columns={columns_metrics}
               options={{

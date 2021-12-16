@@ -38,7 +38,7 @@
                     "normal": 0.01,
                     "mitigated": 0.04
                 },
-                "false ommision rate difference": {
+                "false omission rate difference": {
                     "normal": -0.01,
                     "mitigated": 0.01
                 },
@@ -54,7 +54,7 @@
                     "normal": 1.04,
                     "mitigated": 1.35
                 },
-                "false ommision rate ratio": {
+                "false omission rate ratio": {
                     "normal": 0.87,
                     "mitigated": 1.17
                 },
@@ -123,7 +123,7 @@
                     "normal": 0.73,
                     "mitigated": 0.73
                 },
-                "false ommision rate": {
+                "false omission rate": {
                     "normal": 0.09,
                     "mitigated": 0.09
                 },
@@ -177,7 +177,7 @@
                     "normal": 0.01,
                     "mitigated": -0.0
                 },
-                "false ommision rate difference": {
+                "false omission rate difference": {
                     "normal": -0.01,
                     "mitigated": -0.01
                 },
@@ -193,7 +193,7 @@
                     "normal": 1.04,
                     "mitigated": 0.99
                 },
-                "false ommision rate ratio": {
+                "false omission rate ratio": {
                     "normal": 0.87,
                     "mitigated": 0.87
                 },
@@ -262,7 +262,7 @@
                     "normal": 0.73,
                     "mitigated": 0.72
                 },
-                "false ommision rate": {
+                "false omission rate": {
                     "normal": 0.09,
                     "mitigated": 0.09
                 },
@@ -315,7 +315,7 @@
                     "normal": 0.01,
                     "mitigated": 0.21
                 },
-                "false ommision rate difference": {
+                "false omission rate difference": {
                     "normal": -0.01,
                     "mitigated": 0.03
                 },
@@ -331,7 +331,7 @@
                     "normal": 1.04,
                     "mitigated": 1.77
                 },
-                "false ommision rate ratio": {
+                "false omission rate ratio": {
                     "normal": 0.87,
                     "mitigated": 1.2
                 },
@@ -400,7 +400,7 @@
                     "normal": 0.73,
                     "mitigated": 0.89
                 },
-                "false ommision rate": {
+                "false omission rate": {
                     "normal": 0.09,
                     "mitigated": 0.19
                 },
@@ -453,7 +453,7 @@
                     "normal": 0.01,
                     "mitigated": 0.17
                 },
-                "false ommision rate difference": {
+                "false omission rate difference": {
                     "normal": -0.01,
                     "mitigated": 0.02
                 },
@@ -469,7 +469,7 @@
                     "normal": 1.04,
                     "mitigated": 1.59
                 },
-                "false ommision rate ratio": {
+                "false omission rate ratio": {
                     "normal": 0.87,
                     "mitigated": 1.11
                 },
@@ -538,7 +538,7 @@
                     "normal": 0.73,
                     "mitigated": 0.88
                 },
-                "false ommision rate": {
+                "false omission rate": {
                     "normal": 0.09,
                     "mitigated": 0.19
                 },
@@ -592,7 +592,7 @@
                     "normal": 0.01,
                     "mitigated": 0.12
                 },
-                "false ommision rate difference": {
+                "false omission rate difference": {
                     "normal": -0.01,
                     "mitigated": 0.04
                 },
@@ -608,7 +608,7 @@
                     "normal": 1.04,
                     "mitigated": 3.53
                 },
-                "false ommision rate ratio": {
+                "false omission rate ratio": {
                     "normal": 0.87,
                     "mitigated": 1.88
                 },
@@ -677,7 +677,7 @@
                     "normal": 0.73,
                     "mitigated": 0.69
                 },
-                "false ommision rate": {
+                "false omission rate": {
                     "normal": 0.09,
                     "mitigated": 0.09
                 },
@@ -730,7 +730,7 @@
                     "normal": 0.01,
                     "mitigated": -0.14
                 },
-                "false ommision rate difference": {
+                "false omission rate difference": {
                     "normal": -0.01,
                     "mitigated": -0.03
                 },
@@ -746,7 +746,7 @@
                     "normal": 1.04,
                     "mitigated": 0.64
                 },
-                "false ommision rate ratio": {
+                "false omission rate ratio": {
                     "normal": 0.87,
                     "mitigated": 0.8
                 },
@@ -815,7 +815,7 @@
                     "normal": 0.73,
                     "mitigated": 0.77
                 },
-                "false ommision rate": {
+                "false omission rate": {
                     "normal": 0.09,
                     "mitigated": 0.14
                 },
@@ -868,7 +868,7 @@
                     "normal": 0.01,
                     "mitigated": 0.04
                 },
-                "false ommision rate difference": {
+                "false omission rate difference": {
                     "normal": -0.01,
                     "mitigated": 0.01
                 },
@@ -884,7 +884,7 @@
                     "normal": 1.04,
                     "mitigated": 1.09
                 },
-                "false ommision rate ratio": {
+                "false omission rate ratio": {
                     "normal": 0.87,
                     "mitigated": 1.07
                 },
@@ -953,7 +953,7 @@
                     "normal": 0.73,
                     "mitigated": 0.9
                 },
-                "false ommision rate": {
+                "false omission rate": {
                     "normal": 0.09,
                     "mitigated": 0.21
                 },
@@ -1006,7 +1006,7 @@
                     "normal": 0.01,
                     "mitigated": -0.0
                 },
-                "false ommision rate difference": {
+                "false omission rate difference": {
                     "normal": -0.01,
                     "mitigated": -0.02
                 },
@@ -1022,7 +1022,7 @@
                     "normal": 1.04,
                     "mitigated": 1.0
                 },
-                "false ommision rate ratio": {
+                "false omission rate ratio": {
                     "normal": 0.87,
                     "mitigated": 0.83
                 },
@@ -1091,7 +1091,7 @@
                     "normal": 0.73,
                     "mitigated": 0.74
                 },
-                "false ommision rate": {
+                "false omission rate": {
                     "normal": 0.09,
                     "mitigated": 0.1
                 },
@@ -1144,7 +1144,7 @@
                     "normal": 0.01,
                     "mitigated": -0.07
                 },
-                "false ommision rate difference": {
+                "false omission rate difference": {
                     "normal": -0.01,
                     "mitigated": -0.05
                 },
@@ -1160,7 +1160,7 @@
                     "normal": 1.04,
                     "mitigated": 0.87
                 },
-                "false ommision rate ratio": {
+                "false omission rate ratio": {
                     "normal": 0.87,
                     "mitigated": 0.79
                 },
@@ -1229,7 +1229,7 @@
                     "normal": 0.73,
                     "mitigated": 0.89
                 },
-                "false ommision rate": {
+                "false omission rate": {
                     "normal": 0.09,
                     "mitigated": 0.19
                 },

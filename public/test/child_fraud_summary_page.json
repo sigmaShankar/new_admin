@@ -135,7 +135,7 @@
             "normal_range": "-0.10-0.10"
         },
         {
-            "metrics_name": "false omision rate difference",
+            "metrics_name": "false omission rate difference",
             "metrics_value": -0.01,
             "impact": "Low",
             "normal_range": "-0.10-0.10"
@@ -159,7 +159,7 @@
             "normal_range": "0.85-1.15"
         },
         {
-            "metrics_name": "false omision rate ratio",
+            "metrics_name": "false omission rate ratio",
             "metrics_value": 0.87,
             "impact": "Low",
             "normal_range": "0.85-1.15"
@@ -237,7 +237,7 @@
             "normal_range": "0.85-1"
         },
         {
-            "metrics_name": "false omision rate",
+            "metrics_name": "false omission rate",
             "metrics_value": 0.09,
             "impact": "Low",
             "normal_range": "0-0.15"
