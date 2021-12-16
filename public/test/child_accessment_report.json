@@ -38,26 +38,26 @@
         }
     ],
     "Fairness": {
-        "Fairness_Score": 70.0,
+        "Fairness_Score": 91.07,
         "High": 0,
         "Medium": 1,
         "Low": 0,
         "Fairness": [
-           {
-            "Date": "05-Oct-21",
-            "Accuracy": 78,
-            "Fainess_Score": 83
-        },
-        {
-            "Date": "23-Oct-21",
-            "Accuracy": 73,
-            "Fainess_Score": 85
-        },
-        {
-            "Date": "15-Nov-21",
-            "Accuracy": 78,
-            "Fainess_Score": 91.07
-        }
+            {
+                "Date": "05-Oct-21",
+                "Accuracy": 78,
+                "Fainess_Score": 83
+            },
+            {
+                "Date": "23-Oct-21",
+                "Accuracy": 73,
+                "Fainess_Score": 85
+            },
+            {
+                "Date": "15-Nov-21",
+                "Accuracy": 78,
+                "Fainess_Score": 91.07
+            }
         ],
         "Fairness_Metrics": [
             {
@@ -166,7 +166,7 @@
                 "Value": 0.138
             }
         ],
-        "Explainability_Metrics_desc": "SigmaRed's Responsible AI platform provides more than 40 metrics. They are accessible through the ML Fairness menu"
+        "Explainability_Metrics_desc": "SigmaRed's Responsible AI platform provides more than 60 XAI visualizations. They are accessible through the ML Explainability menu"
     },
     "risk": [
         {
@@ -235,5 +235,5 @@
         ],
         "des": "The production monitoring metrics plot shows the percentage of outliers, drifted features, adversarial samples, NaN(null) values, and OOR(out of range) values in the latest production data."
     },
-    "Next_Evaluation_Date": "5-dec-2021"
+    "Next_Evaluation_Date": "10-dec-2021"
 }
