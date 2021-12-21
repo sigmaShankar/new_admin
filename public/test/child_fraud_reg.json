@@ -1,27 +1,27 @@
 [
     {
         "Sr": "1",
-        "Regulation Name": "Model is biased towards dual nationality citizens",
+        "Regulation Name": "Accuracy on the latest samples appear to be lower than general rate",
         "Risk Description": "Data Accountability and Transparency Act 2020-BURDEN OF PROOF FOR DISPARATE IMPACT.",
         "date": "2021-10-05"
     },
     {
         "Sr": "2",
-        "Regulation Name": "Model is biased towards dual nationality citizens",
+        "Regulation Name": "Negative bias towards the Female disproportionate to default rate",
         "Risk Description": "European AI Regulations-Article 5.\u2014 PROHIBITED ARTIFICIAL INTELLIGENCE PRACTICES",
         "date": "2021-10-05"
     },
 
     {
         "Sr": "3",
-        "Regulation Name": "Model is having high false positive rates",
+        "Regulation Name": "Negative bias towards the Female disproportionate to default rate",
         "Risk Description": "Data Accountability and Transparency Act 2020-BURDEN OF PROOF FOR DISPARATE IMPACT.",
         "date": "2021-10-09"
     },
 
     {
         "Sr": "4",
-        "Regulation Name": "Model is having high false positive rates",
+        "Regulation Name": "Privileged group (Male) is getting higher benefits when compared to unprivileged group (Female)",
         "Risk Description": "European AI Regulations-Article 5.\u2014 PROHIBITED ARTIFICIAL INTELLIGENCE PRACTICES",
         "date": "2021-10-09"
     }
