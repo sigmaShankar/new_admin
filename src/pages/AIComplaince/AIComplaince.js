@@ -427,7 +427,7 @@ export default function AIComplaince() {
     <>
 
       {_section && current_section && value == 0 && (<PageTitle  dropDownName="Regulation Name" data={_section} tabs2={["Regulations","Analytics","Risk Register","Report"]} initialData={current_section} selectValue={(data) => { setCurrentSection(data) }} width={["0.15","0.35","0.65"]} tabValue={handleChange} tabSelection={0} />)}
-      {algoName && currentAlgo && value == 1 && (<PageTitle  dropDownName="Mitigation Algorithm" data={algoName} tabs2={["Regulations","Analytics","Risk Register","Report"]} initialData={currentAlgo} selectValue={(data) => { setCurrentAlgo(data) }} width={["0.15","0.35","0.65"]} tabValue={handleChange} tabSelection={(value == 1)?1:value} />)}
+      {algoName && currentAlgo && value == 1 && (<PageTitle  dropDownName="Mitigation Algorithm" tabs2={["Regulations","Analytics","Risk Register","Report"]}  width={["0.15","0.35","0.65"]} tabValue={handleChange} tabSelection={(value == 1)?1:value} />)}
       {(value == 2 || value == 3) && (<PageTitle  title="AI compliance"  tabs2={["Regulations","Analytics","Risk Register","Report"]} width={["0.3","0.45","0.7"]} tabValue={handleChange} tabSelection={value} />)}
 
 
@@ -556,13 +556,11 @@ export default function AIComplaince() {
                 </CardHeader>
               </Card>
             </Col>
-            <Col xl="5" id="select algo">
+            {/* <Col xl="5" id="select algo">
               <Card className="shadow">
                 <CardHeader className="border-0">
                   <Row className="align-items-center">
-                    {/* <div className="col">
-                        <h3 className="mb-0">Mitigation Algorithm</h3>
-                      </div> */}
+                   
                     <div className="col text-right">
                       <select
                         href="#pablo"
@@ -579,7 +577,7 @@ export default function AIComplaince() {
                   </Row>
                 </CardHeader>
               </Card>
-            </Col>
+            </Col> */}
           </Row>):null}
 
 
@@ -618,9 +616,9 @@ export default function AIComplaince() {
 
               <Row className="">
 
-                {
+                {/* {
                   Object.keys(customValue).length && Object.keys(customValue[currentAlgo]).map(metric => <MetricsGraph name={metric} algo={currentAlgo} data={customValue[currentAlgo][metric]} dates={dateList} />)
-                }
+                } */}
               </Row>
             </Container></> : "Coming soon ..."}
 

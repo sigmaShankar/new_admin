@@ -395,19 +395,19 @@ export default function Dashboard(props) {
 
 
         {Submodel && (<>
-          {(sessionStorage.getItem('currentModelName') == "Fraud Detection") ? mock.bigStat_fraud.map(stat => (
+          {/* {(sessionStorage.getItem('currentModelName') == "Fraud Detection") ? mock.bigStat_fraud.map(stat => (
 
             <Grid item md={4} sm={6} xs={12} key={stat.product}>
-              {/* <br /> */}
+              
               <BigStat {...stat} />
             </Grid>
           )) : mock.bigStat.map(stat => (
 
             <Grid item md={4} sm={6} xs={12} key={stat.product}>
-              {/* <br /> */}
+             
               <BigStat {...stat} />
             </Grid>
-          ))}
+          ))} */}
           {/* <Grid item lg={3} md={4} sm={6} xs={12}>
           <Widget
             title="Visits Today"
@@ -761,7 +761,7 @@ export default function Dashboard(props) {
         ))} */}
 
 
-          <Grid item xs={12} style={{ marginTop: "5vh" }}>
+          {/* <Grid item xs={12} style={{ marginTop: "5vh" }}> */}
             {/* <Widget
             title="Model - Credit Lending"
             upperTitle
@@ -769,9 +769,9 @@ export default function Dashboard(props) {
             bodyClass={classes.tableWidget}
           > */}
             {/* <Table data={mock.table} /> */}
-            {(modelValue) ? <Index /> : null}
+            {/* {(modelValue) ? <Index /> : null} */}
             {/* </Widget> */}
-          </Grid>
+          {/* </Grid> */}
         </>)}
       </Grid>
     </>

@@ -52,7 +52,7 @@ export default function SidebarLink({
   if (!children)
     return (
       <ListItem
-      // disabled={(label == "Alert" || label == "Proxy Bias"  || label == "AI Compliance")?true:false}
+      // disabled={(label == "ML Fairness")?true:false}
         button
         component={link && Link}
         to={link}
@@ -89,6 +89,7 @@ export default function SidebarLink({
       <ListItem
         button
         component={link && Link}
+      disabled={(label == "ML Fairness")?true:false}
         onClick={toggleCollapse}
         className={classes.link}
         to={link}
