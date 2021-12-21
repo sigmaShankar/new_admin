@@ -51,7 +51,7 @@
     "Insurance Cross Sell Prediction": {
         "project_id" : "Sample_Welfare_Benefit_Fraud",
 
-        "name": "Model - Insurance Cross Sell Prediction",
+        "name": "Project - Insurance Cross Sell Prediction",
         "description": "Model to predict whether the policyholders from the past year would also be interested in the Vehicle Insurance offer provided by the company.",
         "temp_name":"Fraud Detection",
 

@@ -170,10 +170,10 @@ export default {
       product: "Robustness",
       date:"13-Dec-21",
       total_risk:"1",
-      High_Risks:"1",
+      High_Risks:"0",
       value_d:"75",
       graphData:[{value:"73",date:"11/05"},{value:"72",date:"11/25"},{value:"75",date:"13/12"}],
-      Medium_Risks:"0",
+      Medium_Risks:"1",
       total: {
         monthly: 1025,
         weekly: 301,

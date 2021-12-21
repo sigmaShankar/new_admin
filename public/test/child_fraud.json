@@ -20,7 +20,7 @@
             {
                 "pillar": "Fairness",
                 "ids": 3,
-                "name": "Privileged group is getting higher benefits when compared to unprivileged group",
+                "name": "Privileged group (Male) is getting higher benefits when compared to unprivileged group (Female)",
                 "impact": "Medium",
                 "date": "2021-07-25"
             }

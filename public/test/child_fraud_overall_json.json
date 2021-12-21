@@ -1,1022 +1,1024 @@
 {
-    "Predicted Positive Count": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "Predicted Positive Count",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+    "Gender": {
+        "Predicted Positive Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Predicted Positive Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        93,
+                        65
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Predicted Positive Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    93,
-                    65
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "Predicted Positive Count",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "Predicted Negative Count": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "Predicted Negative Count",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "Predicted Negative Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Predicted Negative Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        1506,
+                        1166
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Predicted Negative Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    1506,
-                    1166
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "Predicted Negative Count",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "False Positive Count": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "False Positive Count",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "False Positive Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Positive Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        68,
+                        43
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "False Positive Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    68,
-                    43
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "False Positive Count",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "False Negative Count": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "False Negative Count",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "False Negative Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Negative Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        181,
+                        114
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "False Negative Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    181,
-                    114
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "False Negative Count",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "True Negative Count": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "True Negative Count",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "True Negative Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "True Negative Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        1325,
+                        1052
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "True Negative Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    1325,
-                    1052
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "True Negative Count",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "True Positive Count": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "True Positive Count",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "True Positive Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "True Positive Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        25,
+                        22
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "True Positive Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    25,
-                    22
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "True Positive Count",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "Group Label Positive": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "Group Label Positive",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "Group Label Positive": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Group Label Positive",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        206,
+                        136
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Group Label Positive",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    206,
-                    136
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "Group Label Positive",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "Group Label Negative": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "Group Label Negative",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "Group Label Negative": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Group Label Negative",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        1393,
+                        1095
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Group Label Negative",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    1393,
-                    1095
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "Group Label Negative",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "Group Size": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "Group Size",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "Group Size": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Group Size",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        1599,
+                        1231
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Group Size",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    1599,
-                    1231
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "Group Size",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "True Positive Rate": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "True Positive Rate",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "True Positive Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "True Positive Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        0.12135922330097088,
+                        0.16176470588235295
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "True Positive Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    0.12135922330097088,
-                    0.16176470588235295
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "True Positive Rate",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "True Negative Rate": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "True Negative Rate",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "True Negative Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "True Negative Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        0.9511844938980617,
+                        0.960730593607306
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "True Negative Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    0.9511844938980617,
-                    0.960730593607306
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "True Negative Rate",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "False Omission Rate": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "False Omission Rate",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "False Omission Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Omission Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        0.1201859229747676,
+                        0.09777015437392796
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "False Omission Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    0.1201859229747676,
-                    0.09777015437392796
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "False Omission Rate",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "False Discovery Rate": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "False Discovery Rate",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "False Discovery Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Discovery Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        0.7311827956989247,
+                        0.6615384615384615
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "False Discovery Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    0.7311827956989247,
-                    0.6615384615384615
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "False Discovery Rate",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "False Positive Rate": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "False Positive Rate",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "False Positive Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Positive Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        0.048815506101938265,
+                        0.039269406392694065
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "False Positive Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    0.048815506101938265,
-                    0.039269406392694065
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "False Positive Rate",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "False Negative Rate": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "False Negative Rate",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "False Negative Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Negative Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        0.8786407766990292,
+                        0.8382352941176471
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "False Negative Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    0.8786407766990292,
-                    0.8382352941176471
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "False Negative Rate",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "Negative Predictive Value": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "Negative Predictive Value",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "Negative Predictive Value": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Negative Predictive Value",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        0.8798140770252324,
+                        0.902229845626072
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Negative Predictive Value",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    0.8798140770252324,
-                    0.902229845626072
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "Negative Predictive Value",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "Precision": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "Precision",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "Precision": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Precision",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        0.26881720430107525,
+                        0.3384615384615385
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Precision",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    0.26881720430107525,
-                    0.3384615384615385
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "Precision",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "Predicted Positive Ratio": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "Predicted Positive Ratio",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "Predicted Positive Ratio": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Predicted Positive Ratio",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        0.26881720430107525,
+                        0.3384615384615385
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Predicted Positive Ratio",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    0.26881720430107525,
-                    0.3384615384615385
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "Predicted Positive Ratio",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "Predicted Prevalence": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "Predicted Prevalence",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "Predicted Prevalence": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Predicted Prevalence",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
+            "values": [
+                {
+                    "x": [
+                        0.058161350844277676,
+                        0.05280259951259139
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Predicted Prevalence",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
         },
-        "values": [
-            {
-                "x": [
-                    0.058161350844277676,
-                    0.05280259951259139
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "Predicted Prevalence",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
-    },
-    "Group Prevalence": {
-        "layout": {
-            "autosize": "false",
-            "margin": {
-                "l": 220,
-                "r": 50,
-                "b": 60,
-                "t": 50,
-                "pad": 0
-            },
-            "height": 300,
-            "width": 870,
-            "title": "Group Prevalence",
-            "xaxis": {
-                "title": {
-                    "text": "Scores",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+        "Group Prevalence": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Group Prevalence",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
-            },
-            "yaxis": {
-                "title": {
-                    "text": "Attribute Name",
-                    "font": {
-                        "family": "Courier New, monospace",
-                        "size": 18,
-                        "color": "#7f7f7f"
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
                     }
-                }
+                },
+                "showlegend": "true"
             },
-            "showlegend": "true"
-        },
-        "values": [
-            {
-                "x": [
-                    0.1288305190744215,
-                    0.11047928513403736
-                ],
-                "y": [
-                    "Male",
-                    "Female"
-                ],
-                "name": "Group Prevalence",
-                "type": "bar",
-                "orientation": "h"
-            }
-        ]
+            "values": [
+                {
+                    "x": [
+                        0.1288305190744215,
+                        0.11047928513403736
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Group Prevalence",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ]
+        }
     }
 }

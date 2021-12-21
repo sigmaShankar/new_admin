@@ -92,7 +92,7 @@ export default function AIEvalution() {
   const [currentAlgo, setCurrentAlgo] = useState("");
   const [dateList, setDateList] = useState([]);
   const [loadList, setLoadlist] = useState(null);
-  const [Option1, setOption1] = React.useState((sessionStorage.getItem("currentModelName") == "Fraud Detection") ? ["Nationality Status", "Family Status"] : ["Sex", "Race"]);
+  const [Option1, setOption1] = React.useState((sessionStorage.getItem("currentModelName") == "Fraud Detection") ? ["Gender"] : ["Sex", "Race"]);
   const [Option2, setOption2] = React.useState([]);
   const [deault, setdeault] = React.useState([]);
   const [graph, setGraph] = React.useState();
@@ -124,7 +124,7 @@ export default function AIEvalution() {
       (sessionStorage.getItem("currentModelName") == "Fraud Detection") ? setOption2(["dual-nationality", "single-nationality"]) : setOption2(['Male', 'Female'])
 
 
-    } else if (event.target.value == "Race" || event.target.value == "Family Status") {
+    } else if (event.target.value == "Race" || event.target.value == "Gender") {
 
       (sessionStorage.getItem("currentModelName") == "Fraud Detection") ? setOption2(["Divorced", "Married"]) : setOption2(['white', 'Black'])
 
@@ -227,7 +227,7 @@ export default function AIEvalution() {
 
 
   const filterValue2 = () => {
-    setdeault((sessionStorage.getItem("currentModelName") == "Fraud Detection") ? ["Nationality Status", "Family Status"] : ["Sex", "Race"])
+    setdeault((sessionStorage.getItem("currentModelName") == "Fraud Detection") ? ["Gender"] : ["Sex", "Race"])
     // fetch(`http://127.0.0.1:8000/get_overall_data/`)
     //   .then(function (res) {
     //     return res.json();
@@ -273,7 +273,7 @@ export default function AIEvalution() {
   const [Barchartvalue, setBarchartvalue] = useState([]);
 
 
-  
+
 
 
   const getBarchart = () => {
@@ -444,8 +444,8 @@ export default function AIEvalution() {
 
   return (
     <>
-    <PageTitle title="Intersectional Evaluation"   />
-  
+      <PageTitle title="Intersectional Evaluation" />
+
       <br />
       <div >
 
@@ -505,147 +505,148 @@ export default function AIEvalution() {
           </AccordionDetails>
         </Accordion>
 
-{/* 
-        <Accordion style={{ marginBottom: "10px", backgroundColor: "#fff" }}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-            disabled={false}
-          >
-            <Typography className={classes.heading} style={{ width: "100%" }}>
-              <small style={{ float: "left", width: "300px" }}>{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Intersectional Evaluation" : "Intersectionele Evaluatie"} </small>
-            </Typography>
+        {
 
-          </AccordionSummary>
-          <AccordionDetails style={{ width: "100%" }}>
+          (sessionStorage.getItem("currentModelName") != "Fraud Detection") && (<Accordion style={{ marginBottom: "10px", backgroundColor: "#fff" }}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              disabled={false}
+            >
+              <Typography className={classes.heading} style={{ width: "100%" }}>
+                <small style={{ float: "left", width: "300px" }}>{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Intersectional Evaluation" : "Intersectionele Evaluatie"} </small>
+              </Typography>
 
-            <>
-              <Row style={{ width: "100%" }}>
-                <Col xl="4" style={{ width: "100%" }}>
+            </AccordionSummary>
+            <AccordionDetails style={{ width: "100%" }}>
 
-                  <FormControl className={classes.formControl} style={{ width: "100%" }}>
-                    <InputLabel id="demo-controlled-open-select-label">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Protected Feature" : "Beschermd kenmerk"} </InputLabel>
-                    <Select
-                      labelId="demo-controlled-open-select-label"
-                      id="demo-controlled-open-select"
-                      open={open}
-                      onClose={handleClose}
-                      onOpen={handleOpen}
-                      value={Option1Selected}
-                      onChange={handleChange_drop}
-                    >
-                      {Option1.length && Option1.map(value => <MenuItem value={value}>{value}</MenuItem>)}
-                    </Select>
-                  </FormControl>
+              <>
+                <Row style={{ width: "100%" }}>
+                  <Col xl="4" style={{ width: "100%" }}>
+
+                    <FormControl className={classes.formControl} style={{ width: "100%" }}>
+                      <InputLabel id="demo-controlled-open-select-label">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Protected Feature" : "Beschermd kenmerk"} </InputLabel>
+                      <Select
+                        labelId="demo-controlled-open-select-label"
+                        id="demo-controlled-open-select"
+                        open={open}
+                        onClose={handleClose}
+                        onOpen={handleOpen}
+                        value={Option1Selected}
+                        onChange={handleChange_drop}
+                      >
+                        {Option1.length && Option1.map(value => <MenuItem value={value}>{value}</MenuItem>)}
+                      </Select>
+                    </FormControl>
+                  </Col>
+
+                  <Col xl="4" style={{ width: "100%" }}>
+
+                    <FormControl className={classes.formControl} style={{ width: "100%" }}>
+                      <InputLabel id="demo-controlled-open-select-label">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Groups" : "Groepen"}</InputLabel>
+                      <Select
+                        labelId="demo-controlled-open-select-label"
+                        id="demo-controlled-open-select"
+                        open={open2}
+                        onClose={handleClose}
+                        onOpen={handleOpen2}
+                        value={Option2Selected}
+                        onChange={handleChange_drop2}
+                      >
+                        {Option2.length && Option2.map(value => <MenuItem value={value}>{value}</MenuItem>)}
+
+                      </Select>
+                    </FormControl>
+                  </Col>
+
+                </Row>
+
+              </>
+            </AccordionDetails>
+            <AccordionDetails style={{ width: "100%" }}>
+
+              <>
+                <Row style={{ width: "100%" }}>
+                  <Col xl="6" style={{ width: "100%" }}>
+                    <InputLabel id="demo-mutiple-checkbox-label">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Privileged Group" : "Privilege-groep"}</InputLabel>
+
+                    <FormControl className={classes.formControl} style={{ width: "100%" }}>
+                      <Select
+                        labelId="demo-mutiple-checkbox-label"
+                        id="demo-mutiple-checkbox"
+                        multiple
+                        value={privilege}
+                        onChange={handleChange_select_privilege}
+                        input={<Input />}
+                        renderValue={(selected) => (
+                          <div className={classes.chips}>
+                            {selected.map((value) => (
+                              <Chip key={value} label={value} className={classes.chip} />
+                            ))}
+                          </div>
+                        )}
+                        MenuProps={MenuProps}
+                      >
+                        {privilege.length && privilege.map((name) => (
+                          <MenuItem key={name} value={name}>
+                            <Checkbox checked={privilege.indexOf(name) > -1} />
+                            <ListItemText primary={name} />
+                          </MenuItem>
+                        ))}
+                      </Select>
+                    </FormControl>
+                  </Col>
+
+                  <Col xl="6" style={{ width: "100%" }}>
+                    <InputLabel id="demo-mutiple-checkbox-label">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Un-privileged Group" : "Groepsrechten ontnemen"}</InputLabel>
+
+                    <FormControl className={classes.formControl} style={{ width: "100%" }}>
+                      <Select
+                        labelId="demo-mutiple-checkbox-label"
+                        id="demo-mutiple-checkbox"
+                        multiple
+                        value={unprivilege}
+                        onChange={handleChange_select_unprivilege}
+
+                        renderValue={(selected) => (
+                          <div className={classes.chips}>
+                            {selected.map((value) => (
+                              <Chip key={value} label={value} className={classes.chip} />
+                            ))}
+                          </div>
+                        )}
+                        MenuProps={MenuProps}
+                      >
+                        {unprivilege.length && unprivilege.map((name) => (
+                          <MenuItem key={name} value={name}>
+                            <Checkbox checked={unprivilege.indexOf(name) > -1} />
+                            <ListItemText primary={name} />
+                          </MenuItem>
+                        ))}
+                      </Select>
+                    </FormControl>
+                  </Col>
+                </Row>
+              </>
+            </AccordionDetails>
+
+            <AccordionDetails style={{ width: "100%" }}>
+              <Row style={{ width: "100%" }} >
+                <Col xl="3" style={{ width: "100%" }}>
                 </Col>
-
-                <Col xl="4" style={{ width: "100%" }}>
-
-                  <FormControl className={classes.formControl} style={{ width: "100%" }}>
-                    <InputLabel id="demo-controlled-open-select-label">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Groups" : "Groepen"}</InputLabel>
-                    <Select
-                      labelId="demo-controlled-open-select-label"
-                      id="demo-controlled-open-select"
-                      open={open2}
-                      onClose={handleClose}
-                      onOpen={handleOpen2}
-                      value={Option2Selected}
-                      onChange={handleChange_drop2}
-                    >
-                      {Option2.length && Option2.map(value => <MenuItem value={value}>{value}</MenuItem>)}
-
-                    </Select>
-                  </FormControl>
+                <Col xl="3" style={{ width: "100%" }}>
                 </Col>
-             
+                <Col xl="3" style={{ width: "100%" }}>
+                </Col>
+                <Col xl="3" style={{ width: "100%" }}>
+                  <Button variant="contained" style={{ color: "#fff", backgroundColor: "#0b2755", width: "100%", borderRadius: "29px" }} className={classes.margin} onClick={submitEval}>
+                    {(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Evaluate" : "evalueren"}
+                  </Button>
+                </Col>
               </Row>
-
-            </>
-          </AccordionDetails>
-          <AccordionDetails style={{ width: "100%" }}>
-
-            <>
-              <Row style={{ width: "100%" }}>
-                <Col xl="6" style={{ width: "100%" }}>
-                  <InputLabel id="demo-mutiple-checkbox-label">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Privileged Group" : "Privilege-groep"}</InputLabel>
-
-                  <FormControl className={classes.formControl} style={{ width: "100%" }}>
-                    <Select
-                      labelId="demo-mutiple-checkbox-label"
-                      id="demo-mutiple-checkbox"
-                      multiple
-                      value={privilege}
-                      onChange={handleChange_select_privilege}
-                      input={<Input />}
-                      renderValue={(selected) => (
-                        <div className={classes.chips}>
-                          {selected.map((value) => (
-                            <Chip key={value} label={value} className={classes.chip} />
-                          ))}
-                        </div>
-                      )}
-                      MenuProps={MenuProps}
-                    >
-                      {privilege.length && privilege.map((name) => (
-                        <MenuItem key={name} value={name}>
-                          <Checkbox checked={privilege.indexOf(name) > -1} />
-                          <ListItemText primary={name} />
-                        </MenuItem>
-                      ))}
-                    </Select>
-                  </FormControl>
-                </Col>
-
-                <Col xl="6" style={{ width: "100%" }}>
-                  <InputLabel id="demo-mutiple-checkbox-label">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Un-privileged Group" : "Groepsrechten ontnemen"}</InputLabel>
-
-                  <FormControl className={classes.formControl} style={{ width: "100%" }}>
-                    <Select
-                      labelId="demo-mutiple-checkbox-label"
-                      id="demo-mutiple-checkbox"
-                      multiple
-                      value={unprivilege}
-                      onChange={handleChange_select_unprivilege}
-                     
-                      renderValue={(selected) => (
-                        <div className={classes.chips}>
-                          {selected.map((value) => (
-                            <Chip key={value} label={value} className={classes.chip} />
-                          ))}
-                        </div>
-                      )}
-                      MenuProps={MenuProps}
-                    >
-                      {unprivilege.length && unprivilege.map((name) => (
-                        <MenuItem key={name} value={name}>
-                          <Checkbox checked={unprivilege.indexOf(name) > -1} />
-                          <ListItemText primary={name} />
-                        </MenuItem>
-                      ))}
-                    </Select>
-                  </FormControl>
-                </Col>
-              </Row>
-            </>
-          </AccordionDetails>
-
-          <AccordionDetails style={{ width: "100%" }}>
-            <Row style={{ width: "100%" }} >
-              <Col xl="3" style={{ width: "100%" }}>
-              </Col>
-              <Col xl="3" style={{ width: "100%" }}>
-              </Col>
-              <Col xl="3" style={{ width: "100%" }}>
-              </Col>
-              <Col xl="3" style={{ width: "100%" }}>
-                <Button variant="contained" style={{ color: "#fff", backgroundColor: "#0b2755", width: "100%", borderRadius: "29px" }} className={classes.margin} onClick={submitEval}>
-                  {(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Evaluate" : "evalueren"}
-                </Button>
-              </Col>
-            </Row>
-          </AccordionDetails>
-        </Accordion> */}
+            </AccordionDetails>
+          </Accordion>)}
         {(Evaluate.length) ? <Row className="mt-3">
           {
 
