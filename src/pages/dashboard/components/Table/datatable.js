@@ -307,7 +307,7 @@ const Index = (props) => {
               <CardHeader className="border-0" style={{backgroundColor:"black",color:"#fff"}}>
                 <Row className="align-items-center">
                   <div className="col">
-                  {(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? <h5 className="mb-0">Risks - {(sessionStorage.getItem("currentModelName") == "Credit Lending")?"Credit Lending":"Sample Welfare Benefit Fraud" } </h5>
+                  {(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? <h5 className="mb-0">Risks - {(sessionStorage.getItem("currentModelName") == "Credit Lending")?"Credit Lending":"Insurance Cross Sell Prediction" } </h5>
                    :
                    <h5 className="mb-0">risico's - {(sessionStorage.getItem("currentModelName") == "Credit Lending")?"Kredietverlening":"Voorbeeld uitkeringsfraude" } </h5>
                   }

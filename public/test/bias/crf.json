@@ -1,18 +1,12 @@
 {
     "labels": [
-        "Divorced",
-        "Married",
-        "Separated",
-        "Engaged",
-        "widower/widowed",
-        "previous_benefits"
+        "Driving_License",
+        "Previously_Insured",
+        "Vehicle_Damage"
     ],
     "values": [
-        3.30,
-        29.54,
-        19.18,
-        7.77,
-        18.95,
-        21.23
+        10.3859,
+        41.96,
+        47.654
     ]
 }

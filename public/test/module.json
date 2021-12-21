@@ -48,22 +48,22 @@
             }
         }
     },
-    "Sample Welfare Benefit Fraud": {
+    "Insurance Cross Sell Prediction": {
         "project_id" : "Sample_Welfare_Benefit_Fraud",
 
-        "name": "Project - Sample Welfare Benefit Fraud",
-        "description": "Based on the demographic information of parents, the model predicts the probability of committing Welfare Benefit Fraud by that family.",
+        "name": "Model - Insurance Cross Sell Prediction",
+        "description": "Model to predict whether the policyholders from the past year would also be interested in the Vehicle Insurance offer provided by the company.",
         "temp_name":"Fraud Detection",
 
         "modules": {
             "Welfare_Benefit_Fraud_Module": {
                 "module_id" : "Welfare_Benefit_Fraud_Module", 
 
-                "project_name": "Model - Sample Welfare Benefit Fraud",
-                "prject_folder":"Model - Welfare_Benefit_Fraud_Module",
-                "module_name": "Model - Welfare Benefit Fraud",
+                "project_name": "Model - Insurance Cross Sell Prediction",
+                "prject_folder":"Model - Insurance Cross Sell Prediction",
+                "module_name": "Model - Insurance Cross Sell Prediction",
 
-                "description": "Based on the demographic information of parents, the model predicts the probability of committing Welfare Benefit Fraud by that family.",
+                "description": "Model to predict whether the policyholders from the past year would also be interested in the Vehicle Insurance offer provided by the company..",
                 "root_path": "./clients/clientabc/",
                 "monitoring_data_path": "data/Sample_Welfare_Benefit_Fraud/Welfare_Benefit_Fraud_Module/train.csv",
                 "monitoring_test_data_path": "data/Sample_Welfare_Benefit_Fraud/Welfare_Benefit_Fraud_Module/test.csv",

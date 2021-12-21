@@ -116,12 +116,12 @@ export default {
   bigStat_fraud: [
     {
       product: "Overall",
-      date:"18-Nov-21",
+      date:"13-Dec-21",
       total_risk:"3",
-      High_Risks:"2",
-      graphData:[{value:"78",date:"10/02"},{value:"78.5",date:"10/25"},{value:"83",date:"11/18"}],
-      Medium_Risks:"1",
-      value_d:"83",
+      High_Risks:"1",
+      graphData:[{value:"73.1",date:"11/05"},{value:"72.4",date:"11/25"},{value:"79.1",date:"12/13"}],
+      Medium_Risks:"2",
+      value_d:"79.1",
       total: {
         monthly: 4232,
         weekly: 1465,
@@ -142,12 +142,12 @@ export default {
     },
     {
       product: "Fairness",
-      date:"18-Nov-21",
-      total_risk:"1",
-      High_Risks:"0",
-      value_d:"91.07",
+      date:"13-Dec-21",
+      total_risk:"2",
+      High_Risks:"1",
+      value_d:"83.3",
       Medium_Risks:"1",
-      graphData:[{value:"83",date:"10/05"},{value:"85",date:"10/23"},{value:"91.07",date:"11/15"}],
+      graphData:[{value:"73.3",date:"11/21"},{value:"76.8",date:"11/25"},{value:"83.3",date:"12/13"}],
       total: {
         monthly: 754,
         weekly: 180,
@@ -168,11 +168,11 @@ export default {
     },
     {
       product: "Robustness",
-      date:"18-Nov-21",
-      total_risk:"2",
-      High_Risks:"2",
+      date:"13-Dec-21",
+      total_risk:"1",
+      High_Risks:"1",
       value_d:"75",
-      graphData:[{value:"73",date:"10/02"},{value:"72",date:"10/20"},{value:"75",date:"10/25"}],
+      graphData:[{value:"73",date:"11/05"},{value:"72",date:"11/25"},{value:"75",date:"13/12"}],
       Medium_Risks:"0",
       total: {
         monthly: 1025,

@@ -1,132 +1,110 @@
 {
-  "q8389q37q7": {
+    "1626939047.652543": {
+        "pillar_overallscore": 83.33,
+        "accuracy": 64,
+        "risk": [
+            {
+                "pillar": "Robustness",
+                "ids": 1,
+                "name": "Accuracy on the latest samples appear to be lower than general rate",
+                "impact": "Medium",
+                "date": "2021-12-13"
+            },
+            {
+                "pillar": "Fairness",
+                "ids": 2,
+                "name": "Negative bias towards the Female disproportionate to default rate",
+                "impact": "High",
+                "date": "2021-07-25"
+            },
+            {
+                "pillar": "Fairness",
+                "ids": 3,
+                "name": "Privileged group is getting higher benefits when compared to unprivileged group",
+                "impact": "Medium",
+                "date": "2021-07-25"
+            }
 
-    "pillar_overallscore": 91.07,
-    "accuracy": 78,
-    "risk": [
-        {
-            "pillar": "Fairness",
-            "ids": 1,
-            "name": "Model is biased towards dual nationality citizens",
-            "impact": "Medium",
-            "date": "2021-11-15"
-        },
-        {
-            "pillar": "Robustness",
-            "ids": 2,
-            "name": "Model is having high false positive rates",
-            "impact": "High",
-            "date": "2021-11-08"
-        },
-        {
-            "pillar": "Robustness",
-            "ids": 3,
-            "name": "Accuracy on the latest samples appear to be lower than general rate",
-            "impact": "High",
-            "date": "2021-11-18"
-        }
+        ],
+        "mitigation": [
+            {
+                "name": "PreProcessing- Reweighing",
+                "scope": "PreProcessing",
+                "impact": "Medium",
+                "score": 76.92,
+                "OverAll_Acc": 63.18,
+                "Biased_Group_Acc": 60.49,
+                "Mitigation_Rating": 7.0,
+                "date": "2021-12-13",
+                "url": ""
+            },
+            {
+                "name": "PreProcessing- Disparate Impact Remover",
+                "scope": "PreProcessing",
+                "impact": "Medium",
+                "score": 79.62,
+                "OverAll_Acc": 64,
+                "Biased_Group_Acc": 60.0,
+                "Mitigation_Rating": 7.0,
+                "date": "2021-12-13",
+                "url": ""
+            },
+            {
+                "name": "InProcessing- PrejudiceRemover",
+                "scope": "InProcessing",
+                "impact": "Medium",
+                "score": 72.22,
+                "OverAll_Acc": 86.99,
+                "Biased_Group_Acc": 85.009,
+                "Mitigation_Rating": 8.0,
+                "date": "2021-12-13",
+                "url": ""
+            },
+            {
+                "name": "InProcessing- GerryClassifier",
+                "scope": "InProcessing",
+                "impact": "High",
+                "score": 81.25,
+                "OverAll_Acc": 87.97,
+                "Biased_Group_Acc": 86.00,
+                "Mitigation_Rating": 8.5,
+                "date": "2021-12-13",
+                "url": ""
+            },
+            {
+                "name": "PostProcessing- Reject Option Classifier",
+                "scope": "PostProcessing",
+                "impact": "Medium",
+                "score": 79.64,
+                "OverAll_Acc": 62,
+                "Biased_Group_Acc": 61.28,
+                "Mitigation_Rating": 7.0,
+                "date": "2021-12-13",
+                "url": ""
+            },
+            {
+                "name": "PostProcessing- Calibrated Equalized Odds",
+                "scope": "PostProcessing",
+                "impact": "High",
+                "score": 81.25,
+                "OverAll_Acc": 88.18,
+                "Biased_Group_Acc": 86.9,
+                "Mitigation_Rating": 8.6,
+                "date": "2021-12-13",
+                "url": ""
+            },
+            {
+                "name": "InProcessing- Custom Adversarial Debiasing",
+                "scope": "PostProcessing",
+                "impact": "High",
+                "score": 79.28,
+                "OverAll_Acc": 86,
+                "Biased_Group_Acc": 84,
+                "Mitigation_Rating": 8.6,
+                "date": "2021-12-13",
+                "url": ""
+            }
+        ]
+    }
+}
 
-    ],
-    "mitigation": [
-        {
-            "name": "PreProcessing- Reweighing",
-            "scope": "PreProcessing",
-            "impact": "Medium",
-            "score": 85.55,
-            "OverAll_Acc": 76.82,
-            "Biased_Group_Acc": 81.36,
-            "Mitigation_Rating": 6.0,
-            "date": "2021-11-15",
-            "url": ""
-        },
-        {
-            "name": "PreProcessing- Disparate Impact Remover",
-            "scope": "PreProcessing",
-            "impact": "Medium",
-            "score": 82.96,
-            "OverAll_Acc": 76.13,
-            "Biased_Group_Acc": 78.07,
-            "Mitigation_Rating": 6.0,
-            "date": "2021-11-15",
-            "url": ""
-        },
-        {
-            "name": "InProcessing- Prejudice Remover",
-            "scope": "InProcessing",
-            "impact": "Medium",
-            "score": 70.35,
-            "OverAll_Acc": 78.53,
-            "Biased_Group_Acc": 79.34,
-            "Mitigation_Rating": 6.0,
-            "date": "2021-11-15",
-            "url": ""
-        },
-        {
-            "name": "InProcessing- Gerryfair Classifier",
-            "scope": "InProcessing",
-            "impact": "Medium",
-            "score": 71.78,
-            "OverAll_Acc": 78.63,
-            "Biased_Group_Acc": 79.79,
-            "Mitigation_Rating": 6.0,
-            "date": "2021-11-15",
-            "url": ""
-        },
-        {
-            "name": "PostProcessing- Reject Option Classifier",
-            "scope": "PostProcessing",
-            "impact": "Medium",
-            "score": 80,
-            "OverAll_Acc": 77.0,
-            "Biased_Group_Acc": 80.81,
-            "Mitigation_Rating": 5.0,
-            "date": "2021-11-15",
-            "url": ""
-        },
-        {
-            "name": "Adjustable Reject Option Classifier",
-            "scope": "PostProcessing",
-            "impact": "Medium",
-            "score":73.92,
-            "OverAll_Acc": 74,
-            "Biased_Group_Acc": 68,
-            "Mitigation_Rating": 6.5,
-            "date": "2021-11-15",
-            "url": ""
-        },
-        {
-            "name": "PostProcessing- Calibrated Equalized Odds",
-            "scope": "PostProcessing",
-            "impact": "Medium",
-            "score": 79.64,
-            "OverAll_Acc": 78.01,
-            "Biased_Group_Acc": 76.42,
-            "Mitigation_Rating": 7.0,
-            "date": "2021-11-15",
-            "url": ""
-        },
-        {
-            "name": "InProcessing- Adversarial Debiasing",
-            "scope": "InProcessing",
-            "impact": "Medium",
-            "score": 68.92,
-            "OverAll_Acc": 75.01,
-            "Biased_Group_Acc": 79,
-            "Mitigation_Rating": 7.0,
-            "date": "2021-11-15",
-            "url": ""
-        },
-        {
-            "name": "InProcessing- Custom Adversarial Debiasing",
-            "scope": "InProcessing",
-            "impact": "Medium",
-            "score": 82.85,
-            "OverAll_Acc": 77,
-            "Biased_Group_Acc": 77,
-            "Mitigation_Rating": 7.0,
-            "date": "2021-11-15",
-            "url": ""
-        }
-    ]
-}
-}

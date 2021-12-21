@@ -505,7 +505,7 @@ export default function AIEvalution() {
           </AccordionDetails>
         </Accordion>
 
-
+{/* 
         <Accordion style={{ marginBottom: "10px", backgroundColor: "#fff" }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -519,7 +519,6 @@ export default function AIEvalution() {
 
           </AccordionSummary>
           <AccordionDetails style={{ width: "100%" }}>
-            {/* <div style={{ display: "inline-flex", marginLeft: "3%", width: "100%" }}> */}
 
             <>
               <Row style={{ width: "100%" }}>
@@ -559,22 +558,12 @@ export default function AIEvalution() {
                     </Select>
                   </FormControl>
                 </Col>
-                {/* <Col xl="4">
-          <FormControl component="fieldset">
-            <FormLabel component="legend">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Select the group" : "Selecteer de groep"}</FormLabel>
-            <RadioGroup row aria-label="position" name="position" value={radio} onChange={handleChangeRadio}>
-              <FormControlLabel value="Privilege" control={<Radio color="primary" />} label="Privilege" />
-              <FormControlLabel value="Un_privilege" control={<Radio color="primary" />} label="Un privilege" />
-            </RadioGroup>
-          </FormControl>
-        </Col> */}
+             
               </Row>
 
             </>
-            {/* </div> */}
           </AccordionDetails>
           <AccordionDetails style={{ width: "100%" }}>
-            {/* <div style={{ display: "inline-flex", marginLeft: "3%", width: "100%" }}> */}
 
             <>
               <Row style={{ width: "100%" }}>
@@ -618,7 +607,7 @@ export default function AIEvalution() {
                       multiple
                       value={unprivilege}
                       onChange={handleChange_select_unprivilege}
-                      // input={<Input  />}
+                     
                       renderValue={(selected) => (
                         <div className={classes.chips}>
                           {selected.map((value) => (
@@ -639,7 +628,6 @@ export default function AIEvalution() {
                 </Col>
               </Row>
             </>
-            {/* </div> */}
           </AccordionDetails>
 
           <AccordionDetails style={{ width: "100%" }}>
@@ -651,16 +639,14 @@ export default function AIEvalution() {
               <Col xl="3" style={{ width: "100%" }}>
               </Col>
               <Col xl="3" style={{ width: "100%" }}>
-                {/* disabled={!privilege.length || !unprivilege.length}  */}
                 <Button variant="contained" style={{ color: "#fff", backgroundColor: "#0b2755", width: "100%", borderRadius: "29px" }} className={classes.margin} onClick={submitEval}>
                   {(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Evaluate" : "evalueren"}
                 </Button>
               </Col>
             </Row>
           </AccordionDetails>
-        </Accordion>
+        </Accordion> */}
         {(Evaluate.length) ? <Row className="mt-3">
-          {/* {console.log("Evaluate")} */}
           {
 
             Evaluate.map(value => <Evaluate_ name={"metric"} data={value} type={graph} />)

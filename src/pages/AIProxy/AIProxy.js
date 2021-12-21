@@ -566,7 +566,7 @@ export default function AIProxy() {
 
 
 
-
+{/* 
         {sessionStorage.getItem('currentModelName') == "Fraud Detection" && (
           <Grid item xs={12} style={{ marginTop: "3vh" }}>
 
@@ -585,7 +585,7 @@ export default function AIProxy() {
           </Grid>
 
         )}
-        <br />
+        <br /> */}
 
         <Grid container spacing={6}>
           {
