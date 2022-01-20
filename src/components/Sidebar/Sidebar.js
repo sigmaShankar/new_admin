@@ -18,7 +18,8 @@ import {
   Help as Help,
   VpnLock as VpnLock,
   ShowChart as ShowChart,
-  ScatterPlot as ScatterPlot
+  ScatterPlot as ScatterPlot,
+  Dvr as Dvr
 } from "@material-ui/icons";
 import { useTheme } from "@material-ui/styles";
 import { withRouter } from "react-router-dom";
@@ -76,7 +77,9 @@ const structure = [
     { label: "Alert", link: "/app/Mlalert" }
   ],
 },
-  { id: 12121, label: "AI Compliance", link: "/app/compliance", icon: <VpnLock /> }
+  { id: 12121, label: "AI Compliance", link: "/app/compliance", icon: <VpnLock /> },
+  { id: 212123, label: "DEI", link: "/app/DEI", icon: <Dvr /> }
+
 
 
 

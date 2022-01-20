@@ -347,10 +347,10 @@ export default function Training_center(props) {
   }, []);
 
   const getUserList = (IP) => {
-    console.log(IP,"asada")
+    // console.log(IP,"asada")
     axios.post(`${IP}/user/list`,{},config)
       .then(res => {
-        console.log(res?.data,'resposnse data')
+        // console.log(res?.data,'resposnse data')
 
         setData(res?.data)
       })
@@ -431,7 +431,7 @@ export default function Training_center(props) {
 
   const view = (tableMeta) => {
     seteditEnable(true)
-    console.log(tableMeta)
+    // console.log(tableMeta)
     let startDate = new Date(tableMeta.rowData[1])
     let endDate = new Date(tableMeta.rowData[2])
     let dudate = new Date(tableMeta.rowData[7])

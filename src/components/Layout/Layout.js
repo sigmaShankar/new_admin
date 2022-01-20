@@ -53,6 +53,8 @@ import Exam from "../Exams/Exams"
 
 import Training_programe from "../../pages/training_programe";
 import invetory from "../../pages/invetory";
+import DEI from "../../pages/DEI";
+
 
 // import Universities from "../../pages/Universities";
 // import institution_list from "../../pages/institution_list";
@@ -132,6 +134,8 @@ function Layout(props) {
 
               <Route path="/app/aievalation" component={AIEvalution} />
               <Route path="/app/biasSummary" component={SummaryBias} />
+              <Route path="/app/DEI" component={DEI} />
+
 
           
            
