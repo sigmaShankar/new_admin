@@ -134,7 +134,7 @@ function Layout(props) {
 
               <Route path="/app/aievalation" component={AIEvalution} />
               <Route path="/app/biasSummary" component={SummaryBias} />
-              <Route path="/app/DEI" component={DEI} />
+              {/* <Route path="/app/DEI" component={DEI} /> */}
 
 
           

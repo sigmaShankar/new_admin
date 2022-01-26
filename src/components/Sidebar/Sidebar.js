@@ -78,7 +78,7 @@ const structure = [
   ],
 },
   { id: 12121, label: "AI Compliance", link: "/app/compliance", icon: <VpnLock /> },
-  { id: 212123, label: "DEI", link: "/app/DEI", icon: <Dvr /> }
+  // { id: 212123, label: "DEI", link: "/app/DEI", icon: <Dvr /> }
 
 
 
