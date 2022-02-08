@@ -65,11 +65,11 @@ function Login(props) {
             centered
             > */}
             <div style={{display: "flex", borderBottom: "2px solid #093d62"}}>
-              <img src={require("./Sigma-red-Final-logo.png")} alt="logo"  className={classes.logotypeImage} />
-              <Tab
+              <img src={require("./Sigma-red-Final-logo.png")} alt="logo"  style={{width:"100%",height:"16vh"}} />
+              {/* <Tab
               style={{fontWeight: "bold"}} 
               label="Login" 
-              classes={{ root: classes.tab }} />
+              classes={{ root: classes.tab }} /> */}
             </div>
             {/* <Tab label="New User" classes={{ root: classes.tab }} /> */}
           {/* </Tabs> */}
