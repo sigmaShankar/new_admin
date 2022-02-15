@@ -100,13 +100,13 @@ function MetricsBar(props) {
           </CardHeader>
       <br />
       <ResponsiveContainer width="100%" minWidth={480} height={300}>
-          <BarChart  data={props.data} layout="vertical" style={{marginLeft:"-1px"}}>
+          <BarChart  data={props.data} layout="vertical" margin={{left: 50 ,right:20}}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis type="number" />
-            <YAxis type="category"  fontSize={10} dataKey="name" />
+            <YAxis type="category"  fontSize={10}tyle={{width:"10px","overflow-wrap": "break-word"}} dataKey="name" />
             <Tooltip />
             <Legend />
-            <Bar dataKey="Value" fill="#23284a" />
+            <Bar dataKey="Value" radius={8} fill="#23284a" />
           </BarChart>
           </ResponsiveContainer>
         </Card>

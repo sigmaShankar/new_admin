@@ -150,7 +150,7 @@ export default function Training_center(props) {
   }
   const config = {
     headers: { Authorization: `Bearer ${sessionStorage.getItem('token')}` }
-};
+  };
 
   const classes = useStyles();
   const [data, setData] = useState([])
@@ -341,26 +341,26 @@ export default function Training_center(props) {
         val: value,
         isValid: value.length > 0
       })
-    }    if (i === 'IP_explainability') {
+    } if (i === 'IP_explainability') {
       setIP_explainability({
         ...IP_explainability,
         val: value,
         isValid: value.length > 0
       })
-    }    if (i === 'od_alert_resolved') {
+    } if (i === 'od_alert_resolved') {
       setod_alert_resolved(value)
-    }    if (i === 'dd_alert_resolved') {
+    } if (i === 'dd_alert_resolved') {
       setdd_alert_resolved(value)
-    }    if (i === 'cd_alert_resolved') {
+    } if (i === 'cd_alert_resolved') {
       setcd_alert_resolved(value)
-    }    if (i === 'ae_alert_resolved') {
+    } if (i === 'ae_alert_resolved') {
       setae_alert_resolved(value)
-    }    if (i === 'modelType_explainability') {
+    } if (i === 'modelType_explainability') {
       setmodelType_explainability(value)
-    }    if (i === 'nan_alert_resolved') {
+    } if (i === 'nan_alert_resolved') {
       setnan_alert_resolved(value)
     }
-    
+
     if (i === 'oor_alert_resolved') {
       setoor_alert_resolved(value)
     } if (i === 'bias_alert_resolved') {
@@ -474,9 +474,9 @@ export default function Training_center(props) {
       name: "monitorIP",
       options: {
         filter: false,
-   
+
       }
-    },   {
+    }, {
       label: "Explainability IP",
       name: "IP_explainability",
       options: {
@@ -673,13 +673,13 @@ export default function Training_center(props) {
           "oor_alert_resolved": oor_alert_resolved,
           "bias_alert_resolved": bias_alert_resolved,
           "is_production": is_production,
-          "retrain_models":"",
+          "retrain_models": "",
           "meta_data": {
             "project_name": projectname.val,
             "module_name": modulename.val
           }
 
-        },config)
+        }, config)
         .then((res) => {
           clearFields()
           handleOpen(false)
@@ -689,37 +689,37 @@ export default function Training_center(props) {
         })
     } else if (editEnable == false) {
       axios.post(`${IP}/project/create`,
-      {
-        "project_name": projectname.val,
-        "module_name": modulename.val,
-        "path": path.val,
-        "description": description.val,
-        "biasIP": biasIP.val,
-        "monitorIP": monitorIP.val,
-        "IP_explainability": IP_explainability.val,
-        "od_alert_resolved": od_alert_resolved,
-        "dd_alert_resolved": dd_alert_resolved,
-        "cd_alert_resolved": cd_alert_resolved,
-        "ae_alert_resolved": ae_alert_resolved,
-        "modelType_explainability": modelType_explainability,
-        "nan_alert_resolved": nan_alert_resolved,
-        "oor_alert_resolved": oor_alert_resolved,
-        "bias_alert_resolved": bias_alert_resolved,
-        "is_production": is_production,
-        "retrain_models":"",
-        "meta_data": {
+        {
           "project_name": projectname.val,
-          "module_name": modulename.val
-        }
+          "module_name": modulename.val,
+          "path": path.val,
+          "description": description.val,
+          "biasIP": biasIP.val,
+          "monitorIP": monitorIP.val,
+          "IP_explainability": IP_explainability.val,
+          "od_alert_resolved": od_alert_resolved,
+          "dd_alert_resolved": dd_alert_resolved,
+          "cd_alert_resolved": cd_alert_resolved,
+          "ae_alert_resolved": ae_alert_resolved,
+          "modelType_explainability": modelType_explainability,
+          "nan_alert_resolved": nan_alert_resolved,
+          "oor_alert_resolved": oor_alert_resolved,
+          "bias_alert_resolved": bias_alert_resolved,
+          "is_production": is_production,
+          "retrain_models": "",
+          "meta_data": {
+            "project_name": projectname.val,
+            "module_name": modulename.val
+          }
 
-      },config)
+        }, config)
         .then((res) => {
           // if (res.status == 200 & res.data.error_code == 1) {
-            clearFields()
-            handleOpen(false)
-            // setsuggestedList([])
-            // setIsDropDown(true)
-            // getDetails();
+          clearFields()
+          handleOpen(false)
+          // setsuggestedList([])
+          // setIsDropDown(true)
+          // getDetails();
           // }
         }).catch((err) => {
           //console.log(err,'errr')
@@ -780,7 +780,7 @@ export default function Training_center(props) {
                       disabled={isdiable} value={modulename.val} required label="Module Name" style={{ width: '25%' }}
                       onChange={(event) => { onChangeTextHandler(event, 'Module_Name') }} />
 
-<TextField id="standard-basic"
+                    <TextField id="standard-basic"
                       // error={modulename.touched && !modulename.isValid}
                       // helperText={(modulename.touched && !modulename.isValid) ? "Module Name" : ''}
                       // maxLength={177}
@@ -810,7 +810,7 @@ export default function Training_center(props) {
                       disabled={isdiable} value={monitorIP.val} required label="monitorIP" style={{ width: '25%' }}
                       onChange={(event) => { onChangeTextHandler(event, 'monitorIP') }} />
 
-<TextField id="standard-basic"
+                    <TextField id="standard-basic"
                       error={IP_explainability.touched && !IP_explainability.isValid}
                       helperText={(IP_explainability.touched && !IP_explainability.isValid) ? "IP_explainability" : ''}
                       maxLength={177}

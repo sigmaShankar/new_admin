@@ -158,6 +158,17 @@ const Index = (props) => {
       options: {
         filter: true,
         sort: true,
+        customBodyRender: (value, tableMeta, updateValue) => {
+          return (
+            <div style={{ cursor: "pointer" }}>
+              { 
+                <span style={{textAlign:'center'}}>
+                  <small style={{textAlign:'center'}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{tableMeta.rowData[0]}</small>
+                </span>
+              }
+            </div>
+          );
+        },
       },
     },
     {
