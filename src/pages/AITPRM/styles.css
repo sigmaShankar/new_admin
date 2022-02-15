@@ -1,0 +1,59 @@
+.MuiBox-root{
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.MuiMenu-list{
+    background-color: #fff;
+}
+
+/* .table_, .td_, .th_ {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .table_ {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .th_, .td_ {
+    padding: 15px;
+  } */
+
+
+  .table_ {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .th_, .td_ {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .td_l{
+    padding: 15px;
+
+      text-align: center;
+    border-bottom: 1px solid #ddd;
+
+  }
+  .td_r{
+    padding: 15px;
+
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+
+}
+  .th_ {
+    background-color: black;
+    color: white;
+  }
+  .tr_:hover {
+    background-color: #23284a96;
+    cursor: pointer;
+    /* min-height: 150%;
+    min-width: 110%; */
+    /* font-size: 1%; */
+}

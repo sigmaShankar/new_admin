@@ -1,0 +1,372 @@
+{
+    "gender_data": [
+        {
+            "name": "Male",
+            "value": 132
+        },
+        {
+            "name": "Female",
+            "value": 171
+        }
+    ],
+    "CitizenDesc": [
+        {
+            "name": "US Citizen",
+            "value": 287
+        },
+        {
+            "name": "Eligible NonCitizen",
+            "value": 12
+        },
+        {
+            "name": "Non-Citizen",
+            "value": 4
+        }
+    ],
+    "RaceDesc": [
+        {
+            "name": "White",
+            "value": 183
+        },
+        {
+            "name": "Black or African American",
+            "value": 79
+        },
+        {
+            "name": "Asian",
+            "value": 26
+        },
+        {
+            "name": "Two or more races",
+            "value": 11
+        },
+        {
+            "name": "American Indian or Alaska Native",
+            "value": 3
+        },
+        {
+            "name": "Hispanic",
+            "value": 1
+        }
+    ],
+    "gender_race": [
+        {
+            "Name": "White",
+            "Male": 81,
+            "Female": 102
+        },
+        {
+            "Name": "Black or African American",
+            "Male": 33,
+            "Female": 46
+        },
+        {
+            "Name": "Asian",
+            "Male": 11,
+            "Female": 15
+        },
+        {
+            "Name": "Two or more races",
+            "Male": 5,
+            "Female": 6
+        },
+        {
+            "Name": "American Indian or Alaska Native",
+            "Male": 1,
+            "Female": 2
+        },
+        {
+            "Name": "Hispanic",
+            "Male": 1,
+            "Female": 0
+        }
+    ],
+    "gender_dept": [
+        {
+            "Name": "Production",
+            "Male": 80,
+            "Female": 121
+        },
+        {
+            "Name": "It/Is",
+            "Male": 28,
+            "Female": 22
+        },
+        {
+            "Name": "Sales",
+            "Male": 16,
+            "Female": 15
+        },
+        {
+            "Name": "Admin Offices",
+            "Male": 3,
+            "Female": 6
+        },
+        {
+            "Name": "Software Engineering",
+            "Male": 5,
+            "Female": 6
+        },
+        {
+            "Name": "Executive Office",
+            "Male": 0,
+            "Female": 1
+        }
+    ],
+    "race_dept": [
+        {
+            "Name": "Production",
+            "White": 130,
+            "Black_or_African_American": 44,
+            "Asian": 18,
+            "Two_or_more_races": 6,
+            "American_Indian_or_Alaska_Native": 2,
+            "Hispanic": 1
+        },
+        {
+            "Name": "It/Is",
+            "White": 29,
+            "Black_or_African_American": 15,
+            "Asian": 6,
+            "Two_or_more_races": 0,
+            "American_Indian_or_Alaska_Native": 0,
+            "Hispanic": 0
+        },
+        {
+            "Name": "Sales",
+            "White": 14,
+            "Black_or_African_American": 10,
+            "Asian": 1,
+            "Two_or_more_races": 5,
+            "American_Indian_or_Alaska_Native": 1,
+            "Hispanic": 0
+        },
+        {
+            "Name": "Admin Offices",
+            "White": 4,
+            "Black_or_African_American": 5,
+            "Asian": 0,
+            "Two_or_more_races": 0,
+            "American_Indian_or_Alaska_Native": 0,
+            "Hispanic": 0
+        },
+        {
+            "Name": "Software Engineering",
+            "White": 5,
+            "Black_or_African_American": 5,
+            "Asian": 1,
+            "Two_or_more_races": 0,
+            "American_Indian_or_Alaska_Native": 0,
+            "Hispanic": 0
+        },
+        {
+            "Name": "Executive Office",
+            "White": 1,
+            "Black_or_African_American": 0,
+            "Asian": 0,
+            "Two_or_more_races": 0,
+            "American_Indian_or_Alaska_Native": 0,
+            "Hispanic": 0
+        }
+    ],
+    "citizen_dept": [
+        {
+            "Name": "Production",
+            "US_Citizen": 191,
+            "Eligible_NonCitizen": 7,
+            "Non_Citizen": 3
+        },
+        {
+            "Name": "It/Is",
+            "US_Citizen": 48,
+            "Eligible_NonCitizen": 2,
+            "Non_Citizen": 0
+        },
+        {
+            "Name": "Sales",
+            "US_Citizen": 29,
+            "Eligible_NonCitizen": 2,
+            "Non_Citizen": 0
+        },
+        {
+            "Name": "Admin Offices",
+            "US_Citizen": 9,
+            "Eligible_NonCitizen": 0,
+            "Non_Citizen": 0
+        },
+        {
+            "Name": "Software Engineering",
+            "US_Citizen": 9,
+            "Eligible_NonCitizen": 1,
+            "Non_Citizen": 1
+        },
+        {
+            "Name": "Executive Office",
+            "US_Citizen": 1,
+            "Eligible_NonCitizen": 0,
+            "Non_Citizen": 0
+        }
+    ],
+    "gender_dept_count": [
+        {
+            "Name": "Production Technician I",
+            "Male": 52,
+            "Female": 81
+        },
+        {
+            "Name": "Production Technician II",
+            "Male": 19,
+            "Female": 34
+        },
+        {
+            "Name": "Area Sales Manager",
+            "Male": 15,
+            "Female": 12
+        },
+        {
+            "Name": "Production Manager",
+            "Male": 8,
+            "Female": 6
+        },
+        {
+            "Name": "Software Engineer",
+            "Male": 4,
+            "Female": 6
+        },
+        {
+            "Name": "IT Support",
+            "Male": 3,
+            "Female": 5
+        },
+        {
+            "Name": "Database Administrator",
+            "Male": 1,
+            "Female": 4
+        },
+        {
+            "Name": "Data Analyst",
+            "Male": 4,
+            "Female": 3
+        },
+        {
+            "Name": "Network Engineer",
+            "Male": 3,
+            "Female": 2
+        },
+        {
+            "Name": "BI Developer",
+            "Male": 3,
+            "Female": 1
+        },
+        {
+            "Name": "Administrative Assistant",
+            "Male": 0,
+            "Female": 3
+        },
+        {
+            "Name": "Sr. Network Engineer",
+            "Male": 3,
+            "Female": 2
+        },
+        {
+            "Name": "IT Manager - DB",
+            "Male": 2,
+            "Female": 0
+        },
+        {
+            "Name": "Accountant I",
+            "Male": 2,
+            "Female": 1
+        },
+        {
+            "Name": "Sales Manager",
+            "Male": 1,
+            "Female": 2
+        },
+        {
+            "Name": "Senior BI Developer",
+            "Male": 2,
+            "Female": 1
+        },
+        {
+            "Name": "Sr. Accountant",
+            "Male": 0,
+            "Female": 2
+        },
+        {
+            "Name": "Sr. DBA",
+            "Male": 1,
+            "Female": 1
+        },
+        {
+            "Name": "Software Engineering Manager",
+            "Male": 1,
+            "Female": 0
+        },
+        {
+            "Name": "Shared Services Manager",
+            "Male": 1,
+            "Female": 0
+        },
+        {
+            "Name": "CIO",
+            "Male": 0,
+            "Female": 1
+        },
+        {
+            "Name": "Data Architect",
+            "Male": 0,
+            "Female": 1
+        },
+        {
+            "Name": "Director of Sales",
+            "Male": 0,
+            "Female": 1
+        },
+        {
+            "Name": "IT Manager - Support",
+            "Male": 1,
+            "Female": 0
+        },
+        {
+            "Name": "IT Manager - Infra",
+            "Male": 1,
+            "Female": 0
+        },
+        {
+            "Name": "IT Director",
+            "Male": 1,
+            "Female": 0
+        },
+        {
+            "Name": "Enterprise Architect",
+            "Male": 1,
+            "Female": 0
+        },
+        {
+            "Name": "Director of Operations",
+            "Male": 1,
+            "Female": 0
+        },
+        {
+            "Name": "Data Analyst ",
+            "Male": 1,
+            "Female": 0
+        },
+        {
+            "Name": "President & CEO",
+            "Male": 0,
+            "Female": 1
+        },
+        {
+            "Name": "BI Director",
+            "Male": 1,
+            "Female": 0
+        },
+        {
+            "Name": "Principal Data Architect",
+            "Male": 0,
+            "Female": 1
+        }
+    ]
+}

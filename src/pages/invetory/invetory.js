@@ -392,7 +392,7 @@ export default function Training_center(props) {
 
   const view = (tableMeta) => {
     seteditEnable(true)
-    console.log(tableMeta)
+    // console.log(tableMeta)
 
     set_ID(tableMeta.rowData[11])
     // "project_name": projectname.val,

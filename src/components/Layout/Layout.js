@@ -73,6 +73,8 @@ import Mlalert from "../../pages/Mlalert";
 // import Home from "../Home/Home"
 import { useLayoutState } from "../../context/LayoutContext";
 import AIComplaince from "../../pages/AIComplaince/AIComplaince";
+import AITPRM from "../../pages/AITPRM/AITPRM";
+
 import SummaryBias from "../../pages/summaryBias/SummaryBias";
 
 
@@ -132,6 +134,8 @@ function Layout(props) {
 
               <Route path="/app/aievalation" component={AIEvalution} />
               <Route path="/app/biasSummary" component={SummaryBias} />
+              <Route path="/app/tprm" component={AITPRM} />
+
 
           
            
