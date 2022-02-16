@@ -300,11 +300,15 @@ export default function AITPRM() {
       <br />
       <br />
 
-      {currentpage == 0 && (<Row style={{ width: "100%", height: "10px" }}>
-        <h5>Select Model & Vendor</h5>
-        <br />
-        <br />
+      {currentpage == 0 && (<Row style={{  height: "10px" }}>
 
+        <div style={{marginLeft:"40%"}}>
+        <h5>Select Model & Vendor</h5>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
         <table className="table_">
           <tr className="tr_">
             <th className="th_">No</th>
@@ -324,12 +328,15 @@ export default function AITPRM() {
         </table>
       </Row>)}
 
-      {currentpage == 1 && (<Row style={{ width: "100%", height: "10px" }}>
+      {currentpage == 1 && (<Row style={{ height: "10px" }}>
        
+        <div style={{marginLeft:"45%"}}>
         <h5>Checklist</h5>
+        </div>
         <br />
         <br />
-
+        <br />
+        <br />
         <table className="table_" style={{ marginBottom: "20px" }}>
           <tr className="">
             <th className="th_">Risk Factors</th>
@@ -374,8 +381,12 @@ export default function AITPRM() {
         <br />
       </Row>)}
 
-      {currentpage == 2 && (<Row style={{ width: "100%", height: "10px" }}>
+      {currentpage == 2 && (<Row style={{ height: "10px" }}>
+        <div style={{marginLeft:"45%"}}>
         <h5>Reviewer</h5>
+        </div>
+        <br />
+        <br />
         <br />
         <br />
 
