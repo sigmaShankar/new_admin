@@ -245,9 +245,9 @@ export default function AITPRM() {
     console.log(value)
     window.scrollTo(0, 200);
   }
-const changeText = (e,id)=>{
-  console.log(e?.target.value,id)
-}
+  const changeText = (e, id) => {
+    console.log(e?.target.value, id)
+  }
   const initValue = async () => {
     let metricsList = {}
     let tempOverall = [];
@@ -327,7 +327,7 @@ const changeText = (e,id)=>{
           <br />
           <br />
           <br />
-          <table className="table_" style={{width:"100%"}}>
+          <table className="table_" style={{ width: "100%" }}>
             <tr className="tr_">
               <th className="th_">Sr. No.</th>
               <th className="th_">Vendor Name</th>
@@ -379,7 +379,7 @@ const changeText = (e,id)=>{
                   aria-label="maximum height"
                   placeholder="Eg: Lorem ipsum dolor sit amet."
                   defaultValue=""
-                  onChange={e=>changeText(e,value?.id)}
+                  onChange={e => changeText(e, value?.id)}
                 /></td>
                 <td className="td_l"><TextField id="standard-basic" label="Standard" type="number" placeholder="5" /></td>
                 <td className="td_l"><TextareaAutosize
@@ -414,7 +414,7 @@ const changeText = (e,id)=>{
           <h5>Reviewer</h5>
         </div>
         <br />
-    
+
         <div className="search-table-outter wrapper">
           <table className="table_ search-table inner" style={{ marginBottom: "20px" }}>
             <tr className="">
@@ -463,9 +463,7 @@ const changeText = (e,id)=>{
         <Row style={{ width: "100%", height: "10px" }}>
           <br />
           <br />
-          <br />
-          <br />
-          <br />
+     
 
           <div className={classes.root}>
             <AppBar position="static" color="default">
@@ -475,43 +473,47 @@ const changeText = (e,id)=>{
                 indicatorColor="primary"
                 textColor="primary"
                 variant="fullWidth"
-                scrollButtons="auto"
-                aria-label="scrollable auto tabs example"
               >
                 <Tab label="Table of finding" {...a11yProps(0)} />
-                <Tab label="Assessment Summary" {...a11yProps(1)} />
+                <Tab label="Assessment Summary" {...a11yProps(1)} style={{width:"100%"}} />
 
               </Tabs>
             </AppBar>
-            <TabPanel value={value} index={0} style={{width:"120%"}}>
-              <table className="table_" style={{ marginBottom: "20px" }}>
-                <tr className="">
-                  <th className="th_">Sr. No.</th>
-                  <th className="th_">Question</th>
-                  <th className="th_">Pass/Fail</th>
-                  <th className="th_">Assessor Comment </th>
-                  <th className="th_">Evidence comment</th>
-                  <th className="th_">Mitigation comment</th>
-                  <th className="th_">Deadline for mitigation</th>
+            <TabPanel value={value} index={0} >
+              <div className="search-table-outter wrapper">
+                <table className="table_ search-table inner" style={{ marginBottom: "20px" }}>
+                  <tr className="">
+                    <th className="th_">Sr. No.</th>
+                    <th className="th_">Question</th>
+                    <th className="th_">Pass/Fail</th>
+                    <th className="th_">Self Rating (Pass/Fail) </th>
+                    <th className="th_">Assessor Comment</th>
+                    <th className="th_">Evidence comment</th>
+                    <th className="th_">Mitigation comment</th>
+                    <th className="th_">Deadline for mitigation</th>
+                  </tr>
+                  {page3.map(value => {
+                    return (
+                      <tr className="">
+                        <td className="td_r">{value?.quetion}</td>
+                        <td className="td_">{value?.answer}</td>
+                        <td className="td_l">{value?.rating}</td>
+                        <td className="td_l"><TextareaAutosize
+                          minRows={4}
+                          aria-label="maximum height"
+                          placeholder="Eg: Lorem ipsum dolor sit amet."
+                          defaultValue=""
+                        /></td>
+                      </tr>)
+                  })}
 
-
-                </tr>
-                {page2.map(value => {
-                  return (
-                    <tr className="">
-                      <td className="td_r">{value?.quetion}</td>
-                      <td className="td_">{value?.quetion}</td>
-                      <td className="td_l">{value?.quetion}</td>
-                      <td className="td_l">{value?.quetion}</td>
-                      <th className="td_l">{value?.quetion}</th>
-                    </tr>)
-                })}
-
-              </table>
+                </table>
+              </div>
+            
             </TabPanel>
-            <TabPanel value={value} index={1}>
-              <div>
-              <Report />
+            <TabPanel value={value} index={1} style={{width:"100%"}}>
+              <div style={{"min-width":"100px"}}>
+                <Report />
               </div>
             </TabPanel>
           </div>
