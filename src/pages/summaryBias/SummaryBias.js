@@ -275,7 +275,8 @@ export default function SummaryBias(props) {
 
   return (
     <>
-      <PageTitle title="Model Inventory" width={["0.5"]} leftTitle={"vcvbvc"} />
+    {console.log(!props?.hide,"!props?.hide")}
+      {!props?.hide && (<PageTitle title="Model Inventory" width={["0.5"]} leftTitle={"vcvbvc"} />)}
       <br />
 
       <Grid container spacing={4}>

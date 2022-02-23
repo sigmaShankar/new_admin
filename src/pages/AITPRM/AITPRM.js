@@ -351,7 +351,7 @@ export default function AITPRM() {
 
       {currentpage == 1 && (<Row style={{ height: "10px" }}>
 
-        <div style={{ marginLeft: "45%" }}>
+        <div style={{ marginLeft: "40%" }}>
           <h5>Self Assessment Questionaries</h5>
         </div>
         <br />
@@ -377,7 +377,7 @@ export default function AITPRM() {
                 <td className="td_"><TextareaAutosize
                   minRows={7}
                   aria-label="maximum height"
-                  placeholder="Eg: Lorem ipsum dolor sit amet."
+                  placeholder=""
                   defaultValue=""
                   onChange={e => changeText(e, value?.id)}
                 /></td>
@@ -385,7 +385,7 @@ export default function AITPRM() {
                 <td className="td_l"><TextareaAutosize
                   minRows={7}
                   aria-label="maximum height"
-                  placeholder="Eg: Lorem ipsum dolor sit amet."
+                  placeholder=""
                   defaultValue=""
                 /></td>
                 <td className="td_l"><TextField id="standard-basic" label="Standard" type="number" placeholder="5" /></td>
@@ -439,7 +439,7 @@ export default function AITPRM() {
                   <td className="td_l"><TextareaAutosize
                     minRows={4}
                     aria-label="maximum height"
-                    placeholder="Eg: Lorem ipsum dolor sit amet."
+                    placeholder=""
                     defaultValue=""
                   /></td>
                 </tr>)
@@ -501,7 +501,7 @@ export default function AITPRM() {
                         <td className="td_l"><TextareaAutosize
                           minRows={4}
                           aria-label="maximum height"
-                          placeholder="Eg: Lorem ipsum dolor sit amet."
+                          placeholder=""
                           defaultValue=""
                         /></td>
                       </tr>)

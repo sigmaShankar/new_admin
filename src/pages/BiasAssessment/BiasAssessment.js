@@ -249,17 +249,17 @@ export default function BiasAssessment() {
 
   return (
     <>
-      <h3>AI Governence</h3>
+      <h3>Bias Assessment</h3>
       <br />
   
       {currentpage == 0 && (<><Row style={{ marginTop: "2px" }}>
 
-        <Col xl="6" >
-          <small>Upload Model</small>
+        <Col xl="6" style={{display:"flex",'justify-content':"center"}}>
+          <b>Upload Model</b>
 
         </Col>
-        <Col xl="6" >
-          <small>Upload Data</small>
+        <Col xl="6" style={{display:"flex",'justify-content':"center"}}>
+          <b>Upload Data</b>
         </Col>
 
       </Row>
@@ -302,17 +302,16 @@ export default function BiasAssessment() {
           </div>
           <br />
           <br />
-          <br />
-          <br />
+      
           <table className="table_" style={{ width: "100%" }}>
-            <tr className="tr_">
+            <tr className="tr__">
               <th className="td_r" style={{ "max-width": "10px!important", "background-color": "black", color: "#fff" }}>Sr. No.</th>
               <th className="th_">Questionaries</th>
               <th className="th_">Answer</th>
             </tr>
             {data.map(value => {
               return (
-                <tr className="tr_" >
+                <tr className="tr__" >
                   <td className="td_r" style={{ maxWidth: "10px" }}>{value?.id}</td>
                   <td className="td_">{value?.vendor}</td>
                   <td className="td_l"><TextareaAutosize
@@ -321,7 +320,7 @@ export default function BiasAssessment() {
 
 
                     aria-label="maximum height"
-                    placeholder="Eg: Lorem ipsum dolor sit amet."
+                    placeholder=""
                     defaultValue=""
                   /></td>
                 </tr>)
@@ -352,7 +351,7 @@ export default function BiasAssessment() {
                     minRows={7}
                     style={{ width: "70%" }}
                     aria-label="maximum height"
-                    placeholder="Eg: Lorem ipsum dolor sit amet."
+                    placeholder=""
                     defaultValue=""
                   /></td>
                 </tr>)
@@ -395,7 +394,7 @@ export default function BiasAssessment() {
               </Tabs>
             </AppBar>
             <TabPanel value={value} index={0} >
-              <SummaryBias />
+              <SummaryBias hide={true}/>
             </TabPanel>
             <TabPanel value={value} index={1}>
               <div>
@@ -436,7 +435,7 @@ export default function BiasAssessment() {
                   <td className="td_l"><TextareaAutosize
                     minRows={4}
                     aria-label="maximum height"
-                    placeholder="Eg: Lorem ipsum dolor sit amet."
+                    placeholder=""
                     defaultValue=""
                   /></td>
                 </tr>)
