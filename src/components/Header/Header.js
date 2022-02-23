@@ -100,6 +100,9 @@ const history = useHistory();
 const landing = () =>{
     history.push("/homepage")
 };
+const biasAssesment = () =>{
+  history.push("/app/BiasAssessment")
+};
   // global
   var layoutState = useLayoutState();
   var layoutDispatch = useLayoutDispatch();
@@ -380,15 +383,27 @@ const landing = () =>{
           >
             <AccountIcon className={classes.profileMenuIcon} /> Tasks
           </MenuItem> */}
-          {/* <MenuItem
+          <MenuItem
+          onClick={() => {biasAssesment();setProfileMenu(null)}}
             className={classNames(
               classes.profileMenuItem,
               classes.headerMenuItem,
             )}
           >
-            <AccountIcon className={classes.profileMenuIcon} /> Messages
-          </MenuItem> */}
-          <div className={classes.profileMenuUser}>
+            <SendIcon className={classes.profileMenuIcon} /> Bias Assessment
+          </MenuItem>
+          <MenuItem
+              onClick={() => signOut(userDispatch, props.history)}
+
+            className={classNames(
+              classes.profileMenuItem,
+              classes.headerMenuItem,
+            )}
+          >
+            <AccountIcon className={classes.profileMenuIcon} /> Sign Out
+          </MenuItem>
+          {/* <div className={classes.profileMenuUser}>
+
             <Typography
               className={classes.profileMenuLink}
               color="primary"
@@ -396,7 +411,9 @@ const landing = () =>{
             >
               Sign Out
             </Typography>
-          </div>
+
+            
+          </div> */}
           {
             localStorage.getItem('type') !== "admin" ?
               <div className={classes.profileMenuUser}>

@@ -78,6 +78,9 @@ import AIComplaince from "../../pages/AIComplaince/AIComplaince";
 import AITPRM from "../../pages/AITPRM/AITPRM";
 
 import SummaryBias from "../../pages/summaryBias/SummaryBias";
+import BiasAssessment from "../../pages/BiasAssessment/BiasAssessment";
+
+
 
 
 function Layout(props) {
@@ -138,6 +141,8 @@ function Layout(props) {
               <Route path="/app/biasSummary" component={SummaryBias} />
               <Route path="/app/tprm" component={AITPRM} />
               <Route path="/app/DEI" component={DEI} />
+              <Route path="/app/BiasAssessment" component={BiasAssessment} />
+
 
 
           
