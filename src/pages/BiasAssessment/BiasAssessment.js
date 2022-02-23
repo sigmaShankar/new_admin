@@ -389,8 +389,8 @@ export default function BiasAssessment() {
                 scrollButtons="auto"
                 aria-label="scrollable auto tabs example"
               >
-                <Tab label="Table of finding" {...a11yProps(0)} />
-                <Tab label="Assessment Summary" {...a11yProps(1)} />
+                <Tab label="Summary Report" {...a11yProps(0)} />
+                <Tab label="Report" {...a11yProps(1)} />
 
               </Tabs>
             </AppBar>
