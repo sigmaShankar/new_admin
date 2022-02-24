@@ -121,7 +121,7 @@ const page3 = [
 const data = [
   
 
-  { vendor: "What is protected attribute in dataset (for example :- Gender, Race , Religion)", id: 1, model: "xyz", classification: "xyz" },
+  { vendor: "What are the protected attribute in the dataset (for example:- Gender, Race, Religion)", id: 1, model: "xyz", classification: "xyz" },
   {
     vendor: `Is the data representative of the target users (for example, If the model is applied for US-based users 
     but if the data collected has only EU users, there could be challenges)`, id: 2, model: "xyz", classification: "xyz"
@@ -255,7 +255,7 @@ export default function BiasAssessment() {
 
   return (
     <>
-      <h3>Quick Bias Assessment</h3>
+      <h3>Quick AI Bias Assessment</h3>
       <br />
 
       {currentpage == 0 && (<><Row style={{ marginTop: "2px" }}>
@@ -271,13 +271,13 @@ export default function BiasAssessment() {
 
         </Col>
         <Col xl="6" style={{ display: "flex", }}>
-          <p>1) Please upload all relevant model files , model documentation</p>
+          <small>Please upload all relevant model files including model codes, model weights, model documentation, and problem statement</small>
 
 
         </Col>
         <Col xl="6" style={{ display: "flex", }}>
 
-          <p>1) Please upload the dataset and documentation of dataset including problem statement</p>
+          <small>Please upload all relevant dataset files including dataset documentation</small>
 
         </Col>
 
@@ -290,7 +290,7 @@ export default function BiasAssessment() {
             borderBottom: "1px solid #777",
 
             padding: "40px",
-            color: (currentpage == 0) ? "red" : "black",
+           
             fontWeight: (currentpage == 0) ? "bolder" : "lighter"
 
           }}>
@@ -302,7 +302,7 @@ export default function BiasAssessment() {
             borderLeft: "1px solid #777",
             borderBottom: "1px solid #777",
             padding: "40px",
-            color: (currentpage == 1) ? "red" : "black",
+            
             fontWeight: (currentpage == 1) ? "bolder" : "lighter"
           }}>
             <input type="file" placeholder="uploadData" />
@@ -316,7 +316,7 @@ export default function BiasAssessment() {
       {currentpage == 0 && (
         <Row style={{ height: "10px" }}>
           <div style={{ marginLeft: "40%", marginBottom: "5px" }}>
-            <h5>Self Assessment Questionaries</h5>
+            <h5>Self Assessment Questionnaire</h5>
           </div>
           <small>* Please respond to the questions given bellow to initiate the quick bias assessment</small>
 
@@ -327,7 +327,7 @@ export default function BiasAssessment() {
             <tr className="tr__">
               <th className="td_r" style={{ "max-width": "10px!important", "background-color": "black", color: "#fff" }}>SL. No</th>
               <th className="th_">Questions</th>
-              <th className="th_">Response</th>
+              <th className="th_">Responses</th>
             </tr>
             {data.map(value => {
               return (
@@ -382,9 +382,9 @@ export default function BiasAssessment() {
             <Col xl="6" >
             </Col>
             <Col xl="6" >
-              <div style={{ marginBottom: "20px", float: "left" }} onClick={e => { pageChange(1, null) }}>
-                <Button variant="contained" style={{ backgroundColor: "#23284a", color: "#fff", marginBottom: "20px", float: "left" }} >
-                  Submit
+              <div style={{ marginBottom: "20px", float: "right" }} onClick={e => { pageChange(1, null) }}>
+                <Button variant="contained" style={{ backgroundColor: "#23284a", color: "#fff", marginBottom: "20px", float: "right",width:"150%" }} >
+                Start Assessment
                 </Button>
               </div>
             </Col>
