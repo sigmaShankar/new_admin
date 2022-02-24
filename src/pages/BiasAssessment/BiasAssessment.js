@@ -119,31 +119,18 @@ const page3 = [
 
 
 const data = [
-  { vendor: "Explain the problem statement which you are solving using this model", id: 1, model: "xyz", classification: "xyz" },
-  { vendor: "From where data is collected?", id: 2, model: "xyz", classification: "xyz" },
-  { vendor: "Given an overview of the dataset including how the data is collected and on what basis?", id: 3, model: "xyz", classification: "xyz" },
-  { vendor: "What is protected attribute in dataset (for example :- Gender, Race , Religion) ", id: 4, model: "xyz", classification: "xyz" },
-  { vendor: "How many features in the dataset ? ", id: 5, model: "xyz", classification: "xyz" },
-  { vendor: "Is the data representative of the target users (for example, If the model is applied for US-based users but if the data collected has only EU users, there could be challenges)", id: 6, model: "xyz", classification: "xyz" },
-  { vendor: "What is the type model (machine learning or deep learning, and what specific model is considered like logistic regression, gradient boost, etc.)", id: 7, model: "xyz", classification: "xyz" },
-  { vendor: "What are all the standard performance evaluation metrics being used (for evaluating the model for performance like accuracy, etc)? ", id: 8, model: "xyz", classification: "xyz" },
-  { vendor: "Do you prefer to have any other standard evaluation metrics apart from what you already have? If so, please provide the details and threshold values", id: 9, model: "xyz", classification: "xyz" },
-  {
-    vendor: `Apart from that, do you need any other custom evaluation metrics. If so, please provide the details and threshold values 
-  (our analysis will provide all the industry standards and our metrics for Bias, Explainability, ML Monitoring, and 
-  Robustness) `, id: 10, model: "xyz", classification: "xyz"
-  },
+  
 
-  { vendor: "What is protected attribute in dataset (for example :- Gender, Race , Religion)", id: 11, model: "xyz", classification: "xyz" },
+  { vendor: "What is protected attribute in dataset (for example :- Gender, Race , Religion)", id: 1, model: "xyz", classification: "xyz" },
   {
     vendor: `Is the data representative of the target users (for example, If the model is applied for US-based users 
-    but if the data collected has only EU users, there could be challenges)`, id: 12, model: "xyz", classification: "xyz"
+    but if the data collected has only EU users, there could be challenges)`, id: 2, model: "xyz", classification: "xyz"
   },
   {
     vendor: `What are all the standard / Custom performance evaluation metrics being used (for evaluating the model for performance 
-    like accuracy, etc)? `, id: 13, model: "xyz", classification: "xyz"
+    like accuracy, etc)? `, id: 3, model: "xyz", classification: "xyz"
   },
-  { vendor: "Please provide other specific details (if any)", id: 14, model: "xyz", classification: "xyz" },
+  { vendor: "Please provide other specific details (if any)", id: 4, model: "xyz", classification: "xyz" },
 ];
 
 
