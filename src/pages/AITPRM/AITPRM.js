@@ -146,10 +146,10 @@ const page3 = [
 
 
 const data = [
-  { vendor: "Vendor - 1", id: 1, model: "ML Model", classification: "xyz" },
-  { vendor: "Vendor - 2", id: 2, model: "ML Model", classification: "xyz" },
-  { vendor: "Vendor - 3", id: 3, model: "DL Model", classification: "xyz" },
-  { vendor: "Vendor - 4", id: 4, model: "DL Model", classification: "xyz" },
+  { vendor: "Vendor - 1", id: 1, model: "Model - 1 ", classification: "ML Model" },
+  { vendor: "Vendor - 2", id: 2, model: "Model - 2", classification: "ML Model" },
+  { vendor: "Vendor - 3", id: 3, model: "Model - 3", classification: "DL Model" },
+  { vendor: "Vendor - 4", id: 4, model: "Model - 4", classification: "DL Model" },
  
 ];
 
