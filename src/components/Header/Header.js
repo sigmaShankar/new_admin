@@ -383,7 +383,7 @@ const biasAssesment = () =>{
           >
             <AccountIcon className={classes.profileMenuIcon} /> Tasks
           </MenuItem> */}
-          <MenuItem
+          {/* <MenuItem
           onClick={() => {biasAssesment();setProfileMenu(null)}}
             className={classNames(
               classes.profileMenuItem,
@@ -391,7 +391,7 @@ const biasAssesment = () =>{
             )}
           >
             <SendIcon className={classes.profileMenuIcon} /> Bias Assessment
-          </MenuItem>
+          </MenuItem> */}
           <MenuItem
               onClick={() => signOut(userDispatch, props.history)}
 

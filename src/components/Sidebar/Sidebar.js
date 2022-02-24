@@ -19,12 +19,16 @@ import {
   VpnLock as VpnLock,
   ShowChart as ShowChart,
   ScatterPlot as ScatterPlot,
+  // BarChartIcon as BarChartIcon,
+  // CompareIcon as CompareIcon,
   Dvr as Dvr
 } from "@material-ui/icons";
 import { useTheme } from "@material-ui/styles";
 import { withRouter } from "react-router-dom";
 import classNames from "classnames";
 import CloseIcon from "@material-ui/icons/Close"
+import CompareIcon from '@material-ui/icons/Compare';
+import BarChartIcon from '@material-ui/icons/BarChart';
 
 
 // styles
@@ -79,10 +83,12 @@ const structure = [
 },
   { id: 12121, label: "AI Compliance", link: "/app/compliance", icon: <VpnLock /> },
   { id: 212123, label: "DEI", link: "/app/DEI", icon: <Dvr /> },
-  { id: 212123, label: "AI TPRM", link: "/app/tprm", icon: <Dvr /> }
+  { id: 212123, label: "AI TPRM", link: "/app/tprm", icon: <BarChartIcon /> },
+  { id: 212123, label: "Bias Assessment", link: "/app/BiasAssessmen", icon: <CompareIcon /> }
 
 
 
+  
 
 
 ];

@@ -10,16 +10,10 @@
                 "impact": "High",
                 "date": "2021-11-18"
             },
-            {
-                "pillar": "Robustness",
-                "ids": 2,
-                "name": "Accuracy on the latest samples appear to be lower than general rate",
-                "impact": "High",
-                "date": "2021-11-20"
-            },
+
             {
                 "pillar": "Fairness",
-                "ids": 3,
+                "ids": 2,
                 "name": "Negative bias regarding caucasian women disproportionate to default rate",
                 "impact": "Medium",
                 "date": "2021-11-13"

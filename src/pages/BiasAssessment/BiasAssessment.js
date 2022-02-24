@@ -123,8 +123,27 @@ const data = [
   { vendor: "From where data is collected?", id: 2, model: "xyz", classification: "xyz" },
   { vendor: "Given an overview of the dataset including how the data is collected and on what basis?", id: 3, model: "xyz", classification: "xyz" },
   { vendor: "What is protected attribute in dataset (for example :- Gender, Race , Religion) ", id: 4, model: "xyz", classification: "xyz" },
-  { vendor: "How many features in the dataset ? ", id: 6, model: "xyz", classification: "xyz" },
+  { vendor: "How many features in the dataset ? ", id: 5, model: "xyz", classification: "xyz" },
   { vendor: "Is the data representative of the target users (for example, If the model is applied for US-based users but if the data collected has only EU users, there could be challenges)", id: 6, model: "xyz", classification: "xyz" },
+  { vendor: "What is the type model (machine learning or deep learning, and what specific model is considered like logistic regression, gradient boost, etc.)", id: 7, model: "xyz", classification: "xyz" },
+  { vendor: "What are all the standard performance evaluation metrics being used (for evaluating the model for performance like accuracy, etc)? ", id: 8, model: "xyz", classification: "xyz" },
+  { vendor: "Do you prefer to have any other standard evaluation metrics apart from what you already have? If so, please provide the details and threshold values", id: 9, model: "xyz", classification: "xyz" },
+  {
+    vendor: `Apart from that, do you need any other custom evaluation metrics. If so, please provide the details and threshold values 
+  (our analysis will provide all the industry standards and our metrics for Bias, Explainability, ML Monitoring, and 
+  Robustness) `, id: 10, model: "xyz", classification: "xyz"
+  },
+
+  { vendor: "What is protected attribute in dataset (for example :- Gender, Race , Religion)", id: 11, model: "xyz", classification: "xyz" },
+  {
+    vendor: `Is the data representative of the target users (for example, If the model is applied for US-based users 
+    but if the data collected has only EU users, there could be challenges)`, id: 12, model: "xyz", classification: "xyz"
+  },
+  {
+    vendor: `What are all the standard / Custom performance evaluation metrics being used (for evaluating the model for performance 
+    like accuracy, etc)? `, id: 13, model: "xyz", classification: "xyz"
+  },
+  { vendor: "Please provide other specific details (if any)", id: 14, model: "xyz", classification: "xyz" },
 ];
 
 
@@ -249,17 +268,30 @@ export default function BiasAssessment() {
 
   return (
     <>
-      <h3>Bias Assessment</h3>
+      <h3>Quick Bias Assessment</h3>
       <br />
-  
+
       {currentpage == 0 && (<><Row style={{ marginTop: "2px" }}>
 
-        <Col xl="6" style={{display:"flex",'justify-content':"center"}}>
-          <b>Upload Model</b>
+        <Col xl="6" style={{ display: "flex", 'justify-content': "center" }}>
+          <b>Upload Model Files</b><br />
+
 
         </Col>
-        <Col xl="6" style={{display:"flex",'justify-content':"center"}}>
-          <b>Upload Data</b>
+        <Col xl="6" style={{ display: "flex", 'justify-content': "center" }}>
+          <b>Upload Dataset Files</b><br />
+
+
+        </Col>
+        <Col xl="6" style={{ display: "flex", }}>
+          <p>1) Please upload all relevant model files , model documentation</p>
+
+
+        </Col>
+        <Col xl="6" style={{ display: "flex", }}>
+
+          <p>1) Please upload the dataset and documentation of dataset including problem statement</p>
+
         </Col>
 
       </Row>
@@ -270,7 +302,7 @@ export default function BiasAssessment() {
             borderRight: "1px solid #777",
             borderBottom: "1px solid #777",
 
-            padding: "60px",
+            padding: "40px",
             color: (currentpage == 0) ? "red" : "black",
             fontWeight: (currentpage == 0) ? "bolder" : "lighter"
 
@@ -282,7 +314,7 @@ export default function BiasAssessment() {
             "justify-content": "center",
             borderLeft: "1px solid #777",
             borderBottom: "1px solid #777",
-            padding: "60px",
+            padding: "40px",
             color: (currentpage == 1) ? "red" : "black",
             fontWeight: (currentpage == 1) ? "bolder" : "lighter"
           }}>
@@ -296,18 +328,19 @@ export default function BiasAssessment() {
 
       {currentpage == 0 && (
         <Row style={{ height: "10px" }}>
-
           <div style={{ marginLeft: "40%", marginBottom: "5px" }}>
-            <h5>Self Assessment Questionaries - Data</h5>
+            <h5>Self Assessment Questionaries</h5>
           </div>
+          <small>* Please respond to the questions given bellow to initiate the quick bias assessment</small>
+
           <br />
           <br />
-      
-          <table className="table_" style={{ width: "100%" }}>
+
+          <table className="table_" style={{ width: "100%", marginBottom: "20px" }}>
             <tr className="tr__">
-              <th className="td_r" style={{ "max-width": "10px!important", "background-color": "black", color: "#fff" }}>Sr. No.</th>
-              <th className="th_">Questionaries</th>
-              <th className="th_">Answer</th>
+              <th className="td_r" style={{ "max-width": "10px!important", "background-color": "black", color: "#fff" }}>SL. No</th>
+              <th className="th_">Questions</th>
+              <th className="th_">Response</th>
             </tr>
             {data.map(value => {
               return (
@@ -329,7 +362,7 @@ export default function BiasAssessment() {
 
           <br />
 
-          <div style={{ marginLeft: "40%", marginTop: "20px" }}>
+          {/* <div style={{ marginLeft: "40%", marginTop: "20px" }}>
             <h5>Self Assessment Questionaries - Model</h5>
           </div>
           <br />
@@ -356,7 +389,7 @@ export default function BiasAssessment() {
                   /></td>
                 </tr>)
             })}
-          </table>
+          </table> */}
 
           <Row>
             <Col xl="6" >
@@ -374,35 +407,9 @@ export default function BiasAssessment() {
 
       {currentpage == 1 && (
 
-        <Row style={{ width: "100%", height: "10px" }}>
+        <Row style={{ width: "100%", "max-height": "100%" }}>
           <br />
-
-          <div className={classes.root}>
-            <AppBar position="static" color="default">
-              <Tabs
-                value={value}
-                onChange={handleChange}
-                indicatorColor="primary"
-                textColor="primary"
-                variant="fullWidth"
-                scrollButtons="auto"
-                aria-label="scrollable auto tabs example"
-              >
-                <Tab label="Summary Report" {...a11yProps(0)} />
-                <Tab label="Report" {...a11yProps(1)} />
-
-              </Tabs>
-            </AppBar>
-            <TabPanel value={value} index={0} >
-              <SummaryBias hide={true}/>
-            </TabPanel>
-            <TabPanel value={value} index={1}>
-              <div>
-                <Report />
-              </div>
-            </TabPanel>
-          </div>
-
+          <Report />
         </Row>)}
 
       {currentpage == 2 && (<Row style={{ height: "10px" }}>
