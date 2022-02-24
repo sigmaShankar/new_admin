@@ -146,11 +146,10 @@ const page3 = [
 
 
 const data = [
-  { vendor: "Vendor - 1", id: 1, model: "xyz", classification: "xyz" },
-  { vendor: "Vendor - 2", id: 2, model: "xyz", classification: "xyz" },
-  { vendor: "Vendor - 3", id: 3, model: "xyz", classification: "xyz" },
-  { vendor: "Vendor - 4", id: 4, model: "xyz", classification: "xyz" }, { vendor: "Infosys Inc", id: 1, model: "xyz", classification: "xyz" },
-  { vendor: "Vendor - 5", id: 5, model: "xyz", classification: "xyz" }, { vendor: "Infosys Inc", id: 1, model: "xyz", classification: "xyz" },
+  { vendor: "Vendor - 1", id: 1, model: "ML Model", classification: "xyz" },
+  { vendor: "Vendor - 2", id: 2, model: "ML Model", classification: "xyz" },
+  { vendor: "Vendor - 3", id: 3, model: "DL Model", classification: "xyz" },
+  { vendor: "Vendor - 4", id: 4, model: "DL Model", classification: "xyz" },
  
 ];
 
