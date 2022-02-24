@@ -82,9 +82,9 @@ const structure = [
   ],
 },
   { id: 12121, label: "AI Compliance", link: "/app/compliance", icon: <VpnLock /> },
-  { id: 212123, label: "DEI", link: "/app/DEI", icon: <Dvr /> },
-  { id: 212123, label: "AI TPRM", link: "/app/tprm", icon: <BarChartIcon /> },
-  // { id: 212123, label: "Bias Assessment", link: "/app/BiasAssessment", icon: <CompareIcon /> }
+  // { id: 212123, label: "DEI", link: "/app/DEI", icon: <Dvr /> },
+  // { id: 212123, label: "AI TPRM", link: "/app/tprm", icon: <BarChartIcon /> },
+  { id: 212123, label: "Bias Assessment", link: "/app/BiasAssessment", icon: <CompareIcon /> }
 
 
 
