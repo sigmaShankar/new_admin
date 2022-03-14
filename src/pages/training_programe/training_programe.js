@@ -138,13 +138,13 @@ export default function Training_center(props) {
       val: "",
       isValid: false,
       touched: false
-    })  
+    })
     setUsername({
       val: "",
       isValid: false,
       touched: false
     })
-   
+
   }
 
   const [isFormValid, setIsFromValid] = useState(false)
@@ -189,10 +189,10 @@ export default function Training_center(props) {
   const [data, setData] = useState([])
   const [row, setRow] = useState([])
 
-  const [selectedDate, setSelectedDate] = React.useState({val:new Date(), isValid:false, touched: false});
+  const [selectedDate, setSelectedDate] = React.useState({ val: new Date(), isValid: false, touched: false });
   const [isAutoComplete, setIsAutocomplete] = useState(true)
-  const [selectedEndDate, setSelectedEndDate] = React.useState({val:new Date(), isValid:false, touched: false});
-  const [selectedDueDate, setSelectedDueDate] = React.useState({val:new Date(), isValid:false, touched: false});
+  const [selectedEndDate, setSelectedEndDate] = React.useState({ val: new Date(), isValid: false, touched: false });
+  const [selectedDueDate, setSelectedDueDate] = React.useState({ val: new Date(), isValid: false, touched: false });
 
   const form = {
     height: '80%',
@@ -247,12 +247,12 @@ export default function Training_center(props) {
     val: "",
     isValid: false,
     touched: false
-  }) 
-   const [_password, setPassword] = useState({
+  })
+  const [_password, setPassword] = useState({
     val: "",
     isValid: false,
     touched: false
-  })  
+  })
   const [_email, setEmail] = useState({
     val: "",
     isValid: false,
@@ -335,20 +335,20 @@ export default function Training_center(props) {
   const [_id, set_ID] = useState('')
   const config = {
     headers: { Authorization: `Bearer ${sessionStorage.getItem('token')}` }
-};
+  };
 
 
   useEffect(() => {
     axios.get(process.env.PUBLIC_URL + `/ip.json`)
-    .then(res => {
-      setIp(res?.data?.IP)
-      getUserList(res?.data?.IP);
-    })
+      .then(res => {
+        setIp(res?.data?.IP)
+        getUserList(res?.data?.IP);
+      })
   }, []);
 
   const getUserList = (IP) => {
     // console.log(IP,"asada")
-    axios.post(`${IP}/user/list`,{},config)
+    axios.post(`${IP}/user/list`, {}, config)
       .then(res => {
         // console.log(res?.data,'resposnse data')
 
@@ -366,11 +366,11 @@ export default function Training_center(props) {
 
   const validateForm = () => {
     let partialIsValid = title.isValid && Description.isValid && selectedDate.isValid &&
-      selectedEndDate.isValid  && cost.isValid && selectedDueDate.isValid && programmeFor.isValid
+      selectedEndDate.isValid && cost.isValid && selectedDueDate.isValid && programmeFor.isValid
 
-    if(type.val == 'online') {
+    if (type.val == 'online') {
       partialIsValid = partialIsValid && eventlink.isValid
-    } 
+    }
 
     return true
 
@@ -380,7 +380,7 @@ export default function Training_center(props) {
   const [openenrolment, setopenenrolment] = React.useState(false);
   const [premium_member_discount, setpremium_member_discount] = React.useState("");
   const [minimum_participate_discount, setminimum_participate_discount] = React.useState("");
-  const [programmeFor, setProgrammeFor ] = React.useState({
+  const [programmeFor, setProgrammeFor] = React.useState({
     val: "",
     isValid: false,
   });
@@ -554,7 +554,7 @@ export default function Training_center(props) {
     }
   ];
   const columns = [
-    
+
     {
       name: "full_name",
       label: "User name",
@@ -590,7 +590,7 @@ export default function Training_center(props) {
     //     }
     //   }
     // },
-    
+
     {
       name: "status",
       label: "Actions",
@@ -613,8 +613,8 @@ export default function Training_center(props) {
                 View
                 </Button> */}
 
-                <Button
-                style={{margin: "0.5rem"}}
+              <Button
+                style={{ margin: "0.5rem" }}
 
                 onClick={() => { delete_institution(tableMeta) }}
                 color="secondary"
@@ -623,7 +623,7 @@ export default function Training_center(props) {
                 variant="contained"
               >
                 Delete
-                </Button>
+              </Button>
             </div>
 
           );
@@ -721,20 +721,20 @@ export default function Training_center(props) {
   //       }
   //     })
   // }
- 
+
   const delete_institution = (tableMeta) => {
 
     // console.log(tableMeta.rowData[1],IP)
-    axios.post(IP + "/user/delete",{
-      email:tableMeta.rowData[1]
-    },config)
+    axios.post(IP + "/user/delete", {
+      email: tableMeta.rowData[1]
+    }, config)
       .then(res => {
         getUserList(IP)
       })
 
 
     // http://15.223.130.155:8500/user/delete
-    
+
     //   axios.post(`${IP}/user/list`,{},config)
     //   console.log(tableMeta)
     // axios.post(IP + "/user/delete" + tableMeta.rowData[11])
@@ -753,7 +753,7 @@ export default function Training_center(props) {
   }
   const closeCenter = (params) => {
     // //console.log(removeDuplicate(tempList), 'tempList')
-    
+
     setsuggestedList(removeDuplicate(tempList))
     setOpenCenter(params)
     setIsFromValid(validateForm())
@@ -768,9 +768,9 @@ export default function Training_center(props) {
           "full_name": _userName.val,
           "email": _email.val,
           "password": _password.val
-        },config)
+        }, config)
         .then((res) => {
-        getUserList(IP)
+          getUserList(IP)
 
           clearFields()
           // setsuggestedList([])
@@ -779,17 +779,17 @@ export default function Training_center(props) {
         }).catch((err) => {
           //console.log(err)
         })
-    } 
+    }
   }
 
-  if(type.val == 'offline' && !eventlink.isValid) {
+  if (type.val == 'offline' && !eventlink.isValid) {
     setEventlink({
       ...eventlink,
       touched: true,
       isValid: true
     })
     setIsFromValid(validateForm())
-    
+
   }
 
   // if(type.val == 'online' && eventlink.val.trim() == "" && eventlink.isValid) {
@@ -799,18 +799,18 @@ export default function Training_center(props) {
   //     isValid: false
   //   })
   //   setIsFromValid(validateForm())
-    
+
   // }
 
 
-  if(type.val == 'offline' && suggestedList.length > 0 && !isFormValid) {
+  if (type.val == 'offline' && suggestedList.length > 0 && !isFormValid) {
     setIsFromValid(validateForm())
-    
+
   }
 
-  if(type.val == 'offline' && suggestedList.length == 0 && isFormValid) {
+  if (type.val == 'offline' && suggestedList.length == 0 && isFormValid) {
     setIsFromValid(validateForm())
-    
+
   }
 
   // if(type.val == 'offline' && eventlink.val.trim() == "" && eventlink.isValid) {
@@ -819,7 +819,12 @@ export default function Training_center(props) {
 
   return (
     <>
+
+
       <PageTitle title="Add user" button="Add new" add_new={handleOpen} />
+      <Button
+        onClick={() => { handleOpen(true) }}
+      >asasaasa</Button>
       <Grid container spacing={4}>
         <Grid item xs={12}>
           <MUIDataTable
@@ -851,7 +856,7 @@ export default function Training_center(props) {
                   noValidate
                   autoComplete="off">
                   <h2 style={{ fontWeight: 300, marginBottom: "1rem" }}>Add user</h2>
-               
+
                   <div style={inputContainer}>
                     <TextField id="standard-basic"
                       error={_userName.touched && !_userName.isValid}
@@ -871,11 +876,10 @@ export default function Training_center(props) {
 
 
 
-                   
-   
                   </div>
                   <div style={inputContainer}>
-                  <TextField id="standard-basic"
+
+                    <TextField id="standard-basic"
                       error={_email.touched && !_email.isValid}
                       helperText={(_email.touched && !_email.isValid) ? "Email" : ''}
                       maxLength={177}
@@ -883,15 +887,35 @@ export default function Training_center(props) {
                       disabled={isdiable} value={_email.val} required label="Email" style={{ width: '40%' }}
                       onChange={(event) => { onChangeTextHandler(event, 'email') }} />
 
-                <TextField id="standard-basic"
+                    <TextField id="standard-basic"
                       error={_password.touched && !_password.isValid}
                       helperText={(_password.touched && !_password.isValid) ? "Password" : ''}
                       maxLength={177}
                       onBlur={() => { setPassword({ ..._password, touched: true }); setIsFromValid(validateForm()) }}
                       disabled={isdiable} value={_password.val} required label="Password" style={{ width: '40%' }}
                       onChange={(event) => { onChangeTextHandler(event, 'password') }} />
+                
                   </div>
-                  
+
+                  <div style={inputContainer}>
+
+<TextField id="standard-basic"
+  error={_email.touched && !_email.isValid}
+  helperText={(_email.touched && !_email.isValid) ? "Email" : ''}
+  maxLength={177}
+  onBlur={() => { setEmail({ ..._email, touched: true }); setIsFromValid(validateForm()) }}
+  disabled={isdiable} value={_email.val} required label="Email" style={{ width: '40%' }}
+  onChange={(event) => { onChangeTextHandler(event, 'email') }} />
+
+<TextField id="standard-basic"
+  error={_password.touched && !_password.isValid}
+  helperText={(_password.touched && !_password.isValid) ? "Password" : ''}
+  maxLength={177}
+  onBlur={() => { setPassword({ ..._password, touched: true }); setIsFromValid(validateForm()) }}
+  disabled={isdiable} value={_password.val} required label="Password" style={{ width: '40%' }}
+  onChange={(event) => { onChangeTextHandler(event, 'password') }} />
+
+</div>
 
 
                   <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
@@ -902,20 +926,20 @@ export default function Training_center(props) {
                           onClick={onAddNewInstitution}
                           style={buttonStyle}>
                           Save
-                    </button> :
+                        </button> :
                         <button
 
                           onClick={editEnable_}
                           style={buttonStyle}>
                           Edit
-                    </button>
+                        </button>
                     }
                     <button
                       onClick={handleClose}
                       style={{ ...buttonStyle, background: "#FF5C93" }}
                     >
                       Cancel
-              </button>
+                    </button>
                   </div>
                 </form> : open && !isAutoComplete ?
                   <div style={{ height: '80%', width: '80%', maxHeight: "800px", maxWidth: '1000px', background: "white", padding: "1rem", overflow: "scroll" }}>
@@ -930,7 +954,7 @@ export default function Training_center(props) {
                       onClick={() => { setIsAutocomplete(true) }}
                       style={{ margin: "auto", height: '40px', width: "70px", display: "flex", justifyContent: "center", alignItems: "center", cursor: "pointer", backgroundColor: "blue", color: "white", marginTop: "2rem", borderRadius: "2px" }}>
                       Ok
-        </div>
+                    </div>
                   </div> : null
             }
 
@@ -938,88 +962,8 @@ export default function Training_center(props) {
         </Modal>
 
 
-
-
-        <Modal
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
-          open={openCenter}
-          onClose={handleClose}
-        >
-          <div style={{ ...formContainer, zIndex: 2000, flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-            <div style={{ height: "80%", width: "80%", overflowY: "scroll", backgroundColor: "white", maxWidth: '1000px', maxHeight: "800px" }}>
-              <MUIDataTable
-                title="Centers"
-                data={centerlist}
-                columns={center_column}
-                options={{
-                  filterType: "checkbox",
-                  selectableRows: 'multiple',
-                  filter: true,
-                  selectableRowsOnClick: true,
-                  onRowsSelect: (a, b) => {
-                    b.map((el) => {
-                      //console.log(centerlist[el.index], 'jbjjjh')
-
-                      // tempList.push(data[el.index])
-                      tempList.push(centerlist[el.index])
-
-                      // setSuggestion(true)
-                      // setsuggestedList(tempList)
-                    })
-                    // //console.log(a,b)
-                  },
-                }
-                }
-              />
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "1rem" }}>
-              <button
-                onClick={() => { closeCenter(false) }}
-                style={{ ...buttonStyle, width: "auto" }}
-              >
-                Add/Close
-              </button>
-            </div>
-          </div>
-        </Modal>
-
-
         {/* enrolment list */}
 
-        <Modal
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
-          open={openenrolment}
-          onClose={handleClose}
-        >
-          <div style={formContainer}>
-            <div style={{ ...form, padding: 0, paddingBottom: "2rem", paddingTop: "0" }}>
-              <Grid
-                style={{ width: "100%" }}
-                item xs={12}>
-                <MUIDataTable
-                  title="Members"
-                  data={enrolmentlist?.teachers}
-                  columns={enrolment_columns}
-
-                />
-              </Grid>
-              <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "1rem" }}>
-                <Button
-
-                  onClick={() => { setopenenrolment(false); setIsDropDown(true) }}
-                  color="secondary"
-                  style={{ height: 40, float: 'right' }}
-                  className="px-2"
-                  variant="contained"
-                >
-                  Close
-              </Button>
-              </div>
-            </div>
-          </div>
-        </Modal>
       </div>
     </>
   );

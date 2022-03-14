@@ -57,10 +57,10 @@ const structure = [
 
 
 
-  // { id: 1111, type: "title", label: "User Management" },
-  // { id: 102323, type: "divider" },
-  // { id: 183232, label: "Users", link: "/app/users", icon: <Payment /> },
-  // { id: 183234, label: "Project", link: "/app/inventory", icon: <HomeIcon /> },
+  { id: 1111, type: "title", label: "User Management" },
+  { id: 102323, type: "divider" },
+  { id: 183232, label: "Users", link: "/app/users", icon: <Payment /> },
+  { id: 183234, label: "Project", link: "/app/inventory", icon: <HomeIcon /> },
   // { id: 183238, label: "Compliance", link: "/app/compliance2", icon: <FolderShared /> },
 
   { id: 1111, type: "title", label: "Modules" },
