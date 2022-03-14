@@ -901,7 +901,7 @@ export default function Training_center(props) {
 
 <TextField id="standard-basic"
   error={_email.touched && !_email.isValid}
-  helperText={(_email.touched && !_email.isValid) ? "Email" : ''}
+  helperText={(_email.touched && !_email.isValid) ? "Team" : ''}
   maxLength={177}
   onBlur={() => { setEmail({ ..._email, touched: true }); setIsFromValid(validateForm()) }}
   disabled={isdiable} value={_email.val} required label="Email" style={{ width: '40%' }}
