@@ -7,9 +7,9 @@ import {
   IconButton,
   InputBase,
   Menu,
-  MenuItem,
-  Fab,
-  Link
+  // MenuItem,
+  // Fab,
+  // Link
 } from "@material-ui/core";
 import {
   Menu as MenuIcon,
@@ -30,8 +30,8 @@ import useStyles from "./styles";
 
 // components
 import { Badge, Typography, Button } from "../Wrappers/Wrappers";
-import Notification from "../Notification/Notification";
-import UserAvatar from "../UserAvatar/UserAvatar";
+// import Notification from "../Notification/Notification";
+// import UserAvatar from "../UserAvatar/UserAvatar";
 
 // context
 import {
@@ -97,9 +97,9 @@ const notifications = [
 export default function Header(props) {
   var classes = useStyles();
 const history = useHistory();
-const landing = () =>{
-    history.push("/homepage")
-};
+// const landing = () =>{
+//     history.push("/homepage")
+// };
   // global
   var layoutState = useLayoutState();
   var layoutDispatch = useLayoutDispatch();
@@ -187,7 +187,7 @@ const landing = () =>{
           )}
         </IconButton>
         <div >
-          <img style={{height: "6rem", width: "13rem",marginLeft:"-13px",position:"absolute","margin-top":"-3rem"}} src={require("../../assets/Sigma-red-Final-logo.png")}/>
+          <img style={{height: "6rem", width: "13rem",marginLeft:"-13px",position:"absolute",marginTop:"-3rem"}} src={require("../../assets/Sigma-red-Final-logo.png")}/>
         </div>
         <div className={classes.grow} />
         {/* <Button  href="#" variant={"outlined"} color={"secondary"} style={{marginRight: 24,fontSize:"10px"}}>

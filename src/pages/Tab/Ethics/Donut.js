@@ -112,7 +112,7 @@ let Getdata = ()=>{
       return res.json();
     })
     .then(function (selectedAlgo) {
-      console.log(selectedAlgo,"dfdfgd",data)
+      // console.log(selectedAlgo,"dfdfgd",data)
       selectedAlgo['domain']= {column: 0}
       selectedAlgo['name'] = '';
       selectedAlgo['hoverinfo']= 'label+percent+name';

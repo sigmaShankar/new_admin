@@ -8,15 +8,15 @@ const Eda = (props) => {
   const [results, setResults] = useState([]);
   const config = { displayModeBar: false };
   useEffect(() => {
-    const getResults = async () => {
-      const response = await axios.get(`http://18.116.235.85:8000/eda/`);
-      props.stopSpinner()
-      if(response){
-        setResults(response.data);
-        }else{
-          props.startAlert()
-        }
-    };
+    // const getResults = async () => {
+    //   const response = await axios.get(`http://18.116.235.85:8000/eda/`);
+    //   props.stopSpinner()
+    //   if(response){
+    //     setResults(response.data);
+    //     }else{
+    //       props.startAlert()
+    //     }
+    // };
     getResults1()
     // getResults();
   }, []);

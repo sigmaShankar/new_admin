@@ -164,7 +164,7 @@ const Report = (props) => {
                 //   props.stopSpinner()
                 setResults(selectedAlgo)
 
-                console.log(selectedAlgo["Fairness"]["proxy_Bias"]['adjusted_mutual_info_score'], "selectedAlgo")
+                // console.log(selectedAlgo["Fairness"]["proxy_Bias"]['adjusted_mutual_info_score'], "selectedAlgo")
             })
             .catch(function (err) {
                 //   props.startAlert()

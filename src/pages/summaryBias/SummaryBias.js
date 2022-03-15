@@ -15,7 +15,7 @@ import {
   Line,
   Area,
   YAxis,
-  XAxis,Tooltip,
+  XAxis, Tooltip,
   PieChart, Pie, Sector, Cell, Legend
 } from "recharts";
 import { DoneAll as DoneAllIcon, Notifications as NotificationsIcon } from "@material-ui/icons";
@@ -41,9 +41,9 @@ const mainChartData = getMainChartData();
 
 
 const data = [
-  {"name":"High","value":5},
-  {"name":"Medium","value":20},
-  {"name":"Low","value":3}
+  { "name": "High", "value": 5 },
+  { "name": "Medium", "value": 20 },
+  { "name": "Low", "value": 3 }
 ]
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
@@ -255,7 +255,7 @@ export default function SummaryBias(props) {
         return res.json();
       })
       .then(function (selectedAlgo) {
-        console.log(selectedAlgo, "selectedAlgo")
+        // console.log(selectedAlgo, "selectedAlgo")
         setModelData(selectedAlgo)
       })
       .catch(function (err) {
@@ -316,14 +316,14 @@ export default function SummaryBias(props) {
                     <div className={classes.mainChartHeaderLabel}>
                       <Dot color="warning" />
                       <Typography className={classes.mainChartLegentElement}>
-                      Accuracy
+                        Accuracy
                       </Typography>
                     </div>
 
                     <div className={classes.mainChartHeaderLabel}>
                       <Dot color="primary" />
                       <Typography className={classes.mainChartLegentElement}>
-                      Fairness Score
+                        Fairness Score
                       </Typography>
                     </div>
                   </div>
@@ -391,7 +391,7 @@ export default function SummaryBias(props) {
                       fill: theme.palette.warning.main,
                     }}
                   />
-            <Tooltip isAnimationActive={true} style={{ opacity: 0 }} />
+                  <Tooltip isAnimationActive={true} style={{ opacity: 0 }} />
 
                 </ComposedChart>
               </ResponsiveContainer>
@@ -403,7 +403,7 @@ export default function SummaryBias(props) {
             <Widget
               bodyClass={classes.mainChartBody}
             >
-              
+
               <ResponsiveContainer width="100%" minWidth={500} height={300}>
                 <PieChart width={600} height={800}>
                   <Pie

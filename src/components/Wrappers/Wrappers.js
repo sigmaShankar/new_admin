@@ -57,7 +57,7 @@ function Typography({
       style={{
         color: getColor(color, theme, colorBrightness),
         fontWeight: getFontWeight(weight),
-        fontSize: getFontSize(size, props.variant, theme),
+        fontSize: getFontSize(size, props?.variant, theme),
       }}
       {...props}
     >

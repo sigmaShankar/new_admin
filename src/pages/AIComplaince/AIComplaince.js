@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 // node.js library that concatenates classes (strings)
 import classnames from "classnames";
 // javascipt plugin for creating charts
@@ -291,7 +291,7 @@ export default function AIComplaince() {
         return res.json();
       })
       .then(function (selectedAlgo) {
-        console.log(selectedAlgo, "selectedAlgoselectedAlgoselectedAlgo", Object.keys(selectedAlgo).length)
+        // console.log(selectedAlgo, "selectedAlgoselectedAlgoselectedAlgo", Object.keys(selectedAlgo).length)
         if (Object.keys(selectedAlgo).length) {
           let name = Object.keys(selectedAlgo)
           setSection(name)
@@ -316,7 +316,7 @@ export default function AIComplaince() {
         return res.json();
       })
       .then(function (selectedAlgo) {
-        console.log(selectedAlgo, "selectedAlgoselectedAlgoselectedAlgo", Object.keys(selectedAlgo).length)
+        // console.log(selectedAlgo, "selectedAlgoselectedAlgoselectedAlgo", Object.keys(selectedAlgo).length)
         if (Object.keys(selectedAlgo).length) {
           setRistReg(selectedAlgo)
         } else {
@@ -339,7 +339,7 @@ export default function AIComplaince() {
         return res.json();
       })
       .then(function (selectedAlgo) {
-        console.log(selectedAlgo, "selectedAlgoselectedAlgoselectedAlgo", Object.keys(selectedAlgo).length)
+        // console.log(selectedAlgo, "selectedAlgoselectedAlgoselectedAlgo", Object.keys(selectedAlgo).length)
         if (Object.keys(selectedAlgo).length) {
           setassessment(selectedAlgo)
         } else {
@@ -426,9 +426,11 @@ export default function AIComplaince() {
   return (
     <>
 
-      {_section && current_section && value == 0 && (<PageTitle  dropDownName="Regulation Name" data={_section} tabs2={["Regulations","Analytics","Risk Register","Report"]} initialData={current_section} selectValue={(data) => { setCurrentSection(data) }} width={["0.15","0.35","0.65"]} tabValue={handleChange} tabSelection={0} />)}
-      {algoName && currentAlgo && value == 1 && (<PageTitle  dropDownName="Mitigation Algorithm" data={algoName} tabs2={["Regulations","Analytics","Risk Register","Report"]} initialData={currentAlgo} selectValue={(data) => { setCurrentAlgo(data) }} width={["0.15","0.35","0.65"]} tabValue={handleChange} tabSelection={(value == 1)?1:value} />)}
-      {(value == 2 || value == 3) && (<PageTitle  title="AI compliance"  tabs2={["Regulations","Analytics","Risk Register","Report"]} width={["0.3","0.45","0.7"]} tabValue={handleChange} tabSelection={value} />)}
+      {_section && current_section && value == 0 && (<PageTitle dropDownName="Regulation Name" data={_section} tabs2={["Regulations", "Analytics", "Risk Register", "Report"]} initialData={current_section} selectValue={(data) => { setCurrentSection(data) }} width={["0.15", "0.35", "0.65"]} tabValue={handleChange} tabSelection={0} />)}
+      {_section && current_section && value == 2 && (<PageTitle dropDownName="Risk Register" data={_section} tabs2={["Regulations", "Analytics", "Risk Register", "Report"]} initialData={current_section} selectValue={(data) => { setCurrentSection(data) }} width={["0.15", "0.35", "0.65"]} tabValue={handleChange} tabSelection={2} />)}
+
+      {algoName && currentAlgo && value == 1 && (<PageTitle dropDownName="Mitigation Algorithm" data={algoName} tabs2={["Regulations", "Analytics", "Risk Register", "Report"]} initialData={currentAlgo} selectValue={(data) => { setCurrentAlgo(data) }} width={["0.15", "0.35", "0.65"]} tabValue={handleChange} tabSelection={(value == 1) ? 1 : value} />)}
+      {(value == 3) && (<PageTitle title="AI compliance" tabs2={["Regulations", "Analytics", "Risk Register", "Report"]} width={["0.3", "0.45", "0.7"]} tabValue={handleChange} tabSelection={value} />)}
 
 
       {/* <Grid container spacing={6}>
@@ -502,7 +504,7 @@ export default function AIComplaince() {
           <br /> */}
 
           <MUIDataTable
-          style={{paddingLeft:0,paddingRight:0}}
+            style={{ paddingLeft: 0, paddingRight: 0 }}
             title={"Sections"}
             data={(adata[current_section]) ? adata[current_section]['regulatation'] : []}
             columns={columns}
@@ -527,7 +529,7 @@ export default function AIComplaince() {
           />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-         {algoName && currentAlgo ? ( <Row className="mt-3">
+          {algoName && currentAlgo ? (<Row className="mt-3">
             <Col xl="5" id="select algo">
               <Card className="shadow">
                 <CardHeader className="border-0">
@@ -580,14 +582,14 @@ export default function AIComplaince() {
                 </CardHeader>
               </Card>
             </Col>
-          </Row>):null}
+          </Row>) : null}
 
 
 
           {CurrentRegulation == "Standard" ? <>
-         
+
             <Container className="mt--7" fluid>
-             
+
 
               {/* <Row className="mt-3">
                 <Col xl="5" id="select algo">
@@ -626,10 +628,9 @@ export default function AIComplaince() {
 
         </TabPanel>
 
-
         <TabPanel value={value} index={2} dir={theme.direction}>
           {/* <_Index headerDisplay={true} /> */}
-          <MUIDataTable
+          {/* <MUIDataTable
             data={RistReg}
             columns={columnsRiskRegister}
             options={{
@@ -637,15 +638,39 @@ export default function AIComplaince() {
               filter: false,
               selectableRows: false,
             }}
+          /> */}
+          <MUIDataTable
+            style={{ paddingLeft: 0, paddingRight: 0 }}
+            title={"Sections"}
+            data={(adata[current_section]) ? adata[current_section]['regulatation'] : []}
+            columns={columns}
+            options={{
+              print: false,
+              filter: false,
+              selectableRows: false,
+              filterType: "dropdown",
+              responsive: "scroll",
+              expandableRows: true,
+              renderExpandableRow: (rowData, rowMeta) => {
+                console.log(rowData, rowMeta, "testetet");
+                return (
+                  <TableRow>
+                    <TableCell colSpan={rowData.length}>
+                      Details : <div dangerouslySetInnerHTML={{ __html: rowData[1][0] }} />
+                    </TableCell>
+                  </TableRow>
+                );
+              }
+            }}
           />
         </TabPanel>
 
         <TabPanel value={value} index={3} dir={theme.direction}>
-        {/* <ReactToPrint
+          {/* <ReactToPrint
         trigger={() => <button>Print this out!</button>}
         content={() => componentRef.current}
       /> */}
-           <Report ref={componentRef}/>
+          <Report ref={componentRef} />
         </TabPanel>
       </div>
 

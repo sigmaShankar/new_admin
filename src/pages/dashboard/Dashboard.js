@@ -7,6 +7,7 @@ import {
   MenuItem,
 } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
+import { alpha } from '@material-ui/core/styles'
 import {
   ResponsiveContainer,
   ComposedChart,
@@ -103,7 +104,7 @@ export default function Dashboard(props) {
         return res.json();
       })
       .then(function (selectedAlgo) {
-        console.log(selectedAlgo, "selectedAlgo")
+        // console.log(selectedAlgo, "selectedAlgo")
         setModelData(selectedAlgo)
       })
       .catch(function (err) {
@@ -198,14 +199,13 @@ export default function Dashboard(props) {
 
         {/* test */}
         {Object.keys(modelData).length > 0 && Object.keys(modelData).map(value =>
-          <Grid item lg={6} md={6} sm={6} xs={6} style={{ cursor: 'pointer' }} onClick={() => { selectedModel(value, modelData[value]['temp_name'], modelData[value]['project_id'], modelData[value]['name']) }}>
-            <div class="testimotionals">
-              <div class="card">
-                <div class="layer">
-
+          <Grid item lg={6} md={6} sm={6} xs={6} style={{ cursor: 'pointer' }} onClick={() => { selectedModel(value, modelData[value]['temp_name'], modelData[value]['project_id'], modelData[value]['name']) }} key={modelData[value]['temp_name']}>
+            <div className="testimotionals">
+              <div className="card">
+                <div className="layer">
                 </div>
-                <div class="content">
-                  <div class="details">
+                <div className="content">
+                  <div className="details">
                     <h2>  <span>{modelData[value]['name']}</span></h2>
                   </div>
 

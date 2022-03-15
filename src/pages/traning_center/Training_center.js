@@ -8,11 +8,11 @@ import axios from "axios"
 
 // components
 import PageTitle from "../../components/PageTitle";
-import Widget from "../../components/Widget";
+// import Widget from "../../components/Widget";
 import Modal from '@material-ui/core/Modal';
 import TextField from '@material-ui/core/TextField';
 import {Places, MyMapComponent} from "../../components/Map/Map"
-import { createMuiTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import {   makeStyles, ThemeProvider } from '@material-ui/core/styles';
 // import Button from '@material-ui/core/Button';
 import { green, purple } from '@material-ui/core/colors';
 import MenuItem from '@material-ui/core/MenuItem';

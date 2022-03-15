@@ -78,7 +78,7 @@ export default function PageTitle(props) {
   }
   return (
     // <div className={classes.pageTitleContainer}>
-    <Grid spacing={12} md={12} sm={12} xs={12} style={{ padding: "3vh", "background-color": "#fff", "box-shadow": "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px", display: "flex", "flex-direction": "row" }}>
+    <Grid style={{ padding: "3vh", "backgroundColor": "#fff", "boxShadow": "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px", display: "flex", "flexDirection": "row" }}>
 
 
       {props?.title && (<div style={{ flex: (props.width) ? props.width[0] : '0.5' }}>

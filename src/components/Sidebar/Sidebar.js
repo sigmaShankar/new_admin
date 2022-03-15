@@ -130,7 +130,7 @@ function Sidebar({ location }) {
       </div>
       <List className={classes.sidebarList} 
       
-    style={{"background-color": "#23284a"}}
+    style={{"backgroundColor": "#23284a"}}
     >
         {structure.map(link => (
           <SidebarLink
