@@ -666,7 +666,7 @@ export default function AIComplaince() {
                 return (
                   <TableRow>
                     <TableCell colSpan={rowData.length}>
-                      Details : <div dangerouslySetInnerHTML={{ __html: rowData[1][0] }} />
+                      Details : <br /><div dangerouslySetInnerHTML={{ __html: rowData[1][0] }} />
                     </TableCell>
                   </TableRow>
                 );

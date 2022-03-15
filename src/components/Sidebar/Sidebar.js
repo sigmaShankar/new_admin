@@ -40,7 +40,7 @@ import {
 } from "../../context/LayoutContext";
 
 const structure = [
-  { id: 11, type: "title", label: "Dashboard" },
+  { id: 11, type: "title", label: "CO-SB-169 Dashboard" },
   { id: 10, type: "divider" },
 
   { id: 0, label: "Model Inventory", link: "/app/dashboard", icon: <Dashboard /> },
@@ -76,7 +76,7 @@ const structure = [
     { label: "Alert", link: "/app/Mlalert" }
   ],
 },
-  { id: 12121, label: "AI Compliance", link: "/app/compliance", icon: <VpnLock /> }
+  { id: 12121, label: "SB-169 Compliance", link: "/app/compliance", icon: <VpnLock /> }
 
 
 
