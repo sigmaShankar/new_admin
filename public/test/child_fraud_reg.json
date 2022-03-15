@@ -1,30 +1,18 @@
-[
-    {
-        "Sr": "1",
-        "Regulation Name": "Accuracy on the latest samples appear to be lower than general rate",
-        "Risk Description": "Data Accountability and Transparency Act 2020-BURDEN OF PROOF FOR DISPARATE IMPACT.",
-        "date": "2021-10-05"
-    },
-    {
-        "Sr": "2",
-        "Regulation Name": "Negative bias towards the Female disproportionate to default rate",
-        "Risk Description": "European AI Regulations-Article 5.\u2014 PROHIBITED ARTIFICIAL INTELLIGENCE PRACTICES",
-        "date": "2021-10-05"
-    },
-
-    {
-        "Sr": "3",
-        "Regulation Name": "Negative bias towards the Female disproportionate to default rate",
-        "Risk Description": "Data Accountability and Transparency Act 2020-BURDEN OF PROOF FOR DISPARATE IMPACT.",
-        "date": "2021-10-09"
-    },
-
-    {
-        "Sr": "4",
-        "Regulation Name": "Privileged group (Male) is getting higher benefits when compared to unprivileged group (Female)",
-        "Risk Description": "European AI Regulations-Article 5.\u2014 PROHIBITED ARTIFICIAL INTELLIGENCE PRACTICES",
-        "date": "2021-10-09"
+{
+    "CO-SB-169": {
+        "regulatation": [
+            {
+                "name": "Negative bias towards the Female disproportionate to default rate",
+                "details": [
+                    "<pre> (a)Prohibit: (I) Unfair discrimination based on race, color, national or ethnic origin, religion, sex, sexual orientation, disability, gender identity, or gender expression in any insurance practice; and </pre> <pre> (II) The use of external consumer data and information sources, as well as algorithms and predictive models using external consumer data and information sources, which use has the result of unfairly discriminating based on race, color, national or ethnic origin, religion, sex, sexual orientation, disability, gender identity, or gender expression </pre> <pre>(b) After notice and rule-making by the commissioner of insurance, require insurers that use external consumer data and information sources, algorithms, and predictive models to control for, or otherwise demonstrate that such use does not result in, unfair discrimination. <pre>SECTION 2.10-3-1104.9 Insurers' use of external consumer data and information sources, algorithms, and predictive models - unfair discrimination prohibited rules - stakeholder process required - investigations - definitions - repeal.<br /> <pre>(1) IN ADDITION TO THE METHODS AND PRACTICES PROHIBITED PURSUANT TO SECTION 10-3-1104 </pre> <pre>(1)(f), AN PAGE 2-SENATE BILL 21-169INSURER SHALL NOT, WITH REGARD TO ANY INSURANCE PRACTICE:</pre> <pre>(a) UNFAIRLY DISCRIMINATE BASED ON RACE, COLOR, NATIONAL OR ETHNIC ORIGIN, RELIGION, SEX, SEXUAL ORIENTATION, DISABILITY, GENDER IDENTITY, OR GENDER EXPRESSION; OR </pre> <pre>(b) PURSUANT TO RULES ADOPTED BY THE COMMISSIONER, USE ANY EXTERNAL CONSUMER DATA AND INFORMATION SOURCES, AS WELL AS ANY ALGORITHMS OR PREDICTIVE MODELS THAT USE EXTERNAL CONSUMER DATA AND INFORMATION SOURCES, IN A WAY THAT UNFAIRLY DISCRIMINATES BASED ON RACE, COLOR, NATIONAL OR ETHNIC ORIGIN, RELIGION, SEX, SEXUAL ORIENTATION, DISABILITY, GENDER IDENTITY, OR GENDER EXPRESSION </pre> <pre>SECTION 2. (8)(e) UNFAIRLY DISCRIMINATE AND UNFAIR DISCRIMINATION INCLUDE THE USE OF ONE OR MORE EXTERNAL CONSUMER DATA AND INFORMATION SOURCES, AS WELL AS ALGORITHMS OR PREDICTIVE MODELS USING EXTERNAL CONSUMER DATA AND INFORMATION SOURCES, THAT HAVE A CORRELATION TO RACE, COLOR, NATIONAL OR ETHNIC ORIGIN, RELIGION, SEX, SEXUAL ORIENTATION, DISABILITY, GENDER IDENTITY, OR GENDER EXPRESSION, AND THAT USE RESULTS IN A DISPROPORTIONATELY NEGATIVE OUTCOME FOR SUCH CLASSIFICATION OR CLASSIFICATIONS, WHICH NEGATIVE OUTCOME EXCEEDS THE REASONABLE CORRELATION TO THE UNDERLYING INSURANCE PRACTICE, INCLUDING LOSSES AND COSTS FOR UNDERWRITING. </pre></pre>"
+                ]
+            },
+            {
+                "name": "Privileged group (Male) is getting higher benefits when compared to unprivileged group (Female)",
+                "details": [
+                    "<pre> SECTION 1. Legislative declaration (2)  (a)Prohibit: (I) Unfair discrimination based on race, color, national or ethnic origin, religion, sex, sexual orientation, disability, gender identity, or gender expression in any insurance practice; and </pre> <pre> (II) The use of external consumer data and information sources, as well as algorithms and predictive models using external consumer data and information sources, which use has the result of unfairly discriminating based on race, color, national or ethnic origin, religion, sex, sexual orientation, disability, gender identity, or gender expression </pre> <pre>(b) After notice and rule-making by the commissioner of insurance, require insurers that use external consumer data and information sources, algorithms, and predictive models to control for, or otherwise demonstrate that such use does not result in, unfair discrimination.</pre>"
+                ]
+            }
+        ]
     }
-
-
-]
+}

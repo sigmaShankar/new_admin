@@ -231,7 +231,7 @@ export default function AIComplaince() {
     if (newValue == 2) {
       RiskRegister()
     }
-    if (newValue) {
+    if (newValue != 2) {
       // setLoadlist('proxy')
       // initValue('proxy')
       section()
@@ -262,11 +262,19 @@ export default function AIComplaince() {
   const [algoName, setAlgoname] = useState([]);
   const [adata, setAdata] = useState([]);
   const [_section, setSection] = useState([]);
+  const [current_section, setCurrentSection] = useState("");
+
+
+  const [adata2, setAdata2] = useState([]);
+  const [_section2, setSection2] = useState([]);
+  const [current_section2, setCurrentSection2] = useState("");
+
+
+
   const [CurrentRegulation, setCurrentRegulation] = useState("Standard");
   const [currentPage, setCurrentPage] = useState("ML_Fairness");
 
 
-  const [current_section, setCurrentSection] = useState("");
 
 
   const [currentAlgo, setCurrentAlgo] = useState("");
@@ -287,7 +295,7 @@ export default function AIComplaince() {
   const section = async () => {
     fetch(process.env.PUBLIC_URL + `/test/${'compliance'}.json`)
       .then(function (res) {
-        console.log(Object.keys(res), "hgchgvgvhgvhgv", res)
+        // console.log(Object.keys(res), "hgchgvgvhgvhgv", res)
         return res.json();
       })
       .then(function (selectedAlgo) {
@@ -300,7 +308,6 @@ export default function AIComplaince() {
         } else {
           console.log("No compliance")
         }
-
       })
       .catch(function (err) {
         console.log(err, " error");
@@ -308,7 +315,7 @@ export default function AIComplaince() {
   }
 
   const RiskRegister = async () => {
-    let data_ = (sessionStorage.getItem("currentModelName") == "Credit Lending") ? "reg_json" : (sessionStorage.getItem("currentModelName") == "Fraud Detection") ? "child_fraud_reg" : "reg_json";
+    let data_ = (sessionStorage.getItem("currentModelName") == "Credit Lending") ? "reg_json" : (sessionStorage.getItem("currentModelName") == "Fraud Detection") ? "child_fraud_reg" : "child_fraud_reg";
 
     fetch(process.env.PUBLIC_URL + `/test/${data_}.json`)
       .then(function (res) {
@@ -318,7 +325,10 @@ export default function AIComplaince() {
       .then(function (selectedAlgo) {
         // console.log(selectedAlgo, "selectedAlgoselectedAlgoselectedAlgo", Object.keys(selectedAlgo).length)
         if (Object.keys(selectedAlgo).length) {
-          setRistReg(selectedAlgo)
+          let name = Object.keys(selectedAlgo)
+          setSection2(name)
+          setAdata2(selectedAlgo)
+          setCurrentSection2(name[0])
         } else {
           console.log("No compliance")
         }
@@ -427,7 +437,7 @@ export default function AIComplaince() {
     <>
 
       {_section && current_section && value == 0 && (<PageTitle dropDownName="Regulation Name" data={_section} tabs2={["Regulations", "Analytics", "Risk Register", "Report"]} initialData={current_section} selectValue={(data) => { setCurrentSection(data) }} width={["0.15", "0.35", "0.65"]} tabValue={handleChange} tabSelection={0} />)}
-      {_section && current_section && value == 2 && (<PageTitle dropDownName="Risk Register" data={_section} tabs2={["Regulations", "Analytics", "Risk Register", "Report"]} initialData={current_section} selectValue={(data) => { setCurrentSection(data) }} width={["0.15", "0.35", "0.65"]} tabValue={handleChange} tabSelection={2} />)}
+      {_section && current_section && value == 2 && (<PageTitle dropDownName="Risk Register" data={_section2} tabs2={["Regulations", "Analytics", "Risk Register", "Report"]} initialData={current_section2} selectValue={(data) => { setCurrentSection2(data) }} width={["0.15", "0.35", "0.65"]} tabValue={handleChange} tabSelection={2} />)}
 
       {algoName && currentAlgo && value == 1 && (<PageTitle dropDownName="Mitigation Algorithm" data={algoName} tabs2={["Regulations", "Analytics", "Risk Register", "Report"]} initialData={currentAlgo} selectValue={(data) => { setCurrentAlgo(data) }} width={["0.15", "0.35", "0.65"]} tabValue={handleChange} tabSelection={(value == 1) ? 1 : value} />)}
       {(value == 3) && (<PageTitle title="AI compliance" tabs2={["Regulations", "Analytics", "Risk Register", "Report"]} width={["0.3", "0.45", "0.7"]} tabValue={handleChange} tabSelection={value} />)}
@@ -642,7 +652,7 @@ export default function AIComplaince() {
           <MUIDataTable
             style={{ paddingLeft: 0, paddingRight: 0 }}
             title={"Sections"}
-            data={(adata[current_section]) ? adata[current_section]['regulatation'] : []}
+            data={(adata2[current_section2]) ? adata2[current_section2]['regulatation'] : []}
             columns={columns}
             options={{
               print: false,
