@@ -1,7 +1,6 @@
 {
     "Data Accountability and Transparency Act 2020": {
         "regulatation": [
-  
             {
                 "name": "PROHIBITION ON DISCRIMINATION IN PUBLIC ACCOMMODATIONS.",
                 "details": [
@@ -34,9 +33,7 @@
             }
         ]
     },
-
-
-"European AI Regulations": {
+    "EU Proposed Artificial Intelligence Act": {
         "regulatation": [
             {
                 "name": "Article 5.— PROHIBITED ARTIFICIAL INTELLIGENCE PRACTICES",
@@ -82,10 +79,8 @@
             }
         ]
     },
-
-"Algorithmic Accountability Act Of 2019": {
+    "Algorithmic Accountability Act Of 2019": {
         "regulatation": [
-  
             {
                 "name": "SEC. 2. DEFINITIONS :- AUTOMATED DECISION SYSTEM IMPACT ASSESSMENT.",
                 "details": [
@@ -98,7 +93,94 @@
                     "<pre> The term ‘‘high-risk automated decision system’’ means an automated decision system that <br/>  (A)  taking into account the novelty of the technology used and the nature, scope, context, and purpose of the automated decision system, poses a significant risk <br/>  (i) to the privacy or security of personal information of consumers; or <br/>  (ii) of resulting in or contributing to inaccurate, unfair, biased, or discriminatory decisions impacting consumers <br/>  (B) makes decisions, or facilitates human decision making, based on systematic and extensive evaluations of consumers,                 including attempts to analyze or predict sensitive aspects of                    their lives, such as their work performance, economic   situation, health, personal preferences, interests, behaviour, location, or movements, that— <br/>  (i) alter legal rights of consumers; or <br/>  (ii) otherwise significantly impact consumers; <br/>  (C) involves the personal information of a significant number of consumers regarding race, color, national origin, political opinions, religion, trade union membership, genetic data, biometric data, health, gender, gender identity, sexuality, sexual orientation, criminal convictions, or arrests; <br/>  (8) HIGH-RISK INFORMATION SYSTEM.—The term ‘‘high-risk information system’’ means an information system that— <br/>  (A) taking into account the novelty of the technology used and the nature, scope, context, and purpose of the information system, poses a significant risk to the privacy or security of personal information of consumers; <br/>  (B) involves the personal information of a significant number of consumers regarding race, color, national origin, political opinions, religion, trade union membership, genetic data, biometric data, health, gender, gender identity, sexuality, sexual orientation, criminal convictions, or arrests; </pre>"
                 ]
             }
-       
+        ]
+    },
+    "COLORADO SENATE BILL 21-169": {
+        "regulatation": [
+            {
+                "name": "Definitions: ALGORITHM",
+                "details": [
+                    "<pre> ALGORITHM means a computational or machine learning process that informs human decision making in insurance practices.  </pre>"
+                ]
+            },
+            {
+                "name": "Definitions: EXTERNAL CONSUMER DATA AND INFORMATION SOURCE",
+                "details": [
+                    "<pre> EXTERNAL CONSUMER DATA AND INFORMATION SOURCE  means a data includes credit scores, social media habits, locations, purchasing habits, home ownership, educational attainment, occupation, licensures, civil judgments, and court records </pre>"
+                ]
+            },
+            {
+                "name": "Definitions: INSURANCE PRACTICE",
+                "details": [
+                    "<pre>  INSURANCE PRACTICE means marketing, underwriting, pricing, utilization management, reimbursement methodologies, and claims management in the transaction of insurance. </pre>"
+                ]
+            },
+            {
+                "name": "Definitions: PREDICTIVE MODEL",
+                "details": [
+                    "<pre> PREDICTIVE MODEL means a process of using mathematical and computational methods that examine current and historical data sets for underlying patterns and calculate the probability of an outcome.</pre>"
+                ]
+            },
+            {
+                "name": "Definitions: UNFAIRLY DISCRIMINATE AND UNFAIR DISCRIMINATION",
+                "details": [
+                    "<pre> UNFAIRLY DISCRIMINATE AND UNFAIR DISCRIMINATION include the use of Data, Algorithms or predictive models that have a correlation to race, color, national or ethnic origin, religion, sex, sexual orientation, disability, gender identity, or gender expression, and that use results in a disproportionately negative outcome for such classification or classifications, which negative outcome exceeds the reasonable correlation to the underlying insurance practice, including losses and costs for underwriting. </pre>"
+                ]
+            },
+            {
+                "name": "SECTION 1. Legislative declaration (2)",
+                "details": [
+                    "<pre> (a)Prohibit: (I) Unfair discrimination based on race, color, national or ethnic origin, religion, sex, sexual orientation, disability, gender identity, or gender expression in any insurance practice; and </pre> <pre> (II) The use of external consumer data and information sources, as well as algorithms and predictive models using external consumer data and information sources, which use has the result of unfairly discriminating based on race, color, national or ethnic origin, religion, sex, sexual orientation, disability, gender identity, or gender expression </pre> <pre>(b) After notice and rule-making by the commissioner of insurance, require insurers that use external consumer data and information sources, algorithms, and predictive models to control for, or otherwise demonstrate that such use does not result in, unfair discrimination.</pre>"
+                ]
+            },
+            {
+                "name": "SECTION 2.10-3-1104.9",
+                "details": [
+                    "<pre> 10-3-1104.9. Insurers' use of external consumer data and information sources, algorithms, and predictive models - unfair discrimination prohibited rules - stakeholder process required - investigations - definitions - repeal. <pre>(1) IN ADDITION TO THE METHODS AND PRACTICES PROHIBITED PURSUANT TO SECTION 10-3-1104 </pre> <pre>(1)(f), AN PAGE 2-SENATE BILL 21-169INSURER SHALL NOT, WITH REGARD TO ANY INSURANCE PRACTICE:</pre> <pre>(a) UNFAIRLY DISCRIMINATE BASED ON RACE, COLOR, NATIONAL OR ETHNIC ORIGIN, RELIGION, SEX, SEXUAL ORIENTATION, DISABILITY, GENDER IDENTITY, OR GENDER EXPRESSION; OR </pre> <pre>(b) PURSUANT TO RULES ADOPTED BY THE COMMISSIONER, USE ANY EXTERNAL CONSUMER DATA AND INFORMATION SOURCES, AS WELL AS ANY ALGORITHMS OR PREDICTIVE MODELS THAT USE EXTERNAL CONSUMER DATA AND INFORMATION SOURCES, IN A WAY THAT UNFAIRLY DISCRIMINATES BASED ON RACE, COLOR, NATIONAL OR ETHNIC ORIGIN, RELIGION, SEX, SEXUAL ORIENTATION, DISABILITY, GENDER IDENTITY, OR GENDER EXPRESSION.</pre> </pre>"
+                ]
+            },
+            {
+                "name": "SECTION 2. (3)(b)(I)",
+                "details": [
+                    "<pre> RULES ADOPTED PURSUANT TO THIS SECTION MUST REQUIRE EACH INSURER TO: (I) PROVIDE INFORMATION TO THE COMMISSIONER CONCERNING THE EXTERNAL CONSUMER DATA AND INFORMATION SOURCES USED BY THE INSURER IN THE DEVELOPMENT AND IMPLEMENTATION OF ALGORITHMS AND PREDICTIVE MODELS FOR A PARTICULAR TYPE OF INSURANCE AND INSURANCE PRACTICE; </pre>"
+                ]
+            },
+            {
+                "name": "SECTION 2. (3)(b)(III)",
+                "details": [
+                    "<pre> ESTABLISH AND MAINTAIN A RISK MANAGEMENT FRAMEWORK OR SIMILAR PROCESSES OR PROCEDURES THAT ARE REASONABLY DESIGNED TO DETERMINE, TO THE EXTENT PRACTICABLE, WHETHER THE INSURER'S USE OF EXTERNAL CONSUMER DATA AND INFORMATION SOURCES, AS WELL AS ALGORITHMS AND PREDICTIVE MODELS USING EXTERNAL CONSUMER DATA AND INFORMATION SOURCES, UNFAIRLY DISCRIMINATES BASED ON RACE, COLOR, NATIONAL OR ETHNIC ORIGIN, RELIGION, SEX, SEXUAL ORIENTATION, DISABILITY, GENDER IDENTITY, OR GENDER EXPRESSION; </pre>"
+                ]
+            },
+            {
+                "name": "SECTION 2. (3)(b)(IV)",
+                "details": [
+                    "<pre> PROVIDE AN ASSESSMENT OF THE RESULTS OF THE RISK MANAGEMENT FRAMEWORK OR SIMILAR PROCESSES OR PROCEDURES AND ACTIONS TAKEN TO MINIMIZE THE RISK OF UNFAIR DISCRIMINATION, INCLUDING ONGOING MONITORING; </pre>"
+                ]
+            },
+            {
+                "name": "SECTION 2. (3)(C)",
+                "details": [
+                    "<pre> (I) A REASONABLE PERIOD OF TIME FOR INSURERS TO REMEDY ANY UNFAIRLY DISCRIMINATORY IMPACT IN AN ALGORITHM OR PREDICTIVE MODEL; AND <pre> (II) THE ABILITY OF INSURERS TO USE EXTERNAL CONSUMER DATA AND INFORMATION SOURCES, AS WELL AS ALGORITHMS OR PREDICTIVE MODELS USING EXTERNAL CONSUMER DATA AND INFORMATION SOURCES, THAT HAVE BEEN PREVIOUSLY ASSESSED BY THE DIVISION AND FOUND NOT TO BE UNFAIRLY DISCRIMINATORY.</pre> </pre>"
+                ]
+            },
+            {
+                "name": "SECTION 2. (7)(a)",
+                "details": [
+                    "<pre> REQUIRES AN INSURER TO COLLECT FROM AN APPLICANT OR POLICYHOLDER THE RACE, COLOR, NATIONAL OR ETHNIC ORIGIN, RELIGION, SEX, SEXUAL ORIENTATION, DISABILITY, GENDER IDENTITY, OR GENDER EXPRESSION OF AN INDIVIDUAL; OR </pre>"
+                ]
+            },
+            {
+                "name": "SECTION 2. (7)(b)",
+                "details": [
+                    "<pre> (I) PROHIBIT THE USE OF, OR REQUIRE LIFE, ANNUITY, LONG-TERM PAGE 6-SENATE BILL 21-169CARE, OR DISABILITY INSURERS TO TEST, MEDICAL, FAMILY HISTORY, OCCUPATIONAL, DISABILITY, OR BEHAVIORAL INFORMATION RELATED TO A SPECIFIC INDIVIDUAL, WHICH INFORMATION, BASED ON ACTUARIALLY SOUND PRINCIPLES, HAS A DIRECT RELATIONSHIP TO MORTALITY, MORBIDITY, OR LONGEVITY RISK UNLESS SUCH INFORMATION IS OTHERWISE INCLUDED IN THE TESTING OF AN ALGORITHM OR PREDICTIVE MODEL THAT ALSO USES EXTERNAL CONSUMER DATA AND INFORMATION SOURCES; </pre>"
+                ]
+            },
+            {
+                "name": "SECTION 2. (8)(e)",
+                "details": [
+                    "<pre> UNFAIRLY DISCRIMINATE AND UNFAIR DISCRIMINATION INCLUDE THE USE OF ONE OR MORE EXTERNAL CONSUMER DATA AND INFORMATION SOURCES, AS WELL AS ALGORITHMS OR PREDICTIVE MODELS USING EXTERNAL CONSUMER DATA AND INFORMATION SOURCES, THAT HAVE A CORRELATION TO RACE, COLOR, NATIONAL OR ETHNIC ORIGIN, RELIGION, SEX, SEXUAL ORIENTATION, DISABILITY, GENDER IDENTITY, OR GENDER EXPRESSION, AND THAT USE RESULTS IN A DISPROPORTIONATELY NEGATIVE OUTCOME FOR SUCH CLASSIFICATION OR CLASSIFICATIONS, WHICH NEGATIVE OUTCOME EXCEEDS THE REASONABLE CORRELATION TO THE UNDERLYING INSURANCE PRACTICE, INCLUDING LOSSES AND COSTS FOR UNDERWRITING. </pre>"
+                ]
+            }
         ]
     }
 }
