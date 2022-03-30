@@ -81,6 +81,18 @@ import SummaryBias from "../../pages/summaryBias/SummaryBias";
 import BiasAssessment from "../../pages/BiasAssessment/BiasAssessment";
 
 
+ // #################### LAYOUT ######
+
+
+/* 
+    
+    * Integrate sidebar & Route
+    * Import all the component
+    * Create a route name & assign the component to each
+    * These route name are called by sidebar
+*/
+
+
 
 
 function Layout(props) {

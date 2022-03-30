@@ -12,6 +12,8 @@ import styles from "./training_programme.css"
 import Widget from "../../components/Widget";
 import Modal from '@material-ui/core/Modal';
 import TextField from '@material-ui/core/TextField';
+import { Select, Input, FormControl, InputLabel } from "@material-ui/core";
+
 // import {
 //   KeyboardDatePicker,
 // } from '@material-ui/pickers'
@@ -27,15 +29,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Checkbox from '@material-ui/core/Checkbox';
 import { Places, MyMapComponent } from "../../components/Map/Map"
-// import DateFnsUtils from '@date-io/date-fns';
-// import {
-//   MuiPickersUtilsProvider,
-//   KeyboardTimePicker,
-//   KeyboardDatePicker,
-// } from '@material-ui/pickers';
-import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
-
+// import Box from '@material-ui/material/Box';
 // import Table from "../dashboard/components/Table/Table";
 
 // data
@@ -414,6 +408,13 @@ export default function Training_center(props) {
       })
     }
 
+    if (i === "team") {
+setTeam(value)
+    }
+
+    if (i === "role") {
+      setRole(value)
+          }
 
     let isvalid = validateForm()
     setIsFromValid(isvalid)
@@ -709,7 +710,12 @@ export default function Training_center(props) {
   }
 
   const [suggestedList, setsuggestedList] = React.useState([]);
+  const [team, setTeam] = React.useState("");
+  const [role, setRole] = React.useState("");
+
+
   const [enrolmentlist, setenrolmentlist] = React.useState([]);
+
   const [isDropDown, setIsDropDown] = useState(true)
 
   // const view_Enrollment = (tableMeta) => {
@@ -894,28 +900,53 @@ export default function Training_center(props) {
                       onBlur={() => { setPassword({ ..._password, touched: true }); setIsFromValid(validateForm()) }}
                       disabled={isdiable} value={_password.val} required label="Password" style={{ width: '40%' }}
                       onChange={(event) => { onChangeTextHandler(event, 'password') }} />
-                
+
                   </div>
 
                   <div style={inputContainer}>
 
-<TextField id="standard-basic"
-  error={_email.touched && !_email.isValid}
-  helperText={(_email.touched && !_email.isValid) ? "Team" : ''}
-  maxLength={177}
-  onBlur={() => { setEmail({ ..._email, touched: true }); setIsFromValid(validateForm()) }}
-  disabled={isdiable} value={_email.val} required label="Email" style={{ width: '40%' }}
-  onChange={(event) => { onChangeTextHandler(event, 'email') }} />
+                    <FormControl variant="standard" sx={{ m: 1, minWidth: "100%" }} style={{ backgroundColor: "#fff", flex: (props.width) ? props.width[1] : '0.4' }}>
+                      <InputLabel id="demo-simple-select-standard-label">Team</InputLabel>
+                      <Select
+                        labelId="demo-simple-select-standard-label"
+                        id="demo-simple-select-standard"
+                        value={team}
+                        onChange={(event) => { onChangeTextHandler(event, "team") }}
+                        label="Age"
+                      >
+                        <MenuItem value="Data_science">Data science</MenuItem>
+                        <MenuItem value="product">Product</MenuItem>
+                        <MenuItem value="complaince">Complaince</MenuItem>
 
-<TextField id="standard-basic"
-  error={_password.touched && !_password.isValid}
-  helperText={(_password.touched && !_password.isValid) ? "Password" : ''}
-  maxLength={177}
-  onBlur={() => { setPassword({ ..._password, touched: true }); setIsFromValid(validateForm()) }}
-  disabled={isdiable} value={_password.val} required label="Password" style={{ width: '40%' }}
-  onChange={(event) => { onChangeTextHandler(event, 'password') }} />
 
-</div>
+                        {/* {props.data.map((algo) => (
+              <MenuItem value={algo}>{algo}</MenuItem>
+            ))} */}
+                      </Select>
+                    </FormControl>
+
+                    <FormControl variant="standard" sx={{ m: 1, minWidth: "100%" }} style={{ backgroundColor: "#fff", flex: (props.width) ? props.width[1] : '0.4' }}>
+                      <InputLabel id="demo-simple-select-standard-label">Role</InputLabel>
+                      <Select
+                        labelId="demo-simple-select-standard-label"
+                        id="demo-simple-select-standard"
+                        value={role}
+                        onChange={(event) => { onChangeTextHandler(event, "role") }}
+                        label="Age"
+                      >
+                          <MenuItem value="Lead">Data science Lead</MenuItem>
+                        <MenuItem value="developer">Jr Developer</MenuItem>
+                        <MenuItem value="Manager">Product Manager</MenuItem>
+                        <MenuItem value="Complaince">Complaince Lead</MenuItem>
+
+
+                        {/* {props.data.map((algo) => (
+              <MenuItem value={algo}>{algo}</MenuItem>
+            ))} */}
+                      </Select>
+                    </FormControl>
+
+                  </div>
 
 
                   <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>

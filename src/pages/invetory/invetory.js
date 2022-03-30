@@ -4,7 +4,9 @@ import MUIDataTable from "mui-datatables";
 import React, { useState, useEffect } from "react"
 import * as constants from "../../components/Home/constants/constants"
 // import 'date-fns';
-import axios from "axios"
+import axios from "axios";
+import { Card, CardHeader, Row, Col } from "reactstrap";
+
 // import DateFnsUtils from '@date-io/date-fns';
 // components
 import PageTitle from "../../components/PageTitle";
@@ -20,16 +22,6 @@ import { createMuiTheme, withStyles, makeStyles, ThemeProvider } from '@material
 import { green, purple } from '@material-ui/core/colors';
 import MenuItem from '@material-ui/core/MenuItem';
 import { Button } from "./../../components/Wrappers";
-
-import { Places, MyMapComponent } from "../../components/Map/Map"
-// import DateFnsUtils from '@date-io/date-fns';
-// import {
-//   MuiPickersUtilsProvider,
-//   KeyboardTimePicker,
-//   KeyboardDatePicker,
-// } from '@material-ui/pickers';
-import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
 
 // import Table from "../dashboard/components/Table/Table";
 
@@ -731,299 +723,25 @@ export default function Training_center(props) {
   return (
     <>
       <PageTitle title="Add Project" button="Add Project" add_new={handleOpen} />
-      <Grid container spacing={4}>
-        <Grid item xs={12}>
-          <MUIDataTable
-            title="Project List"
-            data={__project}
-            columns={columns}
-            options={{
-              filterType: "checkbox",
-            }
-            }
-          />
-        </Grid>
-      </Grid>
+      <Row style={{ width: "100%" }}>
+                <Col xl="12" style={{ width: "100%",backgroundColor:"red" }}>
 
-      <div>
-        <Modal
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
-          open={open}
-          style={{ zIndex: 1000 }}
-          onClose={handleClose}
-        >
-          <div style={formContainer}>
-            {
-              open && isAutoComplete ?
-                <form
-                  className={styles['centre']}
-                  style={form}
-                  noValidate
-                  autoComplete="off">
-                  <h2 style={{ fontWeight: 300, marginBottom: "1rem" }}>Add Inventory</h2>
+                    <h1>akjdkajsd</h1>
+                </Col>
+              </Row>
 
-                  <div style={inputContainer}>
-                    <TextField id="standard-basic"
-                      error={projectname.touched && !projectname.isValid}
-                      helperText={(projectname.touched && !projectname.isValid) ? "Project Name" : ''}
-                      maxLength={177}
-                      onBlur={() => { setProjectName({ ...projectname, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={projectname.val} required label="Project Name" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'Projec_Name') }} />
+              <Row style={{ width: "100%" }}>
+              <Col xl="1" style={{ width: "100%" }}>
+                </Col>
+                <Col xl="10" style={{ width: "100%" ,backgroundColor:"green"}}>
+                <h1>akjdkajsd</h1>
 
-                    <TextField id="standard-basic"
-                      error={modulename.touched && !modulename.isValid}
-                      helperText={(modulename.touched && !modulename.isValid) ? "Module Name" : ''}
-                      maxLength={177}
-                      onBlur={() => { setModuleName({ ...modulename, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={modulename.val} required label="Module Name" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'Module_Name') }} />
+                </Col>
+                <Col xl="1" style={{ width: "100%" }}>
+                </Col>
+              </Row>
 
-<TextField id="standard-basic"
-                      // error={modulename.touched && !modulename.isValid}
-                      // helperText={(modulename.touched && !modulename.isValid) ? "Module Name" : ''}
-                      // maxLength={177}
-                      // onBlur={() => { setdescription({ ...description, touched: true }) }}
-                      disabled={isdiable} value={description.val} required label="Description" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'description') }} />
-
-
-
-
-
-                  </div>
-                  <div style={inputContainer}>
-                    <TextField id="standard-basic"
-                      error={biasIP.touched && !biasIP.isValid}
-                      helperText={(biasIP.touched && !biasIP.isValid) ? "biasIP" : ''}
-                      maxLength={177}
-                      onBlur={() => { setbiasIP({ ...biasIP, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={biasIP.val} required label="biasIP" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'biasIP') }} />
-
-                    <TextField id="standard-basic"
-                      error={monitorIP.touched && !monitorIP.isValid}
-                      helperText={(monitorIP.touched && !monitorIP.isValid) ? "monitorIP" : ''}
-                      maxLength={177}
-                      onBlur={() => { setmonitorIP({ ...monitorIP, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={monitorIP.val} required label="monitorIP" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'monitorIP') }} />
-
-<TextField id="standard-basic"
-                      error={IP_explainability.touched && !IP_explainability.isValid}
-                      helperText={(IP_explainability.touched && !IP_explainability.isValid) ? "IP_explainability" : ''}
-                      maxLength={177}
-                      onBlur={() => { setIP_explainability({ ...IP_explainability, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={IP_explainability.val} required label="IP_explainability" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'IP_explainability') }} />
-                  </div>
-
-
-                  {/* ÷new    */}
-                  <div style={inputContainer}>
-                    <TextField id="standard-basic"
-                      // error={od_alert_resolved.touched && !od_alert_resolved.isValid}
-                      // helperText={(od_alert_resolved.touched && !od_alert_resolved.isValid) ? "od_alert_resolved" : ''}
-                      // maxLength={177}
-                      // onBlur={() => { setod_alert_resolved({ ...od_alert_resolved, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={od_alert_resolved.val} required label="od_alert_resolved" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'od_alert_resolved') }} />
-
-                    <TextField id="standard-basic"
-                      // error={dd_alert_resolved.touched && !dd_alert_resolved.isValid}
-                      // helperText={(dd_alert_resolved.touched && !dd_alert_resolved.isValid) ? "dd_alert_resolved" : ''}
-                      // maxLength={177}
-                      // onBlur={() => { setdd_alert_resolved({ ...dd_alert_resolved, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={dd_alert_resolved.val} required label="dd_alert_resolved" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'dd_alert_resolved') }} />
-
-
-                    <TextField id="standard-basic"
-                      // error={cd_alert_resolved.touched && !cd_alert_resolved.isValid}
-                      // helperText={(path.touched && !cd_alert_resolved.isValid) ? "Path" : ''}
-                      // maxLength={177}
-                      // onBlur={() => { setcd_alert_resolved({ ...cd_alert_resolved, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={cd_alert_resolved.val} required label="cd_alert_resolved" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'cd_alert_resolved') }} />
-
-                  </div>
-                  <div style={inputContainer}>
-                    <TextField id="standard-basic"
-                      // error={ServerIP.touched && !ServerIP.isValid}
-                      // helperText={(ServerIP.touched && !ServerIP.isValid) ? "IP" : ''}
-                      // maxLength={177}
-                      // onBlur={() => { setServerIP({ ...ServerIP, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={ae_alert_resolved.val} required label="ae_alert_resolved" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'ae_alert_resolved') }} />
-
-                    <TextField id="standard-basic"
-                      // error={path.touched && !path.isValid}
-                      // helperText={(path.touched && !path.isValid) ? "Path" : ''}
-                      // maxLength={177}
-                      // onBlur={() => { setPath({ ...path, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={modelType_explainability.val} required label="ModelType Explainability" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'modelType_explainability') }} />
-
-                    <TextField id="standard-basic"
-                      error={path.touched && !path.isValid}
-                      // helperText={(path.touched && !path.isValid) ? "Path" : ''}
-                      // maxLength={177}
-                      // onBlur={() => { setPath({ ...path, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={nan_alert_resolved.val} required label="nan_alert_resolved" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'nan_alert_resolved') }} />
-
-
-                  </div>       <div style={inputContainer}>
-                    <TextField id="standard-basic"
-                      // error={ServerIP.touched && !ServerIP.isValid}
-                      // helperText={(ServerIP.touched && !ServerIP.isValid) ? "IP" : ''}
-                      // maxLength={177}
-                      // onBlur={() => { setServerIP({ ...ServerIP, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={oor_alert_resolved.val} required label="oor_alert_resolved" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'oor_alert_resolved') }} />
-
-                    <TextField id="standard-basic"
-                      // error={path.touched && !path.isValid}
-                      // helperText={(path.touched && !path.isValid) ? "Path" : ''}
-                      // maxLength={177}
-                      // onBlur={() => { setPath({ ...path, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={bias_alert_resolved.val} required label="bias_alert_resolved" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'bias_alert_resolved') }} />
-
-                    <TextField id="standard-basic"
-                      // error={path.touched && !path.isValid}
-                      // helperText={(path.touched && !path.isValid) ? "Path" : ''}
-                      // maxLength={177}
-                      // onBlur={() => { setPath({ ...path, touched: true }); setIsFromValid(validateForm()) }}
-                      disabled={isdiable} value={is_production.val} required label="Production" style={{ width: '25%' }}
-                      onChange={(event) => { onChangeTextHandler(event, 'is_production') }} />
-                  </div>
-
-                  {/* jajsnja */}
-
-
-                  <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
-                    {
-                      !isdiable ?
-                        <button
-                          disabled={!isFormValid}
-                          onClick={onAddNewInstitution}
-                          style={buttonStyle}>
-                          Save
-                        </button> :
-                        <button
-
-                          onClick={editEnable_}
-                          style={buttonStyle}>
-                          Edit
-                        </button>
-                    }
-                    <button
-                      onClick={handleClose}
-                      style={{ ...buttonStyle, background: "#FF5C93" }}
-                    >
-                      Cancel
-                    </button>
-                  </div>
-                </form> : open && !isAutoComplete ?
-                  <div style={{ height: '80%', width: '80%', maxHeight: "800px", maxWidth: '1000px', background: "white", padding: "1rem", overflow: "scroll" }}>
-
-                    <div
-                      onClick={() => { setIsAutocomplete(true) }}
-                      style={{ margin: "auto", height: '40px', width: "70px", display: "flex", justifyContent: "center", alignItems: "center", cursor: "pointer", backgroundColor: "blue", color: "white", marginTop: "2rem", borderRadius: "2px" }}>
-                      Ok
-                    </div>
-                  </div> : null
-            }
-
-          </div>
-        </Modal>
-
-
-
-
-        <Modal
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
-          open={openCenter}
-          onClose={handleClose}
-        >
-          <div style={{ ...formContainer, zIndex: 2000, flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-            <div style={{ height: "80%", width: "80%", overflowY: "scroll", backgroundColor: "white", maxWidth: '1000px', maxHeight: "800px" }}>
-              <MUIDataTable
-                title="Centers"
-                data={centerlist}
-                columns={center_column}
-                options={{
-                  filterType: "checkbox",
-                  selectableRows: 'multiple',
-                  filter: true,
-                  selectableRowsOnClick: true,
-                  onRowsSelect: (a, b) => {
-                    b.map((el) => {
-                      //console.log(centerlist[el.index], 'jbjjjh')
-
-                      // tempList.push(data[el.index])
-                      tempList.push(centerlist[el.index])
-
-                      // setSuggestion(true)
-                      // setsuggestedList(tempList)
-                    })
-                    // //console.log(a,b)
-                  },
-                }
-                }
-              />
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "1rem" }}>
-              <button
-                onClick={() => { closeCenter(false) }}
-                style={{ ...buttonStyle, width: "auto" }}
-              >
-                Add/Close
-              </button>
-            </div>
-          </div>
-        </Modal>
-
-
-        {/* enrolment list */}
-
-        <Modal
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
-          open={openenrolment}
-          onClose={handleClose}
-        >
-          <div style={formContainer}>
-            <div style={{ ...form, padding: 0, paddingBottom: "2rem", paddingTop: "0" }}>
-              <Grid
-                style={{ width: "100%" }}
-                item xs={12}>
-                <MUIDataTable
-                  title="Members"
-                  data={enrolmentlist?.teachers}
-                  columns={enrolment_columns}
-
-                />
-              </Grid>
-              <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "1rem" }}>
-                <Button
-
-                  onClick={() => { setopenenrolment(false); setIsDropDown(true) }}
-                  color="secondary"
-                  style={{ height: 40, float: 'right' }}
-                  className="px-2"
-                  variant="contained"
-                >
-                  Close
-                </Button>
-              </div>
-            </div>
-          </div>
-        </Modal>
-      </div>
+  
     </>
   );
 }

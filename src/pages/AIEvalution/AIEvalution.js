@@ -214,6 +214,16 @@ export default function AIEvalution() {
     }
     // setPersonName(value);
   };
+
+    /*
+    * useEffect will call the first time of the file render
+    * On the useEffact we called the initial data
+    * sample data response availble at `test/Barchart` & `test/intersectional_metrics`
+
+  */
+
+
+
   useEffect(() => {
 
 
@@ -311,6 +321,7 @@ export default function AIEvalution() {
     filterValue()
 
   }
+  
   const submitEval2 = () => {
     setGraph("default")
     setEvaluateValue([])

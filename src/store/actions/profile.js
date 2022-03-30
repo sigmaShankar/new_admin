@@ -2,8 +2,10 @@ import { SET_PROFILE } from "./actionTypes"
 
 
 export const setProfile = (profile) => {
-    //console.log('****************')
-    //console.log(profile)
+/**
+ * #### Declaring the profile action
+ *
+ */
     return {
         type: SET_PROFILE,
         profile: profile,
