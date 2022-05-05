@@ -1,20 +1,20 @@
 {
     "Fairness": [
         {
-            "Date": "05-Nov-21",
-            "Accuracy": 65,
-            "Fainess_Score": 73.36
-        },
-        {
-            "Date": "25-Nov-21",
-            "Accuracy": 62,
-            "Fainess_Score": 76.80
-        },
-        {
-            "Date": "13-Dec-21",
-            "Accuracy": 64,
-            "Fainess_Score": 83.33
-        }
+                "Date": "05-Apr-22",
+                "Accuracy": 65.00,
+                "Fainess_Score": 73.36
+            },
+            {
+                "Date": "15-Apr-22",
+                "Accuracy": 62.00,
+                "Fainess_Score": 76.80
+            },
+            {
+                "Date": "01-May-22",
+                "Accuracy": 64.00,
+                "Fainess_Score": 83.33
+            }
     ],
     "Pie_chart": [
         {"name":"High","value":4},
@@ -34,7 +34,7 @@
             "metrics_name": "balanced accuracy",
             "metrics_value": 0.79,
             "impact": "Medium",
-            "normal_range": "0.85-1"
+            "normal_range": "0.85-1.00"
         },
         {
             "metrics_name": "statistical parity difference",
@@ -64,7 +64,7 @@
             "metrics_name": "theil index",
             "metrics_value": 0.06,
             "impact": "Low",
-            "normal_range": "0-0.15"
+            "normal_range": "0.00-0.15"
         },
         {
             "metrics_name": "true positive rate difference",
@@ -124,79 +124,79 @@
             "metrics_name": "accuracy",
             "metrics_value": 0.64,
             "impact": "Medium",
-            "normal_range": "0.85-1"
+            "normal_range": "0.85-1.00"
         },
         {
             "metrics_name": "biased group accuracy",
             "metrics_value": 0.62,
             "impact": "Medium",
-            "normal_range": "0.85-1"
+            "normal_range": "0.85-1.00"
         },
         {
             "metrics_name": "error rate",
             "metrics_value": 0.36,
             "impact": "Medium",
-            "normal_range": "0-0.15"
+            "normal_range": "0.00-0.15"
         },
         {
             "metrics_name": "true positive rate",
             "metrics_value": 0.97,
             "impact": "Low",
-            "normal_range": "0.85-1"
+            "normal_range": "0.85-1.00"
         },
         {
             "metrics_name": "false positive rate",
             "metrics_value": 0.4,
             "impact": "Medium",
-            "normal_range": "0-0.15"
+            "normal_range": "0.00-0.15"
         },
         {
             "metrics_name": "false negative rate",
             "metrics_value": 0.03,
             "impact": "Low",
-            "normal_range": "0-0.15"
+            "normal_range": "0.00-0.15"
         },
         {
             "metrics_name": "true negative rate",
             "metrics_value": 0.59,
             "impact": "High",
-            "normal_range": "0.85-1"
+            "normal_range": "0.85-1.00"
         },
         {
             "metrics_name": "precision",
             "metrics_value": 0.25,
             "impact": "High",
-            "normal_range": "0.85-1"
+            "normal_range": "0.85-1.00"
         },
         {
             "metrics_name": "recall",
             "metrics_value": 0.97,
             "impact": "Low",
-            "normal_range": "0.85-1"
+            "normal_range": "0.85-1.00"
         },
         {
             "metrics_name": "sensitivity",
             "metrics_value": 0.97,
             "impact": "Low",
-            "normal_range": "0.85-1"
+            "normal_range": "0.85-1.00"
         },
         {
             "metrics_name": "specificity",
             "metrics_value": 0.61,
             "impact": "Medium",
-            "normal_range": "0.85-1"
+            "normal_range": "0.85-1.00"
         },
         {
             "metrics_name": "false omission rate",
             "metrics_value": 0.01,
             "impact": "Low",
-            "normal_range": "0-0.15"
+            "normal_range": "0.00-0.15"
         },
         {
             "metrics_name": "false discovery rate",
             "metrics_value": 0.75,
             "impact": "High",
-            "normal_range": "0 -0.15"
+            "normal_range": "0.00 -0.15"
         }
     ]
 }

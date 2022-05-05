@@ -1,28 +1,22 @@
 {
     "1626939047.652543": {
         "pillar_overallscore": 83.33,
-        "accuracy": 64,
+        "accuracy": 64.00,
         "risk": [
-            {
-                "pillar": "Robustness",
-                "ids": 1,
-                "name": "Accuracy on the latest samples appear to be lower than general rate",
-                "impact": "Medium",
-                "date": "2021-12-13"
-            },
+            
             {
                 "pillar": "Fairness",
                 "ids": 2,
                 "name": "Negative bias towards the Female disproportionate to default rate",
                 "impact": "High",
-                "date": "2021-07-25"
+                "date": "2022-05-01"
             },
             {
                 "pillar": "Fairness",
                 "ids": 3,
-                "name": "Privileged group (Male) is getting higher benefits when compared to unprivileged group (Female)",
+                "name": "Privileged group is getting higher benefits when compared to unprivileged group",
                 "impact": "Medium",
-                "date": "2021-07-25"
+                "date": "2022-05-01"
             }
 
         ],
@@ -34,8 +28,8 @@
                 "score": 76.92,
                 "OverAll_Acc": 63.18,
                 "Biased_Group_Acc": 60.49,
-                "Mitigation_Rating": 7.0,
-                "date": "2021-12-13",
+                "Mitigation_Rating": 7.00,
+                "date": "2022-05-03",
                 "url": ""
             },
             {
@@ -45,8 +39,8 @@
                 "score": 79.62,
                 "OverAll_Acc": 64,
                 "Biased_Group_Acc": 60.0,
-                "Mitigation_Rating": 7.0,
-                "date": "2021-12-13",
+                "Mitigation_Rating": 7.00,
+                "date": "2022-05-03",
                 "url": ""
             },
             {
@@ -55,9 +49,9 @@
                 "impact": "Medium",
                 "score": 72.22,
                 "OverAll_Acc": 86.99,
-                "Biased_Group_Acc": 85.009,
-                "Mitigation_Rating": 8.0,
-                "date": "2021-12-13",
+                "Biased_Group_Acc": 85.09,
+                "Mitigation_Rating": 8.00,
+                "date": "2022-05-03",
                 "url": ""
             },
             {
@@ -67,8 +61,8 @@
                 "score": 81.25,
                 "OverAll_Acc": 87.97,
                 "Biased_Group_Acc": 86.00,
-                "Mitigation_Rating": 8.5,
-                "date": "2021-12-13",
+                "Mitigation_Rating": 8.50,
+                "date": "2022-05-03",
                 "url": ""
             },
             {
@@ -76,10 +70,10 @@
                 "scope": "PostProcessing",
                 "impact": "Medium",
                 "score": 79.64,
-                "OverAll_Acc": 62,
+                "OverAll_Acc": 62.00,
                 "Biased_Group_Acc": 61.28,
-                "Mitigation_Rating": 7.0,
-                "date": "2021-12-13",
+                "Mitigation_Rating": 7.00,
+                "date": "2022-05-03",
                 "url": ""
             },
             {
@@ -88,9 +82,9 @@
                 "impact": "High",
                 "score": 81.25,
                 "OverAll_Acc": 88.18,
-                "Biased_Group_Acc": 86.9,
-                "Mitigation_Rating": 8.6,
-                "date": "2021-12-13",
+                "Biased_Group_Acc": 86.90,
+                "Mitigation_Rating": 8.60,
+                "date": "2022-05-03",
                 "url": ""
             },
             {
@@ -98,13 +92,12 @@
                 "scope": "PostProcessing",
                 "impact": "High",
                 "score": 79.28,
-                "OverAll_Acc": 86,
-                "Biased_Group_Acc": 84,
-                "Mitigation_Rating": 8.6,
-                "date": "2021-12-13",
+                "OverAll_Acc": 86.00,
+                "Biased_Group_Acc": 84.00,
+                "Mitigation_Rating": 8.60,
+                "date": "2022-05-03",
                 "url": ""
             }
         ]
     }
 }
-

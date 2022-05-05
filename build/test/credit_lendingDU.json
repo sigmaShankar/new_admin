@@ -1,0 +1,137 @@
+{
+    "q8389q37q7": {
+        "pillar_overallscore": 75.0,
+        "accuracy": 74.35,
+        "risk": [
+            {
+                "pillar": "Eerlijkheid",
+                "ids": 1,
+                "name": "Negatieve vooringenomenheid jegens het Afro-Amerikaanse volk staat niet in verhouding tot het wanbetalingspercentage",
+                "impact": "hoog",
+                "date": "2021-07-15 01:35"
+            },
+            {
+                "pillar": "Robustness",
+                "ids": 2,
+                "name": "De nauwkeurigheid van de nieuwste monsters lijkt lager te zijn dan de algemene snelheid",
+                "impact": "Kritiek",
+                "date": "2021-07-15 01:35"
+            },
+            {
+                "pillar": "Eerlijkheid",
+                "ids": 3,
+                "name": "Negatieve vooringenomenheid ten aanzien van blanke vrouwen staat niet in verhouding tot het wanbetalingspercentage",
+                "impact": "Laag",
+                "date": "2021-07-15 01:35"
+            },
+            {
+                "pillar": "verklaarbaarheid",
+                "ids": 4,
+                "name": "Kan het beslissingsproces voor voorspelling niet nauwkeurig uitleggen aan mensen in de leeftijdsgroep 35-40",
+                "impact": "Laag",
+                "date": "2021-07-15 01:35"
+            }
+        ],
+        "mitigation": [
+            {
+                "name": "Optieclassificatie weigeren",
+                "scope": "Nabewerking",
+                "impact": "Medium",
+                "score": 60.0,
+                "OverAll_Acc": 70.7,
+                "Biased_Group_Acc": 72.61,
+                "Mitigation_Rating": 6.0,
+                "date": "2021-05-15",
+                "url": ""
+            },
+            {
+                "name": "Opnieuw wegen",
+                "scope": "Voorverwerking",
+                "impact": "Medium",
+                "score": 66.0,
+                "OverAll_Acc": 68.13,
+                "Biased_Group_Acc": 68.95,
+                "Mitigation_Rating": 7.0,
+                "date": "2021-05-12",
+                "url": ""
+            },
+            {
+                "name": "Verschillende Impact Remover",
+                "scope": "Voorverwerking",
+                "impact": "Medium",
+                "score": 60.0,
+                "OverAll_Acc": 67.52,
+                "Biased_Group_Acc": 68.78,
+                "Mitigation_Rating": 6.0,
+                "date": "2021-05-15",
+                "url": ""
+            },
+            {
+                "name": "Gekalibreerde gelijke kansen",
+                "scope": "Nabewerking",
+                "impact": "hoog",
+                "score": 70.0,
+                "OverAll_Acc": 76.12,
+                "Biased_Group_Acc": 69.94,
+                "Mitigation_Rating": 8,
+                "date": "2021-05-12",
+                "url": ""
+            },
+            {
+                "name": "Vooroordeel verwijderaar",
+                "scope": "In verwerking",
+                "impact": "hoog",
+                "score": 75.0,
+                "OverAll_Acc": 80.95,
+                "Biased_Group_Acc": 76.41,
+                "Mitigation_Rating": 8.0,
+                "date": "2021-05-12",
+                "url": ""
+            },
+            {
+                "name": "GerryFair-classificatie",
+                "scope": "In verwerking",
+                "impact": "Medium",
+                "score": 68.0,
+                "OverAll_Acc": 70.74,
+                "Biased_Group_Acc": 62.44,
+                "Mitigation_Rating": 6.5,
+                "date": "2021-05-12",
+                "url": ""
+            },
+            {
+                "name": "Instelbare afwijzingsoptieclassificatie",
+                "scope": "Nabewerking",
+                "impact": "Medium",
+                "score": 68.0,
+                "OverAll_Acc": 74.0,
+                "Biased_Group_Acc": 74.23,
+                "Mitigation_Rating": 6.0,
+                "date": "2021-05-12",
+                "url": ""
+            },
+            {
+                "name": "Op maat Tegenstrijdige debiasing",
+                "scope": "In verwerking",
+                "impact": "hoog",
+                "score": 92.0,
+                "OverAll_Acc": 94.0,
+                "Biased_Group_Acc": 86.53,
+                "Mitigation_Rating": 9,
+                "date": "2021-05-12",
+                "url": ""
+            },
+            {
+                "name": "Tegenstrijdige debiasing",
+                "scope": "In verwerking",
+                "impact": "hoog",
+                "score": 88.0,
+                "OverAll_Acc": 83.25,
+                "Biased_Group_Acc": 79.20,
+                "Mitigation_Rating": 8.3,
+                "date": "2021-05-12",
+                "url": ""
+            }
+        ]
+    }
+}

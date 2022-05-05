@@ -1,0 +1,30 @@
+[
+    {
+        "Sr. No.": "1",
+        "Regulation Name": "Model is biased towards dual nationality citizens",
+        "Risk Description": "Data Accountability and Transparency Act 2020-BURDEN OF PROOF FOR DISPARATE IMPACT.",
+        "date": "2021-10-05"
+    },
+    {
+        "Sr. No.": "2",
+        "Regulation Name": "Model is biased towards dual nationality citizens",
+        "Risk Description": "European AI Regulations-Article 5.\u2014 PROHIBITED ARTIFICIAL INTELLIGENCE PRACTICES",
+        "date": "2021-10-05"
+    },
+
+    {
+        "Sr. No.": "3",
+        "Regulation Name": "Model is having high false positive rates",
+        "Risk Description": "Data Accountability and Transparency Act 2020-BURDEN OF PROOF FOR DISPARATE IMPACT.",
+        "date": "2021-10-09"
+    },
+
+    {
+        "Sr. No.": "4",
+        "Regulation Name": "Model is having high false positive rates",
+        "Risk Description": "European AI Regulations-Article 5.\u2014 PROHIBITED ARTIFICIAL INTELLIGENCE PRACTICES",
+        "date": "2021-10-09"
+    }
+
+
+]

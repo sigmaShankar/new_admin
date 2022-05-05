@@ -1,0 +1,1248 @@
+{
+    "1621944550.298842": [
+        {
+            "metrics": {
+                "accuracy": {
+                    "normal": 0.77,
+                    "mitigated": 0.77
+                },
+                "statistical parity difference": {
+                    "normal": -0.02,
+                    "mitigated": -0.0
+                },
+                "disparate impact ratio": {
+                    "normal": 0.96,
+                    "mitigated": 0.99
+                },
+                "average odds difference": {
+                    "normal": 0.01,
+                    "mitigated": 0.01
+                },
+                "equal opportunity difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.04
+                },
+                "theil index": {
+                    "normal": 0.1,
+                    "mitigated": 0.1
+                },
+                "true positive rate difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.04
+                },
+                "false posiitve rate difference": {
+                    "normal": 0.02,
+                    "mitigated": 0.05
+                },
+                "false negative rate difference": {
+                    "normal": 0.01,
+                    "mitigated": 0.04
+                },
+                "false omission rate difference": {
+                    "normal": -0.01,
+                    "mitigated": 0.01
+                },
+                "false discovery rate difference": {
+                    "normal": 0.07,
+                    "mitigated": 0.11
+                },
+                "false posiitve rate ratio": {
+                    "normal": 1.07,
+                    "mitigated": 1.24
+                },
+                "false negative rate ratio": {
+                    "normal": 1.04,
+                    "mitigated": 1.35
+                },
+                "false omission rate ratio": {
+                    "normal": 0.87,
+                    "mitigated": 1.17
+                },
+                "false discovery rate ratio": {
+                    "normal": 1.19,
+                    "mitigated": 1.34
+                },
+                "balanced accuracy": {
+                    "normal": 0.79,
+                    "mitigated": 0.79
+                },
+
+                "biased group accuracy": {
+                    "normal": 0.78,
+                    "mitigated": 0.81
+                },
+                "error rate": {
+                    "normal": 0.23,
+                    "mitigated": 0.23
+                },
+                "number of true positives": {
+                    "normal": 2178.0,
+                    "mitigated": 2228.0
+                },
+                "number of false positives": {
+                    "normal": 1483.0,
+                    "mitigated": 1514.0
+                },
+                "number of false negatives": {
+                    "normal": 414.0,
+                    "mitigated": 377.0
+                },
+                "number of true negatives": {
+                    "normal": 4083.0,
+                    "mitigated": 4039.0
+                },
+                "true positive rate ": {
+                    "normal": 0.84,
+                    "mitigated": 0.86
+                },
+                "false posiitve rate": {
+                    "normal": 0.27,
+                    "mitigated": 0.27
+                },
+                "false negative rate": {
+                    "normal": 0.16,
+                    "mitigated": 0.14
+                },
+                "true negative rate ": {
+                    "normal": 0.73,
+                    "mitigated": 0.73
+                },
+                "precision": {
+                    "normal": 0.59,
+                    "mitigated": 0.6
+                },
+                "recall": {
+                    "normal": 0.84,
+                    "mitigated": 0.86
+                },
+                "sensitivity": {
+                    "normal": 0.84,
+                    "mitigated": 0.86
+                },
+                "specificity": {
+                    "normal": 0.73,
+                    "mitigated": 0.73
+                },
+                "false omission rate": {
+                    "normal": 0.09,
+                    "mitigated": 0.09
+                },
+                "false discovery rate": {
+                    "normal": 0.41,
+                    "mitigated": 0.4
+                }
+            },
+            "algo": "PreProcessing- Reweighing",
+            "__typename": "Ethics",
+            "run_id": "0",
+            "id": "0",
+            "createdAt": "2021-15-11"
+        },
+        {
+            "metrics": {
+                "accuracy": {
+                    "normal": 0.77,
+                    "mitigated": 0.76
+                },
+
+                "statistical parity difference": {
+                    "normal": -0.02,
+                    "mitigated": -0.0
+                },
+                "disparate impact ratio": {
+                    "normal": 0.96,
+                    "mitigated": 1.0
+                },
+                "average odds difference": {
+                    "normal": 0.01,
+                    "mitigated": 0.02
+                },
+                "equal opportunity difference": {
+                    "normal": -0.01,
+                    "mitigated": 0.0
+                },
+                "theil index": {
+                    "normal": 0.1,
+                    "mitigated": 0.1
+                },
+                "true positive rate difference": {
+                    "normal": -0.01,
+                    "mitigated": 0.0
+                },
+                "false posiitve rate difference": {
+                    "normal": 0.02,
+                    "mitigated": 0.03
+                },
+                "false negative rate difference": {
+                    "normal": 0.01,
+                    "mitigated": -0.0
+                },
+                "false omission rate difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.01
+                },
+                "false discovery rate difference": {
+                    "normal": 0.07,
+                    "mitigated": 0.07
+                },
+                "false posiitve rate ratio": {
+                    "normal": 1.07,
+                    "mitigated": 1.12
+                },
+                "false negative rate ratio": {
+                    "normal": 1.04,
+                    "mitigated": 0.99
+                },
+                "false omission rate ratio": {
+                    "normal": 0.87,
+                    "mitigated": 0.87
+                },
+                "false discovery rate ratio": {
+                    "normal": 1.19,
+                    "mitigated": 1.19
+                },
+                "balanced accuracy": {
+                    "normal": 0.79,
+                    "mitigated": 0.78
+                },
+
+                "biased group accuracy": {
+                    "normal": 0.78,
+                    "mitigated": 0.78
+                },
+                "error rate": {
+                    "normal": 0.23,
+                    "mitigated": 0.24
+                },
+                "number of true positives": {
+                    "normal": 2178.0,
+                    "mitigated": 2161.0
+                },
+                "number of false positives": {
+                    "normal": 1483.0,
+                    "mitigated": 1540.0
+                },
+                "number of false negatives": {
+                    "normal": 414.0,
+                    "mitigated": 407.0
+                },
+                "number of true negatives": {
+                    "normal": 4083.0,
+                    "mitigated": 4050.0
+                },
+                "true positive rate ": {
+                    "normal": 0.84,
+                    "mitigated": 0.84
+                },
+                "false posiitve rate": {
+                    "normal": 0.27,
+                    "mitigated": 0.28
+                },
+                "false negative rate": {
+                    "normal": 0.16,
+                    "mitigated": 0.16
+                },
+                "true negative rate ": {
+                    "normal": 0.73,
+                    "mitigated": 0.72
+                },
+                "precision": {
+                    "normal": 0.59,
+                    "mitigated": 0.58
+                },
+                "recall": {
+                    "normal": 0.84,
+                    "mitigated": 0.84
+                },
+                "sensitivity": {
+                    "normal": 0.84,
+                    "mitigated": 0.84
+                },
+                "specificity": {
+                    "normal": 0.73,
+                    "mitigated": 0.72
+                },
+                "false omission rate": {
+                    "normal": 0.09,
+                    "mitigated": 0.09
+                },
+                "false discovery rate": {
+                    "normal": 0.41,
+                    "mitigated": 0.42
+                }
+            },
+            "algo": "PreProcessing- Disparate Impact Remover",
+            "__typename": "Ethics",
+            "run_id": "0",
+            "id": "0",
+            "createdAt": "2021-15-11"
+        },
+        {
+            "metrics": {
+                "accuracy": {
+                    "normal": 0.77,
+                    "mitigated": 0.79
+                },
+                "statistical parity difference": {
+                    "normal": -0.02,
+                    "mitigated": -0.15
+                },
+                "disparate impact ratio": {
+                    "normal": 0.96,
+                    "mitigated": 0.62
+                },
+                "average odds difference": {
+                    "normal": 0.01,
+                    "mitigated": -0.14
+                },
+                "equal opportunity difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.21
+                },
+                "theil index": {
+                    "normal": 0.1,
+                    "mitigated": 0.18
+                },
+                "true positive rate difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.21
+                },
+                "false posiitve rate difference": {
+                    "normal": 0.02,
+                    "mitigated": -0.07
+                },
+                "false negative rate difference": {
+                    "normal": 0.01,
+                    "mitigated": 0.21
+                },
+                "false omission rate difference": {
+                    "normal": -0.01,
+                    "mitigated": 0.03
+                },
+                "false discovery rate difference": {
+                    "normal": 0.07,
+                    "mitigated": 0.02
+                },
+                "false posiitve rate ratio": {
+                    "normal": 1.07,
+                    "mitigated": 0.59
+                },
+                "false negative rate ratio": {
+                    "normal": 1.04,
+                    "mitigated": 1.77
+                },
+                "false omission rate ratio": {
+                    "normal": 0.87,
+                    "mitigated": 1.2
+                },
+                "false discovery rate ratio": {
+                    "normal": 1.19,
+                    "mitigated": 1.06
+                },
+
+                "balanced accuracy": {
+                    "normal": 0.79,
+                    "mitigated": 0.73
+                },
+                "biased group accuracy": {
+                    "normal": 0.78,
+                    "mitigated": 0.79
+                },
+                "error rate": {
+                    "normal": 0.23,
+                    "mitigated": 0.21
+                },
+                "number of true positives": {
+                    "normal": 2178.0,
+                    "mitigated": 1482.0
+                },
+                "number of false positives": {
+                    "normal": 1483.0,
+                    "mitigated": 627.0
+                },
+                "number of false negatives": {
+                    "normal": 414.0,
+                    "mitigated": 1124.0
+                },
+                "number of true negatives": {
+                    "normal": 4083.0,
+                    "mitigated": 4925.0
+                },
+                "true positive rate ": {
+                    "normal": 0.84,
+                    "mitigated": 0.57
+                },
+                "false posiitve rate": {
+                    "normal": 0.27,
+                    "mitigated": 0.11
+                },
+                "false negative rate": {
+                    "normal": 0.16,
+                    "mitigated": 0.43
+                },
+                "true negative rate ": {
+                    "normal": 0.73,
+                    "mitigated": 0.89
+                },
+                "precision": {
+                    "normal": 0.59,
+                    "mitigated": 0.7
+                },
+                "recall": {
+                    "normal": 0.84,
+                    "mitigated": 0.57
+                },
+                "sensitivity": {
+                    "normal": 0.84,
+                    "mitigated": 0.57
+                },
+                "specificity": {
+                    "normal": 0.73,
+                    "mitigated": 0.89
+                },
+                "false omission rate": {
+                    "normal": 0.09,
+                    "mitigated": 0.19
+                },
+                "false discovery rate": {
+                    "normal": 0.41,
+                    "mitigated": 0.3
+                }
+            },
+            "algo": "InProcessing- PrejudiceRemover",
+            "__typename": "Ethics",
+            "run_id": "0",
+            "id": "0",
+            "createdAt": "2021-15-11"
+        },
+        {
+            "metrics": {
+                "accuracy": {
+                    "normal": 0.77,
+                    "mitigated": 0.79
+                },
+                "statistical parity difference": {
+                    "normal": -0.02,
+                    "mitigated": -0.12
+                },
+                "disparate impact ratio": {
+                    "normal": 0.96,
+                    "mitigated": 0.68
+                },
+                "average odds difference": {
+                    "normal": 0.01,
+                    "mitigated": -0.11
+                },
+                "equal opportunity difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.17
+                },
+                "theil index": {
+                    "normal": 0.1,
+                    "mitigated": 0.17
+                },
+                "true positive rate difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.17
+                },
+                "false posiitve rate difference": {
+                    "normal": 0.02,
+                    "mitigated": -0.04
+                },
+                "false negative rate difference": {
+                    "normal": 0.01,
+                    "mitigated": 0.17
+                },
+                "false omission rate difference": {
+                    "normal": -0.01,
+                    "mitigated": 0.02
+                },
+                "false discovery rate difference": {
+                    "normal": 0.07,
+                    "mitigated": 0.04
+                },
+                "false posiitve rate ratio": {
+                    "normal": 1.07,
+                    "mitigated": 0.71
+                },
+                "false negative rate ratio": {
+                    "normal": 1.04,
+                    "mitigated": 1.59
+                },
+                "false omission rate ratio": {
+                    "normal": 0.87,
+                    "mitigated": 1.11
+                },
+                "false discovery rate ratio": {
+                    "normal": 1.19,
+                    "mitigated": 1.16
+                },
+                "balanced accuracy": {
+                    "normal": 0.79,
+                    "mitigated": 0.73
+                },
+
+                "biased group accuracy": {
+                    "normal": 0.78,
+                    "mitigated": 0.8
+                },
+                "error rate": {
+                    "normal": 0.23,
+                    "mitigated": 0.21
+                },
+                "number of true positives": {
+                    "normal": 2178.0,
+                    "mitigated": 1550.0
+                },
+                "number of false positives": {
+                    "normal": 1483.0,
+                    "mitigated": 635.0
+                },
+                "number of false negatives": {
+                    "normal": 414.0,
+                    "mitigated": 1108.0
+                },
+                "number of true negatives": {
+                    "normal": 4083.0,
+                    "mitigated": 4865.0
+                },
+                "true positive rate ": {
+                    "normal": 0.84,
+                    "mitigated": 0.58
+                },
+                "false posiitve rate": {
+                    "normal": 0.27,
+                    "mitigated": 0.12
+                },
+                "false negative rate": {
+                    "normal": 0.16,
+                    "mitigated": 0.42
+                },
+                "true negative rate ": {
+                    "normal": 0.73,
+                    "mitigated": 0.88
+                },
+                "precision": {
+                    "normal": 0.59,
+                    "mitigated": 0.71
+                },
+                "recall": {
+                    "normal": 0.84,
+                    "mitigated": 0.58
+                },
+                "sensitivity": {
+                    "normal": 0.84,
+                    "mitigated": 0.58
+                },
+                "specificity": {
+                    "normal": 0.73,
+                    "mitigated": 0.88
+                },
+                "false omission rate": {
+                    "normal": 0.09,
+                    "mitigated": 0.19
+                },
+                "false discovery rate": {
+                    "normal": 0.41,
+                    "mitigated": 0.29
+                }
+            },
+            "algo": "InProcessing- GerryClassifier",
+            "__typename": "Ethics",
+            "run_id": "0",
+            "id": "0",
+            "createdAt": "2021-15-11"
+        },
+        {
+            "metrics": {
+                "accuracy": {
+                    "normal": 0.77,
+                    "mitigated": 0.74
+                },
+
+                "statistical parity difference": {
+                    "normal": -0.02,
+                    "mitigated": -0.2
+                },
+                "disparate impact ratio": {
+                    "normal": 0.96,
+                    "mitigated": 0.69
+                },
+                "average odds difference": {
+                    "normal": 0.01,
+                    "mitigated": -0.16
+                },
+                "equal opportunity difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.12
+                },
+                "theil index": {
+                    "normal": 0.1,
+                    "mitigated": 0.1
+                },
+                "true positive rate difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.12
+                },
+                "false posiitve rate difference": {
+                    "normal": 0.02,
+                    "mitigated": -0.2
+                },
+                "false negative rate difference": {
+                    "normal": 0.01,
+                    "mitigated": 0.12
+                },
+                "false omission rate difference": {
+                    "normal": -0.01,
+                    "mitigated": 0.04
+                },
+                "false discovery rate difference": {
+                    "normal": 0.07,
+                    "mitigated": -0.03
+                },
+                "false posiitve rate ratio": {
+                    "normal": 1.07,
+                    "mitigated": 0.59
+                },
+                "false negative rate ratio": {
+                    "normal": 1.04,
+                    "mitigated": 3.53
+                },
+                "false omission rate ratio": {
+                    "normal": 0.87,
+                    "mitigated": 1.88
+                },
+                "false discovery rate ratio": {
+                    "normal": 1.19,
+                    "mitigated": 0.93
+                },
+                "balanced accuracy": {
+                    "normal": 0.79,
+                    "mitigated": 0.77
+                },
+
+                "biased group accuracy": {
+                    "normal": 0.78,
+                    "mitigated": 0.68
+                },
+                "error rate": {
+                    "normal": 0.23,
+                    "mitigated": 0.26
+                },
+                "number of true positives": {
+                    "normal": 2178.0,
+                    "mitigated": 5925.0
+                },
+                "number of false positives": {
+                    "normal": 1483.0,
+                    "mitigated": 4624.0
+                },
+                "number of false negatives": {
+                    "normal": 414.0,
+                    "mitigated": 967.0
+                },
+                "number of true negatives": {
+                    "normal": 4083.0,
+                    "mitigated": 10238.0
+                },
+                "true positive rate ": {
+                    "normal": 0.84,
+                    "mitigated": 0.86
+                },
+                "false posiitve rate": {
+                    "normal": 0.27,
+                    "mitigated": 0.31
+                },
+                "false negative rate": {
+                    "normal": 0.16,
+                    "mitigated": 0.14
+                },
+                "true negative rate ": {
+                    "normal": 0.73,
+                    "mitigated": 0.69
+                },
+                "precision": {
+                    "normal": 0.59,
+                    "mitigated": 0.56
+                },
+                "recall": {
+                    "normal": 0.84,
+                    "mitigated": 0.86
+                },
+                "sensitivity": {
+                    "normal": 0.84,
+                    "mitigated": 0.86
+                },
+                "specificity": {
+                    "normal": 0.73,
+                    "mitigated": 0.69
+                },
+                "false omission rate": {
+                    "normal": 0.09,
+                    "mitigated": 0.09
+                },
+                "false discovery rate": {
+                    "normal": 0.41,
+                    "mitigated": 0.44
+                }
+            },
+            "algo": "PostProcessing- Adjustable Reject Option Classifier",
+            "__typename": "Ethics",
+            "run_id": "0",
+            "id": "0",
+            "createdAt": "2021-05-13 06:14:42.654089"
+        },
+        {
+            "metrics": {
+                "accuracy": {
+                    "normal": 0.77,
+                    "mitigated": 0.75
+                },
+                "statistical parity difference": {
+                    "normal": -0.02,
+                    "mitigated": 0.13
+                },
+                "disparate impact ratio": {
+                    "normal": 0.96,
+                    "mitigated": 1.47
+                },
+                "average odds difference": {
+                    "normal": 0.01,
+                    "mitigated": 0.13
+                },
+                "equal opportunity difference": {
+                    "normal": -0.01,
+                    "mitigated": 0.14
+                },
+                "theil index": {
+                    "normal": 0.1,
+                    "mitigated": 0.14
+                },
+                "true positive rate difference": {
+                    "normal": -0.01,
+                    "mitigated": 0.14
+                },
+                "false posiitve rate difference": {
+                    "normal": 0.02,
+                    "mitigated": 0.13
+                },
+                "false negative rate difference": {
+                    "normal": 0.01,
+                    "mitigated": -0.14
+                },
+                "false omission rate difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.03
+                },
+                "false discovery rate difference": {
+                    "normal": 0.07,
+                    "mitigated": 0.11
+                },
+                "false posiitve rate ratio": {
+                    "normal": 1.07,
+                    "mitigated": 1.97
+                },
+                "false negative rate ratio": {
+                    "normal": 1.04,
+                    "mitigated": 0.64
+                },
+                "false omission rate ratio": {
+                    "normal": 0.87,
+                    "mitigated": 0.8
+                },
+                "false discovery rate ratio": {
+                    "normal": 1.19,
+                    "mitigated": 1.33
+                },
+                "balanced accuracy": {
+                    "normal": 0.79,
+                    "mitigated": 0.75
+                },
+
+                "biased group accuracy": {
+                    "normal": 0.78,
+                    "mitigated": 0.79
+                },
+                "error rate": {
+                    "normal": 0.23,
+                    "mitigated": 0.25
+                },
+                "number of true positives": {
+                    "normal": 2178.0,
+                    "mitigated": 627.0
+                },
+                "number of false positives": {
+                    "normal": 1483.0,
+                    "mitigated": 436.0
+                },
+                "number of false negatives": {
+                    "normal": 414.0,
+                    "mitigated": 235.0
+                },
+                "number of true negatives": {
+                    "normal": 4083.0,
+                    "mitigated": 1422.0
+                },
+                "true positive rate ": {
+                    "normal": 0.84,
+                    "mitigated": 0.73
+                },
+                "false posiitve rate": {
+                    "normal": 0.27,
+                    "mitigated": 0.23
+                },
+                "false negative rate": {
+                    "normal": 0.16,
+                    "mitigated": 0.27
+                },
+                "true negative rate ": {
+                    "normal": 0.73,
+                    "mitigated": 0.77
+                },
+                "precision": {
+                    "normal": 0.59,
+                    "mitigated": 0.59
+                },
+                "recall": {
+                    "normal": 0.84,
+                    "mitigated": 0.73
+                },
+                "sensitivity": {
+                    "normal": 0.84,
+                    "mitigated": 0.73
+                },
+                "specificity": {
+                    "normal": 0.73,
+                    "mitigated": 0.77
+                },
+                "false omission rate": {
+                    "normal": 0.09,
+                    "mitigated": 0.14
+                },
+                "false discovery rate": {
+                    "normal": 0.41,
+                    "mitigated": 0.41
+                }
+            },
+            "algo": "InProcessing- Adversarial Debiasing",
+            "__typename": "Ethics",
+            "run_id": "0",
+            "id": "0",
+            "createdAt": "2021-05-13 06:14:42.654089"
+        },
+        {
+            "metrics": {
+                "accuracy": {
+                    "normal": 0.77,
+                    "mitigated": 0.77
+                },
+                "statistical parity difference": {
+                    "normal": -0.02,
+                    "mitigated": -0.02
+                },
+                "disparate impact ratio": {
+                    "normal": 0.96,
+                    "mitigated": 0.9
+                },
+                "average odds difference": {
+                    "normal": 0.01,
+                    "mitigated": -0.03
+                },
+                "equal opportunity difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.04
+                },
+                "theil index": {
+                    "normal": 0.1,
+                    "mitigated": 0.2
+                },
+                "true positive rate difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.04
+                },
+                "false posiitve rate difference": {
+                    "normal": 0.02,
+                    "mitigated": -0.02
+                },
+                "false negative rate difference": {
+                    "normal": 0.01,
+                    "mitigated": 0.04
+                },
+                "false omission rate difference": {
+                    "normal": -0.01,
+                    "mitigated": 0.01
+                },
+                "false discovery rate difference": {
+                    "normal": 0.07,
+                    "mitigated": -0.02
+                },
+                "false posiitve rate ratio": {
+                    "normal": 1.07,
+                    "mitigated": 0.86
+                },
+                "false negative rate ratio": {
+                    "normal": 1.04,
+                    "mitigated": 1.09
+                },
+                "false omission rate ratio": {
+                    "normal": 0.87,
+                    "mitigated": 1.07
+                },
+                "false discovery rate ratio": {
+                    "normal": 1.19,
+                    "mitigated": 0.94
+                },
+                "balanced accuracy": {
+                    "normal": 0.79,
+                    "mitigated": 0.7
+                },
+
+                "biased group accuracy": {
+                    "normal": 0.78,
+                    "mitigated": 0.77
+                },
+                "error rate": {
+                    "normal": 0.23,
+                    "mitigated": 0.23
+                },
+                "number of true positives": {
+                    "normal": 2178.0,
+                    "mitigated": 426.0
+                },
+                "number of false positives": {
+                    "normal": 1483.0,
+                    "mitigated": 193.0
+                },
+                "number of false negatives": {
+                    "normal": 414.0,
+                    "mitigated": 436.0
+                },
+                "number of true negatives": {
+                    "normal": 4083.0,
+                    "mitigated": 1665.0
+                },
+                "true positive rate ": {
+                    "normal": 0.84,
+                    "mitigated": 0.49
+                },
+                "false posiitve rate": {
+                    "normal": 0.27,
+                    "mitigated": 0.1
+                },
+                "false negative rate": {
+                    "normal": 0.16,
+                    "mitigated": 0.51
+                },
+                "true negative rate ": {
+                    "normal": 0.73,
+                    "mitigated": 0.9
+                },
+                "precision": {
+                    "normal": 0.59,
+                    "mitigated": 0.69
+                },
+                "recall": {
+                    "normal": 0.84,
+                    "mitigated": 0.49
+                },
+                "sensitivity": {
+                    "normal": 0.84,
+                    "mitigated": 0.49
+                },
+                "specificity": {
+                    "normal": 0.73,
+                    "mitigated": 0.9
+                },
+                "false omission rate": {
+                    "normal": 0.09,
+                    "mitigated": 0.21
+                },
+                "false discovery rate": {
+                    "normal": 0.41,
+                    "mitigated": 0.31
+                }
+            },
+            "algo": "InProcessing- Custom Adversarial Debiasing",
+            "__typename": "Ethics",
+            "run_id": "0",
+            "id": "0",
+            "createdAt": "2021-05-13 06:14:42.654089"
+        },
+        {
+            "metrics": {
+                "accuracy": {
+                    "normal": 0.77,
+                    "mitigated": 0.77
+                },
+                "statistical parity difference": {
+                    "normal": -0.02,
+                    "mitigated": 0.0
+                },
+                "disparate impact ratio": {
+                    "normal": 0.96,
+                    "mitigated": 1.01
+                },
+                "average odds difference": {
+                    "normal": 0.01,
+                    "mitigated": 0.03
+                },
+                "equal opportunity difference": {
+                    "normal": -0.01,
+                    "mitigated": 0.0
+                },
+                "theil index": {
+                    "normal": 0.1,
+                    "mitigated": 0.1
+                },
+                "true positive rate difference": {
+                    "normal": -0.01,
+                    "mitigated": 0.0
+                },
+                "false posiitve rate difference": {
+                    "normal": 0.02,
+                    "mitigated": 0.06
+                },
+                "false negative rate difference": {
+                    "normal": 0.01,
+                    "mitigated": -0.0
+                },
+                "false omission rate difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.02
+                },
+                "false discovery rate difference": {
+                    "normal": 0.07,
+                    "mitigated": 0.13
+                },
+                "false posiitve rate ratio": {
+                    "normal": 1.07,
+                    "mitigated": 1.32
+                },
+                "false negative rate ratio": {
+                    "normal": 1.04,
+                    "mitigated": 1.0
+                },
+                "false omission rate ratio": {
+                    "normal": 0.87,
+                    "mitigated": 0.83
+                },
+                "false discovery rate ratio": {
+                    "normal": 1.19,
+                    "mitigated": 1.45
+                },
+                "balanced accuracy": {
+                    "normal": 0.79,
+                    "mitigated": 0.78
+                },
+
+                "biased group accuracy": {
+                    "normal": 0.78,
+                    "mitigated": 0.81
+                },
+                "error rate": {
+                    "normal": 0.23,
+                    "mitigated": 0.23
+                },
+                "number of true positives": {
+                    "normal": 2178.0,
+                    "mitigated": 2167.0
+                },
+                "number of false positives": {
+                    "normal": 1483.0,
+                    "mitigated": 1418.0
+                },
+                "number of false negatives": {
+                    "normal": 414.0,
+                    "mitigated": 458.0
+                },
+                "number of true negatives": {
+                    "normal": 4083.0,
+                    "mitigated": 4115.0
+                },
+                "true positive rate ": {
+                    "normal": 0.84,
+                    "mitigated": 0.83
+                },
+                "false posiitve rate": {
+                    "normal": 0.27,
+                    "mitigated": 0.26
+                },
+                "false negative rate": {
+                    "normal": 0.16,
+                    "mitigated": 0.17
+                },
+                "true negative rate ": {
+                    "normal": 0.73,
+                    "mitigated": 0.74
+                },
+                "precision": {
+                    "normal": 0.59,
+                    "mitigated": 0.6
+                },
+                "recall": {
+                    "normal": 0.84,
+                    "mitigated": 0.83
+                },
+                "sensitivity": {
+                    "normal": 0.84,
+                    "mitigated": 0.83
+                },
+                "specificity": {
+                    "normal": 0.73,
+                    "mitigated": 0.74
+                },
+                "false omission rate": {
+                    "normal": 0.09,
+                    "mitigated": 0.1
+                },
+                "false discovery rate": {
+                    "normal": 0.41,
+                    "mitigated": 0.4
+                }
+            },
+            "algo": "PostProcessing- Reject Option Classifier",
+            "__typename": "Ethics",
+            "run_id": "0",
+            "id": "0",
+            "createdAt": "2021-15-11"
+        },
+        {
+            "metrics": {
+                "accuracy": {
+                    "normal": 0.77,
+                    "mitigated": 0.78
+                },
+                "statistical parity difference": {
+                    "normal": -0.02,
+                    "mitigated": 0.03
+                },
+                "disparate impact ratio": {
+                    "normal": 0.96,
+                    "mitigated": 1.12
+                },
+                "average odds difference": {
+                    "normal": 0.01,
+                    "mitigated": 0.05
+                },
+                "equal opportunity difference": {
+                    "normal": -0.01,
+                    "mitigated": 0.07
+                },
+                "theil index": {
+                    "normal": 0.1,
+                    "mitigated": 0.19
+                },
+                "true positive rate difference": {
+                    "normal": -0.01,
+                    "mitigated": 0.07
+                },
+                "false posiitve rate difference": {
+                    "normal": 0.02,
+                    "mitigated": 0.03
+                },
+                "false negative rate difference": {
+                    "normal": 0.01,
+                    "mitigated": -0.07
+                },
+                "false omission rate difference": {
+                    "normal": -0.01,
+                    "mitigated": -0.05
+                },
+                "false discovery rate difference": {
+                    "normal": 0.07,
+                    "mitigated": 0.07
+                },
+                "false posiitve rate ratio": {
+                    "normal": 1.07,
+                    "mitigated": 1.37
+                },
+                "false negative rate ratio": {
+                    "normal": 1.04,
+                    "mitigated": 0.87
+                },
+                "false omission rate ratio": {
+                    "normal": 0.87,
+                    "mitigated": 0.79
+                },
+                "false discovery rate ratio": {
+                    "normal": 1.19,
+                    "mitigated": 1.31
+                },
+                "balanced accuracy": {
+                    "normal": 0.79,
+                    "mitigated": 0.71
+                },
+
+                "biased group accuracy": {
+                    "normal": 0.78,
+                    "mitigated": 0.76
+                },
+                "error rate": {
+                    "normal": 0.23,
+                    "mitigated": 0.22
+                },
+                "number of true positives": {
+                    "normal": 2178.0,
+                    "mitigated": 1370.0
+                },
+                "number of false positives": {
+                    "normal": 1483.0,
+                    "mitigated": 600.0
+                },
+                "number of false negatives": {
+                    "normal": 414.0,
+                    "mitigated": 1194.0
+                },
+                "number of true negatives": {
+                    "normal": 4083.0,
+                    "mitigated": 4994.0
+                },
+                "true positive rate ": {
+                    "normal": 0.84,
+                    "mitigated": 0.53
+                },
+                "false posiitve rate": {
+                    "normal": 0.27,
+                    "mitigated": 0.11
+                },
+                "false negative rate": {
+                    "normal": 0.16,
+                    "mitigated": 0.47
+                },
+                "true negative rate ": {
+                    "normal": 0.73,
+                    "mitigated": 0.89
+                },
+                "precision": {
+                    "normal": 0.59,
+                    "mitigated": 0.7
+                },
+                "recall": {
+                    "normal": 0.84,
+                    "mitigated": 0.53
+                },
+                "sensitivity": {
+                    "normal": 0.84,
+                    "mitigated": 0.53
+                },
+                "specificity": {
+                    "normal": 0.73,
+                    "mitigated": 0.89
+                },
+                "false omission rate": {
+                    "normal": 0.09,
+                    "mitigated": 0.19
+                },
+                "false discovery rate": {
+                    "normal": 0.41,
+                    "mitigated": 0.3
+                }
+            },
+            "algo": "PostProcessing- Calibrated Equalized Odds",
+            "__typename": "Ethics",
+            "run_id": "0",
+            "id": "0",
+            "createdAt": "2021-15-11"
+        }
+    ]
+}

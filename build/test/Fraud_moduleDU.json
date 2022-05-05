@@ -1,0 +1,28 @@
+{"Child Care Benefit Fraud ": {
+        
+    "Child Fraud" : {
+
+        "project_name" : "Child Care Benefit Fraud",
+        "module_name" : "Child Fraud",
+        "data_path" : "./io/data/child_froud_dataset/train.csv",
+        "test_data_path" : "./io/data/child_froud_dataset/test.csv",
+        "labelled_test_data_path" : "./io/data/child_froud_dataset/labelled_test.csv",
+        "target_column" : "Fraud_Status",
+        "od_alert_resolved" : "False",
+        "dd_alert_resolved" : "False",
+        "cd_alert_resolved" : "False",
+        "ae_alert_resolved" : "False",
+        "nan_alert_resolved" : "False",
+        "oor_alert_resolved" : "False",
+        "bias_alert_resolved" : "False",
+        "p_val" : 0.05,
+        "is_labelled_test_data" : "True",
+        "od_scatter_data_limit" : 512,
+        "od_box_data_limit" : 512,
+        "is_trained" : "False",
+        "alert_sleep_interval" : 5000,
+        "is_production" : "True",
+        "retrain_models" : "False"
+    }
+}
+}
