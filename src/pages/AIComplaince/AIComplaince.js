@@ -55,7 +55,14 @@ import MetricsGraph from "../Tab/Ethics/Metrics";
 // import ReactPDF from '@react-pdf/renderer';
 import ReactToPrint from 'react-to-print';
 
+/*
+Declaring required Modules from material-ui
+funtion => TabPanel,handleChange
+      * used to swithcing the tab's
 
+* columns,columnsRiskRegister these are used to bind the Value & Table columns
+* useState is used to declar the varialble's
+*/
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -243,19 +250,12 @@ export default function AIComplaince() {
   };
 
 
-  // const DownloadPdf = useReactToPrint({
-  //   content:()=>componentRef.current,
-  // })
+    /*
+    * Declaring the initial state & variable
 
-  // if (window.Chart) {
-  //   parseOptions(Chart, chartOptions());
-  // }
+    */
 
-  // const toggleNavs = (e, index) => {
-  //   e.preventDefault();
-  //   setActiveNav(index);
-  //   setChartExample1Data("data" + index);
-  // };
+
   const [progress, setProgress] = React.useState(0);
   const [spinner, setSpinner] = React.useState(false);
   const [customValue, setCustomValue] = useState({});
@@ -274,6 +274,12 @@ export default function AIComplaince() {
   const [assessment, setassessment] = useState({});
   const [RistReg, setRistReg] = useState([]);
 
+  /*
+    * useEffect will call the first time of the file render
+    * On the useEffact we called the initial data
+    * sample data response availble at `test/compliance`
+
+  */
 
 
 
@@ -309,7 +315,6 @@ export default function AIComplaince() {
 
   const RiskRegister = async () => {
     let data_ = (sessionStorage.getItem("currentModelName") == "Credit Lending") ? "reg_json" : (sessionStorage.getItem("currentModelName") == "Fraud Detection") ? "child_fraud_reg" : "reg_json";
-
     fetch(process.env.PUBLIC_URL + `/test/${data_}.json`)
       .then(function (res) {
         console.log(Object.keys(res), "hgchgvgvhgvhgv", res)

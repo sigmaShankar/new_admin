@@ -130,7 +130,6 @@ export default function AIEvalution() {
 
     }
 
-    // 
 
     fetch(`http://127.0.0.1:8000/get_protected_data/${event.target.value}`)
       .then(function (res) {
@@ -212,7 +211,6 @@ export default function AIEvalution() {
         value.push(options[i].value);
       }
     }
-    // setPersonName(value);
   };
 
     /*
@@ -225,7 +223,6 @@ export default function AIEvalution() {
 
 
   useEffect(() => {
-
 
     setLoadlist('proxy')
     initValue('proxy')
@@ -369,21 +366,7 @@ export default function AIEvalution() {
       });
   }
 
-  // const Intersect = () => {
-  //   const timer = setInterval(() => {
-  //     setProgress((oldProgress) => {
-  //       if (oldProgress === 100) {
-  //         return 0;
-  //       }
-  //       const diff = Math.random() * 10;
-  //       return Math.min(oldProgress + diff, 100);
-  //     });
-  //   }, 500);
-
-  //   return () => {
-  //     clearInterval(timer);
-  //   };
-  // }
+  
 
   // console.log(customValue,"Object.keys(customValue).length");
   const initValue = async (params) => {

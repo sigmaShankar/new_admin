@@ -3,7 +3,7 @@ import { compose, withProps } from "recompose"
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 import axios from  "axios"
 import styles from "./Map.module.css"
-import Autocomplete from 'react-google-autocomplete';
+// import Autocomplete from 'react-google-autocomplete';
 
 
 export const MyMapComponent = compose(
@@ -27,16 +27,7 @@ export const MyMapComponent = compose(
 
 export const Places = (props) => {
       
-     return (<Autocomplete
-              apiKey="AIzaSyAyQTUfdF5HDuUEXesoLLhIXxldK0YgREg"
-              style={props.style ? {...props.style} : {width: '90%'}}
-              onPlaceSelected={(place) => {props.onPlaceSelected(place) }}
-              value={props.value}
-              onChange={props.onChange}
-              disabled={props.disabled ? props.disabled : false}
-              types={[]}
-            componentRestrictions={{country: "in"}}
-      />)
+     return (<></>)
 }
 
 class MyFancyComponent extends React.PureComponent {

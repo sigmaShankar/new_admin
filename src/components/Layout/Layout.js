@@ -90,9 +90,8 @@ import BiasAssessment from "../../pages/BiasAssessment/BiasAssessment";
     * Import all the component
     * Create a route name & assign the component to each
     * These route name are called by sidebar
+    * eg :- <Route path="{URL for Routing}" component={Component name}
 */
-
-
 
 
 function Layout(props) {

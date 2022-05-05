@@ -333,19 +333,20 @@ export default function Training_center(props) {
 
 
   useEffect(() => {
-    axios.get(process.env.PUBLIC_URL + `/ip.json`)
-      .then(res => {
-        setIp(res?.data?.IP)
-        getUserList(res?.data?.IP);
-      })
+    // axios.get(process.env.PUBLIC_URL + `/ip.json`)
+    //   .then(res => {
+    //     setIp(res?.data?.IP)
+    //     getUserList(res?.data?.IP);
+    //   })
+
+    getUserList()
+
   }, []);
 
   const getUserList = (IP) => {
     // console.log(IP,"asada")
-    axios.post(`${IP}/user/list`, {}, config)
+    axios.get(`${'http://127.0.0.1:4000'}/api/user/getUser`,)
       .then(res => {
-        // console.log(res?.data,'resposnse data')
-
         setData(res?.data)
       })
   }
@@ -538,36 +539,48 @@ setTeam(value)
 
     clearFields()
   };
-  const center_column = [
-    {
-      name: "name",
-      label: "Name",
-      options: {
-        filter: true,
-      }
-    },
-    {
-      name: "location",
-      label: "Location",
-      options: {
-        filter: true,
-      }
-    }
-  ];
+
+
   const columns = [
 
     {
-      name: "full_name",
+      name: "Name",
       label: "User name",
       options: {
         filter: true,
+        Checkbox:false
       }
     },
     {
       label: "Email",
-      name: "email",
+      name: "Email",
       options: {
         filter: true,
+        Checkbox:false
+      }
+    },
+    {
+      label: "Team",
+      name: "Team",
+      options: {
+        filter: true,
+        Checkbox:false
+      }
+    },
+    {
+      label: "Role",
+      name: "Role",
+      options: {
+        filter: true,
+        Checkbox:false
+      }
+    },
+    {
+      label: "Date",
+      name: "Create_at",
+      options: {
+        Checkbox:false,
+        filter: false,
         customBodyRender: (value, tableMeta, updateValue) => {
           return (
             <p>
@@ -577,20 +590,6 @@ setTeam(value)
         }
       }
     },
-    // {
-    //   label: "Password",
-    //   name: "password",
-    //   options: {
-    //     filter: false,
-    //     customBodyRender: (value, tableMeta, updateValue) => {
-    //       return (
-    //         <p>
-    //           {value ? value.split('T')[0] : ''}
-    //         </p>
-    //       )
-    //     }
-    //   }
-    // },
 
     {
       name: "status",
@@ -641,63 +640,7 @@ setTeam(value)
     },
   ];
 
-  const enrolment_columns = [
-    {
-      name: "First_name",
-      label: "Name",
-      options: {
-        filter: true,
-      }
-    },
-    {
-      name: "DOB",
-      label: "DOB",
-      options: {
-        filter: true,
-      }
-    }, {
-      name: "Phone_Number",
-      label: "Phone Number",
-      options: {
-        filter: true,
-      }
-    }, {
-      name: "Gender",
-      label: "Gender",
-      options: {
-        filter: true,
-      }
-    },
-    {
-      name: "age",
-      label: "age",
-      options: {
-        filter: true,
-      }
-    },
-    {
-      name: "city",
-      label: "City",
-      options: {
-        filter: true,
-      }
-    },
-    {
-      name: "State",
-      label: "State",
-      options: {
-        filter: true,
-      }
-    },
-    {
-      name: "District",
-      label: "District",
-      options: {
-        filter: true,
-      }
-    },
-
-  ];
+ 
 
   const dateStyle = {
     display: "flex",
@@ -830,12 +773,12 @@ setTeam(value)
       <PageTitle title="Add user" button="Add new" add_new={handleOpen} />
       <Button
         onClick={() => { handleOpen(true) }}
-      >asasaasa</Button>
+      >Add</Button>
       <Grid container spacing={4}>
         <Grid item xs={12}>
           <MUIDataTable
             title="User's"
-            data={data}
+            data={data?.output}
             columns={columns}
             options={{
               filterType: "checkbox",

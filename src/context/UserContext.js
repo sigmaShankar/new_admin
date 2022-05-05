@@ -10,8 +10,8 @@ function userReducer(state, action) {
       return { ...state, isAuthenticated: true };
     case "SIGN_OUT_SUCCESS":
       return { ...state, isAuthenticated: false };
-      case "LOGIN_FAILURE":
-        return { ...state, isAuthenticated: false };
+    case "LOGIN_FAILURE":
+      return { ...state, isAuthenticated: false };
     default: {
       throw new Error(`Unhandled action type: ${action.type}`);
     }
@@ -52,62 +52,90 @@ export { UserProvider, useUserState, useUserDispatch, loginUser, signOut };
 
 // ###########################################################
 
-function loginUser(dispatch, login, password, history, IP,setIsLoading, setError) {
+function loginUser(dispatch, login, password, history, IP, setIsLoading, setError) {
 
-//   setError(false);
+  //   setError(false);
   setIsLoading(true);
-//   axios.post(`${IP}/user/login`,
-//   {
-//     "email": login,
-//     "password": password
-// })
-// .then((res) => {
-//   console.log(res?.data,"asknaskn")
-//   if(res?.data.hasOwnProperty('error')){
-//     localStorage.removeItem("id_token");
-//     localStorage.clear()
-//       // dispatch({ type: "SIGN_OUT_SUCCESS" });
-//       setError(true);
-//       setIsLoading(false);
-//   }else{
-//     sessionStorage.setItem("token",res?.data?.access_token)
-//     setTimeout(() => {
-//       localStorage.clear()
-//       localStorage.setItem('id_token', 1)
-//       localStorage.setItem("type", "admin")
-//       setError(null)
-//       setIsLoading(false)
-//       //console.log(dispatch({ type: 'LOGIN_SUCCESS' }),'dispatch({ type:  })')
-//       dispatch({ type: 'LOGIN_SUCCESS' })
-//       history.push('/app/dashboard')
-//     }, 2000);
-//   }
-// }).catch((err) => {
-//   console.log(err)
-//   localStorage.removeItem("id_token");
-//   localStorage.clear()
-//     // dispatch({ type: "SIGN_OUT_SUCCESS" });
-//     setError(true);
-//     setIsLoading(false);
-// })
+  //   axios.post(`${IP}/user/login`,
+  //   {
+  //     "email": login,
+  //     "password": password
+  // })
+  // .then((res) => {
+  //   console.log(res?.data,"asknaskn")
+  //   if(res?.data.hasOwnProperty('error')){
+  //     localStorage.removeItem("id_token");
+  //     localStorage.clear()
+  //       // dispatch({ type: "SIGN_OUT_SUCCESS" });
+  //       setError(true);
+  //       setIsLoading(false);
+  //   }else{
+  //     sessionStorage.setItem("token",res?.data?.access_token)
+  //     setTimeout(() => {
+  //       localStorage.clear()
+  //       localStorage.setItem('id_token', 1)
+  //       localStorage.setItem("type", "admin")
+  //       setError(null)
+  //       setIsLoading(false)
+  //       //console.log(dispatch({ type: 'LOGIN_SUCCESS' }),'dispatch({ type:  })')
+  //       dispatch({ type: 'LOGIN_SUCCESS' })
+  //       history.push('/app/dashboard')
+  //     }, 2000);
+  //   }
+  // }).catch((err) => {
+  //   console.log(err)
+  //   localStorage.removeItem("id_token");
+  //   localStorage.clear()
+  //     // dispatch({ type: "SIGN_OUT_SUCCESS" });
+  //     setError(true);
+  //     setIsLoading(false);
+  // })
 
-// temp
-  if (login === 'admin@sigmared.ai' && password === 'TT@i$iat%m&ArPE*d') {
+  // temp
+  if (login === 'admin@sigmared.ai' && password === '1234') {
 
-    // setTimeout(() => {
-      localStorage.clear()
-      localStorage.setItem('id_token', 1)
-      localStorage.setItem("type", "admin")
-      setError(null)
-      setIsLoading(false)
-      //console.log(dispatch({ type: 'LOGIN_SUCCESS' }),'dispatch({ type:  })')
-      dispatch({ type: 'LOGIN_SUCCESS' })
-      history.push('/app/dashboard')
-      // window.location.reload()
-    // }, 2000);
+    localStorage.clear()
+    localStorage.setItem('id_token', 1)
+    localStorage.setItem("type", "admin")
+    setError(null)
+    setIsLoading(false)
+    dispatch({ type: 'LOGIN_SUCCESS' })
+    history.push('/app/dashboard')
+    window.location.reload();
+
+  } else if (login === 'shankar@sigmared.ai' && password === '1234') {
+    localStorage.clear()
+    localStorage.setItem('id_token', 1)
+    localStorage.setItem("type", "datascience")
+    setError(null)
+    setIsLoading(false)
+    dispatch({ type: 'LOGIN_SUCCESS' })
+    history.push('/app/dashboard')
+    window.location.reload();
+
+  } else if (login === 'product@sigmared.ai' && password === '1234') {
+    localStorage.clear()
+    localStorage.setItem('id_token', 1)
+    localStorage.setItem("type", "product")
+    setError(null)
+    setIsLoading(false)
+    dispatch({ type: 'LOGIN_SUCCESS' })
+    history.push('/app/dashboard')
+    window.location.reload();
+
+  } else if (login === 'complaince@sigmared.ai' && password === '1234') {
+    localStorage.clear()
+    localStorage.setItem('id_token', 1)
+    localStorage.setItem("type", "complaince")
+    setError(null)
+    setIsLoading(false)
+    dispatch({ type: 'LOGIN_SUCCESS' })
+    history.push('/app/dashboard')
+    window.location.reload();
+
   } else {
-  localStorage.removeItem("id_token");
-  localStorage.clear()
+    localStorage.removeItem("id_token");
+    localStorage.clear()
     // dispatch({ type: "SIGN_OUT_SUCCESS" });
     setError(true);
     setIsLoading(false);

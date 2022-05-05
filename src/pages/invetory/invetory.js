@@ -6,28 +6,21 @@ import * as constants from "../../components/Home/constants/constants"
 // import 'date-fns';
 import axios from "axios";
 import { Card, CardHeader, Row, Col } from "reactstrap";
+import Button from '@material-ui/core/Button';
 
-// import DateFnsUtils from '@date-io/date-fns';
-// components
-import PageTitle from "../../components/PageTitle";
-import styles from "./training_programme.css"
-import Widget from "../../components/Widget";
-import Modal from '@material-ui/core/Modal';
-import TextField from '@material-ui/core/TextField';
-// import {
-//   KeyboardDatePicker,
-// } from '@material-ui/pickers'
 import { createMuiTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
-// import Button from '@material-ui/core/Button';
-import { green, purple } from '@material-ui/core/colors';
-import MenuItem from '@material-ui/core/MenuItem';
-import { Button } from "./../../components/Wrappers";
+
 
 // import Table from "../dashboard/components/Table/Table";
 
 // data
-
-
+import DoneOutlineIcon from '@material-ui/icons/DoneOutline';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import NewReleasesIcon from '@material-ui/icons/NewReleases';
+import TextareaAutosize from '@material-ui/core/TextareaAutosize';
+import SyncIcon from '@material-ui/icons/Sync';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
@@ -112,7 +105,6 @@ export default function Training_center(props) {
     setsuggestedList(filteredArray)
 
   }
-  const [isShowMarker, setIsShowMarker] = useState(false)
 
   const clearFields = () => {
     setServerIP({
@@ -142,16 +134,13 @@ export default function Training_center(props) {
   }
   const config = {
     headers: { Authorization: `Bearer ${sessionStorage.getItem('token')}` }
-};
+  };
 
   const classes = useStyles();
   const [data, setData] = useState([])
   const [row, setRow] = useState([])
 
-  const [selectedDate, setSelectedDate] = React.useState({ val: new Date(), isValid: false, touched: false });
-  const [isAutoComplete, setIsAutocomplete] = useState(true)
-  const [selectedEndDate, setSelectedEndDate] = React.useState({ val: new Date(), isValid: false, touched: false });
-  const [selectedDueDate, setSelectedDueDate] = React.useState({ val: new Date(), isValid: false, touched: false });
+
 
   const form = {
     height: '80%',
@@ -212,19 +201,12 @@ export default function Training_center(props) {
     touched: false
   })
 
-  const [IP, setIp] = useState("")
-  const [biasIP, setbiasIP] = useState("")
+  const [DataValue, setDataValue] = useState(null)
+  const [role, setRole] = useState(null)
+  const [roleReject, setRoleReject] = useState(null)
+
   const [monitorIP, setmonitorIP] = useState("")
-  const [IP_explainability, setIP_explainability] = useState("")
-  const [od_alert_resolved, setod_alert_resolved] = useState("")
-  const [dd_alert_resolved, setdd_alert_resolved] = useState("")
-  const [cd_alert_resolved, setcd_alert_resolved] = useState("")
-  const [ae_alert_resolved, setae_alert_resolved] = useState("")
-  const [target_column, settarget_column] = useState("")
-  const [modelType_explainability, setmodelType_explainability] = useState("")
-  const [nan_alert_resolved, setnan_alert_resolved] = useState("")
-  const [oor_alert_resolved, setoor_alert_resolved] = useState("")
-  const [bias_alert_resolved, setbias_alert_resolved] = useState("")
+
   const [p_val, setp_val] = useState("")
   const [alert_sleep_interval, setalert_sleep_interval] = useState("")
   const [is_production, setis_production] = useState(true)
@@ -251,34 +233,49 @@ export default function Training_center(props) {
 
 
   useEffect(() => {
-    // const [IP, setIp] = useState("")
+    if (localStorage.getItem('type') == 'admin') {
+      setRole("Approved_admin")
+      setRoleReject('RejectAdmin')
+    } else if (localStorage.getItem('type') == 'datascience') {
+      setRole("Approved_Datascience")
+      setRoleReject('RejectDatascience')
 
-    axios.get(process.env.PUBLIC_URL + `/ip.json`)
-      .then(res => {
-        setIp(res?.data?.IP)
-        getUserList();
-      })
+    } else if (localStorage.getItem('type') == 'product') {
+      setRole("Approved_Product")
+      setRoleReject('RejectProduct')
+    } else if (localStorage.getItem('type') == 'complaince') {
+      setRole("Approved_Complaince")
+      setRoleReject('RejectComplaince')
+    }
+    getData()
 
   }, []);
 
 
-  const getUserList = () => {
-    axios.get(`${IP}/user/list`)
+  const getData = () => {
+    let _temp = (DataValue)?DataValue.length:0
+    axios.get(`http://127.0.0.1:4000/api/getModel/${(localStorage.getItem('type') == 'admin') ? 'admin' : null}`)
       .then(res => {
-        setData(res)
-        getDetails();
-
+        if(_temp != res?.data?.output.length && DataValue){
+          toast.info('New Model arraived!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
+          }
+        setDataValue(res?.data?.output)
+   
+        // console.log(DataValue, "DataValueDataValueDataValue", res)
       })
   }
 
 
 
-  const getDetails = () => {
-    axios.get(`${IP}/project/create`)
-      .then(res => {
-        setProject(res)
-      })
-  }
+
 
   const validate = (i, val) => {
     if (i === 0) {
@@ -288,89 +285,17 @@ export default function Training_center(props) {
   }
 
   const validateForm = () => {
-    let partialIsValid = projectname.isValid && biasIP.isValid && modulename.isValid && monitorIP.isValid && monitorIP.isValid
+    let partialIsValid = projectname.isValid && modulename.isValid && monitorIP.isValid && monitorIP.isValid
 
     return partialIsValid
 
   }
 
-  const [openCenter, setOpenCenter] = React.useState(false);
-  const [openenrolment, setopenenrolment] = React.useState(false);
 
-
-  const [centerlist, setCenterlist] = React.useState([]);
 
   // fetch(process.env.PUBLIC_URL + `/test/${URL}.json`)
 
-  const onChangeTextHandler = (event, i) => {
-    let value = event.target.value
-    if (i === 'Projec_Name') {
-      setProjectName({
-        ...projectname,
-        val: value,
-        isValid: value.length > 0
-      })
-    }
-    if (i === 'Module_Name') {
-      setModuleName({
-        ...modulename,
-        val: value,
-        isValid: value.length > 0
-      })
-    }
 
-    if (i === 'biasIP') {
-      setbiasIP({
-        ...biasIP,
-        val: value,
-        isValid: value.length > 0
-      })
-    }
-
-    if (i === 'monitorIP') {
-      setmonitorIP({
-        ...monitorIP,
-        val: value,
-        isValid: value.length > 0
-      })
-    }    if (i === 'IP_explainability') {
-      setIP_explainability({
-        ...IP_explainability,
-        val: value,
-        isValid: value.length > 0
-      })
-    }    if (i === 'od_alert_resolved') {
-      setod_alert_resolved(value)
-    }    if (i === 'dd_alert_resolved') {
-      setdd_alert_resolved(value)
-    }    if (i === 'cd_alert_resolved') {
-      setcd_alert_resolved(value)
-    }    if (i === 'ae_alert_resolved') {
-      setae_alert_resolved(value)
-    }    if (i === 'modelType_explainability') {
-      setmodelType_explainability(value)
-    }    if (i === 'nan_alert_resolved') {
-      setnan_alert_resolved(value)
-    }
-    
-    if (i === 'oor_alert_resolved') {
-      setoor_alert_resolved(value)
-    } if (i === 'bias_alert_resolved') {
-      setbias_alert_resolved(value)
-    } if (i === 'is_production') {
-      setis_production(value)
-    }
-    if (i === 'retrain_models') {
-      setServerIP({
-        ...ServerIP,
-        val: value,
-        isValid: value.length > 0
-      })
-    }
-
-    let isvalid = validateForm()
-    setIsFromValid(isvalid)
-  }
   let tempList = [];
   const editEnable_ = () => {
     setIsdiable(false)
@@ -387,22 +312,7 @@ export default function Training_center(props) {
     // console.log(tableMeta)
 
     set_ID(tableMeta.rowData[11])
-    // "project_name": projectname.val,
-    // "module_name": modulename.val,
-    // "path": path.val,
-    // "description": description.val,
-    // "biasIP": biasIP.val,
-    // "monitorIP": monitorIP.val,
-    // "IP_explainability": IP_explainability.val,
-    // "od_alert_resolved": od_alert_resolved,
-    // "dd_alert_resolved": dd_alert_resolved,
-    // "cd_alert_resolved": cd_alert_resolved,
-    // "ae_alert_resolved": ae_alert_resolved,
-    // "modelType_explainability": modelType_explainability,
-    // "nan_alert_resolved": nan_alert_resolved,
-    // "oor_alert_resolved": oor_alert_resolved,
-    // "bias_alert_resolved": bias_alert_resolved,
-    // "is_production": is_production,
+
 
 
     setIsdiable(true)
@@ -436,159 +346,7 @@ export default function Training_center(props) {
       }
     }
   ];
-  const columns = [
-    {
-      name: "project_name",
-      label: "Project name",
-      options: {
-        filter: true,
-      }
-    },
-    {
-      label: "Module name",
-      name: "module_name",
-      options: {
-        filter: true,
 
-      }
-    },
-    {
-      label: "Bias IP",
-      name: "biasIP",
-      options: {
-        filter: false,
-
-      }
-    },
-
-    {
-      label: "Monitor IP",
-      name: "monitorIP",
-      options: {
-        filter: false,
-   
-      }
-    },   {
-      label: "Explainability IP",
-      name: "IP_explainability",
-      options: {
-        filter: false,
-
-      }
-    },
-    {
-      label: "Is Production",
-      name: "is_production",
-      options: {
-        filter: false,
-      }
-    },
-    {
-      name: "status",
-      label: "Actions",
-      options: {
-        filter: false,
-        sort: false,
-        empty: true,
-
-        customBodyRender: (value, tableMeta, updateValue) => {
-          return (
-            <div>
-              <Button
-                style={{ margin: "0.5rem" }}
-                onClick={() => { view(tableMeta) }}
-                color="success"
-                size="small"
-                className="px-2"
-                variant="contained"
-              >
-                View
-              </Button>
-
-              <Button
-                style={{ margin: "0.5rem" }}
-
-                onClick={() => { delete_institution(tableMeta) }}
-                color="secondary"
-                size="small"
-                className="px-2"
-                variant="contained"
-              >
-                Delete
-              </Button>
-            </div>
-
-          );
-        }
-      }
-    },
-    {
-      label: "centers",
-      name: "centers",
-      options: {
-        filter: false,
-        display: false
-      }
-    },
-  ];
-
-  const enrolment_columns = [
-    {
-      name: "First_name",
-      label: "Name",
-      options: {
-        filter: true,
-      }
-    },
-    {
-      name: "DOB",
-      label: "DOB",
-      options: {
-        filter: true,
-      }
-    }, {
-      name: "Phone_Number",
-      label: "Phone Number",
-      options: {
-        filter: true,
-      }
-    }, {
-      name: "Gender",
-      label: "Gender",
-      options: {
-        filter: true,
-      }
-    },
-    {
-      name: "age",
-      label: "age",
-      options: {
-        filter: true,
-      }
-    },
-    {
-      name: "city",
-      label: "City",
-      options: {
-        filter: true,
-      }
-    },
-    {
-      name: "State",
-      label: "State",
-      options: {
-        filter: true,
-      }
-    },
-    {
-      name: "District",
-      label: "District",
-      options: {
-        filter: true,
-      }
-    },
-
-  ];
 
   const dateStyle = {
     display: "flex",
@@ -601,147 +359,161 @@ export default function Training_center(props) {
   }
 
   const [suggestedList, setsuggestedList] = React.useState([]);
-  const [enrolmentlist, setenrolmentlist] = React.useState([]);
+  const [rejectReson, setResonReject] = React.useState("");
   const [isDropDown, setIsDropDown] = useState(true)
 
-  const view_Enrollment = (tableMeta) => {
-    axios.get("https://campusfield.in/api/training/get_programme/" + tableMeta.rowData[6])
-      .then(res => {
-        if (res.data) {
-          setenrolmentlist(res.data.output[0])
-          setopenenrolment(true);
-        }
-      })
-  }
 
   const delete_institution = (tableMeta) => {
-    axios.post(`${IP}/project/delete`)
+    axios.post(`/project/delete`)
       .then(res => {
-        getDetails()
+        // getDetails()
       })
   }
-  function removeDuplicate(things) {
-    return things.filter((thing, index) => {
-      const _thing = JSON.stringify(thing);
-      return index === things.findIndex(obj => {
-        return JSON.stringify(obj) === _thing;
-      });
-    });
-  }
-  const closeCenter = (params) => {
-    // setsuggestedList(removeDuplicate(tempList))
-    // setOpenCenter(params)
-    // setIsFromValid(validateForm())
-  }
-  const get_center = () => {
-    axios.get("https://campusfield.in/api/training/training_center")
-      .then(res => {
-        if (res.data) {
-          //console.log(res.data)
-          setCenterlist(res.data.output)
-        }
-      })
-  }
-  const onAddNewInstitution = () => {
-    //console.log('called')
-    // //console.log(name,Website,mobile,email,City,Description,State,District,Pincode,'sdas');
-    if (editEnable) {
-      axios.post(`${IP}/project/update`,
 
-        {
-          "project_name": projectname.val,
-          "module_name": modulename.val,
-          "path": path.val,
-          "description": description.val,
-          "biasIP": biasIP.val,
-          "monitorIP": monitorIP.val,
-          "IP_explainability": IP_explainability.val,
-          "od_alert_resolved": od_alert_resolved,
-          "dd_alert_resolved": dd_alert_resolved,
-          "cd_alert_resolved": cd_alert_resolved,
-          "ae_alert_resolved": ae_alert_resolved,
-          "modelType_explainability": modelType_explainability,
-          "nan_alert_resolved": nan_alert_resolved,
-          "oor_alert_resolved": oor_alert_resolved,
-          "bias_alert_resolved": bias_alert_resolved,
-          "is_production": is_production,
-          "retrain_models":"",
-          "meta_data": {
-            "project_name": projectname.val,
-            "module_name": modulename.val
-          }
 
-        },config)
-        .then((res) => {
-          clearFields()
-          handleOpen(false)
-          // getDetails();
-        }).catch((err) => {
-          //console.log(err)
+  const grantPermission = (value, data) => {
+    // console.log(value, data._id, "value,datavalue,datavalue,data")
+    let _temp = {}
+    _temp[role] = value
+    if (value) {
+      // console.log(data?._id,role,_temp)
+      axios.put(`http://127.0.0.1:4000/api/updateModel/${role}/${data?._id}`, _temp)
+        .then(res => {
+          console.log(res, "resss")
+          getData()
         })
-    } else if (editEnable == false) {
-      axios.post(`${IP}/project/create`,
-      {
-        "project_name": projectname.val,
-        "module_name": modulename.val,
-        "path": path.val,
-        "description": description.val,
-        "biasIP": biasIP.val,
-        "monitorIP": monitorIP.val,
-        "IP_explainability": IP_explainability.val,
-        "od_alert_resolved": od_alert_resolved,
-        "dd_alert_resolved": dd_alert_resolved,
-        "cd_alert_resolved": cd_alert_resolved,
-        "ae_alert_resolved": ae_alert_resolved,
-        "modelType_explainability": modelType_explainability,
-        "nan_alert_resolved": nan_alert_resolved,
-        "oor_alert_resolved": oor_alert_resolved,
-        "bias_alert_resolved": bias_alert_resolved,
-        "is_production": is_production,
-        "retrain_models":"",
-        "meta_data": {
-          "project_name": projectname.val,
-          "module_name": modulename.val
-        }
-
-      },config)
-        .then((res) => {
-          // if (res.status == 200 & res.data.error_code == 1) {
-            clearFields()
-            handleOpen(false)
-            // setsuggestedList([])
-            // setIsDropDown(true)
-            // getDetails();
-          // }
-        }).catch((err) => {
-          //console.log(err,'errr')
-        })
+    } else {
+      if (rejectReson) {
+        _temp[roleReject] = rejectReson;
+        // console.log(_temp,"_temp_temp")
+        axios.put(`http://127.0.0.1:4000/api/updateModel/${role}/${data?._id}`, _temp)
+          .then(res => {
+            console.log(res, "resss")
+            getData()
+          })
+      } else {
+        alert("Please provide reason for rejecting this model")
+      }
     }
   }
 
+  const onChangeTextHandler = (event, i) => {
+    setResonReject(event.target.value)
+  }
 
   return (
     <>
-      <PageTitle title="Add Project" button="Add Project" add_new={handleOpen} />
-      <Row style={{ width: "100%" }}>
-                <Col xl="12" style={{ width: "100%",backgroundColor:"red" }}>
+      {/* <PageTitle title="Add Project" button="Add Project" add_new={handleOpen} /> */}
+      <Row>
+        <Col xl="6" style={{ width: "100%" }}>
+          <h5>Project Inventory</h5>
+        </Col>
+        <Col xl="6" style={{ width: "100%", right: "9%", display: "flex", flexDirection: "row-reverse" }}>
+          <SyncIcon style={{ fontSize: "35px", color: "#23284a", cursor: "pointer" }} onClick={() => { getData() }} />
+        </Col>
+      </Row>
+      {DataValue && DataValue.map(value => <Row style={{ width: "100%", margin: "10px", padding: "10px", paddingBottom: "10px" }}>
+        <Col xl="1" style={{ width: "100%" }}>
+        </Col>
+        <Col xl="10" style={{ width: "100%", backgroundColor: "#fff", boxShadow: `${(value[role]) ? 'green' : 'red'} 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px` }}>
+          <Row style={{ width: "100%", padding: "8px" }}>
+            <small style={{ float: "left" }}> <h5>{value?.ModelName}</h5></small>
+            <Button variant="contained" style={{ float: "right", fontSize: "10px", padding: "2px", backgroundColor: "rgb(206 105 104)", color: "#fff", right: "-65%" }} >
+              Review Model
+            </Button>
+            <p style={{ float: "right", margin: "auto" }}>Date : {value?.Create_at?.substring(0, 10)}</p>
 
-                    <h1>akjdkajsd</h1>
-                </Col>
-              </Row>
+          </Row>
 
-              <Row style={{ width: "100%" }}>
-              <Col xl="1" style={{ width: "100%" }}>
-                </Col>
-                <Col xl="10" style={{ width: "100%" ,backgroundColor:"green"}}>
-                <h1>akjdkajsd</h1>
+          <Row style={{ width: "100%", paddingLeft: "8px", paddingBottom: "5px", marginTop: "-1%" }}>
+            <span> <b>Type : {value?.ModelType}</b></span>
 
-                </Col>
-                <Col xl="1" style={{ width: "100%" }}>
-                </Col>
-              </Row>
+          </Row>
 
-  
+
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <Row style={{ padding: "40px", margin: "20px", 'border-bottom': "1px solid gray" }}>
+            <Col xl="3" style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+
+              <div>
+                <span> Admin </span>
+                <AccountCircleIcon style={{ color: `${(value['Approved_admin']) ? 'green' : (!value["Approved_admin"] && !value['RejectAdmin']?.length) ? '#ffa600' : 'red'}`, marginLeft: "16%", cursor: "pointer" }} />
+              </div>
+              {/* <div style={{position:"absolute",minWidth:"140px",top:"-150%",backgroundColor: "#cfcfcfa6","box-shadow": "rgb(29 29 217 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px"}}>
+              <ul>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+
+              </ul>
+              </div> */}
+            </Col>
+            {(role == "admin" || role == "Approved_Datascience" || role == "Approved_admin") && <Col xl="3" style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+              <div>
+                <span> Data Scinece </span>
+                <AccountCircleIcon style={{ color: `${(value["Approved_Datascience"]) ? 'green' : (!value["Approved_Datascience"] && !value["RejectDatascience"]?.length) ? '#ffa600' : 'red'}`, marginLeft: "23%", cursor: "pointer" }} />
+              </div>
+            </Col>}
+
+            {(role == "admin" || role == "Approved_Complaince" || role == "Approved_admin") && <Col xl="3" style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+
+              <div>
+                <span> Complaince </span>
+                <AccountCircleIcon style={{ color: `${(value["Approved_Complaince"]) ? 'green' : (!value["Approved_Complaince"] && !value["RejectComplaince"]?.length) ? '#ffa600' : 'red'}`, marginLeft: "23%", cursor: "pointer" }} />
+              </div>
+
+            </Col>}
+
+            {(role == "admin" || role == "Approved_Product" || role == "Approved_admin") && <Col xl="3" style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+
+              <div>
+                <span> Product </span>
+                <AccountCircleIcon style={{ color: `${(value["Approved_Product"]) ? 'green' : (!value['Approved_Product'] && !value['RejectProduct']?.length) ? '#ffa600' : 'red'}`, marginLeft: "16%", cursor: "pointer" }} />
+              </div>
+
+            </Col>}
+          </Row>
+          {!value[role] && !value[roleReject]?.length && (<Row style={{ marginBottom: "20px" }}>
+            <Col xl="6" style={{ width: "100%" }}>
+            </Col>
+            <Col xl="3" style={{ width: "100%" }}>
+              <TextareaAutosize
+                maxRows={4}
+                aria-label="maximum height"
+                placeholder="Write Reason to Reject"
+                onChange={(event) => { onChangeTextHandler(event, "team") }}
+              />
+
+              <NewReleasesIcon style={{ color: "red", marginLeft: "25%", cursor: "pointer" }} onClick={() => { grantPermission(false, value) }} />
+
+            </Col>
+            <Col xl="2" style={{ width: "100%" }}>
+
+              <DoneOutlineIcon style={{ color: "green", marginLeft: "16%", cursor: "pointer" }} onClick={() => { grantPermission(true, value) }} />
+
+            </Col>
+          </Row>)}
+
+          {(role == "Approved_admin" && value["Approved_Product"] && value["Approved_Complaince"] && value["Approved_Datascience"] && value['Approved_admin']) && (<Row style={{ marginBottom: "20px" }}>
+            <Col xl="6" style={{ width: "100%" }}>
+            </Col>
+            <Col xl="3" style={{ width: "100%" }}>
+            </Col>
+            <Col xl="3" style={{ width: "100%" }}>
+
+              <Button variant="contained" style={{ backgroundColor: "#23284a", color: "#fff" }} >
+                Process Init
+              </Button>
+
+            </Col>
+          </Row>)}
+        </Col>
+
+      </Row>)}
+      <ToastContainer />
     </>
   );
 }
