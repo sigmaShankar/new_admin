@@ -92,6 +92,7 @@ function loginUser(dispatch, login, password, history, IP, setIsLoading, setErro
   // })
 
   // temp
+  console.log(login,password)
   if (login === 'admin@sigmared.ai' && password === '1234') {
 
     localStorage.clear()

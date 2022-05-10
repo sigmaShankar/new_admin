@@ -1,7 +1,9 @@
 // import React from "react";
 import { Grid } from "@material-ui/core";
 import MUIDataTable from "mui-datatables";
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
+
 import * as constants from "../../components/Home/constants/constants"
 // import 'date-fns';
 import axios from "axios";
@@ -99,6 +101,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function Training_center(props) {
+  let history = useHistory();
 
   const removeItem = (value) => {
     let filteredArray = suggestedList.filter(item => item._id !== value._id)
@@ -370,6 +373,15 @@ export default function Training_center(props) {
       })
   }
 
+const selectedModel = () =>{
+  if(localStorage.getItem('type') == "datascience" || localStorage.getItem('type') == "admin"){
+    history.push("/app/BiasAssessment")
+
+  }else if(localStorage.getItem('type') == "complaince"){
+    history.push("//app/Explainability")
+
+  }
+}
 
   const grantPermission = (value, data) => {
     // console.log(value, data._id, "value,datavalue,datavalue,data")
@@ -418,7 +430,7 @@ export default function Training_center(props) {
         <Col xl="10" style={{ width: "100%", backgroundColor: "#fff", boxShadow: `${(value[role]) ? 'green' : 'red'} 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px` }}>
           <Row style={{ width: "100%", padding: "8px" }}>
             <small style={{ float: "left" }}> <h5>{value?.ModelName}</h5></small>
-            <Button variant="contained" style={{ float: "right", fontSize: "10px", padding: "2px", backgroundColor: "rgb(206 105 104)", color: "#fff", right: "-65%" }} >
+            <Button variant="contained" style={{ float: "right", fontSize: "10px", padding: "2px", backgroundColor: "rgb(206 105 104)", color: "#fff", right: "-65%" }} onClick={() => { selectedModel() }}>
               Review Model
             </Button>
             <p style={{ float: "right", margin: "auto" }}>Date : {value?.Create_at?.substring(0, 10)}</p>
