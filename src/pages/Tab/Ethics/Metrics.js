@@ -83,11 +83,14 @@ function BarGraph(props) {
 
 function MetricsGraph(props) {
   const [mitigateChk, setMitigateChk] = useState(true);
+  // console.log(props)
+
   const data = [];
   (sessionStorage.getItem("currentModelName") == "Credit Lending") ?  props.dates.map(date => data.push({ name: "as on " + "10/11/2021" })) : props.dates.map(date => data.push({ name: "as on " + "10/11/2021" }))
   
   var temp = {};
   props.data.map((val, ind) => {
+  
     data[ind].Normal = val.normal;
     data[ind].Mitigated = val.mitigated;
     if (val.proxy) data[ind].Proxy = val.proxy;

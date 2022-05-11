@@ -375,7 +375,7 @@ export default function Training_center(props) {
 
 const selectedModel = () =>{
   if(localStorage.getItem('type') == "datascience" || localStorage.getItem('type') == "admin"){
-    history.push("/app/BiasAssessment")
+    history.push("/app/reviewBias")
 
   }else if(localStorage.getItem('type') == "complaince"){
     history.push("//app/Explainability")

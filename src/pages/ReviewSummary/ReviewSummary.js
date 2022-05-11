@@ -6,6 +6,7 @@ import {
   OutlinedInput,
   MenuItem,
 } from "@material-ui/core";
+import MetricsGraph from "./Ethics/Metrics";
 import { useTheme } from "@material-ui/styles";
 import {
   ResponsiveContainer,
@@ -14,6 +15,9 @@ import {
   LineChart,
   Line,
   Area,
+  BarChart,
+  Bar,
+  CartesianGrid,
   YAxis,
   XAxis,Tooltip,
   PieChart, Pie, Sector, Cell, Legend
@@ -31,11 +35,9 @@ import mock from "./mock";
 import Widget from "../../components/Widget";
 
 import PageTitle from "../../components/PageTitle";
-import { Typography } from "../../components/Wrappers";
-import Dot from "../../components/Sidebar/components/Dot";
-import Index from "./components/Table/datatable";
 
-import BigStat from "./components/BigStat/BigStat";
+
+import { Card, CardHeader, Row, Col } from "reactstrap";
 
 const mainChartData = getMainChartData();
 
@@ -248,8 +250,10 @@ export default function ReviewSummary(props) {
 
 
   const initValue = async () => {
-    let URL = (sessionStorage.getItem("currentModelName") == "Credit Lending") ? "Credit_bias_summary_page" : (sessionStorage.getItem("currentModelName") == "Fraud Detection") ? "child_fraud_summary_page" : "Credit_bias_summary_page";
+    let URL = "fairness_review";
+    // let URL = "Credit_bias_summary_page";
 
+    
     fetch(process.env.PUBLIC_URL + `/test/${URL}.json`)
       .then(function (res) {
         return res.json();
@@ -276,130 +280,17 @@ export default function ReviewSummary(props) {
   return (
     <>
     {console.log(!props?.hide,"!props?.hide")}
-      {!props?.hide && (<PageTitle title="Model Inventory" width={["0.5"]} leftTitle={"vcvbvc"} />)}
+      {!props?.hide && (<PageTitle title="Bias Review" width={["0.5"]} leftTitle={"vcvbvc"} />)}
       <br />
 
       <Grid container spacing={4}>
 
 
 
-        {(sessionStorage.getItem('currentModelName') == "Fraud Detection") ? mock.bigStat_fraud.map(stat => (
-
-          <Grid item md={4} sm={6} xs={12} key={stat.product}>
-            {/* <br /> */}
-            <BigStat {...stat} />
-          </Grid>
-        )) : mock.bigStat.map(stat => (
-
-          <Grid item md={4} sm={6} xs={12} key={stat.product}>
-            {/* <br /> */}
-            <BigStat {...stat} />
-          </Grid>
-        ))}
-
-
         {modelData && (<>
-          <Grid item md={6} sm={12} xs={6} style={{ marginBottom: "4vh" }}>
-            <h4>Fairness and Accuracy Over Time</h4>
 
-            <Widget
-              bodyClass={classes.mainChartBody}
-              header={
-                <div className={classes.mainChartHeader}>
-                  <Typography
-                    variant="h5"
-                    color="text"
-                    colorBrightness="secondary"
-                  >
 
-                  </Typography>
-                  <div className={classes.mainChartHeaderLabels}>
-                    <div className={classes.mainChartHeaderLabel}>
-                      <Dot color="warning" />
-                      <Typography className={classes.mainChartLegentElement}>
-                      Accuracy
-                      </Typography>
-                    </div>
-
-                    <div className={classes.mainChartHeaderLabel}>
-                      <Dot color="primary" />
-                      <Typography className={classes.mainChartLegentElement}>
-                      Fairness Score
-                      </Typography>
-                    </div>
-                  </div>
-                  {/* <Select
-                  value={mainChartState}
-                  onChange={e => setMainChartState(e.target.value)}
-                  input={
-                    <OutlinedInput
-                      labelWidth={0}
-                      classes={{
-                        notchedOutline: classes.mainChartSelectRoot,
-                        input: classes.mainChartSelect,
-                      }}
-                    />
-                  }
-                  autoWidth
-                >
-                  <MenuItem value="daily">Daily</MenuItem>
-                  <MenuItem value="weekly">Weekly</MenuItem>
-                  <MenuItem value="monthly">Monthly</MenuItem>
-                </Select> */}
-                </div>
-              }
-            >
-
-              <ResponsiveContainer width="100%" minWidth={500} height={350}>
-                <ComposedChart
-                  margin={{ top: 0, right: -15, left: -15, bottom: 0 }}
-                  data={modelData['Fairness']}
-                >
-                  <YAxis
-
-                    // stroke={theme.palette.text.hint + "80"}
-                    tickLine={false}
-                  />
-                  <XAxis
-                    tickFormatter={i => i}
-                    // tick={{ fill: theme.palette.text.hint + "80", fontSize: 14 }}
-                    // stroke={theme.palette.text.hint + "80"}
-                    tickLine={false}
-                    dataKey="Date"
-                    style={{ color: "black" }}
-                  />
-                  {/* <Area
-                    type="natural"
-                    dataKey="Fainess_Score"
-                    fill={theme.palette.background.light}
-                    strokeWidth={0}
-                  /> */}
-                  <Line
-                    type="natural"
-                    dataKey="Fainess_Score"
-                    stroke={theme.palette.primary.main}
-                    strokeWidth={2}
-
-                  />
-                  <Line
-                    type="linear"
-                    dataKey="Accuracy"
-                    stroke={theme.palette.warning.main}
-                    strokeWidth={2}
-                    dot={{
-                      stroke: theme.palette.warning.dark,
-                      strokeWidth: 2,
-                      fill: theme.palette.warning.main,
-                    }}
-                  />
-            <Tooltip isAnimationActive={true} style={{ opacity: 0 }} />
-
-                </ComposedChart>
-              </ResponsiveContainer>
-            </Widget>
-          </Grid>
-
-          <Grid item xs={6} md={6} sm={12} style={{ marginBottom: "4vh" }}>
+          <Grid item xs={12} md={12} sm={12} style={{ marginBottom: "4vh" }}>
             <h4>Metric Impact Overview</h4>
             <Widget
               bodyClass={classes.mainChartBody}
@@ -432,98 +323,6 @@ export default function ReviewSummary(props) {
 
 
 
-
-          <Grid item md={12} sm={12} xs={12}>
-            <Widget
-              title={modelData['Trans_Ip_Name']['Name']}
-              style={{ cursor: 'pointer' }}
-              upperTitle
-
-              className={classes.card}
-              bodyClass={classes.fullHeightBody}
-            >
-              <Grid lg={12} md={12} sm={12} xs={12}>
-                <Typography variant="h9">{modelData['Trans_Ip_Name']['description']} </Typography>
-              </Grid>
-
-              <br />
-
-              <div className={classes.serverOverviewElement}>
-                <b style={{ width: "100%" }}><Typography
-                  color="text"
-                  variant="h7"
-                  className={classes.serverOverviewElementText}
-                >
-                  Actual Value
-                </Typography></b>
-                <div className={classes.serverOverviewElementChartWrapper}>
-                  <ResponsiveContainer width="99%">
-                    <Typography
-                      color="#23284a"
-                      variant="h6"
-                      colorBrightness="secondary"
-                      className={classes.serverOverviewElementText}
-                    >
-                      {modelData['Trans_Ip_Name']['Actual']}
-                    </Typography>
-                  </ResponsiveContainer>
-                </div>
-              </div>
-
-              <br />
-
-              <div className={classes.serverOverviewElement}>
-                <b style={{ width: "100%" }}><Typography
-                  color="text"
-                  variant="h7"
-                  className={classes.serverOverviewElementText}
-                >
-                  Mitigated Value
-                </Typography></b>
-                <div className={classes.serverOverviewElementChartWrapper}>
-                  <ResponsiveContainer width="99%">
-                    <b>
-                      <Typography
-                        color="#23284a"
-                        variant="h6"
-                        colorBrightness="secondary"
-                        className={classes.serverOverviewElementText}
-                      >
-                        {modelData['Trans_Ip_Name']['Mitigated']}
-                      </Typography>
-                    </b>
-                  </ResponsiveContainer>
-                </div>
-              </div>
-
-              <br />
-
-              <div className={classes.serverOverviewElement}>
-                <b style={{ width: "100%" }}><Typography
-                  color="text"
-                  variant="h7"
-                  className={classes.serverOverviewElementText}
-                >
-                  Acceptable Range
-                </Typography></b>
-                <div className={classes.serverOverviewElementChartWrapper}>
-                  <ResponsiveContainer width="99%">
-                    <Typography
-                      color="#23284a"
-                      variant="h6"
-                      colorBrightness="secondary"
-                      className={classes.serverOverviewElementText}
-                    >
-                      {modelData['Trans_Ip_Name']['Acceptable Range']}
-                    </Typography>
-                  </ResponsiveContainer>
-                </div>
-              </div>
-            </Widget>
-          </Grid>
-
-
-
           <Grid item xs={12} >
 
             <MUIDataTable
@@ -539,7 +338,18 @@ export default function ReviewSummary(props) {
               }}
             />
           </Grid>
-        </>)}
+        <h4>{modelData['Data']['algo']}</h4>
+        <Grid container spacing={6}>
+   
+            {
+              Object.keys(modelData['Data']['metrics']).map(metric => <MetricsGraph name={metric}  algo={"currentAlgo"} data={[modelData['Data']['metrics'][metric]]} dates={['5/13/2021']} />)
+            }
+        </Grid>
+
+        </>)
+        
+        
+        }
       </Grid>
     </>
   );
