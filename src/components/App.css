@@ -48,7 +48,7 @@ button:focus {
 /* changed */
 .MuiDrawer-paper {
     z-index: 100 !important;
-    background-color: #23284a!important;
+    /* background-color: #23284a!important; */
 }
 
 
@@ -101,7 +101,7 @@ button:focus {
     color: #23284a!important;
 } */
 .makeStyles-toolbar-7,.MuiToolbar-regular{
-    background-color: white;
+    background-color: #23284a;
 }
 .MuiList-root{
     background-color: #23284a;

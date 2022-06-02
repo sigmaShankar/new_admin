@@ -1,0 +1,6 @@
+{
+  "name": "UploadData",
+  "version": "1.0.0",
+  "private": true,
+  "main": "UploadData.js"
+}

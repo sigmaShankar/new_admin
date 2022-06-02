@@ -44,16 +44,16 @@ import Typography from "../../pages/typography";
 // import Qualifications from "../../pages/Qualifications";
 
 // import Questions from "../../pages/Questions";
-import Exam from "../Exams/Exams"
+// import Exam from "../Exams/Exams"
 // import State from "../../pages/State";
 // import Subject from "../../pages/Subject";
 
 
 // import Testimonials from "../../pages/Testimonials";
 
-import Training_programe from "../../pages/training_programe";
-import invetory from "../../pages/invetory";
-import DEI from "../../pages/DEI";
+// import Training_programe from "../../pages/training_programe";
+// import invetory from "../../pages/invetory";
+// import DEI from "../../pages/DEI";
 
 
 // import Universities from "../../pages/Universities";
@@ -61,25 +61,28 @@ import DEI from "../../pages/DEI";
 // // import AddCandidate from "../../pages/AddCandidate";
 // import applicant_list from "../../pages/applicant_list";
 // import training_programe from "../../pages/training_programe";
-import Training_center from "../../pages/traning_center";
+// import Training_center from "../../pages/traning_center";
 
-import Tab from "../../pages/Tab";
-import AIProxy from "../../pages/AIProxy";
-import AIEvalution from "../../pages/AIEvalution";
+// import Tab from "../../pages/Tab";
+// import AIProxy from "../../pages/AIProxy";
+// import AIEvalution from "../../pages/AIEvalution";
 
-import Explainability from "../../pages/Explainability";
-import Mlmonitor from "../../pages/Mlmonitor";
-import Mlalert from "../../pages/Mlalert";
+// import Explainability from "../../pages/Explainability";
+// import Mlmonitor from "../../pages/Mlmonitor";
+// import Mlalert from "../../pages/Mlalert";
 
 
 // import Home from "../Home/Home"
 import { useLayoutState } from "../../context/LayoutContext";
-import AIComplaince from "../../pages/AIComplaince/AIComplaince";
-import AITPRM from "../../pages/AITPRM/AITPRM";
+// import AIComplaince from "../../pages/AIComplaince/AIComplaince";
+// import AITPRM from "../../pages/AITPRM/AITPRM";
 
-import SummaryBias from "../../pages/summaryBias/SummaryBias";
-import BiasAssessment from "../../pages/BiasAssessment/BiasAssessment";
-import ReviewSummary from "../../pages/ReviewSummary/ReviewSummary";
+// import SummaryBias from "../../pages/summaryBias/SummaryBias";
+// import BiasAssessment from "../../pages/BiasAssessment/BiasAssessment";
+// import ReviewSummary from "../../pages/ReviewSummary/ReviewSummary";
+import UploadData from "../../pages/uploadData/UploadData"; 
+
+
 
 
 
@@ -120,6 +123,8 @@ function Layout(props) {
             {/* <Route path="/" exact component={Home}/> */}
             <Switch>
               <Route path="/app/dashboard" component={Dashboard} />
+              <Route path="/app/UploadData" component={UploadData} />
+
               {/* <Route path="/app/teachers" component={Teachers} />
               <Route path="/app/institution" component={Institutions} />
               <Route path="/app/newCandidate" component={AddCandidate} />
@@ -128,17 +133,17 @@ function Layout(props) {
 
 
 
-              <Route path="/app/fairness" component={Tab} />
-              <Route path="/app/aiproxy" component={AIProxy} />
+              {/* <Route path="/app/fairness" component={Tab} />
+              <Route path="/app/aiproxy" component={AIProxy} /> */}
 
               {/* <Route path="/app/approve_institution" component={approve_institution} />
               <Route path="/app/institution_list" component={institution_list} /> */}
 
               {/* <Route path="/app/enrollment" component={Enrollment} />
               <Route path="/app/enquires" component={enquires} /> */}
-              <Route path="/app/typography" component={Typography} />
+              {/* <Route path="/app/typography" component={Typography} /> */}
               {/* <Route path="/app/tables" component={Tables} /> */}
-              <Route path="/app/training_center" component={Training_center} />
+              {/* <Route path="/app/training_center" component={Training_center} />
               <Route path="/app/users" component={Training_programe} />
               <Route path="/app/inventory" component={invetory} />
               <Route path="/app/compliance" component={AIComplaince} />
@@ -155,7 +160,7 @@ function Layout(props) {
               <Route path="/app/tprm" component={AITPRM} />
               <Route path="/app/DEI" component={DEI} />
               <Route path="/app/BiasAssessment" component={BiasAssessment} />
-              <Route path="/app/reviewBias" component={ReviewSummary} />
+              <Route path="/app/reviewBias" component={ReviewSummary} /> */}
 
 
 

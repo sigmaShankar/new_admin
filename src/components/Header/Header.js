@@ -156,8 +156,8 @@ const biasAssesment = () =>{
         </div>
       </div> : null
     }
-    <AppBar position="fixed" className={classes.appBar}>
-      <Toolbar className={classes.toolbar}>
+    <AppBar position="fixed" className={classes.appBar} >
+      <Toolbar className={classes.toolbar} style={{backgroundColor:"#ffc107ed"}}>
 
         <IconButton
           color="inherit"
@@ -190,7 +190,8 @@ const biasAssesment = () =>{
           )}
         </IconButton>
         <div >
-          <img style={{height: "6rem", width: "13rem",marginLeft:"-13px",position:"absolute","margin-top":"-3rem"}} src={require("../../assets/Sigma-red-Final-logo.png")}/>
+          <h4 style={{height: "6rem", width: "13rem",marginLeft:"1px",position:"absolute","margin-top":"-1rem"}}>BioRhyme</h4>
+          {/* <img style={{height: "6rem", width: "13rem",marginLeft:"-13px",position:"absolute","margin-top":"-3rem"}} src={require("../../assets/Sigma-red-Final-logo.png")}/> */}
         </div>
         <div className={classes.grow} />
         {/* <Button  href="#" variant={"outlined"} color={"secondary"} style={{marginRight: 24,fontSize:"10px"}}>
@@ -367,14 +368,14 @@ const biasAssesment = () =>{
               Flalogic.com
             </Typography>
           </div> */}
-          {/* <MenuItem
+          <MenuItem
             className={classNames(
               classes.profileMenuItem,
               classes.headerMenuItem,
             )}
           >
             <AccountIcon className={classes.profileMenuIcon} /> Profile
-          </MenuItem> */}
+          </MenuItem>
           {/* <MenuItem
             className={classNames(
               classes.profileMenuItem,

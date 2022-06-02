@@ -1,0 +1,267 @@
+{
+    "securityRadial": {
+      "series": [71],
+      "options": {
+        "chart": {
+          "height": 280,
+          "type": "radialBar",
+          "toolbar": { "show": false }
+        },
+        "plotOptions": {
+          "radialBar": {
+            "startAngle": -135,
+            "endAngle": 225,
+            "hollow": {
+              "margin": 0,
+              "size": "70%",
+              "background": "#fff",
+              "imageOffsetX": 0,
+              "imageOffsetY": 0,
+              "position": "front",
+              "dropShadow": {
+                "enabled": true,
+                "top": 3,
+                "left": 0,
+                "blur": 4,
+                "opacity": 0.24
+              }
+            },
+            "track": {
+              "background": "#fff",
+              "strokeWidth": "67%",
+              "margin": 0,
+              "dropShadow": {
+                "enabled": true,
+                "top": -3,
+                "left": 0,
+                "blur": 4,
+                "opacity": 0.35
+              }
+            },
+            "dataLabels": {
+              "show": true,
+              "name": {
+                "offsetY": -10,
+                "show": true,
+                "color": "black",
+                "fontSize": "18px"
+              },
+              "value": { "color": "#111", "fontSize": "23px", "show": true }
+            }
+          }
+        },
+        "fill": {
+          "type": "gradient",
+          "gradient": {
+            "shade": "light",
+            "shadeIntensity": 0.4,
+            "inverseColors": false,
+            "opacityFrom": 1,
+            "opacityTo": 1,
+            "stops": [0, 50, 53, 91]
+          }
+        },
+        "stroke": { "lineCap": "round" },
+        "labels": ["Robustness"]
+      }
+    },
+    "overallRadial": {
+      "series": [77.6],
+      "options": {
+        "chart": {
+          "height": 280,
+          "type": "radialBar",
+          "toolbar": { "show": false }
+        },
+        "plotOptions": {
+          "radialBar": {
+            "startAngle": -135,
+            "endAngle": 225,
+            "hollow": {
+              "margin": 0,
+              "size": "70%",
+              "background": "#fff",
+              "imageOffsetX": 0,
+              "imageOffsetY": 0,
+              "position": "front",
+              "dropShadow": {
+                "enabled": true,
+                "top": 3,
+                "left": 0,
+                "blur": 4,
+                "opacity": 0.24
+              }
+            },
+            "track": {
+              "background": "#fff",
+              "strokeWidth": "67%",
+              "margin": 0,
+              "dropShadow": {
+                "enabled": true,
+                "top": -3,
+                "left": 0,
+                "blur": 4,
+                "opacity": 0.35
+              }
+            },
+            "dataLabels": {
+              "show": true,
+              "name": {
+                "offsetY": -10,
+                "show": true,
+                "color": "black",
+                "fontSize": "18px"
+              },
+              "value": { "color": "#111", "fontSize": "23px", "show": true }
+            }
+          }
+        },
+        "fill": {
+          "type": "solid",
+          "colors": "#FF5733",
+          "gradient": {
+            "shade": "dark",
+            "shadeIntensity": 0.4,
+            "inverseColors": false,
+            "opacityFrom": 1,
+            "opacityTo": 1,
+            "stops": [0, 50, 53, 91]
+          }
+        },
+        "stroke": { "lineCap": "round" },
+        "labels": ["Overall"]
+      }
+    },
+    "ethicsRadial": {
+      "series": [77],
+      "options": {
+        "chart": {
+          "height": 280,
+          "type": "radialBar",
+          "toolbar": { "show": false }
+        },
+        "plotOptions": {
+          "radialBar": {
+            "startAngle": -135,
+            "endAngle": 225,
+            "hollow": {
+              "margin": 0,
+              "size": "70%",
+              "background": "#fff",
+              "imageOffsetX": 0,
+              "imageOffsetY": 0,
+              "position": "front",
+              "dropShadow": {
+                "enabled": true,
+                "top": 3,
+                "left": 0,
+                "blur": 4,
+                "opacity": 0.24
+              }
+            },
+            "track": {
+              "background": "#fff",
+              "strokeWidth": "67%",
+              "margin": 0,
+              "dropShadow": {
+                "enabled": true,
+                "top": -3,
+                "left": 0,
+                "blur": 4,
+                "opacity": 0.35
+              }
+            },
+            "dataLabels": {
+              "show": true,
+              "name": {
+                "offsetY": -10,
+                "show": true,
+                "color": "black",
+                "fontSize": "18px"
+              },
+              "value": { "color": "#111", "fontSize": "23px", "show": true }
+            }
+          }
+        },
+        "fill": {
+          "type": "gradient",
+          "gradient": {
+            "shade": "light",
+            "shadeIntensity": 0.4,
+            "inverseColors": false,
+            "opacityFrom": 1,
+            "opacityTo": 1,
+            "stops": [0, 50, 53, 91]
+          }
+        },
+        "stroke": { "lineCap": "round" },
+        "labels": ["Fairness"]
+      }
+    },
+    "transparencyRadial": {
+      "series": [85],
+      "options": {
+        "chart": {
+          "height": 280,
+          "type": "radialBar",
+          "toolbar": { "show": false }
+        },
+        "plotOptions": {
+          "radialBar": {
+            "startAngle": -135,
+            "endAngle": 225,
+            "hollow": {
+              "margin": 0,
+              "size": "70%",
+              "background": "#fff",
+              "imageOffsetX": 0,
+              "imageOffsetY": 0,
+              "position": "front",
+              "dropShadow": {
+                "enabled": true,
+                "top": 3,
+                "left": 0,
+                "blur": 4,
+                "opacity": 0.24
+              }
+            },
+            "track": {
+              "background": "#fff",
+              "strokeWidth": "67%",
+              "margin": 0,
+              "dropShadow": {
+                "enabled": true,
+                "top": -3,
+                "left": 0,
+                "blur": 4,
+                "opacity": 0.35
+              }
+            },
+            "dataLabels": {
+              "show": true,
+              "name": {
+                "offsetY": -10,
+                "show": true,
+                "color": "black",
+                "fontSize": "18px"
+              },
+              "value": { "color": "#111", "fontSize": "23px", "show": true }
+            }
+          }
+        },
+        "fill": {
+          "type": "gradient",
+          "gradient": {
+            "shade": "light",
+            "shadeIntensity": 0.4,
+            "inverseColors": false,
+            "opacityFrom": 1,
+            "opacityTo": 1,
+            "stops": [0, 50, 53, 91]
+          }
+        },
+        "stroke": { "lineCap": "round" },
+        "labels": ["Transparency"]
+      }
+    }
+  }

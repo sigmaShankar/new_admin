@@ -44,227 +44,13 @@ import {
   toggleSidebar,
 } from "../../context/LayoutContext";
 
-let structure = []
-
-let normal = [
-  { id: 11, type: "title", label: "Dashboard" },
-  { id: 10, type: "divider" },
-
-  { id: 0, label: "Model Inventory", link: "/app/dashboard", icon: <Dashboard /> },
-
-  // { id: 18, label: "Payment", link: "/app/sitemanagement/payments", icon: <Payment /> },
+let structure = [
+  { id: 0, label: "Food Analytics", link: "/app/dashboard", icon: <Dashboard /> },
+  { id: 1, label: "Food Detection", link: "/app/UploadData", icon: <Dashboard /> },
 
 
-  // { id: 1111, type: "title", label: "User Management" },
-  // { id: 102323, type: "divider" },
-  // { id: 183232, label: "Users", link: "/app/users", icon: <Payment /> },
-  { id: 183234, label: "Project", link: "/app/inventory", icon: <HomeIcon /> },
-  // { id: 183238, label: "Compliance", link: "/app/compliance2", icon: <FolderShared /> },
+]
 
-  { id: 1111, type: "title", label: "Modules" },
-  { id: 102323, type: "divider" },
-  {
-    id: 183235, label: "ML Fairness", link: "", icon: <Security />,
-    children: [
-      { label: "Summary", link: "/app/biasSummary" },
-      { label: "Bias", link: "/app/fairness" },
-      { label: "Proxy Bias", link: "/app/aiproxy" },
-      { label: "Intersectional", link: "/app/aievalation" },
-
-    ],
-  },
-  { id: 213, label: "ML Explainability", link: "/app/Explainability", icon: <ScatterPlot /> },
-  {
-    id: 1123, label: "ML Monitoring", link: "", icon: <ShowChart />,
-    children: [
-      { label: "Monitoring", link: "/app/Monitor" },
-      { label: "Alert", link: "/app/Mlalert" }
-    ],
-  },
-  { id: 12121, label: "AI Compliance", link: "/app/compliance", icon: <VpnLock /> },
-  { id: 212123, label: "DEI", link: "/app/DEI", icon: <Dvr /> },
-  { id: 212123, label: "AI TPRM", link: "/app/tprm", icon: <BarChartIcon /> },
-];
-
-let admin = [
-  { id: 11, type: "title", label: "Dashboard" },
-  { id: 10, type: "divider" },
-
-  { id: 0, label: "Model Inventory", link: "/app/dashboard", icon: <Dashboard /> },
-
-  // { id: 18, label: "Payment", link: "/app/sitemanagement/payments", icon: <Payment /> },
-
-
-  { id: 1111, type: "title", label: "User Management" },
-  { id: 102323, type: "divider" },
-  { id: 183232, label: "Users", link: "/app/users", icon: <Payment /> },
-  { id: 183234, label: "Project", link: "/app/inventory", icon: <HomeIcon /> },
-  // { id: 183238, label: "Compliance", link: "/app/compliance2", icon: <FolderShared /> },
-
-  { id: 1111, type: "title", label: "Modules" },
-  { id: 102323, type: "divider" },
-  {
-    id: 183235, label: "ML Fairness", link: "", icon: <Security />,
-    children: [
-      { label: "Summary", link: "/app/biasSummary" },
-      { label: "Bias", link: "/app/fairness" },
-      { label: "Proxy Bias", link: "/app/aiproxy" },
-      { label: "Intersectional", link: "/app/aievalation" },
-
-    ],
-  },
-  { id: 213, label: "ML Explainability", link: "/app/Explainability", icon: <ScatterPlot /> },
-  {
-    id: 1123, label: "ML Monitoring", link: "", icon: <ShowChart />,
-    children: [
-      { label: "Monitoring", link: "/app/Monitor" },
-      { label: "Alert", link: "/app/Mlalert" }
-    ],
-  },
-  { id: 12121, label: "AI Compliance", link: "/app/compliance", icon: <VpnLock /> },
-  { id: 212123, label: "DEI", link: "/app/DEI", icon: <Dvr /> },
-  { id: 212123, label: "AI TPRM", link: "/app/tprm", icon: <BarChartIcon /> },
-  // { id: 212123, label: "Bias Assessment", link: "/app/BiasAssessment", icon: <CompareIcon /> }
-
-];
-
-
-let datascience = [
-  { id: 11, type: "title", label: "Dashboard" },
-  { id: 10, type: "divider" },
-
-  { id: 0, label: "Model Inventory", link: "/app/dashboard", icon: <Dashboard /> },
-
-  // { id: 18, label: "Payment", link: "/app/sitemanagement/payments", icon: <Payment /> },
-
-
-  { id: 1111, type: "title", label: "User Management" },
-  { id: 102323, type: "divider" },
-  // { id: 183232, label: "Users", link: "/app/users", icon: <Payment /> },
-  { id: 183234, label: "Project", link: "/app/inventory", icon: <HomeIcon /> },
-  // { id: 183238, label: "Compliance", link: "/app/compliance2", icon: <FolderShared /> },
-
-  { id: 1111, type: "title", label: "Modules" },
-  { id: 102323, type: "divider" },
-  {
-    id: 183235, label: "ML Fairness", link: "", icon: <Security />,
-    children: [
-      { label: "Summary", link: "/app/biasSummary" },
-      { label: "Bias", link: "/app/fairness" },
-      { label: "Proxy Bias", link: "/app/aiproxy" },
-      { label: "Intersectional", link: "/app/aievalation" },
-
-    ],
-  },
-  { id: 213, label: "ML Explainability", link: "/app/Explainability", icon: <ScatterPlot /> },
-  {
-    id: 1123, label: "ML Monitoring", link: "", icon: <ShowChart />,
-    children: [
-      { label: "Monitoring", link: "/app/Monitor" },
-      { label: "Alert", link: "/app/Mlalert" }
-    ],
-  },
-  // { id: 12121, label: "AI Compliance", link: "/app/compliance", icon: <VpnLock /> },
-  // { id: 212123, label: "DEI", link: "/app/DEI", icon: <Dvr /> },
-  // { id: 212123, label: "AI TPRM", link: "/app/tprm", icon: <BarChartIcon /> },
-  // { id: 212123, label: "Bias Assessment", link: "/app/BiasAssessment", icon: <CompareIcon /> }
-
-];
-let product = [
-  { id: 11, type: "title", label: "Dashboard" },
-  { id: 10, type: "divider" },
-
-  { id: 0, label: "Model Inventory", link: "/app/dashboard", icon: <Dashboard /> },
-
-  // { id: 18, label: "Payment", link: "/app/sitemanagement/payments", icon: <Payment /> },
-
-
-  { id: 1111, type: "title", label: "User Management" },
-  { id: 102323, type: "divider" },
-  // { id: 183232, label: "Users", link: "/app/users", icon: <Payment /> },
-  { id: 183234, label: "Project", link: "/app/inventory", icon: <HomeIcon /> },
-  // { id: 183238, label: "Compliance", link: "/app/compliance2", icon: <FolderShared /> },
-
-  { id: 1111, type: "title", label: "Modules" },
-  { id: 102323, type: "divider" },
-  {
-    id: 183235, label: "ML Fairness", link: "", icon: <Security />,
-    children: [
-      { label: "Summary", link: "/app/biasSummary" },
-      { label: "Bias", link: "/app/fairness" },
-      { label: "Proxy Bias", link: "/app/aiproxy" },
-      { label: "Intersectional", link: "/app/aievalation" },
-
-    ],
-  },
-  { id: 213, label: "ML Explainability", link: "/app/Explainability", icon: <ScatterPlot /> },
-  {
-    id: 1123, label: "ML Monitoring", link: "", icon: <ShowChart />,
-    children: [
-      { label: "Monitoring", link: "/app/Monitor" },
-      { label: "Alert", link: "/app/Mlalert" }
-    ],
-  },
-  // { id: 12121, label: "AI Compliance", link: "/app/compliance", icon: <VpnLock /> },
-  // { id: 212123, label: "DEI", link: "/app/DEI", icon: <Dvr /> },
-  // { id: 212123, label: "AI TPRM", link: "/app/tprm", icon: <BarChartIcon /> },
-  // { id: 212123, label: "Bias Assessment", link: "/app/BiasAssessment", icon: <CompareIcon /> }
-
-];
-let complaince = [
-  { id: 11, type: "title", label: "Dashboard" },
-  { id: 10, type: "divider" },
-
-  { id: 0, label: "Model Inventory", link: "/app/dashboard", icon: <Dashboard /> },
-
-  // { id: 18, label: "Payment", link: "/app/sitemanagement/payments", icon: <Payment /> },
-
-
-  { id: 1111, type: "title", label: "User Management" },
-  { id: 102323, type: "divider" },
-  // { id: 183232, label: "Users", link: "/app/users", icon: <Payment /> },
-  { id: 183234, label: "Project", link: "/app/inventory", icon: <HomeIcon /> },
-  // { id: 183238, label: "Compliance", link: "/app/compliance2", icon: <FolderShared /> },
-
-  // { id: 1111, type: "title", label: "Modules" },
-  // { id: 102323, type: "divider" },
-  // { id: 183235, label: "ML Fairness", link: "", icon: <Security /> ,
-  //   children: [
-  //     { label: "Summary", link: "/app/biasSummary" },
-  //     { label: "Bias", link: "/app/fairness" },
-  //     { label: "Proxy Bias", link: "/app/aiproxy" },
-  //     { label: "Intersectional", link: "/app/aievalation" },
-
-  //   ],
-  // },
-  //   { id: 213, label: "ML Explainability", link: "/app/Explainability", icon: <ScatterPlot /> },
-  //   { id: 1123, label: "ML Monitoring", link: "", icon: <ShowChart />,
-  //   children: [
-  //     { label: "Monitoring", link: "/app/Monitor" },
-  //     { label: "Alert", link: "/app/Mlalert" }
-  //   ],
-  // },
-  { id: 12121, label: "AI Compliance", link: "/app/compliance", icon: <VpnLock /> },
-  // { id: 212123, label: "DEI", link: "/app/DEI", icon: <Dvr /> },
-  // { id: 212123, label: "AI TPRM", link: "/app/tprm", icon: <BarChartIcon /> },
-  // { id: 212123, label: "Bias Assessment", link: "/app/BiasAssessment", icon: <CompareIcon /> }
-
-];
-
-if (localStorage.getItem('type') == 'admin') {
-  
-  structure = admin
-} else if (localStorage.getItem('type') == 'complaince') {
-
-  structure = complaince
-
-} else if (localStorage.getItem('type') == 'datascience') {
-
-  structure = datascience
-
-} else {
-  structure = normal
-}
 
 function Sidebar({ location }) {
   var classes = useStyles();
@@ -286,6 +72,7 @@ function Sidebar({ location }) {
   });
 
   return (
+    // <></>
     <Drawer
       style={{ minHeight: "100vh" }}
 
@@ -314,7 +101,7 @@ function Sidebar({ location }) {
       </div>
       <List className={classes.sidebarList}
 
-        style={{ "background-color": "#23284a" }}
+        style={{ "background-color": "#fff",color:"red"}}
       >
         {structure.map(link => (
           <SidebarLink

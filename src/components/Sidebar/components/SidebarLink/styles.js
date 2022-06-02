@@ -18,7 +18,7 @@ export default makeStyles(theme => ({
   },
   linkIcon: {
     marginRight: theme.spacing(1),
-    color: "#fff",
+    color: "black",
     transition: theme.transitions.create("color"),
     width: 24,
     display: "flex",
@@ -29,7 +29,7 @@ export default makeStyles(theme => ({
   },
   linkText: {
     padding: 0,
-    color: "#fff",
+    color: "black",
     transition: theme.transitions.create(["opacity", "color"]),
     fontSize: 16,
   },

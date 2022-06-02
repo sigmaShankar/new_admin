@@ -57,22 +57,22 @@ function Login(props) {
       {/* </div> */}
       <div className={classes.formContainer}>
         <div className={classes.form}>
-          {/* <Tabs
+          <Tabs
             value={activeTabId}
             onChange={(e, id) => setActiveTabId(id)}
             indicatorColor="primary"
             textColor="primary"
             centered
-            > */}
-            <div style={{display: "flex", borderBottom: "2px solid #093d62"}}>
-              <img src={require("./Sigma-red-Final-logo.png")} alt="logo"  style={{width:"100%",height:"16vh"}} />
-              {/* <Tab
+            >
+            {/* <div style={{display: "flex", borderBottom: "2px solid #093d62"}}> */}
+              {/* <img src={require("./Sigma-red-Final-logo.png")} alt="logo"  style={{width:"100%",height:"16vh"}} /> */}
+              <Tab
               style={{fontWeight: "bold"}} 
               label="Login" 
-              classes={{ root: classes.tab }} /> */}
-            </div>
-            {/* <Tab label="New User" classes={{ root: classes.tab }} /> */}
-          {/* </Tabs> */}
+              classes={{ root: classes.tab }} />
+            {/* </div> */}
+            <Tab label="New User" classes={{ root: classes.tab }} />
+          </Tabs>
           {activeTabId === 0 && (
             <React.Fragment>
               {/* <Typography variant="h1" className={classes.greeting}>
@@ -131,11 +131,13 @@ function Login(props) {
                     }
                     onClick={() =>
                       loginUser(
+                        "loginAccount",
                         userDispatch,
                         loginValue,
                         passwordValue,
                         props.history,
                         IP,
+                        nameValue,
                         setIsLoading,
                         setError,
                       )
@@ -222,11 +224,13 @@ function Login(props) {
                   <Button
                     onClick={() =>
                       loginUser(
+                        "createAccount",
                         userDispatch,
                         loginValue,
                         passwordValue,
                         props.history,
                         IP,
+                        nameValue,
                         setIsLoading,
                         setError,
                       )
@@ -248,10 +252,10 @@ function Login(props) {
               </div>
               <div className={classes.formDividerContainer}>
                 <div className={classes.formDivider} />
-                <Typography className={classes.formDividerWord}>or</Typography>
+                {/* <Typography className={classes.formDividerWord}>or</Typography> */}
                 <div className={classes.formDivider} />
               </div>
-              <Button
+              {/* <Button
                 size="large"
                 className={classnames(
                   classes.googleButton,
@@ -260,13 +264,13 @@ function Login(props) {
               >
                 <img src={google} alt="google" className={classes.googleIcon} />
                 &nbsp;Sign in with Google
-              </Button>
+              </Button> */}
             </React.Fragment>
           )}
         </div>
-        <Typography color="primary" className={classes.copyright}>
+        {/* <Typography color="primary" className={classes.copyright}>
         © Copyright 2021  Sigmared AI. All Rights Reserved
-        </Typography>
+        </Typography> */}
       </div>
     </Grid>
   );
