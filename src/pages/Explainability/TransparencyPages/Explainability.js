@@ -58,12 +58,6 @@ const SimpleAttributions = (props) => {
            {(result?.score)? <h4>Score : {result?.score}</h4>:null} 
 
             {/* <br /> */}
-            {/* {(result.text)?null:<br />}
-            {(result.text)?null:<br />}
-
-            {(result?.name?.length > 50 )?null:<br />} */}
-
-
 
             <Plot
               data={result.data}
@@ -73,6 +67,7 @@ const SimpleAttributions = (props) => {
               useResizeHandler
               style={{ width: "100%", height: "100%" }}
             />
+            
           </div>
         );
       })}
