@@ -1,19 +1,19 @@
 {
     "Fairness": [
         {
-            "Date": "02-Oct-21",
+            "Date": "01-Aug-22",
             "Accuracy": 67,
             "Fainess_Score": 60
         },
         {
-            "Date": "25-Oct-21",
+            "Date": "13-Aug-22",
             "Accuracy": 72,
             "Fainess_Score": 65
         },
         {
-            "Date": "18-Nov-21",
+            "Date": "28-Aug-22",
             "Accuracy": 74.35,
-            "Fainess_Score": 66.07
+            "Fainess_Score":66.07
         }
     ],
     "Pie_chart": [

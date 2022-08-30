@@ -8,21 +8,15 @@
                 "ids": 1,
                 "name": "Negative bias towards the African American people disproportionate to default rate",
                 "impact": "High",
-                "date": "2021-11-18"
+                "date": "2022-08-17"
             },
-            {
-                "pillar": "Robustness",
-                "ids": 2,
-                "name": "Accuracy on the latest samples appear to be lower than general rate",
-                "impact": "High",
-                "date": "2021-11-20"
-            },
+
             {
                 "pillar": "Fairness",
                 "ids": 3,
                 "name": "Negative bias regarding caucasian women disproportionate to default rate",
                 "impact": "Medium",
-                "date": "2021-11-13"
+                "date": "2022-08-17"
             }
 
         ],
@@ -35,7 +29,7 @@
                 "OverAll_Acc": 70.7,
                 "Biased_Group_Acc": 72.61,
                 "Mitigation_Rating": 6.0,
-                "date": "2021-11-10",
+                "date": "2022-08-29",
                 "url": ""
             },
             {
@@ -46,7 +40,7 @@
                 "OverAll_Acc": 68.13,
                 "Biased_Group_Acc": 68.95,
                 "Mitigation_Rating": 7.0,
-                "date": "2021-11-10",
+                "date": "2022-08-29",
                 "url": ""
             },
             {
@@ -57,7 +51,7 @@
                 "OverAll_Acc": 67.52,
                 "Biased_Group_Acc": 68.78,
                 "Mitigation_Rating": 6.0,
-                "date": "2021-11-10",
+                "date": "2022-08-29",
                 "url": ""
             },
             {
@@ -67,8 +61,8 @@
                 "score": 72.08,
                 "OverAll_Acc": 76.12,
                 "Biased_Group_Acc": 69.94,
-                "Mitigation_Rating": 8,
-                "date": "2021-11-10",
+                "Mitigation_Rating": 8.0,
+                "date": "2022-08-29",
                 "url": ""
             },
             {
@@ -79,7 +73,7 @@
                 "OverAll_Acc": 80.95,
                 "Biased_Group_Acc": 76.41,
                 "Mitigation_Rating": 8.0,
-                "date": "2021-11-10",
+                "date": "2022-08-29",
                 "url": ""
             },
             {
@@ -90,7 +84,7 @@
                 "OverAll_Acc": 70.74,
                 "Biased_Group_Acc": 62.44,
                 "Mitigation_Rating": 6.5,
-                "date": "2021-11-10",
+                "date": "2022-08-29",
                 "url": ""
             },
             {
@@ -101,7 +95,7 @@
                 "OverAll_Acc": 74.0,
                 "Biased_Group_Acc": 74.23,
                 "Mitigation_Rating": 6.0,
-                "date": "2021-11-10",
+                "date": "2022-08-29",
                 "url": ""
             },
             {
@@ -111,8 +105,8 @@
                 "score": 66.42,
                 "OverAll_Acc": 94.0,
                 "Biased_Group_Acc": 86.53,
-                "Mitigation_Rating": 9,
-                "date": "2021-11-10",
+                "Mitigation_Rating": 9.0,
+                "date": "2022-08-29",
                 "url": ""
             },
             {
@@ -123,7 +117,7 @@
                 "OverAll_Acc": 83.25,
                 "Biased_Group_Acc": 79.20,
                 "Mitigation_Rating": 8.3,
-                "date": "2021-11-10",
+                "date": "2022-08-29",
                 "url": ""
             }
         ]

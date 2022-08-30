@@ -1,17 +1,17 @@
 {
     "Fairness": [
         {
-            "Date": "05-Oct-21",
+            "Date": "12-Aug-22",
             "Accuracy": 78,
             "Fainess_Score": 83
         },
         {
-            "Date": "23-Oct-21",
+            "Date": "18-Aug-22",
             "Accuracy": 73,
             "Fainess_Score": 85
         },
         {
-            "Date": "15-Nov-21",
+            "Date": "26-Aug-22",
             "Accuracy": 78,
             "Fainess_Score": 91.07
         }

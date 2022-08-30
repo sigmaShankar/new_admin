@@ -3,40 +3,40 @@ export default {
     {
       "Fairness": 68,
       "Robustness": 73,
-      "Date": "02-Oct-21"
+      "Date": "22-Aug-22"
   },
   {
       "Fairness": 73,
       "Robustness": 68,
-      "Date": "25-Oct-21"
+      "Date": "22-Aug-22"
   },
   {
       "Fairness": 75,
       "Robustness": 71,
-      "Date": "18-Nov-21"
+      "Date": "22-Aug-22"
   }
   ],
   analatics_fraud:[
     {
       "Fairness": 72,
       "Robustness": 73,
-      "Date": "05-Oct-21"
+      "Date": "22-Aug-22"
   },
   {
       "Fairness": 73,
       "Robustness": 72,
-      "Date": "23-Oct-21"
+      "Date": "22-Aug-22"
   },
   {
       "Fairness": 70,
       "Robustness": 75,
-      "Date": "15-Nov-21"
+      "Date": "22-Aug-22"
   }
   ],
   bigStat: [
     {
       product: "Overall",
-      date:"18-Nov-21",
+      date:"17-Aug-22",
       total_risk:"3",
       High_Risks:"2",
       graphData:[{value:"70.5",date:"10/02"},{value:"71.5",date:"10/25"},{value:"68.53",date:"11/18"}],
@@ -62,7 +62,7 @@ export default {
     },
     {
       product: "Fairness",
-      date:"18-Nov-21",
+      date:"17-Aug-22",
       total_risk:"2",
       High_Risks:"1",
       value_d:"66",
@@ -88,7 +88,7 @@ export default {
     },
     {
       product: "Robustness",
-      date:"18-Nov-21",
+      date:"17-Aug-22",
       total_risk:"1",
       High_Risks:"1",
       value_d:"71",
@@ -116,7 +116,7 @@ export default {
   bigStat_fraud: [
     {
       product: "Overall",
-      date:"18-Nov-21",
+      date:"17-Aug-22",
       total_risk:"3",
       High_Risks:"2",
       graphData:[{value:"78",date:"10/02"},{value:"78.5",date:"10/25"},{value:"83",date:"11/18"}],
@@ -142,7 +142,7 @@ export default {
     },
     {
       product: "Fairness",
-      date:"18-Nov-21",
+      date:"17-Aug-22",
       total_risk:"1",
       High_Risks:"0",
       value_d:"91.07",
@@ -168,7 +168,7 @@ export default {
     },
     {
       product: "Robustness",
-      date:"18-Nov-21",
+      date:"17-Aug-22",
       total_risk:"2",
       High_Risks:"2",
       value_d:"75",
