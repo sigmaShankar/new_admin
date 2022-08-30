@@ -39,7 +39,7 @@ export default {
       date:"17-Aug-22",
       total_risk:"3",
       High_Risks:"2",
-      graphData:[{value:"70.5",date:"10/02"},{value:"71.5",date:"10/25"},{value:"68.53",date:"11/18"}],
+      graphData:[{value:"70.5",date:"22/02"},{value:"71.5",date:"22/12"},{value:"68.53",date:"22/17"}],
       Medium_Risks:"1",
       value_d:"68.53",
       total: {
@@ -67,7 +67,7 @@ export default {
       High_Risks:"1",
       value_d:"66",
       Medium_Risks:"1",
-      graphData:[{value:"60",date:"10/02"},{value:"65",date:"10/25"},{value:"66",date:"11/18"}],
+      graphData:[{value:"60",date:"22/02"},{value:"65",date:"22/17"},{value:"66",date:"22/17"}],
       total: {
         monthly: 754,
         weekly: 180,
@@ -92,7 +92,7 @@ export default {
       total_risk:"1",
       High_Risks:"1",
       value_d:"71",
-      graphData:[{value:"73",date:"10/02"},{value:"78",date:"10/25"},{value:"71",date:"11/18"}],
+      graphData:[{value:"73",date:"22/02"},{value:"78",date:"22/12"},{value:"71",date:"22/17"}],
       Medium_Risks:"0",
       total: {
         monthly: 1025,
@@ -119,7 +119,7 @@ export default {
       date:"17-Aug-22",
       total_risk:"3",
       High_Risks:"2",
-      graphData:[{value:"78",date:"10/02"},{value:"78.5",date:"10/25"},{value:"83",date:"11/18"}],
+      graphData:[{value:"78",date:"22/02"},{value:"78.5",date:"22/12"},{value:"83",date:"22/17"}],
       Medium_Risks:"1",
       value_d:"83",
       total: {
@@ -147,7 +147,7 @@ export default {
       High_Risks:"0",
       value_d:"91.07",
       Medium_Risks:"1",
-      graphData:[{value:"83",date:"10/05"},{value:"85",date:"10/23"},{value:"91.07",date:"11/15"}],
+      graphData:[{value:"83",date:"22/02"},{value:"85",date:"22/12"},{value:"91.07",date:"22/17"}],
       total: {
         monthly: 754,
         weekly: 180,
@@ -172,7 +172,7 @@ export default {
       total_risk:"2",
       High_Risks:"2",
       value_d:"75",
-      graphData:[{value:"73",date:"10/02"},{value:"72",date:"10/20"},{value:"75",date:"10/25"}],
+      graphData:[{value:"73",date:"22/02"},{value:"72",date:"22/12"},{value:"75",date:"22/17"}],
       Medium_Risks:"0",
       total: {
         monthly: 1025,
