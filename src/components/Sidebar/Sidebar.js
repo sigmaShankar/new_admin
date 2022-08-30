@@ -45,10 +45,9 @@ import {
 } from "../../context/LayoutContext";
 
 let structure = [
+  { id: 2, label: "Dashboard", link: "/app/dashboard2", icon: <Dashboard /> },
   { id: 0, label: "Food Analytics", link: "/app/dashboard", icon: <Dashboard /> },
   { id: 1, label: "Food Detection", link: "/app/UploadData", icon: <Dashboard /> },
-
-
 ]
 
 

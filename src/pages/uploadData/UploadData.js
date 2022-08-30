@@ -13,7 +13,8 @@ import MUIDataTable from "mui-datatables";
 import React, { useState, useEffect } from "react"
 import * as constants from "../../components/Home/constants/constants"
 import { Card, CardHeader, Row, Col } from "reactstrap";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios"
 
 // components
@@ -28,6 +29,7 @@ import { createMuiTheme, withStyles, makeStyles, ThemeProvider } from '@material
 // import Table from "../dashboard/components/Table/Table";
 
 import "./upload.css"
+import Plot from "react-plotly.js";
 
 
 function rand() {
@@ -151,43 +153,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function UploadData(props) {
 
-  const clearFields = () => {
-    setName({
-      val: '',
-      isValid: false,
-      touched: false
-    })
-    setMobile({
-      val: '',
-      isValid: false,
-      touched: false
-    })
-    setWebsite({
-      val: '',
-      isValid: false,
-      touched: false
-    })
-    setEmail({
-      val: '',
-      isValid: false,
-      touched: false
-    })
-    setLocation({
-      val: '',
-      isValid: false,
-      touched: false
-    })
-    setAbout({
-      val: '',
-      isValid: false,
-      touched: false
-    })
-    set_ID({
-      val: '',
-      isValid: false,
-      touched: false
-    })
-  }
+
 
   const classes = useStyles();
   const [data, setData] = useState(null)
@@ -223,37 +189,12 @@ export default function UploadData(props) {
     width: "100%"
   }
 
-  const [name, setName] = useState({
-    val: "",
-    isValid: false,
-    touched: false
-  })
-  const [mobile, setMobile] = useState({
-    val: "",
-    isValid: false,
-    touched: false
-  })
-  const [email, setEmail] = useState({
-    val: "",
-    isValid: false,
-    touched: false
-  })
-  const [Website, setWebsite] = useState({
-    val: "",
-    isValid: false,
-    touched: false
-  })
-  const [about, setAbout] = useState({
-    val: "",
-    isValid: false,
-    touched: false
-  })
+  const [keyIngredient, setKeyIngredient] = useState(null)
+  const [location, setLocation] = useState("null")
+  const [catagory, setCatagory] = useState(null)
 
-  const [location, setLocation] = useState({
-    val: "",
-    isValid: false,
-    touched: false
-  })
+
+
 
 
   const [file, setFile] = useState();
@@ -265,7 +206,7 @@ export default function UploadData(props) {
   useEffect(() => {
 
   }, []);
-
+  const config = { displayModeBar: false };
 
   const validate = (i, val) => {
     if (1 == 0) {
@@ -284,66 +225,11 @@ export default function UploadData(props) {
     return val ? true : false
   }
 
-  const validateForm = () => {
-    //console.log(name.isValid &&  location.isValid )
-    return (name.isValid && location.isValid && about.val)
-  }
+
 
   // const [open, setOpen] = React.useState(false);
 
-  const onChangeTextHandler = (event, i) => {
-    let value = event.target.value
 
-    let isValid = validateForm()
-
-    if (i === 1) {
-      setName({
-        ...name,
-        val: value,
-        isValid: validate(i, value)
-      })
-    }
-
-    if (i === 2) {
-      setMobile({
-        ...mobile,
-        val: value,
-        isValid: validate(i, value)
-      })
-    }
-    if (i === 3) {
-      setWebsite({
-        ...Website,
-        val: value,
-        isValid: validate(i, value)
-      })
-    }
-
-    if (i === 4) {
-      setEmail({
-        ...email,
-        val: value,
-        isValid: validate(i, value)
-      })
-    }
-
-    if (i === 5) {
-      setAbout({
-        ...about,
-        val: value,
-        isValid: validate(i, value)
-      })
-    }
-
-    if (i === 11) {
-      setLocation({
-        ...location,
-        val: value,
-        isValid: validate(i, value)
-      })
-    }
-    setIsFormValid(validateForm())
-  }
 
   const view = (tableMeta) => {
   };
@@ -354,7 +240,12 @@ export default function UploadData(props) {
     { name: "Subham", age: 25, gender: "Male" },
   ]
 
-  const delete_institution = (tableMeta) => {
+  const handleChange3 = (key, value) => {
+    if (key == "Catagory") {
+      setCatagory(value)
+    } else if (key == "KeyIngredient") {
+      setKeyIngredient(value)
+    }
 
   }
 
@@ -364,12 +255,12 @@ export default function UploadData(props) {
     // setFile(event.target.files[0])
     formData.append("file", event.target.files[0]);
 
-    axios.post("http://13.127.201.98:8000/get_prediction_v3", formData)
+    axios.post("http://13.127.201.98:8000/get_prediction_v3?user_id=asas%40gmail.com", formData)
       .then((res) => {
         console.log(res?.data, "esdsd")
         setData(res?.data)
         if (res?.data?.image_id) {
-          axios.post('http://13.127.201.98:8000/get_image_v2/?image_id=' + res?.data?.image_id, {})
+          axios.post('http://13.127.201.98:8000/get_image/?image_id=' + res?.data?.image_id, {})
             .then((res) => {
               console.log(typeof res?.data, "laslasdkalhdlkhal")
               setFile(res?.data?.image)
@@ -380,6 +271,23 @@ export default function UploadData(props) {
       }).catch((err) => {
         console.log(err)
       })
+  }
+
+  const submitDetails = () =>{
+    axios.post(`http://13.127.201.98:8000/post_food_details/?user_id=asas@gmail.com&location=temp&key_ingredients=${keyIngredient}&serving_category=${catagory}`,{})
+    .then((res) => {
+      console.log(res, "esdsd")
+    }).catch((err) => {
+      toast.error("Error", {
+        position: "top-right",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    })
   }
 
   const convertImage = (image_id) => {
@@ -395,13 +303,13 @@ export default function UploadData(props) {
       <h5>Upload Image</h5>
       <br />
       <Grid container spacing={4}>
-        <Grid item xs={12} md={6} sm={12} style={{ borderRightColor: "black", borderBottomColor: "black", borderRightStyle: "solid", paddingBottom: "10%" ,marginBottom:"50px"}}>
+        <Grid item xs={12} md={6} sm={12} style={{ borderRightColor: "black", borderBottomColor: "black", borderRightStyle: "solid", paddingBottom: "10%", marginBottom: "50px" }}>
 
           <div style={{ marginTop: "4vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
             <img src={require("./img_525430.png")} alt="logo" style={{ width: "20%", height: "12vh" }} />
 
           </div>
-          <div style={{marginLeft:"21%", marginTop: "4vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <div style={{ marginLeft: "21%", marginTop: "4vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
 
             <input type="file" id="myfile" name="myfile" accept="image/*" onChange={($event) => { onFileChange($event) }} />
           </div>
@@ -435,81 +343,81 @@ export default function UploadData(props) {
                 )
               })}
             </table> */}
-                <select
-                  href="#pablo"
-                  class="form-control"
-                  style={{ color: "black" }}
-                  // onChange={(e) => handleChange3(e.target.value)}
-                  size="sm"
-                >
-                  {/* {results.length && results.map((result) => (
+
+                <Grid item lg={12} md={12} sm={12} xs={12} style={{ padding: 0, margin: 0 }}>
+                  <Plot
+                    data={data?.data}
+                    layout={data?.layout}
+                    args={data?.args}
+                    config={config}
+                    useResizeHandler
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                </Grid>
+                <br />
+                <br />
+                <br />
+
+                <h5 style={{ marginTop: "-9%" }}>Food Details</h5>
+                <br />
+             
+                <Grid item lg={12} md={12} sm={12} xs={12} style={{ padding: 0, margin: 0 }}>
+
+                  <select
+                    href="#pablo"
+                    class="form-control"
+                    style={{ color: "black" }}
+                    onChange={(e) => handleChange3("Catagory", e.target.value)}
+                    size="sm"
+                  >
+
+                    
+                    {/* {results.length && results.map((result) => (
                             <option key={result.id} value={result.name}> {result.name} </option>
                           ))} */}
-                  <option value="Standard"> Select Category </option>
-                  <option value="Esmall"> Extra Small </option>
-                  <option value="small"> Small </option>
-                  <option value="medium"> Medium </option>
-                  <option value="large"> Large </option>
-                  <option value="Elarge"> Extra Large </option>
+                    <option value="Standard"> Select Category </option>
+                    <option value="Esmall"> Extra Small </option>
+                    <option value="small"> Small </option>
+                    <option value="medium"> Medium </option>
+                    <option value="large"> Large </option>
+                    <option value="Elarge"> Extra Large </option>
 
-                </select>
-                {/* <TextField
-                  id=""
-                  // InputProps={{
-                  //   classes: {
-                  //     underline: classes.textFieldUnderline,
-                  //     input: classes.textField,
-                  //   },
-                  // }}
-                  // value={loginValue}
-                  // onChange={e => setLoginValue(e.target.value)}
-                  margin="normal"
-                  placeholder="Food 1"
-                  fullWidth
-                />
-                <TextField
-                  id=""
-                  // InputProps={{
-                  //   classes: {
-                  //     underline: classes.textFieldUnderline,
-                  //     input: classes.textField,
-                  //   },
-                  // }}
-                  // value={loginValue}
-                  // onChange={e => setLoginValue(e.target.value)}
-                  margin="normal"
-                  placeholder="Food 2"
-                  fullWidth
-                /> */}
-                <TextField
-                  id=""
-                  // InputProps={{
-                  //   classes: {
-                  //     underline: classes.textFieldUnderline,
-                  //     input: classes.textField,
-                  //   },
-                  // }}
-                  // value={loginValue}
-                  // onChange={e => setLoginValue(e.target.value)}
-                  margin="normal"
-                  placeholder="Description"
-                  fullWidth
-                />
-                <br />
-                <br />
+                  </select>
                 <br />
 
-                <Button
-                  disabled={
-                    0 === 0 || 1 === 0
-                  }
-                  onClick={() => { }}
-                  variant="contained"
-                  color="primary"
-                  size="large"
-                >
-                  Submit
-                </Button>
+                 
+                  <TextField
+                    id=""
+                    InputProps={{
+                      classes: {
+                        underline: classes.textFieldUnderline,
+                        input: classes.textField,
+                      },
+                    }}
+                    value={keyIngredient}
+                    onChange={e => handleChange3("KeyIngredient", e.target.value)}
+                    margin="normal"
+                    placeholder="Description"
+                    fullWidth
+                  />
+                  <br />
+                  <br />
+                  <br />
+
+                  <Button
+                    disabled={
+                      keyIngredient == null && catagory == null
+                    }
+                    onClick={submitDetails}
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    
+                    style={{ width: "100%" }}
+                  >
+                    Submit
+                  </Button>
+                </Grid>
               </div>
             }
 
@@ -530,6 +438,7 @@ export default function UploadData(props) {
         {/* <Typography className={classes.formDividerWord}>or</Typography> */}
         <div className={classes.formDivider} />
       </div>
+      <ToastContainer />
 
     </div>
   );

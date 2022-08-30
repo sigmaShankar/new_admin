@@ -75,7 +75,7 @@ const Index = (props) => {
 
     }
     // URL = "credit_lending";
-    // console.log("meeee", URL)
+    console.log("meeee", URL)
     fetch(process.env.PUBLIC_URL + `/test/${URL}.json`)
       .then(function (res) {
         return res.json();
@@ -96,7 +96,7 @@ const Index = (props) => {
         }
         if (overall.length == 0) setOverall(tempOverall)
         if (mitigation.length == 0) {
-          // console.log(tempMitigation, "tempMitigation")
+          console.log(tempMitigation, "tempMitigation")
           setMitigation(tempMitigation[0])
         }
         if (_risk.length == 0) setRisk(tempRisk[0])
@@ -140,6 +140,9 @@ const Index = (props) => {
 
   // let selectedAlgo =
 
+
+  
+  
 
   const [activeTab, setActiveTab] = useState("Ethics");
   const [title, setTitle] = useState("Risk");
@@ -286,7 +289,7 @@ const Index = (props) => {
   const mitigation_funtion = (id, date) => {
     setPopup([])
     let data = mitigation.filter((x) => x.date_generated == date);
-    // console.log(data, 'datadaaatf', mitigation);
+    console.log(data, 'datadaaatf', mitigation);
     setPopup(data);
     setModalShow(true);
   };

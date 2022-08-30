@@ -29,29 +29,17 @@ export default function Widget({
   var [isMoreMenuOpen, setMoreMenuOpen] = useState(false);
 
   return (
-    <div className={classes.widgetWrapper}>
+    <div className={classes.widgetWrapper} style={{boxShadow: "rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset"}}>
       <Paper className={classes.paper} classes={{ root: classes.widgetRoot }}>
         <div className={classes.widgetHeader}>
           {header ? (
             header
           ) : (
-            <React.Fragment>
-              <Typography variant="h5" color="success">
+            <React.Fragment style={{display:"flex","justifyContent":"center",alignItems:"center"}}>
+              <Typography variant="h5" color="success" >
                 {title}
               </Typography>
-              {!disableWidgetMenu && (
-                <IconButton
-                  color="primary"
-                  classes={{ root: classes.moreButton }}
-                  aria-owns="widget-menu"
-                  aria-haspopup="true"
-                  onClick={() => setMoreMenuOpen(true)}
-                  buttonRef={setMoreButtonRef}
-                >
-                  {iconT && (<DoneAllIcon style={{color:"green",fontSize:"4vh"}}/>)}
-                  {/* <MoreIcon /> */}
-                </IconButton>
-              )}
+              
             </React.Fragment>
           )}
         </div>

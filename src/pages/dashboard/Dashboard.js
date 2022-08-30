@@ -7,6 +7,9 @@ import {
   MenuItem,
 } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import {
   ResponsiveContainer,
   ComposedChart,
@@ -448,7 +451,7 @@ export default function Dashboard(props) {
           </ul>
         </Grid> */}
 
-        <table>
+        <table style={{backgroundColor: "white",border:"2px solid #021a02",boxShadow: "rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px"}}>
           <tr>
             <th>Food Type</th>
             <th>Actual</th>
@@ -468,12 +471,17 @@ export default function Dashboard(props) {
 
         <br />
         <br />
+        <br />
+        <br />    <br />
+        <br />
         {/* <Grid item lg={12} md={12} sm={12} xs={12} style={{ boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px" }}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
         </Grid>
         <br />
         <br /> */}
       </Grid>
+      <ToastContainer />
+
     </>
   );
 }

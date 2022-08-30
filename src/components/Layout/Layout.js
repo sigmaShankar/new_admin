@@ -17,6 +17,8 @@ import Sidebar from "../Sidebar";
 
 // pages
 import Dashboard from "../../pages/dashboard";
+import Dashboard2 from "../../pages/dashboard2";
+
 
 // import Enrollment from "../../pages/Enrollment";
 
@@ -123,6 +125,8 @@ function Layout(props) {
             {/* <Route path="/" exact component={Home}/> */}
             <Switch>
               <Route path="/app/dashboard" component={Dashboard} />
+              <Route path="/app/dashboard2" component={Dashboard2} />
+
               <Route path="/app/UploadData" component={UploadData} />
 
               {/* <Route path="/app/teachers" component={Teachers} />

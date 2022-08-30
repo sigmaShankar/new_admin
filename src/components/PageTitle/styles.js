@@ -9,16 +9,16 @@ export default makeStyles(theme => ({
     padding: theme.spacing(3),
     paddingBottom: theme.spacing(1),
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "center",
     alignItems: "center",
   },
   widgetRoot: {
     boxShadow: theme.customShadows.widget,
   },
   widgetBody: {
-    paddingBottom: theme.spacing(3),
-    paddingRight: theme.spacing(3),
-    paddingLeft: theme.spacing(3),
+    // paddingBottom: theme.spacing(3),
+    // paddingRight: theme.spacing(3),
+    // paddingLeft: theme.spacing(3),
   },
   noPadding: {
     padding: 0,
