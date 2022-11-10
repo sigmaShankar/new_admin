@@ -9,7 +9,7 @@
             "ids": 1,
             "name": "Model is biased towards dual nationality citizens",
             "impact": "Medium",
-            "date": "2022-08-17"
+            "date": "2022-10-17"
         }
 
     ],
@@ -22,7 +22,7 @@
             "OverAll_Acc": 76.82,
             "Biased_Group_Acc": 81.36,
             "Mitigation_Rating": 6.0,
-            "date": "2022-08-20",
+            "date": "2022-11-01",
             "url": ""
         },
         {
@@ -33,7 +33,7 @@
             "OverAll_Acc": 76.13,
             "Biased_Group_Acc": 78.07,
             "Mitigation_Rating": 6.0,
-            "date": "2022-08-20",
+            "date": "2022-11-01",
             "url": ""
         },
         {
@@ -44,7 +44,7 @@
             "OverAll_Acc": 78.53,
             "Biased_Group_Acc": 79.34,
             "Mitigation_Rating": 6.0,
-            "date": "2022-08-20",
+            "date": "2022-11-01",
             "url": ""
         },
         {
@@ -55,7 +55,7 @@
             "OverAll_Acc": 78.63,
             "Biased_Group_Acc": 79.79,
             "Mitigation_Rating": 6.0,
-            "date": "2022-08-20",
+            "date": "2022-11-01",
             "url": ""
         },
         {
@@ -66,7 +66,7 @@
             "OverAll_Acc": 77.0,
             "Biased_Group_Acc": 80.81,
             "Mitigation_Rating": 5.0,
-            "date": "2022-08-20",
+            "date": "2022-11-01",
             "url": ""
         },
         {
@@ -77,7 +77,7 @@
             "OverAll_Acc": 74,
             "Biased_Group_Acc": 68,
             "Mitigation_Rating": 6.5,
-            "date": "2022-08-20",
+            "date": "2022-11-01",
             "url": ""
         },
         {
@@ -88,7 +88,7 @@
             "OverAll_Acc": 78.01,
             "Biased_Group_Acc": 76.42,
             "Mitigation_Rating": 7.0,
-            "date": "2022-08-20",
+            "date": "2022-11-01",
             "url": ""
         },
         {
@@ -99,7 +99,7 @@
             "OverAll_Acc": 75.01,
             "Biased_Group_Acc": 79,
             "Mitigation_Rating": 7.0,
-            "date": "2022-08-20",
+            "date": "2022-11-01",
             "url": ""
         },
         {
@@ -110,7 +110,7 @@
             "OverAll_Acc": 77,
             "Biased_Group_Acc": 77,
             "Mitigation_Rating": 7.0,
-            "date": "2022-08-20",
+            "date": "2022-11-01",
             "url": ""
         }
     ]

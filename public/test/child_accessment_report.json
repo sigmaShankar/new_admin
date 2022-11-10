@@ -1,7 +1,7 @@
 {
     "Model_Name": "Sample Welfare Benefit Fraud",
     "Model_Description": "Based on the parent's information, the model predicts the probability of committing a welfare benefit fraud",
-    "Last_Trained_On": "Aug 08th 2022",
+    "Last_Trained_On": "Nov 05th 2022",
     "No_Of_Risks": "3",
     "model_health_metrics": [
         {
@@ -44,17 +44,17 @@
         "Low": 0,
         "Fairness": [
             {
-                "Date": "12-Aug-22",
+                "Date": "12-Oct-22",
                 "Accuracy": 78,
                 "Fainess_Score": 83
             },
             {
-                "Date": "18-Aug-22",
+                "Date": "18-Oct-22",
                 "Accuracy": 73,
                 "Fainess_Score": 85
             },
             {
-                "Date": "26-Aug-22",
+                "Date": "26-Oct-22",
                 "Accuracy": 78,
                 "Fainess_Score": 91.07
             }
@@ -174,22 +174,22 @@
             "ids": 1,
             "name": "Model is biased towards dual nationality citizens",
             "impact": "Medium",
-            "date": "2022-08-17"
+            "date": "2022-10-17"
         }
 
     ],
     "Monitoring": {
         "Production_data_drift": [
             {
-                "Date": "10-Aug-22",
+                "Date": "10-Oct-22",
                 "Drift": 0
             },
             {
-                "Date": "18-Aug-22",
+                "Date": "18-Oct-22",
                 "Drift": 0
             },
             {
-                "Date": "28-Aug-22",
+                "Date": "28-Oct-22",
                 "Drift": 0
             }
         ],
@@ -222,5 +222,5 @@
         ],
         "des": "The production monitoring metrics plot shows the percentage of outliers, drifted features, adversarial samples, NaN(null) values, and OOR(out of range) values in the latest production data."
     },
-    "Next_Evaluation_Date": "05-sept-2022"
+    "Next_Evaluation_Date": "25-Nov-2022"
 }

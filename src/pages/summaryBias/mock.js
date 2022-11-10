@@ -36,7 +36,7 @@ export default {
   bigStat: [
     {
       product: "Overall",
-      date:"17-Aug-22",
+      date:"17-OCT-22",
       total_risk:"3",
       High_Risks:"2",
       graphData:[{value:"70.5",date:"22/02"},{value:"71.5",date:"22/12"},{value:"68.53",date:"22/17"}],
@@ -62,7 +62,7 @@ export default {
     },
     {
       product: "Fairness",
-      date:"17-Aug-22",
+      date:"17-OCT-22",
       total_risk:"2",
       High_Risks:"1",
       value_d:"66",
@@ -88,7 +88,7 @@ export default {
     },
     {
       product: "Robustness",
-      date:"17-Aug-22",
+      date:"17-OCT-22",
       total_risk:"1",
       High_Risks:"1",
       value_d:"71",
@@ -116,7 +116,7 @@ export default {
   bigStat_fraud: [
     {
       product: "Overall",
-      date:"17-Aug-22",
+      date:"17-OCT-22",
       total_risk:"3",
       High_Risks:"2",
       graphData:[{value:"78",date:"22/02"},{value:"78.5",date:"22/12"},{value:"83",date:"22/17"}],
@@ -142,7 +142,7 @@ export default {
     },
     {
       product: "Fairness",
-      date:"17-Aug-22",
+      date:"17-OCT-22",
       total_risk:"1",
       High_Risks:"0",
       value_d:"91.07",
@@ -168,7 +168,7 @@ export default {
     },
     {
       product: "Robustness",
-      date:"17-Aug-22",
+      date:"17-OCT-22",
       total_risk:"2",
       High_Risks:"2",
       value_d:"75",
