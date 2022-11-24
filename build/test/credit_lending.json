@@ -1,0 +1,125 @@
+{
+    "q8389q37q7": {
+        "pillar_overallscore": 66.07,
+        "accuracy": 74.35,
+        "risk": [
+            {
+                "pillar": "Fairness",
+                "ids": 1,
+                "name": "Negative bias towards the African American people disproportionate to default rate",
+                "impact": "High",
+                "date": "2022-10-17"
+            },
+
+            {
+                "pillar": "Fairness",
+                "ids": 3,
+                "name": "Negative bias regarding caucasian women disproportionate to default rate",
+                "impact": "Medium",
+                "date": "2022-10-17"
+            }
+
+        ],
+        "mitigation": [
+            {
+                "name": "PostProcessing-Reject Option Classifier",
+                "scope": "PostProcessing",
+                "impact": "Medium",
+                "score": 77.49,
+                "OverAll_Acc": 70.7,
+                "Biased_Group_Acc": 72.61,
+                "Mitigation_Rating": 6.0,
+                "date": "2022-11-01",
+                "url": ""
+            },
+            {
+                "name": "PreProcessing-Reweighing",
+                "scope": "PreProcessing",
+                "impact": "Medium",
+                "score": 76.42,
+                "OverAll_Acc": 68.13,
+                "Biased_Group_Acc": 68.95,
+                "Mitigation_Rating": 7.0,
+                "date": "2022-11-01",
+                "url": ""
+            },
+            {
+                "name": "PreProcessing-Disparate Impact Remover",
+                "scope": "PreProcessing",
+                "impact": "Medium",
+                "score": 75.35,
+                "OverAll_Acc": 67.52,
+                "Biased_Group_Acc": 68.78,
+                "Mitigation_Rating": 6.0,
+                "date": "2022-11-01",
+                "url": ""
+            },
+            {
+                "name": "PostProcessing-Callibrated Equalized Odds",
+                "scope": "PostProcessing",
+                "impact": "High",
+                "score": 72.08,
+                "OverAll_Acc": 76.12,
+                "Biased_Group_Acc": 69.94,
+                "Mitigation_Rating": 8.0,
+                "date": "2022-11-01",
+                "url": ""
+            },
+            {
+                "name": "InProcessing-Prejudice Remover",
+                "scope": "InProcessing",
+                "impact": "High",
+                "score": 56.07,
+                "OverAll_Acc": 80.95,
+                "Biased_Group_Acc": 76.41,
+                "Mitigation_Rating": 8.0,
+                "date": "2022-11-01",
+                "url": ""
+            },
+            {
+                "name": "InProcessing-GerryFair Classifier",
+                "scope": "InProcessing",
+                "impact": "Medium",
+                "score": 72.0,
+                "OverAll_Acc": 70.74,
+                "Biased_Group_Acc": 62.44,
+                "Mitigation_Rating": 6.5,
+                "date": "2022-11-01",
+                "url": ""
+            },
+            {
+                "name": "PostProcessing-Adjustable Reject Option Classifier",
+                "scope": "PostProcessing",
+                "impact": "Medium",
+                "score": 77.14,
+                "OverAll_Acc": 74.0,
+                "Biased_Group_Acc": 74.23,
+                "Mitigation_Rating": 6.0,
+                "date": "2022-11-01",
+                "url": ""
+            },
+            {
+                "name": "InProcessing-Custom Adversarial Debiasing",
+                "scope": "InProcessing",
+                "impact": "High",
+                "score": 66.42,
+                "OverAll_Acc": 94.0,
+                "Biased_Group_Acc": 86.53,
+                "Mitigation_Rating": 9.0,
+                "date": "2022-11-01",
+                "url": ""
+            },
+            {
+                "name": "InProcessing-Adversarial Debiasing",
+                "scope": "InProcessing",
+                "impact": "High",
+                "score": 62.14,
+                "OverAll_Acc": 83.25,
+                "Biased_Group_Acc": 79.20,
+                "Mitigation_Rating": 8.3,
+                "date": "2022-11-01",
+                "url": ""
+            }
+        ]
+    }
+}

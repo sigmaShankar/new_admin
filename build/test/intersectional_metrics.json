@@ -1,0 +1,633 @@
+{
+    "Prevalence Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "Prevalence Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "Prevalence Difference"
+                ],
+                "y": [
+                    -0.27
+                ],
+                "name": "Prevalence Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "Prevalence Difference returns the proportion of actual positives versus total population between unprivileged and privileged groups. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    },
+    "Matthews Correlation Coefficient Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "Matthews Correlation Coefficient Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "Matthews Correlation Coefficient Difference"
+                ],
+                "y": [
+                    -0.06
+                ],
+                "name": "Matthews Correlation Coefficient Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "Matthews Correlation Coefficient Difference returns  a reliable statistical rate which produces a high score only if the prediction obtained good results in all of the (tp, fn, tn, fp), proportionally both to the size of positive values and the size of values between unprivileged and privileged groups. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    },
+    "Fowlkes Mallows Index Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "Fowlkes Mallows Index Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "Fowlkes Mallows Index Difference"
+                ],
+                "y": [
+                    -0.27
+                ],
+                "name": "Fowlkes Mallows Index Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "Fowlkes Mallows Index Difference returns how similar the actual values and predicted values between unprivileged and privileged groups. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    },
+    "Bookmaker Informedness Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "Bookmaker Informedness Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "Bookmaker Informedness Difference"
+                ],
+                "y": [
+                    -0.09
+                ],
+                "name": "Bookmaker Informedness Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "Bookmaker Informedness Difference returns the performance of dichotomous diagnostic test (dividing into parts with mutually exhaustive points and estimating the probability of informed decision). between unprivileged and privileged groups. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    },
+    "Markedness Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "Markedness Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "Markedness Difference"
+                ],
+                "y": [
+                    -0.03
+                ],
+                "name": "Markedness Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "Markedness Difference is the measure of how much one variable is marked as a predictor or the cause of another between unprivileged and privileged groups. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    },
+    "Cohen kappa Coefficient Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "Cohen kappa Coefficient Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "Cohen kappa Coefficient Difference"
+                ],
+                "y": [
+                    -0.39
+                ],
+                "name": "Cohen kappa Coefficient Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "Cohen kappa Coefficient Difference returns the degree of agreement between unprivileged and privileged groups. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    },
+    "Critical Success Index Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "Critical Success Index Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "Critical Success Index Difference"
+                ],
+                "y": [
+                    -0.22
+                ],
+                "name": "Critical Success Index Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "Critical Success Index Difference returns the prediction performance equal to the total number of correct predictions between unprivileged and privileged groups. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    },
+    "Gilbert Skill Score Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "Gilbert Skill Score Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "Gilbert Skill Score Difference"
+                ],
+                "y": [
+                    -0.02
+                ],
+                "name": "Gilbert Skill Score Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "Gilbert Skill Score Difference is similar to Critical Success Index Difference is adjusted for chances. Returns the forecast performance equal to the total number of correct forecasts between unprivileged and privileged groups. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    },
+    "Treatment Equality Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "Treatment Equality Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "Treatment Equality Difference"
+                ],
+                "y": [
+                    -3.76
+                ],
+                "name": "Treatment Equality Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "Treatment Equality Difference returns the proportion of false positives and negatives between unprivileged and privileged groups. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    },
+    "Diagnostic Odds Ratio Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "Diagnostic Odds Ratio Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "Diagnostic Odds Ratio Difference"
+                ],
+                "y": [
+                    9.26
+                ],
+                "name": "Diagnostic Odds Ratio Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "Diagnostic Odds Ratio Difference returns the likelihood ratio for positives and negatives between unprivileged and privileged groups. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    },
+    "Brier Score Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "Brier Score Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "Brier Score Difference"
+                ],
+                "y": [
+                    -0.25
+                ],
+                "name": "Brier Score Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "Brier Score Difference is a strictly proper scoring rule that measures the accuracy of probabilistic predictions between unprivileged and privileged groups. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    },
+    "F Beta Score Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "F Beta Score Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "F Beta Score Difference"
+                ],
+                "y": [
+                    -0.25
+                ],
+                "name": "F Beta Score Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "F Beta Score Difference returns harmonic mean of precision and recall between unprivileged and privileged groups. Beta is mostly 1, called as F1 score. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    },
+    
+    "Jensen Shannon Divergence Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "Jensen Shannon Divergence Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "Jensen Shannon Divergence Difference"
+                ],
+                "y": [
+                    0.17
+                ],
+                "name": "Jensen Shannon Divergence Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "Jensen Shannon Divergence Difference is a method of measuring the similarity between the actual and predicted probability distributions between unprivileged and privileged groups. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    },
+    "Theil T Index Difference": {
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 280,
+            "width": 490,
+            "title": "",
+            "xaxis": {
+                "title": "Theil T Index Difference"
+            },
+            "yaxis": {
+                "title": {
+                    "text": "Scores",
+                    "font": {
+                        "family": "Courier New, monospace",
+                        "size": 18,
+                        "color": "#7f7f7f"
+                    }
+                }
+            },
+            "showlegend": "true"
+        },
+        "values": [
+            {
+                "x": [
+                    "Theil T Index Difference"
+                ],
+                "y": [
+                    0.79
+                ],
+                "name": "Theil T Index Difference",
+                "type": "bar",
+                "width": [
+                    0.3
+                ]
+            }
+        ],
+        "discription": "Theil T Index Difference measures the inequality in benefit allocation for individuals between unprivileged and privileged groups. 0 indicates best. Greater than 0 inclined towards unprivileged groups and less than 0 inclined towards privileged groups"
+    }
+}

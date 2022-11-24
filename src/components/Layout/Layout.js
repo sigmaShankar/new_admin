@@ -76,6 +76,8 @@ import Mlalert from "../../pages/Mlalert";
 import { useLayoutState } from "../../context/LayoutContext";
 import AIComplaince from "../../pages/AIComplaince/AIComplaince";
 import SummaryBias from "../../pages/summaryBias/SummaryBias";
+import AdversarialML from "../../pages/AdversarialML/AdversarialML";
+
 
 
 function Layout(props) {
@@ -125,6 +127,8 @@ function Layout(props) {
               <Route path="/app/inventory" component={invetory} />
               <Route path="/app/compliance" component={AIComplaince} />
               <Route path="/app/Explainability" component={Explainability} />
+              <Route path="/app/Adversarial" component={AdversarialML} />
+
 
 
             

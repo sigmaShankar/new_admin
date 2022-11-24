@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7df932e.chunk.css",
-    "main.js": "/static/js/main.78a37d19.chunk.js",
-    "main.js.map": "/static/js/main.78a37d19.chunk.js.map",
+    "main.css": "/static/css/main.220620ea.chunk.css",
+    "main.js": "/static/js/main.e55ca5d1.chunk.js",
+    "main.js.map": "/static/js/main.e55ca5d1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.53ffb582.js",
     "runtime-main.js.map": "/static/js/runtime-main.53ffb582.js.map",
     "static/css/2.4bedae8a.chunk.css": "/static/css/2.4bedae8a.chunk.css",
-    "static/js/2.5c436d64.chunk.js": "/static/js/2.5c436d64.chunk.js",
-    "static/js/2.5c436d64.chunk.js.map": "/static/js/2.5c436d64.chunk.js.map",
+    "static/js/2.1d27df6f.chunk.js": "/static/js/2.1d27df6f.chunk.js",
+    "static/js/2.1d27df6f.chunk.js.map": "/static/js/2.1d27df6f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.45c2e004c27a6f87e399ad8f7c78d1ab.js": "/precache-manifest.45c2e004c27a6f87e399ad8f7c78d1ab.js",
+    "precache-manifest.96e8c3f8beca8cab1e9ea11d754ba530.js": "/precache-manifest.96e8c3f8beca8cab1e9ea11d754ba530.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4bedae8a.chunk.css.map": "/static/css/2.4bedae8a.chunk.css.map",
-    "static/css/main.d7df932e.chunk.css.map": "/static/css/main.d7df932e.chunk.css.map",
-    "static/js/2.5c436d64.chunk.js.LICENSE.txt": "/static/js/2.5c436d64.chunk.js.LICENSE.txt",
-    "static/media/google.svg": "/static/media/google.695a3160.svg",
-    "static/media/img_525430.png": "/static/media/img_525430.f41f89be.png",
-    "static/media/preview-icon.png": "/static/media/preview-icon.0924efb4.png"
+    "static/css/main.220620ea.chunk.css.map": "/static/css/main.220620ea.chunk.css.map",
+    "static/js/2.1d27df6f.chunk.js.LICENSE.txt": "/static/js/2.1d27df6f.chunk.js.LICENSE.txt",
+    "static/media/Sigma-red-Final-logo.png": "/static/media/Sigma-red-Final-logo.3bde4ff0.png",
+    "static/media/coming_soon.webp": "/static/media/coming_soon.e519a17b.webp",
+    "static/media/google.svg": "/static/media/google.695a3160.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.53ffb582.js",
     "static/css/2.4bedae8a.chunk.css",
-    "static/js/2.5c436d64.chunk.js",
-    "static/css/main.d7df932e.chunk.css",
-    "static/js/main.78a37d19.chunk.js"
+    "static/js/2.1d27df6f.chunk.js",
+    "static/css/main.220620ea.chunk.css",
+    "static/js/main.e55ca5d1.chunk.js"
   ]
 }

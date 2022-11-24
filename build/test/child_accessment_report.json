@@ -1,0 +1,226 @@
+{
+    "Model_Name": "Sample Welfare Benefit Fraud",
+    "Model_Description": "Based on the parent's information, the model predicts the probability of committing a welfare benefit fraud",
+    "Last_Trained_On": "Nov 05th 2022",
+    "No_Of_Risks": "3",
+    "model_health_metrics": [
+        {
+            "name": "ACC",
+            "Value": 0.77
+        },
+        {
+            "name": "Eror Rate",
+            "Value": 0.23
+        },
+        {
+            "name": "TPR",
+            "Value": 0.84
+        },
+        {
+            "name": "FPR",
+            "Value": 0.27
+        },
+        {
+            "name": "FNR",
+            "Value": 0.16
+        },
+        {
+            "name": "TNR",
+            "Value": 0.73
+        },
+        {
+            "name": "Recall",
+            "Value": 0.84
+        },
+        {
+            "name": "Sensitivity",
+            "Value": 0.84
+        }
+    ],
+    "Fairness": {
+        "Fairness_Score": 91.07,
+        "High": 0,
+        "Medium": 1,
+        "Low": 0,
+        "Fairness": [
+            {
+                "Date": "12-Oct-22",
+                "Accuracy": 78,
+                "Fainess_Score": 83
+            },
+            {
+                "Date": "18-Oct-22",
+                "Accuracy": 73,
+                "Fainess_Score": 85
+            },
+            {
+                "Date": "26-Oct-22",
+                "Accuracy": 78,
+                "Fainess_Score": 91.07
+            }
+        ],
+        "Fairness_Metrics": [
+            {
+                "name": "DIR",
+                "Value": 0.96
+            },
+            {
+                "name": "SPD",
+                "Value": -0.02
+            },
+            {
+                "name": "EOD",
+                "Value": -0.01
+            },
+            {
+                "name": "theil index",
+                "Value": 0.1
+            }
+        ],
+        "Fariness_Metrics_desc": "SigmaRed Reponsible AI platform provides more than 40 metrics, they can be accessible from ML Fairness menu",
+        "proxy_Bias": {
+            "adjusted_mutual_info_score": [
+                {
+                    "name": "average_monthly_income",
+                    "Value": 0.02529
+                },
+                {
+                    "name": "Married",
+                    "Value": 0.01084
+                },
+                {
+                    "name": "average_weekly_work_hours",
+                    "Value": 0.006
+                },
+                {
+                    "name": "widower/widowed",
+                    "Value": 0.00486
+                },
+                {
+                    "name": "previous_benefits",
+                    "Value": 0.0044
+                },
+                {
+                    "name": "Separated",
+                    "Value": 0.00356
+                },
+                {
+                    "name": "Engaged",
+                    "Value": 0.00064
+                },
+                {
+                    "name": "combined_educational_years",
+                    "Value": 0.00043
+                },
+                {
+                    "name": "Divorced",
+                    "Value": 0.00012
+                },
+                {
+                    "name": "No_of_children",
+                    "Value": 0.00
+                }
+            ]
+        }
+    },
+    "Transperency": {
+        "Feature_Importance": [
+            {
+                "name": "Divorced",
+                "Value": -0.0143
+            },
+            {
+                "name": "Engaged",
+                "Value": -0.0123
+            },
+            {
+                "name": "Married",
+                "Value": -0.006
+            },
+            {
+                "name": "Previous_benefits",
+                "Value": -0.003
+            },
+            {
+                "name": "No_of_children",
+                "Value": 0.001
+            },
+            {
+                "name": "Average_weekly_work_hours",
+                "Value": 0.010
+            },
+            {
+                "name": "Dual_nationality",
+                "Value": 0.014
+            },
+            {
+                "name": "Widower/widowed",
+                "Value": 0.020
+            },
+            {
+                "name": "Combined_educational_years",
+                "Value": 0.042
+            },
+            {
+                "name": "Separated",
+                "Value": 0.138
+            }
+        ],
+        "Explainability_Metrics_desc": "SigmaRed's Responsible AI platform provides more than 60 XAI visualizations. They are accessible through the ML Explainability menu"
+    },
+    "risk": [
+        {
+            "pillar": "Fairness",
+            "ids": 1,
+            "name": "Model is biased towards dual nationality citizens",
+            "impact": "Medium",
+            "date": "2022-10-17"
+        }
+
+    ],
+    "Monitoring": {
+        "Production_data_drift": [
+            {
+                "Date": "10-Oct-22",
+                "Drift": 0
+            },
+            {
+                "Date": "18-Oct-22",
+                "Drift": 0
+            },
+            {
+                "Date": "28-Oct-22",
+                "Drift": 0
+            }
+        ],
+        "dd_decsr": "The production data drift plot shows changes in the data inputs that may cause performance degradation of the model over a period of time. This drift is detected by measuring and comparing probability distributions of reference and production data using multiple, best in class, statistical methods.",
+        "Production_monitoring_metrics": [
+            {
+                "name": "od",
+                "Value": 2
+            },
+            {
+                "name": "dd",
+                "Value": 0
+            },
+            {
+                "name": "cd",
+                "Value": 0.79
+            },
+            {
+                "name": "ae",
+                "Value": 2
+            },
+            {
+                "name": "NaN",
+                "Value": 0
+            },
+            {
+                "name": "Out_of_range",
+                "Value": 0.016
+            }
+        ],
+        "des": "The production monitoring metrics plot shows the percentage of outliers, drifted features, adversarial samples, NaN(null) values, and OOR(out of range) values in the latest production data."
+    },
+    "Next_Evaluation_Date": "25-Nov-2022"
+}

@@ -1,0 +1,15 @@
+{
+    "barchart": [
+        {
+            "name": "Resnet",
+            "accuracy": "93"
+        },
+        {
+            "name": "CNN",
+            "accuracy": "87"
+        }
+    ],
+    "Precision": "89.1%",
+    "Recall": "93.0%",
+    "f1_Score": "90.0%"
+}
