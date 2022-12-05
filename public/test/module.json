@@ -2,19 +2,19 @@
     "Credit Lending": {
         "project_id" : "Adult_Income",
 
-        "name": "Project - Credit Lending", 
+        "name": "Project - Employee recruitment", 
         
-        "description": "This model enables the intelligent processing of loan applications",
-        "temp_name":"Credit Lending",
+        "description": "This model enables intelligent screening of candidate profiles",
+        "temp_name":"Employee recruitment",
         "modules": {
             "Adult_Income_Module": {
                 "module_id" : "Adult_Income_Module",
 
-                "project_name": "Model - Credit Lending",
+                "project_name": "Model - Employee recruitment",
                 "prject_folder":"Model - Adult Income",
-                "module_name": "Model - Credit Lending", 
+                "module_name": "Model - Employee recruitment", 
                 
-                "description": "This model is used to predict approval of loan for a given applicant, using various attributes of the application",
+                "description": "This model is used to predict the approval of a candidate using various attributes",
                 "root_path": "./clients/clientabc/",
                 "monitoring_data_path": "data/Adult_Income/Adult_Income_Module/train.csv",
                 "monitoring_test_data_path": "data/Adult_Income/Adult_Income_Module/test.csv",

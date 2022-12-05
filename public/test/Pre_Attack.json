@@ -2,11 +2,11 @@
     "barchart": [
         {
             "name": "Resnet",
-            "accuracy": "93"
+            "accuracy(%)": "93"
         },
         {
             "name": "CNN",
-            "accuracy": "87"
+            "accuracy(%)": "87"
         }
     ],
     "Precision": "89.1%",

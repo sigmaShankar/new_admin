@@ -118,7 +118,7 @@ const renderActiveShape = (props) => {
         textAnchor={textAnchor}
         fill="#333"
         style={{ fontSize: "12px" }}
-      >{`value: ${value}`}</text>
+      >{`acc: ${value}`}</text>
       <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey}
@@ -235,13 +235,15 @@ export default function AdversarialML() {
   const [progress, setProgress] = React.useState(0);
   const [spinner, setSpinner] = React.useState(true);
   const [select2, setSelect2] = useState("");
+  const [select3, setSelect3] = useState("");
+
   const [customValue, setCustomValue] = useState({});
   const [currentAlgo, setCurrentAlgo] = useState("");
   const [Preattack, setPreattack] = useState(null);
   const [loadList, setLoadlist] = useState(null);
   const [results, setResults] = useState([]);
   const [modelData, setModelData] = useState(null);
-  const [age, setAge] = useState("Model");
+  const [age, setAge] = useState("");
 
   const [fetchResults, setFetchResults] = useState(false);
   const explain = {
@@ -279,6 +281,12 @@ const handle3 = (value)=>{
   const handleChangeIndex = (index) => {
     setValue(index);
   };
+
+  const handle4 = (value)=>{
+    console.log(value,"valuevalue");
+    setSelect3(value.target.value)
+    }
+
 
   const [activeNav, setActiveNav] = useState(1);
   const [chartExample1Data, setChartExample1Data] = useState("data1");
@@ -490,7 +498,7 @@ const handle3 = (value)=>{
                           <YAxis domain={[0, 1]} />
                           <Tooltip />
                           <Legend />
-                          <Bar dataKey="accuracy" fill="#413ea0" radius={8} barSize={70} />
+                          <Bar dataKey="accuracy(%)" fill="#413ea0" radius={8} barSize={70} />
 
                         </BarChart>
                       </ResponsiveContainer>
@@ -708,7 +716,7 @@ const handle3 = (value)=>{
                     </Widget>
                   </Grid>
 
-                  <Grid item md={4} sm={4} xs={4} style={{ marginBottom: "4vh", marginLeft: "5px" }}>
+                  <Grid item md={5} sm={5} xs={5} style={{ marginBottom: "4vh", marginLeft: "5px" }}>
                     {/* <h4>Fairness and Accuracy Over Time</h4> */}
 
                     <Widget
@@ -806,7 +814,7 @@ const handle3 = (value)=>{
                           <div className={classes.mainChartHeaderLabels}>
                             <div className={classes.mainChartHeaderLabel}>
                               <Typography className={classes.mainChartLegentElement}>
-                                Robustness :-
+                                Robustness Score :-
                               </Typography>
                             </div>
                             <Grid item md={12} sm={12} xs={12}>
@@ -836,15 +844,30 @@ const handle3 = (value)=>{
 
               <>
                 <Row>
-                  <Grid item md={4} sm={4} xs={4} style={{ marginBottom: "4vh", marginRight: "5px", width: "100%" }}>
+                <Grid item md={3} sm={3} xs={3} style={{ marginBottom: "4vh", marginRight: "5px", width: "100%" }}>
                     <FormControl variant="standard" style={{ width: "100%" }} >
-                      <InputLabel id="demo-simple-select-standard-label">Attack Type :-</InputLabel>
+                      <InputLabel id="demo-simple-select-standard-label">Select Model</InputLabel>
+                      <Select
+                        labelId="demo-simple-select-standard-label"
+                        id="demo-simple-select-standard"
+                        value={select3}
+                        onChange={handle3}
+                        label="select3"
+                      >
+                        <MenuItem value="Resnet">Resnet</MenuItem>
+                        <MenuItem value="CNN">CNN</MenuItem>
+                      </Select>
+                    </FormControl>
+                  </Grid>
+                  <Grid item md={3} sm={3} xs={3} style={{ marginBottom: "4vh", marginRight: "5px", width: "100%" }}>
+                    <FormControl variant="standard" style={{ width: "100%" }} >
+                      <InputLabel id="demo-simple-select-standard-label">Select Attack</InputLabel>
                       <Select
                         labelId="demo-simple-select-standard-label"
                         id="demo-simple-select-standard"
                         value={age}
                         onChange={handle2}
-                        label="Age"
+                        label="handle2"
                       >
                         <MenuItem value="projected_gradient_attack">Projected Gradient Attack</MenuItem>
                         <MenuItem value="carliniInfMethod">CarliniInf Method</MenuItem>
@@ -857,9 +880,9 @@ const handle3 = (value)=>{
                       </Select>
                     </FormControl>
                   </Grid>
-                  <Grid item md={4} sm={4} xs={4} style={{ marginBottom: "4vh", marginRight: "5px", width: "100%" }}>
+                  <Grid item md={3} sm={3} xs={3} style={{ marginBottom: "4vh", marginRight: "5px", width: "100%" }}>
                     <FormControl variant="standard" style={{ width: "100%" }} >
-                      <InputLabel id="demo-simple-select-standard-label">Defense Type :-</InputLabel>
+                      <InputLabel id="demo-simple-select-standard-label">Select Defense</InputLabel>
                       <Select
                         labelId="demo-simple-select-standard-label"
                         id="demo-simple-select-standard"

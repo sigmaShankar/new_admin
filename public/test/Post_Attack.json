@@ -1,17 +1,17 @@
 {
     "barchart": [
         {
-            "name": "Projected Gradient Attack",
+            "name": "PGA",
             "old": "98",
             "transformed": "93"
         },
         {
-            "name": "CarliniInfMethod",
+            "name": "Carlini",
             "old": "98",
             "transformed": "50"
         },
         {
-            "name": "FastestGradientMethod",
+            "name": "FGM",
             "old": "98",
             "transformed": "68"
         },
@@ -38,15 +38,15 @@
     ],
     "piechart": [
         {
-            "name": "Projected Gradient Attack",
+            "name": "PGA",
             "accuracy": 93
         },
         {
-            "name": "CarliniInfMethod",
+            "name": "Carlini",
             "accuracy": 50
         },
         {
-            "name": "FastestGradientMethod",
+            "name": "FGM",
             "accuracy": 68
         },
         {
