@@ -326,7 +326,7 @@ export default function Explainability2 (){
                         {/* {results.length && results.map((result) => (
                             <option key={result.id} value={result.name}> {result.name} </option>
                           ))} */}
-                        <option value="pytorch_model"> Pytorch Model(Credit Lending) </option>
+                        <option value="pytorch_model"> Pytorch Model(Employee recruitment) </option>
                         <option value="scikitk-learn_model"> Scikit-learn model(Sample Welfare Benefit Fraud) </option>
 
 

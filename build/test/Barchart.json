@@ -1,134 +1,134 @@
 {
     "adjusted mutual info score": [
         {
-            "name": "Age (0-10)",
-            "Value": 0.00831
+            "name": "Big Data Developer",
+            "Value": 0.07695
         },
         {
-            "name": "Age (10-20)",
-            "Value": 0.00515
+            "name": "Community manager",
+            "Value": 0.07775
         },
         {
-            "name": "Education Years=10",
-            "Value": 0.003
+            "name": "Entrepreneur",
+            "Value": 0.07849
         },
         {
-            "name": "Age (40-50)",
-            "Value": 0.00168
+            "name": "Freelance",
+            "Value": 0.07844
         },
         {
-            "name": "Education Years >12",
-            "Value": 0.00166
+            "name": "Full time employee",
+            "Value": 0.07863
         },
         {
-            "name": "Education Years <6",
-            "Value": 0.00164
+            "name": "Intern",
+            "Value": 0.07561
         },
         {
-            "name": "Age (20-30)",
-            "Value": 0.00152
+            "name": "Quality assurance",
+            "Value": 0.07696
         },
         {
-            "name": "Age (30-40)",
-            "Value": 0.00124
+            "name": "Software-development-engineer",
+            "Value": 0.07845
         },
         {
-            "name": "Education Years=12",
-            "Value": 0.00085
+            "name": "Volunteer",
+            "Value": 0.07862
         },
         {
-            "name": "Age (50-60)",
-            "Value": 0.0002
+            "name": "Years of experience 1 year",
+            "Value": 0.0784
         },
         {
-            "name": "Education Years=7",
-            "Value": 0.00016
+            "name": "Years of experience 1-2 years",
+            "Value": 0.07709
         },
         {
-            "name": "Education Years=11",
-            "Value": 0.00015
+            "name": "Years of experience 2-3 years",
+            "Value": 0.07737
         },
         {
-            "name": "Education Years=9",
-            "Value": 0.00012
+            "name": "Years of experience 3-4 years",
+            "Value": 0.07346
         },
         {
-            "name": "Education Years=8",
-            "Value": 0
+            "name": "Years of experience 6 months",
+            "Value": 0.07863
         },
         {
-            "name": "Education Years=6",
-            "Value": 0
+            "name": "Years of experience < 6 months",
+            "Value": 0.07693
         },
         {
-            "name": "Age (60-70)",
-            "Value": 0
+            "name": "Years of experience > 4 years",
+            "Value": 0.07029
         }
     ],
     "normalized mutual info score": [
         {
-            "name": "Age (0-10)",
-            "Value": 0.00834
-        },
-        {
-            "name": "Age (10-20)",
-            "Value": 0.00517
-        },
-        {
-            "name": "Education Years=10",
-            "Value": 0.00302
-        },
-        {
-            "name": "Age (40-50)",
-            "Value": 0.0017
-        },
-        {
-            "name": "Education Years >12",
+            "name": "Big Data Developer",
             "Value": 0.00168
         },
         {
-            "name": "Education Years <6",
-            "Value": 0.00167
-        },
-        {
-            "name": "Age (20-30)",
-            "Value": 0.00154
-        },
-        {
-            "name": "Age (30-40)",
-            "Value": 0.00126
-        },
-        {
-            "name": "Education Years=12",
+            "name": "Community manager",
             "Value": 0.00088
         },
         {
-            "name": "Age (50-60)",
-            "Value": 0.00023
-        },
-        {
-            "name": "Education Years=7",
-            "Value": 0.00019
-        },
-        {
-            "name": "Education Years=11",
-            "Value": 0.00018
-        },
-        {
-            "name": "Education Years=9",
+            "name": "Entrepreneur",
             "Value": 0.00014
         },
         {
-            "name": "Education Years=8",
+            "name": "Freelance",
+            "Value": 0.00019
+        },
+        {
+            "name": "Full time employee",
+            "Value": 0.0
+        },
+        {
+            "name": "Intern",
+            "Value": 0.00302
+        },
+        {
+            "name": "Quality assurance",
+            "Value": 0.00167
+        },
+        {
+            "name": "Software-development-engineer",
+            "Value": 0.00018
+        },
+        {
+            "name": "Volunteer",
             "Value": 1e-05
         },
         {
-            "name": "Age (60-70)",
+            "name": "Years of experience 1 year",
+            "Value": 0.00023
+        },
+        {
+            "name": "Years of experience 1-2 years",
+            "Value": 0.00154
+        },
+        {
+            "name": "Years of experience 2-3 years",
+            "Value": 0.00126
+        },
+        {
+            "name": "Years of experience 3-4 years",
+            "Value": 0.00517
+        },
+        {
+            "name": "Years of experience 6 months",
             "Value": 0.0
         },
         {
-            "name": "Education Years=6",
-            "Value": 0.0
+            "name": "Years of experience < 6 months",
+            "Value": 0.0017
+        },
+        {
+            "name": "Years of experience > 4 years",
+            "Value": 0.00834
         }
     ]
 }
