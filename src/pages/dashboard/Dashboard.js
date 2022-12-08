@@ -221,7 +221,9 @@ export default function Dashboard(props) {
         {/* test end */}
         {/* sub model */}
         <Grid item lg={12} md={12} sm={12} xs={12} >
-          {modelDataSelect && (<h6>Models of {modelDataSelect}</h6>)}
+          {/* {modelDataSelect && (<h6>Models of {modelDataSelect}</h6>)} */}
+          {modelDataSelect && (<h6>Models :</h6>)}
+
           {modelDataSelect && Object.keys(modelData[modelDataSelect]['modules']).map(value =>
             <Grid item lg={4} md={4} sm={4} xs={6} style={{ cursor: 'pointer' }} onClick={() => { selectSub(modelData[modelDataSelect]['modules'][value]['project_name'], modelData[modelDataSelect]['modules'][value]['module_id']) }}>
               <Widget

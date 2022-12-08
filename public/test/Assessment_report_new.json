@@ -1,6 +1,6 @@
 {
-    "Model_Name": "Credit Lending",
-    "Model_Description": "This model is used to predict approval of loan for a given applicant, using various attributes of the application",
+    "Model_Name": "Employee recruitment",
+    "Model_Description": "This model is used to predict the approval of a candidate using various attributes",
     "Last_Trained_On": "Nov 01st 2022",
     "No_Of_Risks": "3",
     "model_health_metrics": [
@@ -79,70 +79,71 @@
         ],
         "Fariness_Metrics_desc": "SigmaRed's Responsible AI platform provides more than 40 metrics. They are accessible through the ML Fairness menu",
         "proxy_Bias": {
+        
             "adjusted_mutual_info_score": [
                 {
-                    "name": "Age (0-10)",
-                    "Value": 0.00831
-                },
-                {
-                    "name": "Age (10-20)",
-                    "Value": 0.00515
-                },
-                {
-                    "name": "Education Years=10",
-                    "Value": 0.003
-                },
-                {
-                    "name": "Age (40-50)",
+                    "name": "Big Data Developer",
                     "Value": 0.00168
                 },
                 {
-                    "name": "Education Years >12",
-                    "Value": 0.00166
+                    "name": "Community manager",
+                    "Value": 0.00088
                 },
                 {
-                    "name": "Education Years <6",
-                    "Value": 0.00164
+                    "name": "Entrepreneur",
+                    "Value": 0.00014
                 },
                 {
-                    "name": "Age (20-30)",
-                    "Value": 0.00152
+                    "name": "Freelance",
+                    "Value": 0.00019
                 },
                 {
-                    "name": "Age (30-40)",
-                    "Value": 0.00124
+                    "name": "Full time employee",
+                    "Value": 0.0
                 },
                 {
-                    "name": "Education Years=12",
-                    "Value": 0.00085
+                    "name": "Intern",
+                    "Value": 0.00302
                 },
                 {
-                    "name": "Age (50-60)",
-                    "Value": 0.0002
+                    "name": "Quality assurance",
+                    "Value": 0.00167
                 },
                 {
-                    "name": "Education Years=7",
-                    "Value": 0.00016
+                    "name": "Software-development-engineer",
+                    "Value": 0.00018
                 },
                 {
-                    "name": "Education Years=11",
-                    "Value": 0.00015
+                    "name": "Volunteer",
+                    "Value": 1e-05
                 },
                 {
-                    "name": "Education Years=9",
-                    "Value": 0.00012
+                    "name": "Years of experience 1 year",
+                    "Value": 0.00023
                 },
                 {
-                    "name": "Education Years=8",
-                    "Value": 0
+                    "name": "Years of experience 1-2 years",
+                    "Value": 0.00154
                 },
                 {
-                    "name": "Education Years=6",
-                    "Value": 0
+                    "name": "Years of experience 2-3 years",
+                    "Value": 0.00126
                 },
                 {
-                    "name": "Age (60-70)",
-                    "Value": 0
+                    "name": "Years of experience 3-4 years",
+                    "Value": 0.00517
+                },
+                {
+                    "name": "Years of experience 6 months",
+                    "Value": 0.0
+                },
+                {
+                    "name": "Years of experience < 6 months",
+                    "Value": 0.0017
+                },
+                {
+                    "name": "Years of experience > 4 years",
+                    "Value": 0.00834
                 }
             ]
         }

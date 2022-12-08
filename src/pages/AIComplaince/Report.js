@@ -153,7 +153,7 @@ const Report = (props) => {
 
     const getResults1 = () => {
         // eda_credit
-        let URL = (sessionStorage.getItem("currentModelName") == "Credit Lending") ? "Assessment_report_new" : (sessionStorage.getItem("currentModelName") == "Fraud Detection") ? "child_accessment_report" : "Assessment_report_new";
+        let URL = (sessionStorage.getItem("currentModelName") == "Employee recruitment") ? "Assessment_report_new" : (sessionStorage.getItem("currentModelName") == "Fraud Detection") ? "child_accessment_report" : "Assessment_report_new";
 
         let final = process.env.PUBLIC_URL + `/test/${URL}.json`
         fetch(final.trim())
@@ -401,13 +401,13 @@ const Report = (props) => {
 
                     <Grid item md={12} sm={12} xs={12} >
 
-                        {Object.keys(results).length ? <MetricsBar name={["adjusted_mutual_info_score"]} data={results["Fairness"]["proxy_Bias"]['adjusted_mutual_info_score']} /> : null}
+                        {Object.keys(results).length ? <MetricsBar name={["Normalized Mutual Info Score"]} data={results["Fairness"]["proxy_Bias"]['adjusted_mutual_info_score']} /> : null}
 
                     </Grid>
                 </div>
 
 
-                <div style={{ borderBottom: "1px", borderBottomStyle: "solid", borderColor: "black", padding: "2vh" }}>
+                {/* <div style={{ borderBottom: "1px", borderBottomStyle: "solid", borderColor: "black", padding: "2vh" }}>
                     <Grid item md={12} sm={12} xs={12} >
                         <h5>Transparency</h5>
                         {Object.keys(results).length ? <span>{results["Transperency"]["Explainability_Metrics_desc"]}</span> : null}
@@ -424,7 +424,6 @@ const Report = (props) => {
                                             <XAxis type="number" />
                                             <YAxis type="category" allowDataOverflow={false} fontSize={10} style={{width:"10px","overflow-wrap": "break-word"}} dataKey="name" />
                                             <Tooltip />
-                                            {/* <Legend /> */}
                                             <Bar dataKey="Value"radius={8}  fill="#ffc260" />
                                         </BarChart>
                                     </ResponsiveContainer> : null
@@ -433,7 +432,7 @@ const Report = (props) => {
                             </Grid>
                         </div>
                     </Grid>
-                </div>
+                </div> */}
 
                 <div style={{ borderBottom: "1px", borderBottomStyle: "solid", borderColor: "black", padding: "2vh" }}>
                     <Grid item md={12} sm={12} xs={12} >
