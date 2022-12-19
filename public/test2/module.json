@@ -1,0 +1,100 @@
+{
+    "Credit Lending": {
+        "project_id" : "Adult_Income",
+
+        "name": "Project - Employee recruitment", 
+        
+        "description": "This model enables intelligent screening of candidate profiles",
+        "temp_name":"Employee recruitment",
+        "modules": {
+            "Adult_Income_Module": {
+                "module_id" : "Adult_Income_Module",
+
+                "project_name": "Model - Employee recruitment",
+                "prject_folder":"Model - Adult Income",
+                "module_name": "Model - Employee recruitment", 
+                
+                "description": "This model is used to predict the approval of a candidate using various attributes",
+                "root_path": "./clients/clientabc/",
+                "monitoring_data_path": "data/Adult_Income/Adult_Income_Module/train.csv",
+                "monitoring_test_data_path": "data/Adult_Income/Adult_Income_Module/test.csv",
+                "monitoring_labelled_test_data_path": "data/Adult_Income/Adult_Income_Module/labelled_test.csv",
+                "target_column": "label",
+                "model": {
+                    "type": "classification",
+                    "model_extension": "sklearn",
+                    "model_definition_path": "",
+                    "model_path": "data/Adult_Income/Adult_Income_Module/model.pkl"
+                },
+                "IP_explainability": "http://13.232.200.79:8502",
+                "biasIP": "http://3.108.188.50",
+                "monitorIP": "http://127.0.0.1:8000",
+                "p_val": 0.05,
+                "is_trained": "True",
+                "is_production": "True",
+                "retrain_models": "False",
+                "alert_sleep_interval": 5000,
+                "od_alert_resolved": "False",
+                "dd_alert_resolved": "False",
+                "cd_alert_resolved": "False",
+                "ae_alert_resolved": "False",
+                "nan_alert_resolved": "False",
+                "oor_alert_resolved": "False",
+                "bias_alert_resolved": "False",
+                "is_labelled_test_data": "True",
+                "common_train_data_path": "data/Adult_Income/Adult_Income_Module/train.csv",
+                "common_test_data_path": "data/Sample_Welfare_Benefit_Fraud/Welfare_Benefit_Fraud_Module/labelled_test.csv",
+                "imageUI": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgcn.com%2Farticles%2F2019%2F06%2F03%2F-%2Fmedia%2FGIG%2FEDIT_SHARED%2FCyber%2Ffrauddetection.png&f=1&nofb=1"
+            }
+        }
+    },
+    "Sample Welfare Benefit Fraud": {
+        "project_id" : "Sample_Welfare_Benefit_Fraud",
+
+        "name": "Project - Sample Welfare Benefit Fraud",
+        "description": "Based on the demographic information of parents, the model predicts the probability of committing Welfare Benefit Fraud by that family.",
+        "temp_name":"Fraud Detection",
+
+        "modules": {
+            "Welfare_Benefit_Fraud_Module": {
+                "module_id" : "Welfare_Benefit_Fraud_Module", 
+
+                "project_name": "Model - Sample Welfare Benefit Fraud",
+                "prject_folder":"Model - Welfare_Benefit_Fraud_Module",
+                "module_name": "Model - Welfare Benefit Fraud",
+
+                "description": "Based on the demographic information of parents, the model predicts the probability of committing Welfare Benefit Fraud by that family.",
+                "root_path": "./clients/clientabc/",
+                "monitoring_data_path": "data/Sample_Welfare_Benefit_Fraud/Welfare_Benefit_Fraud_Module/train.csv",
+                "monitoring_test_data_path": "data/Sample_Welfare_Benefit_Fraud/Welfare_Benefit_Fraud_Module/test.csv",
+                "monitoring_labelled_test_data_path": "data/Sample_Welfare_Benefit_Fraud/Welfare_Benefit_Fraud_Module/labelled_test.csv",
+                "target_column": "y_true",
+                "model": {
+                    "type": "classification",
+                    "model_extension": "sklearn",
+                    "model_definition_path": "",
+                    "model_path": "data/Sample_Welfare_Benefit_Fraud/Welfare_Benefit_Fraud_Module/model.pkl"
+                },
+                "IP_explainability": "http://13.232.200.79:8502",
+                "biasIP": "http://3.108.188.50",
+                "monitorIP": "http://127.0.0.1:8000",
+                "p_val": 0.05,
+                "is_trained": "True",
+                "is_production": "True",
+                "retrain_models": "False",
+                "alert_sleep_interval": 5000,
+                "od_alert_resolved": "False",
+                "dd_alert_resolved": "False",
+                "cd_alert_resolved": "False",
+                "ae_alert_resolved": "False",
+                "nan_alert_resolved": "False",
+                "oor_alert_resolved": "False",
+                "bias_alert_resolved": "False",
+                "is_labelled_test_data": "True",
+                "common_train_data_path": "data/Sample_Welfare_Benefit_Fraud/Welfare_Benefit_Fraud_Module/train.csv",
+                "common_test_data_path": "data/Sample_Welfare_Benefit_Fraud/Welfare_Benefit_Fraud_Module/labelled_test.csv",
+                "imageUI": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgcn.com%2Farticles%2F2019%2F06%2F03%2F-%2Fmedia%2FGIG%2FEDIT_SHARED%2FCyber%2Ffrauddetection.png&f=1&nofb=1"
+            }
+        }
+    }
+}

@@ -84,7 +84,7 @@ function BarGraph(props) {
 function MetricsGraph(props) {
   const [mitigateChk, setMitigateChk] = useState(true);
   const data = [];
-  (sessionStorage.getItem("currentModelName") == "Credit Lending") ?  props.dates.map(date => data.push({ name: "as on " + "17/08/2022" })) : props.dates.map(date => data.push({ name: "as on " + "17/08/2022" }))
+  (sessionStorage.getItem("currentModelName") == "Credit Lending") ?  props.dates.map(date => data.push({ name: "as on " + "15/12/2022" })) : props.dates.map(date => data.push({ name: "as on " + "15/12/2022" }))
   
   var temp = {};
   props.data.map((val, ind) => {

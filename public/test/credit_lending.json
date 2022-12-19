@@ -8,15 +8,15 @@
                 "ids": 1,
                 "name": "Negative bias towards the African American people disproportionate to default rate",
                 "impact": "High",
-                "date": "2022-10-17"
+                "date": "2022-12-15"
             },
 
             {
                 "pillar": "Fairness",
-                "ids": 3,
+                "ids": 2,
                 "name": "Negative bias regarding caucasian women disproportionate to default rate",
                 "impact": "Medium",
-                "date": "2022-10-17"
+                "date": "2022-12-15"
             }
 
         ],

@@ -133,7 +133,7 @@ let Getdata = ()=>{
           <CardHeader className="border-0">
             <Row className="align-items-center">
             <div className="col" style={{display:"inline-flex"}}>
-              <h4 className="mb-0"  style={{cursor:"help",textTransform: "capitalize" }}> <b title="Representing the correlation between protected feature vs other feature in the dataset." >Correlation pie chart</b></h4>
+              <h4 className="mb-0"  style={{cursor:"help",textTransform: "capitalize" }}> <b title="Representing the correlation between protected feature vs other feature in the dataset." >Correlation chart</b></h4>
               <span style={{marginLeft:"auto",float:"right",cursor:"help"}}><i  title="Representing the correlation between protected feature vs other feature in the dataset." style={{cursor:"help","font-size":"20px"}}  class="fa fa-info-circle" aria-hidden="true"></i></span>
             </div>
 

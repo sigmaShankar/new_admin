@@ -36,10 +36,10 @@ export default {
   bigStat: [
     {
       product: "Overall",
-      date:"17-OCT-22",
+      date:"15-DEC-22",
       total_risk:"3",
       High_Risks:"2",
-      graphData:[{value:"70.5",date:"22/02"},{value:"71.5",date:"22/12"},{value:"68.53",date:"22/17"}],
+      graphData:[{value:"70.5",date:"12/02"},{value:"71.5",date:"12/12"},{value:"68.53",date:"12/15"}],
       Medium_Risks:"1",
       value_d:"68.53",
       total: {
@@ -62,12 +62,12 @@ export default {
     },
     {
       product: "Fairness",
-      date:"17-OCT-22",
+      date:"15-DEC-22",
       total_risk:"2",
       High_Risks:"1",
       value_d:"66",
       Medium_Risks:"1",
-      graphData:[{value:"60",date:"22/02"},{value:"65",date:"22/17"},{value:"66",date:"22/17"}],
+      graphData:[{value:"70.5",date:"12/02"},{value:"71.5",date:"12/12"},{value:"68.53",date:"12/15"}],
       total: {
         monthly: 754,
         weekly: 180,
@@ -88,11 +88,11 @@ export default {
     },
     {
       product: "Robustness",
-      date:"17-OCT-22",
+      date:"15-DEC-22",
       total_risk:"1",
       High_Risks:"1",
       value_d:"71",
-      graphData:[{value:"73",date:"22/02"},{value:"78",date:"22/12"},{value:"71",date:"22/17"}],
+      graphData:[{value:"70.5",date:"12/02"},{value:"71.5",date:"12/12"},{value:"68.53",date:"12/15"}],
       Medium_Risks:"0",
       total: {
         monthly: 1025,

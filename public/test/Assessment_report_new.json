@@ -1,8 +1,8 @@
 {
     "Model_Name": "Employee recruitment",
     "Model_Description": "This model is used to predict the approval of a candidate using various attributes",
-    "Last_Trained_On": "Nov 01st 2022",
-    "No_Of_Risks": "3",
+    "Last_Trained_On": "Nov 30th 2022",
+    "No_Of_Risks": "2",
     "model_health_metrics": [
         {
             "name": "ACC",
@@ -44,17 +44,17 @@
         "Low": 0,
         "Fairness": [
             {
-                "Date": "01-Oct-22",
+                "Date": "15-Nov-22",
                 "Accuracy": 67,
                 "Fainess_Score": 60
             },
             {
-                "Date": "13-Oct-22",
+                "Date": "30-Nov-22",
                 "Accuracy": 72,
                 "Fainess_Score": 65
             },
             {
-                "Date": "01-Nov-22",
+                "Date": "16-Dec-22",
                 "Accuracy": 74.35,
                 "Fainess_Score":66.07
             }
@@ -199,29 +199,29 @@
             "ids": 1,
             "name": "Negative bias towards the African American people disproportionate to default rate",
             "impact": "High",
-            "date": "2022-10-17"
+            "date": "2022-12-15"
         },
 
         {
             "pillar": "Fairness",
-            "ids": 3,
+            "ids": 2,
             "name": "Negative bias regarding caucasian women disproportionate to default rate",
             "impact": "Low",
-            "date": "2022-10-17"
+            "date": "2022-12-15"
         }
     ],
     "Monitoring": {
         "Production_data_drift": [
             {
-                "Date": "02-Oct-22",
+                "Date": "20-Nov-22",
                 "Drift": 4
             },
             {
-                "Date": "15-Oct-22",
+                "Date": "01-Dec-22",
                 "Drift": 4.5
             },
             {
-                "Date": "29-Oct-22",
+                "Date": "14-Dec-22",
                 "Drift": 5.4
             }
         ],
@@ -254,5 +254,5 @@
         ],
         "des": "The production monitoring metrics plot shows the percentage of outliers, drifted features, adversarial samples, NaN(null) values, and OOR(out of range) values in the latest production data."
     },
-    "Next_Evaluation_Date": "25-Nov-2022"
+    "Next_Evaluation_Date": "30-Dec-2022"
 }

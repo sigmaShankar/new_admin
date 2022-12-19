@@ -1,0 +1,134 @@
+{
+    "adjusted mutual info score": [
+        {
+            "name": "Big Data Developer",
+            "Value": 0.07695
+        },
+        {
+            "name": "Community manager",
+            "Value": 0.07775
+        },
+        {
+            "name": "Entrepreneur",
+            "Value": 0.07849
+        },
+        {
+            "name": "Freelance",
+            "Value": 0.07844
+        },
+        {
+            "name": "Full time employee",
+            "Value": 0.07863
+        },
+        {
+            "name": "Intern",
+            "Value": 0.07561
+        },
+        {
+            "name": "Quality assurance",
+            "Value": 0.07696
+        },
+        {
+            "name": "Software-development-engineer",
+            "Value": 0.07845
+        },
+        {
+            "name": "Volunteer",
+            "Value": 0.07862
+        },
+        {
+            "name": "Years of experience 1 year",
+            "Value": 0.0784
+        },
+        {
+            "name": "Years of experience 1-2 years",
+            "Value": 0.07709
+        },
+        {
+            "name": "Years of experience 2-3 years",
+            "Value": 0.07737
+        },
+        {
+            "name": "Years of experience 3-4 years",
+            "Value": 0.07346
+        },
+        {
+            "name": "Years of experience 6 months",
+            "Value": 0.07863
+        },
+        {
+            "name": "Years of experience < 6 months",
+            "Value": 0.07693
+        },
+        {
+            "name": "Years of experience > 4 years",
+            "Value": 0.07029
+        }
+    ],
+    "normalized mutual info score": [
+        {
+            "name": "Big Data Developer",
+            "Value": 0.00168
+        },
+        {
+            "name": "Community manager",
+            "Value": 0.00088
+        },
+        {
+            "name": "Entrepreneur",
+            "Value": 0.00014
+        },
+        {
+            "name": "Freelance",
+            "Value": 0.00019
+        },
+        {
+            "name": "Full time employee",
+            "Value": 0.0
+        },
+        {
+            "name": "Intern",
+            "Value": 0.00302
+        },
+        {
+            "name": "Quality assurance",
+            "Value": 0.00167
+        },
+        {
+            "name": "Software-development-engineer",
+            "Value": 0.00018
+        },
+        {
+            "name": "Volunteer",
+            "Value": 1e-05
+        },
+        {
+            "name": "Years of experience 1 year",
+            "Value": 0.00023
+        },
+        {
+            "name": "Years of experience 1-2 years",
+            "Value": 0.00154
+        },
+        {
+            "name": "Years of experience 2-3 years",
+            "Value": 0.00126
+        },
+        {
+            "name": "Years of experience 3-4 years",
+            "Value": 0.00517
+        },
+        {
+            "name": "Years of experience 6 months",
+            "Value": 0.0
+        },
+        {
+            "name": "Years of experience < 6 months",
+            "Value": 0.0017
+        },
+        {
+            "name": "Years of experience > 4 years",
+            "Value": 0.00834
+        }
+    ]
+}

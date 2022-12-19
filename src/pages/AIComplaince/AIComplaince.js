@@ -407,10 +407,10 @@ export default function AIComplaince() {
   };
   const page_ = (value) => {
     if (value == "ML_Monitor") {
-      history.push("/admin/Monitor")
+      history.push("/app/Monitor")
 
     } else if (value == "ML_Explainability") {
-      history.push("/admin/transparency")
+      history.push("/app/Explainability")
     }
   };
 
