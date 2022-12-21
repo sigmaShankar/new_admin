@@ -1,7 +1,7 @@
 {
     "Model_Name": "Employee recruitment",
-    "Model_Description": "This model is used to predict the approval of a candidate using various attributes",
-    "Last_Trained_On": "Nov 30th 2022",
+    "Model_Description": "This AI model enables, accelerated and intelligent screening of the profiles of candidates",
+    "Last_Trained_On": "Dec 15th 2022",
     "No_Of_Risks": "2",
     "model_health_metrics": [
         {
