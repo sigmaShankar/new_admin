@@ -282,19 +282,17 @@ export default function SummaryBias(props) {
 
 
 
-        {(sessionStorage.getItem('currentModelName') == "Fraud Detection") ? mock.bigStat_fraud.map(stat => (
+        {/* {(sessionStorage.getItem('currentModelName') == "Fraud Detection") ? mock.bigStat_fraud.map(stat => (
 
           <Grid item md={4} sm={6} xs={12} key={stat.product}>
-            {/* <br /> */}
             <BigStat {...stat} />
           </Grid>
         )) : mock.bigStat.map(stat => (
 
           <Grid item md={4} sm={6} xs={12} key={stat.product}>
-            {/* <br /> */}
             <BigStat {...stat} />
           </Grid>
-        ))}
+        ))} */}
 
 
         {modelData && (<>

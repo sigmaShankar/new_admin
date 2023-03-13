@@ -35,13 +35,13 @@ export default {
   ],
   bigStat: [
     {
-      product: "Overall",
+      product: "Accuracy",
       date:"26-Feb-23",
       total_risk:"3",
       High_Risks:"2",
       graphData:[{value:"73",date:"10/02"},{value:"78",date:"10/02"},{value:"71",date:"26/02"}],
       Medium_Risks:"1",
-      value_d:"68.53",
+      value_d:"67%",
       total: {
         monthly: 4232,
         weekly: 1465,
@@ -65,7 +65,7 @@ export default {
       date:"26-Feb-23",
       total_risk:"2",
       High_Risks:"1",
-      value_d:"66",
+      value_d:"72%",
       Medium_Risks:"1",
       graphData:[{value:"73",date:"10/02"},{value:"78",date:"10/02"},{value:"71",date:"26/02"}],
       total: {
@@ -87,11 +87,11 @@ export default {
       }
     },
     {
-      product: "Robustness",
+      product: "No. Of High Risk",
       date:"26-Feb-23",
       total_risk:"1",
       High_Risks:"1",
-      value_d:"71",
+      value_d:"74.35",
       graphData:[{value:"73",date:"10/02"},{value:"78",date:"10/02"},{value:"71",date:"26/02"}],
       Medium_Risks:"0",
       total: {
@@ -115,13 +115,13 @@ export default {
   ],
   bigStat_fraud: [
     {
-      product: "Overall",
+      product: "Accuracy",
       date:"27-Feb-23",
       total_risk:"3",
       High_Risks:"1",
       graphData:[{value:"73.1",date:"11/02"},{value:"72.4",date:"11/02"},{value:"79.1",date:"27/02"}],
       Medium_Risks:"2",
-      value_d:"79.1",
+      value_d:"65%",
       total: {
         monthly: 4232,
         weekly: 1465,
@@ -145,7 +145,7 @@ export default {
       date:"27-Feb-23",
       total_risk:"2",
       High_Risks:"1",
-      value_d:"83.3",
+      value_d:"62%",
       Medium_Risks:"1",
       graphData:[{value:"73.1",date:"11/02"},{value:"72.4",date:"11/02"},{value:"79.1",date:"27/02"}],
       total: {
@@ -167,11 +167,11 @@ export default {
       }
     },
     {
-      product: "Robustness",
+      product: "No. Of High Risk",
       date:"27-Feb-23",
       total_risk:"1",
       High_Risks:"0",
-      value_d:"75",
+      value_d:"64",
       graphData:[{value:"73.1",date:"11/02"},{value:"72.4",date:"11/02"},{value:"79.1",date:"27/02"}],
       Medium_Risks:"1",
       total: {
