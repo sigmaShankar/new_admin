@@ -1,7 +1,7 @@
 {
     "Model_Name": "Credit Lending",
     "Model_Description": "This model is used to predict approval of loan for a given applicant, using various attributes of the application",
-    "Last_Trained_On": "Nov 10th 2021",
+    "Last_Trained_On": "Feb 25th 2023",
     "No_Of_Risks": "3",
     "model_health_metrics": [
         {
@@ -44,17 +44,17 @@
         "Low": 0,
         "Fairness": [
             {
-                "Date": "02-Oct-21",
+                "Date": "25-Jan-23",
                 "Accuracy": 67,
                 "Fainess_Score": 60
             },
             {
-                "Date": "25-Oct-21",
+                "Date": "10-Feb-23",
                 "Accuracy": 72,
                 "Fainess_Score": 65
             },
             {
-                "Date": "18-Nov-21",
+                "Date": "25-Feb-23",
                 "Accuracy": 74.35,
                 "Fainess_Score":66.07
             }
@@ -218,15 +218,15 @@
     "Monitoring": {
         "Production_data_drift": [
             {
-                "Date": "02-Oct-21",
+                "Date": "01-Feb-23",
                 "Drift": 4
             },
             {
-                "Date": "25-Oct-21",
+                "Date": "15-Feb-23",
                 "Drift": 4.5
             },
             {
-                "Date": "15-Nov-21",
+                "Date": "27-Feb-23",
                 "Drift": 5.4
             }
         ],
@@ -259,5 +259,5 @@
         ],
         "des": "The production monitoring metrics plot shows the percentage of outliers, drifted features, adversarial samples, NaN(null) values, and OOR(out of range) values in the latest production data."
     },
-    "Next_Evaluation_Date": "08-dec-2021"
+    "Next_Evaluation_Date": "05-Mar-2023"
 }

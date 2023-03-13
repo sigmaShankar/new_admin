@@ -99,7 +99,7 @@
                 ]
             }
         ],
-        "timestamp": "2021-06-15 18:51:51.967794",
+        "timestamp": "2023-02-27 18:51:51.967794",
         "name": "Monitoring Alert",
         "des": " Monitoring alerts indicate the percentage of outliers, drifted features, \n\n      adversarial samples, NaN(null) values and OOR(out of range) values in the production \n\n      data that go beyond the predetermined threshold value and is highlighted through a \n\n      different color. If the metric percentage is less than 2% then it is considered as a \n\n      normal alert (blue), if it is between 2% to 5% then it will appear as medium alert (yellow) \n\n      and if the metric percentage is beyond 5% then it will appear as a high alert (red). \n\n      The pie chart indicates the total number of normal, medium and high alerts. All the dropdown \n\n      buttons contain the information of the particular module such as alerts from the outlier \n\n      detection module, the drift detection module and more. Finally, the logs button contains \n\n      critical/Error log information if any.\n"
     },

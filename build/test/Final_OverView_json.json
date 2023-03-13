@@ -1,0 +1,3748 @@
+{
+    "Sex": {
+        "Predicted Positive Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Predicted Positive Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        11368,
+                        1543
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Predicted Positive Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Total number of points which is predicted as positive"
+        },
+        "Predicted Negative Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Predicted Negative Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        11530,
+                        9748
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Predicted Negative Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Total number of points which is predicted as negative"
+        },
+        "False Positive Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Positive Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        5768,
+                        1010
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "False Positive Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Total count of points which is predicted as positive but actual is negative"
+        },
+        "False Negative Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Negative Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        1352,
+                        672
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "False Negative Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Total count of points which is predicted as negative but actual is positive"
+        },
+        "True Negative Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "True Negative Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        10178,
+                        9076
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "True Negative Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Total count of correctly predicted negative points"
+        },
+        "True Positive Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "True Positive Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        5600,
+                        533
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "True Positive Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Total count of correctly predicted positive points"
+        },
+        "Group Label Positive": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Group Label Positive",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        6952,
+                        1205
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Group Label Positive",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Count of positive labels in group"
+        },
+        "Group Label Negative": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Group Label Negative",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        15946,
+                        10086
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Group Label Negative",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Count of negative labels in group"
+        },
+        "Group Size": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Group Size",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        22898,
+                        11291
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Group Size",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Size of group"
+        },
+        "True Positive Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "True Positive Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.8055235903337169,
+                        0.44232365145228214
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "True Positive Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Probability that an actual positive will be predicted positive.(Sensitivity)"
+        },
+        "True Negative Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "True Negative Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.6382791922739245,
+                        0.8998611937338885
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "True Negative Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Probability that an actual negative will be predicted negative.(Specificity)"
+        },
+        "False Omission Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Omission Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.11725932350390286,
+                        0.0689372178908494
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "False Omission Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "The conditional probability of the condition being TRUE(positive)  provided that the prediction is negative."
+        },
+        "False Discovery Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Discovery Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.5073891625615764,
+                        0.6545690213869086
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "False Discovery Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "The conditional probability of the condition being negative  provided that the prediction is positive."
+        },
+        "False Positive Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Positive Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.3617208077260755,
+                        0.10013880626611144
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "False Positive Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Probability that a positive result will be predicted when the true value is negative.(False alarm rate)"
+        },
+        "False Negative Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Negative Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.19447640966628307,
+                        0.5576763485477179
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "False Negative Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Probability that a negative result will be predicted when the true value is positive.(Miss alarm rate)"
+        },
+        "Negative Predictive Value": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Negative Predictive Value",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.8827406764960971,
+                        0.9310627821091506
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Negative Predictive Value",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "The conditional probability of the condition being TRUE(positive)  provided that the prediction is negative."
+        },
+        "Precision": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Precision",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.49261083743842365,
+                        0.34543097861309136
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Precision",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Points that are declared to be positive but what percentage of them are actually positive"
+        },
+        "Predicted Positive Ratio": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Predicted Positive Ratio",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.49261083743842365,
+                        0.34543097861309136
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Predicted Positive Ratio",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "The conditional probability of the condition being negative  provided that the prediction is positive."
+        },
+        "Predicted Prevalence": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Predicted Prevalence",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.49646257315049347,
+                        0.1366575148348242
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Predicted Prevalence",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Probability of positive prediction in a particular group."
+        },
+        "Group Prevalence": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Group Prevalence",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.30360730194776836,
+                        0.10672216809848552
+                    ],
+                    "y": [
+                        "Male",
+                        "Female"
+                    ],
+                    "name": "Group Prevalence",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Probability of positive labels in a particular group."
+        },
+        "Prevalence": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Prevalence",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.11,
+                        0.3
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "Prevalence",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Prevalence returns the proportion of actual positives versus total population. Ranges between (0 and 1). 0.5 indicates ideal, 0 indicates worst"
+        },
+        "Matthews Correlation Coefficient": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Matthews Correlation Coefficient",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.31,
+                        0.41
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "Matthews Correlation Coefficient",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Matthews Correlation Coefficient returns  a reliable statistical rate which produces a high score only if the prediction obtained good results in all of the (tp, fn, tn, fp), proportionally both to the size of positive values and the size of values. Ranges between (-1 and +1). +1 indicates best, 0 indicates random"
+        },
+        "Fowlkes Mallows Index": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Fowlkes Mallows Index",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.39,
+                        0.63
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "Fowlkes Mallows Index",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Fowlkes Mallows Index returns how similar the actual values and predicted values are. Ranges between (0 and +1). +1 indicates best, 0 indicates worst."
+        },
+        "Bookmaker Informedness": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Bookmaker Informedness",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.34,
+                        0.44
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "Bookmaker Informedness",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Bookmaker Informedness returns the performance of dichotomous diagnostic test (dividing into parts with mutually exhaustive points and estimating the probability of informed decision).  Ranges between (0 and +1). +1 indicates best, 0 worst."
+        },
+        "Markedness": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Markedness",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.28,
+                        0.38
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "Markedness",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Markedness is the measure of how much one variable is marked as a predictor or the cause of another. Ranges between (0 and +1) . +1 indicates best, 0 worst."
+        },
+        "Cohen kappa Coefficient": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Cohen kappa Coefficient",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.43,
+                        0.71
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "Cohen kappa Coefficient",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Cohen kappa Coefficient returns the degree of agreement. Ranges between (-1 and +1). +1 indicates best, 0 indicates random, -1 indicates worst."
+        },
+        "Critical Success Index": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Critical Success Index",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.24,
+                        0.44
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "Critical Success Index",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Critical Success Index returns the prediction performance equal to the total number of correct predictions. Ranges between (0 and +1). +1 indicates best, 0 worst."
+        },
+        "Gilbert Skill Score": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Gilbert Skill Score",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.18,
+                        0.23
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "Gilbert Skill Score",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Gilbert Skill Score is similar to Critical Success Index is adjusted for chances. Returns the forecast performance equal to the total number of correct forecasts. Ranges between (0 and +1). +1 indicates best, 0 worst."
+        },
+        "Treatment Equality": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Treatment Equality",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        1.5,
+                        4.27
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "Treatment Equality",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Treatment Equality returns the proportion of false positives and negatives. Ranges between (0 and +1). +1 indicates best, 0 indicates worst."
+        },
+        "Diagnostic Odds Ratio": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Diagnostic Odds Ratio",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        7.13,
+                        7.31
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "Diagnostic Odds Ratio",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Diagnostic Odds Ratio returns the likelihood ratio for positives and negatives. Ranges between (0 and inf). Higher values, better results."
+        },
+        "Brier Score": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Brier Score",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.15,
+                        0.31
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "Brier Score",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Brier Score is a strictly proper scoring rule that measures the accuracy of probabilistic predictions. Ranges between (0 and +1). 0 indicates best, +1 indicates worst. The lower score, better the predictions are calibrated."
+        },
+        "F Beta Score": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "F Beta Score",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.39,
+                        0.61
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "F Beta Score",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "F Beta Score returns harmonic mean of precision and recall. Beta is mostly 1, called as F1 score. Ranges between (0 and +1). +1 indicates best, 0 indicates worst."
+        },
+       
+        "Jensen Shannon Divergence": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Jensen Shannon Divergence",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.42,
+                        0.26
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "Jensen Shannon Divergence",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Jensen Shannon Divergence is a method of measuring the similarity between the actual and predicted probability distributions. Scores are between 0 (identical) and 1 (maximally different). Positive values mean the label distributions diverge, the more positive the larger the divergence."
+        },
+        "Theil T Index": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Theil T Index",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.82,
+                        0.22
+                    ],
+                    "y": [
+                        "Female",
+                        "Male"
+                    ],
+                    "name": "Theil T Index",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Theil T Index measures the inequality in benefit allocation for individuals. A value of 0 implies perfect fairness and higher implies unfairness. Fairness is indicated by lower scores, higher scores are problematic."
+        }
+    },
+    "Race": {
+        "Predicted Positive Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Predicted Positive Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        12001,
+                        446,
+                        368,
+                        45,
+                        51
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "Predicted Positive Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Total number of points which is predicted as positive"
+        },
+        "Predicted Negative Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Predicted Negative Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        17192,
+                        2847,
+                        706,
+                        254,
+                        279
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "Predicted Negative Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Total number of points which is predicted as negative"
+        },
+        "False Positive Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Positive Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        6288,
+                        255,
+                        179,
+                        25,
+                        31
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "False Positive Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Total count of points which is predicted as positive but actual is negative"
+        },
+        "False Negative Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Negative Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        1694,
+                        191,
+                        104,
+                        19,
+                        16
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "False Negative Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Total count of points which is predicted as negative but actual is positive"
+        },
+        "True Negative Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "True Negative Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        15498,
+                        2656,
+                        602,
+                        235,
+                        263
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "True Negative Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Total count of correctly predicted negative points"
+        },
+        "True Positive Count": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "True Positive Count",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        5713,
+                        191,
+                        189,
+                        20,
+                        20
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "True Positive Count",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Total count of correctly predicted positive points"
+        },
+        "Group Label Positive": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Group Label Positive",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        7407,
+                        382,
+                        293,
+                        39,
+                        36
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "Group Label Positive",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Count of positive labels in group"
+        },
+        "Group Label Negative": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Group Label Negative",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        21786,
+                        2911,
+                        781,
+                        260,
+                        294
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "Group Label Negative",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Count of negative labels in group"
+        },
+        "Group Size": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Group Size",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        29193,
+                        3293,
+                        1074,
+                        299,
+                        330
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "Group Size",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Size of group"
+        },
+        "True Positive Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "True Positive Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.7712974213581747,
+                        0.5,
+                        0.6450511945392492,
+                        0.5128205128205128,
+                        0.5555555555555556
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "True Positive Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Probability that an actual positive will be predicted positive.(Sensitivity)"
+        },
+        "True Negative Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "True Negative Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.7113742770586615,
+                        0.9124012366884232,
+                        0.7708066581306018,
+                        0.9038461538461539,
+                        0.8945578231292517
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "True Negative Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Probability that an actual negative will be predicted negative.(Specificity)"
+        },
+        "False Omission Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Omission Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.0985342019543974,
+                        0.06708816297857394,
+                        0.14730878186968838,
+                        0.07480314960629922,
+                        0.05734767025089606
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "False Omission Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "The conditional probability of the condition being TRUE(positive)  provided that the prediction is negative."
+        },
+        "False Discovery Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Discovery Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.523956336971919,
+                        0.5717488789237668,
+                        0.48641304347826086,
+                        0.5555555555555556,
+                        0.6078431372549019
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "False Discovery Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "The conditional probability of the condition being negative  provided that the prediction is positive."
+        },
+        "False Positive Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Positive Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.2886257229413385,
+                        0.08759876331157677,
+                        0.22919334186939821,
+                        0.09615384615384616,
+                        0.1054421768707483
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "False Positive Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Probability that a positive result will be predicted when the true value is negative.(False alarm rate)"
+        },
+        "False Negative Rate": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "False Negative Rate",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.2287025786418253,
+                        0.5,
+                        0.35494880546075086,
+                        0.48717948717948717,
+                        0.4444444444444444
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "False Negative Rate",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Probability that a negative result will be predicted when the true value is positive.(Miss alarm rate)"
+        },
+        "Negative Predictive Value": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Negative Predictive Value",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.9014657980456026,
+                        0.9329118370214261,
+                        0.8526912181303116,
+                        0.9251968503937008,
+                        0.942652329749104
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "Negative Predictive Value",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "The conditional probability of the condition being TRUE(positive)  provided that the prediction is negative."
+        },
+        "Precision": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Precision",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.476043663028081,
+                        0.4282511210762332,
+                        0.5135869565217391,
+                        0.4444444444444444,
+                        0.39215686274509803
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "Precision",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Points that are declared to be positive but what percentage of them are actually positive"
+        },
+        "Predicted Positive Ratio": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Predicted Positive Ratio",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.476043663028081,
+                        0.4282511210762332,
+                        0.5135869565217391,
+                        0.4444444444444444,
+                        0.39215686274509803
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "Predicted Positive Ratio",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "The conditional probability of the condition being negative  provided that the prediction is positive."
+        },
+        "Predicted Prevalence": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Predicted Prevalence",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.4110917000650841,
+                        0.13543880959611296,
+                        0.3426443202979516,
+                        0.1505016722408027,
+                        0.15454545454545454
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "Predicted Prevalence",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Probability of positive prediction in a particular group."
+        },
+        "Group Prevalence": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Group Prevalence",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.25372520809783167,
+                        0.11600364409353174,
+                        0.27281191806331473,
+                        0.13043478260869565,
+                        0.10909090909090909
+                    ],
+                    "y": [
+                        "White",
+                        "Black",
+                        "Asian-Pac-Islander",
+                        "Other",
+                        "Amer-Indian-Eskimo"
+                    ],
+                    "name": "Group Prevalence",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Probability of positive labels in a particular group."
+        },
+        "Prevalence": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Prevalence",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.12,
+                        0.25,
+                        0.11,
+                        0.27,
+                        0.13
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "Prevalence",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Prevalence returns the proportion of actual positives versus total population. Ranges between (0 and 1). 0.5 indicates ideal, 0 indicates worst"
+        },
+        "Matthews Correlation Coefficient": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Matthews Correlation Coefficient",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.39,
+                        0.43,
+                        0.39,
+                        0.39,
+                        0.39
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "Matthews Correlation Coefficient",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Matthews Correlation Coefficient returns  a reliable statistical rate which produces a high score only if the prediction obtained good results in all of the (tp, fn, tn, fp), proportionally both to the size of positive values and the size of values. Ranges between (-1 and +1). +1 indicates best, 0 indicates random"
+        },
+        "Fowlkes Mallows Index": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Fowlkes Mallows Index",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.46,
+                        0.61,
+                        0.47,
+                        0.58,
+                        0.48
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "Fowlkes Mallows Index",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Fowlkes Mallows Index returns how similar the actual values and predicted values are. Ranges between (0 and +1). +1 indicates best, 0 indicates worst."
+        },
+        "Bookmaker Informedness": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Bookmaker Informedness",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.41,
+                        0.48,
+                        0.45,
+                        0.42,
+                        0.42
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "Bookmaker Informedness",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Bookmaker Informedness returns the performance of dichotomous diagnostic test (dividing into parts with mutually exhaustive points and estimating the probability of informed decision).  Ranges between (0 and +1). +1 indicates best, 0 worst."
+        },
+        "Markedness": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Markedness",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.36,
+                        0.38,
+                        0.33,
+                        0.37,
+                        0.37
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "Markedness",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Markedness is the measure of how much one variable is marked as a predictor or the cause of another. Ranges between (0 and +1) . +1 indicates best, 0 worst."
+        },
+        "Cohen kappa Coefficient": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Cohen kappa Coefficient",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.46,
+                        0.7,
+                        0.56,
+                        0.51,
+                        0.46
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "Cohen kappa Coefficient",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Cohen kappa Coefficient returns the degree of agreement. Ranges between (-1 and +1). +1 indicates best, 0 indicates random, -1 indicates worst."
+        },
+        "Critical Success Index": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Critical Success Index",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.3,
+                        0.42,
+                        0.3,
+                        0.4,
+                        0.31
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "Critical Success Index",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Critical Success Index returns the prediction performance equal to the total number of correct predictions. Ranges between (0 and +1). +1 indicates best, 0 worst."
+        },
+        "Gilbert Skill Score": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Gilbert Skill Score",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.24,
+                        0.25,
+                        0.23,
+                        0.24,
+                        0.24
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "Gilbert Skill Score",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Gilbert Skill Score is similar to Critical Success Index is adjusted for chances. Returns the forecast performance equal to the total number of correct forecasts. Ranges between (0 and +1). +1 indicates best, 0 worst."
+        },
+        "Treatment Equality": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Treatment Equality",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        1.34,
+                        3.71,
+                        1.94,
+                        1.72,
+                        1.32
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "Treatment Equality",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Treatment Equality returns the proportion of false positives and negatives. Ranges between (0 and +1). +1 indicates best, 0 indicates worst."
+        },
+        "Diagnostic Odds Ratio": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Diagnostic Odds Ratio",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        10.42,
+                        8.31,
+                        10.6,
+                        6.11,
+                        9.89
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "Diagnostic Odds Ratio",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Diagnostic Odds Ratio returns the likelihood ratio for positives and negatives. Ranges between (0 and inf). Higher values, better results."
+        },
+        "Brier Score": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Brier Score",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.14,
+                        0.27,
+                        0.14,
+                        0.26,
+                        0.15
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "Brier Score",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Brier Score is a strictly proper scoring rule that measures the accuracy of probabilistic predictions. Ranges between (0 and +1). 0 indicates best, +1 indicates worst. The lower score, better the predictions are calibrated."
+        },
+        "F Beta Score": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "F Beta Score",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.46,
+                        0.59,
+                        0.46,
+                        0.57,
+                        0.48
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "F Beta Score",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "F Beta Score returns harmonic mean of precision and recall. Beta is mostly 1, called as F1 score. Ranges between (0 and +1). +1 indicates best, 0 indicates worst."
+        },
+        
+        "Jensen Shannon Divergence": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Jensen Shannon Divergence",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.37,
+                        0.28,
+                        0.37,
+                        0.3,
+                        0.36
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "Jensen Shannon Divergence",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Jensen Shannon Divergence is a method of measuring the similarity between the actual and predicted probability distributions. Scores are between 0 (identical) and 1 (maximally different). Positive values mean the label distributions diverge, the more positive the larger the divergence."
+        },
+        "Theil T Index": {
+            "layout": {
+                "autosize": "false",
+                "margin": {
+                    "l": 220,
+                    "r": 50,
+                    "b": 60,
+                    "t": 50,
+                    "pad": 0
+                },
+                "height": 300,
+                "width": 870,
+                "title": "Theil T Index",
+                "xaxis": {
+                    "title": {
+                        "text": "Scores",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "yaxis": {
+                    "title": {
+                        "text": "Attribute Name",
+                        "font": {
+                            "family": "Courier New, monospace",
+                            "size": 18,
+                            "color": "#7f7f7f"
+                        }
+                    }
+                },
+                "showlegend": "true"
+            },
+            "values": [
+                {
+                    "x": [
+                        0.69,
+                        0.26,
+                        0.59,
+                        0.44,
+                        0.67
+                    ],
+                    "y": [
+                        "Black",
+                        "White",
+                        "Amer-Indian-Eskimo",
+                        "Asian-Pac-Islander",
+                        "Other"
+                    ],
+                    "name": "Theil T Index",
+                    "type": "bar",
+                    "orientation": "h"
+                }
+            ],
+            "discription": "Theil T Index measures the inequality in benefit allocation for individuals. A value of 0 implies perfect fairness and higher implies unfairness. Fairness is indicated by lower scores, higher scores are problematic."
+        }
+    }
+}

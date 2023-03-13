@@ -1,0 +1,102 @@
+{
+    "1626939047.652543": {
+        "pillar_overallscore": 83.33,
+        "accuracy": 64,
+        "risk": [
+            {
+                "pillar": "Fairness",
+                "ids": 1,
+                "name": "Negative bias towards the Female disproportionate to default rate",
+                "impact": "High",
+                "date": "2023-02-27"
+            },
+            {
+                "pillar": "Fairness",
+                "ids": 2,
+                "name": "Privileged group (Male) is getting higher benefits when compared to unprivileged group (Female)",
+                "impact": "Medium",
+                "date": "2023-02-27"
+            }
+
+        ],
+        "mitigation": [
+            {
+                "name": "PreProcessing- Reweighing",
+                "scope": "PreProcessing",
+                "impact": "Medium",
+                "score": 76.92,
+                "OverAll_Acc": 63.18,
+                "Biased_Group_Acc": 60.49,
+                "Mitigation_Rating": 7.0,
+                "date": "2023-02-27",
+                "url": ""
+            },
+            {
+                "name": "PreProcessing- Disparate Impact Remover",
+                "scope": "PreProcessing",
+                "impact": "Medium",
+                "score": 79.62,
+                "OverAll_Acc": 64,
+                "Biased_Group_Acc": 60.0,
+                "Mitigation_Rating": 7.0,
+                "date": "2023-02-27",
+                "url": ""
+            },
+            {
+                "name": "InProcessing- PrejudiceRemover",
+                "scope": "InProcessing",
+                "impact": "Medium",
+                "score": 72.22,
+                "OverAll_Acc": 86.99,
+                "Biased_Group_Acc": 85.009,
+                "Mitigation_Rating": 8.0,
+                "date": "2023-02-27",
+                "url": ""
+            },
+            {
+                "name": "InProcessing- GerryClassifier",
+                "scope": "InProcessing",
+                "impact": "High",
+                "score": 81.25,
+                "OverAll_Acc": 87.97,
+                "Biased_Group_Acc": 86.00,
+                "Mitigation_Rating": 8.5,
+                "date": "2023-02-27",
+                "url": ""
+            },
+            {
+                "name": "PostProcessing- Reject Option Classifier",
+                "scope": "PostProcessing",
+                "impact": "Medium",
+                "score": 79.64,
+                "OverAll_Acc": 62,
+                "Biased_Group_Acc": 61.28,
+                "Mitigation_Rating": 7.0,
+                "date": "2023-02-27",
+                "url": ""
+            },
+            {
+                "name": "PostProcessing- Calibrated Equalized Odds",
+                "scope": "PostProcessing",
+                "impact": "High",
+                "score": 81.25,
+                "OverAll_Acc": 88.18,
+                "Biased_Group_Acc": 86.9,
+                "Mitigation_Rating": 8.6,
+                "date": "2023-02-27",
+                "url": ""
+            },
+            {
+                "name": "InProcessing- Custom Adversarial Debiasing",
+                "scope": "PostProcessing",
+                "impact": "High",
+                "score": 79.28,
+                "OverAll_Acc": 86,
+                "Biased_Group_Acc": 84,
+                "Mitigation_Rating": 8.6,
+                "date": "2023-02-27",
+                "url": ""
+            }
+        ]
+    }
+}

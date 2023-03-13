@@ -1,0 +1,202 @@
+{
+    "Fairness": [
+        {
+            "Date": "05-Feb-23",
+            "Accuracy": 65,
+            "Fainess_Score": 73.36
+        },
+        {
+            "Date": "15-Feb-23",
+            "Accuracy": 62,
+            "Fainess_Score": 76.80
+        },
+        {
+            "Date": "27-Feb-23",
+            "Accuracy": 64,
+            "Fainess_Score": 83.33
+        }
+    ],
+    "Pie_chart": [
+        {"name":"High","value":4},
+        {"name":"Medium","value":9},
+        {"name":"Low","value":15}
+    ],
+    "Trans_Ip_Name": {
+        "Name": "Bias Evaluation Using Explainability",
+        "Actual": 0.017,
+        "description": "Privilege Score, our proprietary metric, is used to evaluate the model's bias. A higher privilege score indicates that the model is highly biased",
+        "Mitigated":  0.009,
+        "Acceptable Range": "-0.01 to 0.01"
+    },
+
+    "Metrics_Table": [
+        {
+            "metrics_name": "balanced accuracy",
+            "metrics_value": 0.79,
+            "impact": "Medium",
+            "normal_range": "0.85-1"
+        },
+        {
+            "metrics_name": "statistical parity difference",
+            "metrics_value": -0.09,
+            "impact": "Low",
+            "normal_range": "-0.10-0.10"
+        },
+        {
+            "metrics_name": "disparate impact ratio",
+            "metrics_value": 0.82,
+            "impact": "Medium",
+            "normal_range": "0.85-1.15"
+        },
+        {
+            "metrics_name": "average odds difference",
+            "metrics_value": -0.03,
+            "impact": "Low",
+            "normal_range": "-0.10-0.10"
+        },
+        {
+            "metrics_name": "equal opportunity difference",
+            "metrics_value": 0.01,
+            "impact": "Low",
+            "normal_range": "-0.10-0.10"
+        },
+        {
+            "metrics_name": "theil index",
+            "metrics_value": 0.06,
+            "impact": "Low",
+            "normal_range": "0-0.15"
+        },
+        {
+            "metrics_name": "true positive rate difference",
+            "metrics_value": 0.01,
+            "impact": "Low",
+            "normal_range": "-0.10-0.10"
+        },
+        {
+            "metrics_name": "false positive rate difference",
+            "metrics_value": -0.08,
+            "impact": "Low",
+            "normal_range": "-0.10-0.10"
+        },
+        {
+            "metrics_name": "false negative rate difference",
+            "metrics_value": -0.01,
+            "impact": "Low",
+            "normal_range": "-0.10-0.10"
+        },
+        {
+            "metrics_name": "false omission rate difference",
+            "metrics_value": -0.01,
+            "impact": "Low",
+            "normal_range": "-0.10-0.10"
+        },
+        {
+            "metrics_name": "false discovery rate difference",
+            "metrics_value": 0.02,
+            "impact": "Low",
+            "normal_range": "-0.10-0.10"
+        },
+        {
+            "metrics_name": "false positive rate ratio",
+            "metrics_value": 0.81,
+            "impact": "Medium",
+            "normal_range": "0.85-1.15"
+        },
+        {
+            "metrics_name": "false negative rate ratio",
+            "metrics_value": 0.64,
+            "impact": "Medium",
+            "normal_range": "0.85-1.15"
+        },
+        {
+            "metrics_name": "false omission rate ratio",
+            "metrics_value": 0.4,
+            "impact": "High",
+            "normal_range": "0.85-1.15"
+        },
+        {
+            "metrics_name": "false discovery rate ratio",
+            "metrics_value": 1.03,
+            "impact": "Low",
+            "normal_range": "0.85-1.15"
+        },
+        {
+            "metrics_name": "accuracy",
+            "metrics_value": 0.64,
+            "impact": "Medium",
+            "normal_range": "0.85-1"
+        },
+        {
+            "metrics_name": "biased group accuracy",
+            "metrics_value": 0.62,
+            "impact": "Medium",
+            "normal_range": "0.85-1"
+        },
+        {
+            "metrics_name": "error rate",
+            "metrics_value": 0.36,
+            "impact": "Medium",
+            "normal_range": "0-0.15"
+        },
+        {
+            "metrics_name": "true positive rate",
+            "metrics_value": 0.97,
+            "impact": "Low",
+            "normal_range": "0.85-1"
+        },
+        {
+            "metrics_name": "false positive rate",
+            "metrics_value": 0.4,
+            "impact": "Medium",
+            "normal_range": "0-0.15"
+        },
+        {
+            "metrics_name": "false negative rate",
+            "metrics_value": 0.03,
+            "impact": "Low",
+            "normal_range": "0-0.15"
+        },
+        {
+            "metrics_name": "true negative rate",
+            "metrics_value": 0.59,
+            "impact": "High",
+            "normal_range": "0.85-1"
+        },
+        {
+            "metrics_name": "precision",
+            "metrics_value": 0.25,
+            "impact": "High",
+            "normal_range": "0.85-1"
+        },
+        {
+            "metrics_name": "recall",
+            "metrics_value": 0.97,
+            "impact": "Low",
+            "normal_range": "0.85-1"
+        },
+        {
+            "metrics_name": "sensitivity",
+            "metrics_value": 0.97,
+            "impact": "Low",
+            "normal_range": "0.85-1"
+        },
+        {
+            "metrics_name": "specificity",
+            "metrics_value": 0.61,
+            "impact": "Medium",
+            "normal_range": "0.85-1"
+        },
+        {
+            "metrics_name": "false omission rate",
+            "metrics_value": 0.01,
+            "impact": "Low",
+            "normal_range": "0-0.15"
+        },
+        {
+            "metrics_name": "false discovery rate",
+            "metrics_value": 0.75,
+            "impact": "High",
+            "normal_range": "0 -0.15"
+        }
+    ]
+}

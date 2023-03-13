@@ -1,0 +1,42 @@
+{
+    "labels": [
+        "race",
+        "Age (0-10)",
+        "Age (11-20)",
+        "Age (21-30)",
+        "Age (31-40)",
+        "Age (41-50)",
+        "Age (51-60)",
+        "Age >=70",
+        "Education Years=6",
+        "Education Years=7",
+        "Education Years=8",
+        "Education Years=9",
+        "Education Years=10",
+        "Education Years=11",
+        "Education Years=12",
+        "Education Years=<6",
+        "Education Years=>12",
+        "Income Binary"
+    ],
+    "values": [
+        12.43,
+        9.79,
+        9.77,
+        5.25,
+        4.74,
+        5.02,
+        1.62,
+        0.19,
+        0.11,
+        1.39,
+        0.31,
+        1.55,
+        7.35,
+        1.35,
+        2.89,
+        4.19,
+        5.55,
+        26.419327016543633
+    ]
+}

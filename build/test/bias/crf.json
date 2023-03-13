@@ -1,0 +1,12 @@
+{
+    "labels": [
+        "Driving_License",
+        "Previously_Insured",
+        "Vehicle_Damage"
+    ],
+    "values": [
+        10.3859,
+        41.96,
+        47.654
+    ]
+}

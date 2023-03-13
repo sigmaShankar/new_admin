@@ -1,0 +1,165 @@
+{
+    "Monitoring": {
+        "project_name": "insurance_claim",
+        "model_name": "insurance",
+        "header": "Monitoring Alert",
+        "values": [
+            {
+                "x": [
+                    "od",
+                    "dd",
+                    "cd",
+                    "ae",
+                    "NaN",
+                    "Out_of_range"
+                ],
+                "y": [
+                    2,
+                    0.125,
+                    0.95,
+                    2,
+                    0.0,
+                    0.001
+                ],
+                "type": "bar",
+                "name": "Normal",
+                "mode": "lines+markers",
+                "marker": {
+                    "color": "rgb(0, 204, 204)"
+                },
+                "width": "0.25"
+            }
+        ],
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 350,
+            "width": 875,
+            "xaxis": {
+                "title": ""
+            },
+            "yaxis": {
+                "title": ""
+            },
+            "showlegend": "true"
+        },
+        "features": [
+            {
+                "title": "od_alert",
+                "data": [
+                    "Percentage of outlier sample detected in production data is Medium"
+                ]
+            },
+            {
+                "title": "dd_alert",
+                "data": [
+                    "Percentage of feature drifted in production data is Normal"
+                ]
+            },
+            {
+                "title": "cd_alert",
+                "data": [
+                    "Percentage of accuracy drift detected in production data is Normal"
+                ]
+            },
+            {
+                "title": "ae_alert",
+                "data": [
+                    "Percentage of adversarial sample detected in production data is High"
+                ]
+            },
+            {
+                "title": "di_alert",
+                "data": [
+                    "Percentage of NaN value detected in production data is Normal",
+                    "Percentage of OOR(Out of Range) value detected in production data is Normal"
+                ]
+            },
+            {
+                "title": "Logs",
+                "data": [
+                    "***** Adverserial_Detection ***** : ",
+                    "Critical/Error logs Not found in Adverserial_Detection log file",
+                    "***** Concept_Drift ***** : ",
+                    "Critical/Error logs Not found in Concept_Drift log file",
+                    "***** Drift_Detection ***** : ",
+                    "Critical/Error logs Not found in Drift_Detection log file",
+                    "***** Outlier_Detection ***** : ",
+                    "Critical/Error logs Not found in Outlier_Detection log file",
+                    "***** insurance_claim_insurance ***** : ",
+                    "Critical/Error logs Not found in insurance_claim_insurance log file",
+                    "***** response ***** : ",
+                    "Critical/Error logs Not found in response log file"
+                ]
+            }
+        ],
+        "timestamp": "2023-02-27 18:51:51.967794",
+        "name": "Monitoring Alert",
+        "des": " Monitoring alerts indicate the percentage of outliers, drifted features, \n\n      adversarial samples, NaN(null) values and OOR(out of range) values in the production \n\n      data that go beyond the predetermined threshold value and is highlighted through a \n\n      different color. If the metric percentage is less than 2% then it is considered as a \n\n      normal alert (blue), if it is between 2% to 5% then it will appear as medium alert (yellow) \n\n      and if the metric percentage is beyond 5% then it will appear as a high alert (red). \n\n      The pie chart indicates the total number of normal, medium and high alerts. All the dropdown \n\n      buttons contain the information of the particular module such as alerts from the outlier \n\n      detection module, the drift detection module and more. Finally, the logs button contains \n\n      critical/Error log information if any.\n"
+    },
+    "bias_alert": {
+        "header": "Bias Alert",
+        "values": [
+            {
+                "x": [
+                    "false_negative_rate_ratio",
+                    "false_ommision_rate_ratio",
+                    "sensitivity",
+                    "false_discovery_rate"
+                ],
+                "y": [
+                    8.956371354087289e-08,
+                    1.7182778292181736e-05,
+                    1.241283226986617e-08,
+                    5.162895667882635e-06
+                ],
+                "type": "bar",
+                "marker": {
+                    "color": "red"
+                },
+                "width": "0.25",
+                "barmode": "stack"
+            }
+        ],
+        "layout": {
+            "autosize": "false",
+            "margin": {
+                "l": 50,
+                "r": 50,
+                "b": 50,
+                "t": 50,
+                "pad": 0
+            },
+            "height": 350,
+            "width": 875,
+            "xaxis": {
+                "title": ""
+            },
+            "yaxis": {
+                "title": ""
+            },
+            "showlegend": "true"
+        },
+        "features": [
+            {
+                "title": "Alert_Messages",
+                "data": [
+                    "false_negative_rate_ratio : metric value has been changed : 8.956371354087289e-08%",
+                    "false_ommision_rate_ratio : metric value has been changed : 1.7182778292181736e-05%",
+                    "sensitivity : metric value has been changed : 1.241283226986617e-08%",
+                    "false_discovery_rate : metric value has been changed : 5.162895667882635e-06%",
+                    "false_discovery_rate: metric has medium risk in production",
+                    "false_ommision_rate: metric has HIGH risk in production"
+                ]
+            }
+        ],
+        "name": "Bias alert",
+        "des": " The bias alert bar chart only display metrics that have changed in production. \n\n        The y-axis indicates the percentage of change that occurred in these metrics. The pie chart \n\n        indicates the number of Normal, Medium and high alerts. The alert message button contains the \n\n        information of the changed metrics along with their percentage value."
+    }
+}

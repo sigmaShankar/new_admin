@@ -35908,7 +35908,7 @@ const datasetForChaild ={
               ]
           }
       ],
-      "timestamp": "2021-11-15 18:51:51.967794",
+      "timestamp": "2023-Feb-27 18:51:51.967794",
       "name": "Outlier Detection",
       "des": "An outlier represents the data points that are not in the normal range as specified by \n        threshold values. Any data point outside the threshold values will be highlighted as an outlier/anomaly. \n        We have given an overall scatter plot for the entire production dataset after reducing the data’s\n        dimensionality if required. Apart from this, we have also given two plots for each feature. \n        One of them is a Probability Density Plot and the other one is a Box Plot. These plots represent \n        outliers with respect to the reference and production data.\n        "
   },
@@ -35916,7 +35916,7 @@ const datasetForChaild ={
       "project_name": "insurance_claim",
       "module_name": "insurance",
       "header": "Drift Detection",
-      "timestamp": "2021-11-15 18:52:13.211811",
+      "timestamp": "2023-Feb-27 18:52:13.211811",
       "name": "Drift Detection",
       "des": "Data drift identifies potential changes in the data inputs that may cause performance\n        degradation of the model. This drift is detected by measuring and comparing probability distributions \n        of reference and production data using multiple, best in class, statistical methods. We have provided \n        a bar plot with p-values highlighting the drift in production data. Apart from this, for every \n        feature we have provided three graphs. They are, a Probability Density Plot, a Cumulative Distribution \n        Function plot and a Mean Bar Plot.\n        "
       ,"values": [
@@ -40634,7 +40634,7 @@ const datasetForChaild ={
           },
           "showlegend": "true"
       },
-      "timestamp": "2021-11-15 18:52:12.381070",
+      "timestamp": "2023-Feb-27 18:52:12.381070",
       "name": "production metric drift",
       "des": "Concept drift indicates the changes in model performance with respect to various metrics like\n      Accuracy, AUC-ROC, F1 score etc. The Bar Plot given represents percentage concept drift with \n      respect to these metrics."
   },
@@ -40697,7 +40697,7 @@ const datasetForChaild ={
           },
           "showlegend": "true"
       },
-      "timestamp": "2021-11-15 18:52:14.498710",
+      "timestamp": "2023-Feb-27 18:52:14.498710",
       "name": "AE",
       "des": "Adversarial detection indicates the percentage of data points which are adversarial in nature \n      when compared to all data points in reference and production data. We have deployed multiple best in \n      class techniques to identify and detect data points that are perturbated. We are representing \n      adversarial perturbation in reference and production data through a Paired Bar Plot.\n  "},
   "di": {
@@ -41451,7 +41451,7 @@ export default function Mlmonitor() {
                     <tr>
                       <th scope="row">Last Calculated</th>
                       {/* <td>{outlier?.timestamp?.substring(0,10)}</td> */}
-                      <td>2021-11-15</td>
+                      <td>2023-Feb-27</td>
 
                     </tr>
                   </tbody>
@@ -41601,7 +41601,7 @@ export default function Mlmonitor() {
                     <tr>
                       <th scope="row">Last Calculated</th>
                       {/* <td>{drift.timestamp?.substring(0,10)}</td> */}
-                      <td>2021-11-15</td>
+                      <td>2023-Feb-27</td>
 
                     </tr>
                   </tbody>
@@ -41758,7 +41758,7 @@ export default function Mlmonitor() {
                     <tr>
                       <th scope="row">Last Calculated</th>
                       {/* <td>{adversarial?.timestamp?.substring(0,10)}</td> */}
-                      <td>2021-11-15</td>
+                      <td>2023-Feb-27</td>
 
                     </tr>
                   </tbody>
@@ -41906,7 +41906,7 @@ export default function Mlmonitor() {
                     <tr>
                       <th scope="row">Last Calculated</th>
                       {/* <td>{concept?.timestamp?.substring(0,10)}</td> */}
-                      <td>2021-11-15</td>
+                      <td>2023-Feb-27</td>
 
                     </tr>
                   </tbody>
@@ -42051,7 +42051,7 @@ export default function Mlmonitor() {
                     <tr>
                       <th scope="row">Last Calculated</th>
                       {/* <td>{dataInteg?.timestamp?.substring(0,10)}</td> */}
-                      <td>2021-11-15</td>
+                      <td>2023-Feb-27</td>
 
                     </tr>
                   </tbody>

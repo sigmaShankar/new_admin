@@ -1,7 +1,7 @@
 {
     "Model_Name": "Model - Insurance Cross Sell Prediction",
     "Model_Description": "Model to predict whether the policyholders from the past year would also be interested in the Vehicle Insurance offer provided by the company.",
-    "Last_Trained_On": "Dec 13th 2021",
+    "Last_Trained_On": "Feb 27th 2023",
     "No_Of_Risks": "3",
     "model_health_metrics": [
         {
@@ -44,17 +44,17 @@
         "Low": 0,
         "Fairness": [
             {
-                "Date": "05-Nov-21",
+                "Date": "05-Feb-23",
                 "Accuracy": 65,
                 "Fainess_Score": 73.36
             },
             {
-                "Date": "25-Nov-21",
+                "Date": "15-Feb-23",
                 "Accuracy": 62,
                 "Fainess_Score": 76.80
             },
             {
-                "Date": "13-Dec-21",
+                "Date": "27-Feb-23",
                 "Accuracy": 64,
                 "Fainess_Score": 83.33
             }
@@ -166,35 +166,35 @@
             "ids": 1,
             "name": "Accuracy on the latest samples appear to be lower than general rate",
             "impact": "Medium",
-            "date": "2021-12-13"
+            "date": "2023-02-27"
         },
         {
             "pillar": "Fairness",
             "ids": 2,
             "name": "Negative bias towards the Female disproportionate to default rate",
             "impact": "High",
-            "date": "2021-07-25"
+            "date": "2023-02-27"
         },
         {
             "pillar": "Fairness",
             "ids": 3,
             "name": "Privileged group is getting higher benefits when compared to unprivileged group",
             "impact": "Medium",
-            "date": "2021-07-25"
+            "date": "2023-02-27"
         }
     ],
     "Monitoring": {
         "Production_data_drift": [
             {
-                "Date": "05-Nov-21",
+                "Date": "05-Feb-23",
                 "Drift": 0.025
             },
             {
-                "Date": "23-Nov-21",
+                "Date": "15-Feb-23",
                 "Drift": 0.100
             },
             {
-                "Date": "14-Dec-21",
+                "Date": "27-Feb-23",
                 "Drift": 0.125
             }
         ],
@@ -227,5 +227,5 @@
         ],
         "des": "The production monitoring metrics plot shows the percentage of outliers, drifted features, adversarial samples, NaN(null) values, and OOR(out of range) values in the latest production data."
     },
-    "Next_Evaluation_Date": "31-dec-2021"
+    "Next_Evaluation_Date": "05-Mar-2023"
 }
