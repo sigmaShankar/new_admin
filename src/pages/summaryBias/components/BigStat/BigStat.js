@@ -45,9 +45,9 @@ export default function BigStat(props) {
     >
       <div className={classes.totalValueContainer} >
         <div className={classes.totalValue}>
-          <Typography size="xxl" color="text" colorBrightness="secondary">
+          {/* <Typography size="xxl" color="text" colorBrightness="secondary">
             {value_d}%
-          </Typography>
+          </Typography> */}
           {/* <Typography color={total.percent.profit ? "success" : "secondary"}>
             &nbsp;{total.percent.profit ? "+" : "-"}
             {theme.palette[color].main}%
@@ -78,44 +78,44 @@ export default function BigStat(props) {
       <div className={classes.bottomStatsContainer}>
         <div className={classnames(classes.statCell, classes.borderRight)}>
           <Grid container alignItems="center" className={classes.gridCenter}>
-            <Typography variant="h6">{total_risk}</Typography>
+            {/* <Typography variant="h6">{total_risk}</Typography> */}
             {/* <ArrowForwardIcon
               className={classnames(classes.profitArrow, {
                 [!registrations[value].profit]: classes.profitArrowDanger,
               })}
             /> */}
           </Grid>
-          <Typography size="sm" color="text" colorBrightness="secondary">
+          {/* <Typography size="sm" color="text" colorBrightness="secondary">
             Total Risks
-          </Typography>
+          </Typography> */}
         </div>
         <div className={classes.statCell}>
           <Grid container alignItems="center" className={classes.gridCenter}>
-            <Typography variant="h6">{High_Risks}</Typography>
+            {/* <Typography variant="h6">{High_Risks}</Typography> */}
             {/* <ArrowForwardIcon
               className={classnames(classes.profitArrow, {
                 [!registrations[value].profit]: classes.profitArrowDanger,
               })}
             /> */}
           </Grid>
-          <Typography size="sm" color="text" colorBrightness="secondary">
+          {/* <Typography size="sm" color="text" colorBrightness="secondary">
             High Risks
-          </Typography>
+          </Typography> */}
         </div>
         <div className={classnames(classes.statCell, classes.borderRight)}>
           <Grid container alignItems="center" className={classes.gridCenter}>
-            <Typography variant="h6">
+            {/* <Typography variant="h6">
               {Medium_Risks}
-            </Typography>
+            </Typography> */}
             {/* <ArrowForwardIcon
               className={classnames(classes.profitArrow, {
                 [classes.profitArrowDanger]: !registrations[value].profit,
               })}
             /> */}
           </Grid>
-          <Typography size="sm" color="text" colorBrightness="secondary">
+          {/* <Typography size="sm" color="text" colorBrightness="secondary">
             Medium Risks
-          </Typography>
+          </Typography> */}
         </div>
       </div>
     </Widget>

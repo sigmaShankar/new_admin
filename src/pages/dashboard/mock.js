@@ -35,7 +35,7 @@ export default {
   ],
   bigStat: [
     {
-      product: "Overall",
+      product: "Accuracy",
       date:"18-Nov-21",
       total_risk:"3",
       High_Risks:"2",
