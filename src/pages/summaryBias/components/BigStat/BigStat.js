@@ -4,6 +4,7 @@ import { ArrowForward as ArrowForwardIcon, Notifications as NotificationsIcon } 
 import { useTheme } from "@material-ui/styles";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts";
 import classnames from "classnames";
+import { Card, CardHeader, Row, Col } from "reactstrap";
 
 // styles
 import useStyles from "./styles";
@@ -16,7 +17,7 @@ export default function BigStat(props) {
   var { product, total, color, registrations, graphData, value_d, bounce, date, total_risk, High_Risks, Medium_Risks } = props;
   var classes = useStyles();
   var theme = useTheme();
-
+  const des = JSON.parse(localStorage.getItem('holder'))
   // local
   var [value, setValue] = useState("daily");
 
@@ -24,7 +25,14 @@ export default function BigStat(props) {
     <Widget
       header={
         <div className={classes.title}>
-          <Typography variant="h5">{product}</Typography>
+          {/* <Typography variant="h5">{product}</Typography> */}
+          <Row className="align-items-center" >
+            <div className="col" style={{ display: "inline-flex" }}>
+              <span className="mb-0" title={des[product]} style={{ cursor: "help", textTransform: "capitalize", color: "black" }}> <b title={des[product]} >{product}</b></span>
+              &nbsp; &nbsp; &nbsp;<span style={{ marginLeft: "auto", float: "right", cursor: "help", color: "black" }}><i title={des[product]} style={{ cursor: "help", "font-size": "20px", color: "black" }} class="fa fa-info-circle" aria-hidden="true"></i></span>
+            </div>
+
+          </Row>
           {/* <NotificationsIcon /> */}
           <Select
             value={value}
@@ -46,7 +54,7 @@ export default function BigStat(props) {
       <div className={classes.totalValueContainer} >
         <div className={classes.totalValue}>
           <Typography size="xxl" color="text" colorBrightness="secondary">
-            {value_d}%
+            {value_d}
           </Typography>
           {/* <Typography color={total.percent.profit ? "success" : "secondary"}>
             &nbsp;{total.percent.profit ? "+" : "-"}
@@ -78,44 +86,44 @@ export default function BigStat(props) {
       <div className={classes.bottomStatsContainer}>
         <div className={classnames(classes.statCell, classes.borderRight)}>
           <Grid container alignItems="center" className={classes.gridCenter}>
-            <Typography variant="h6">{total_risk}</Typography>
+            {/* <Typography variant="h6">{total_risk}</Typography> */}
             {/* <ArrowForwardIcon
               className={classnames(classes.profitArrow, {
                 [!registrations[value].profit]: classes.profitArrowDanger,
               })}
             /> */}
           </Grid>
-          <Typography size="sm" color="text" colorBrightness="secondary">
+          {/* <Typography size="sm" color="text" colorBrightness="secondary">
             Total Risks
-          </Typography>
+          </Typography> */}
         </div>
         <div className={classes.statCell}>
           <Grid container alignItems="center" className={classes.gridCenter}>
-            <Typography variant="h6">{High_Risks}</Typography>
+            {/* <Typography variant="h6">{High_Risks}</Typography> */}
             {/* <ArrowForwardIcon
               className={classnames(classes.profitArrow, {
                 [!registrations[value].profit]: classes.profitArrowDanger,
               })}
             /> */}
           </Grid>
-          <Typography size="sm" color="text" colorBrightness="secondary">
+          {/* <Typography size="sm" color="text" colorBrightness="secondary">
             High Risks
-          </Typography>
+          </Typography> */}
         </div>
         <div className={classnames(classes.statCell, classes.borderRight)}>
           <Grid container alignItems="center" className={classes.gridCenter}>
-            <Typography variant="h6">
+            {/* <Typography variant="h6">
               {Medium_Risks}
-            </Typography>
+            </Typography> */}
             {/* <ArrowForwardIcon
               className={classnames(classes.profitArrow, {
                 [classes.profitArrowDanger]: !registrations[value].profit,
               })}
             /> */}
           </Grid>
-          <Typography size="sm" color="text" colorBrightness="secondary">
+          {/* <Typography size="sm" color="text" colorBrightness="secondary">
             Medium Risks
-          </Typography>
+          </Typography> */}
         </div>
       </div>
     </Widget>

@@ -187,7 +187,7 @@ const landing = () =>{
           )}
         </IconButton>
         <div >
-          <img style={{height: "6rem", width: "13rem",marginLeft:"-13px",position:"absolute","margin-top":"-3rem"}} src={require("../../assets/Sigma-red-Final-logo.png")}/>
+          {/* <img style={{height: "6rem", width: "13rem",marginLeft:"-13px",position:"absolute","margin-top":"-3rem"}} src={require("../../assets/Sigma-red-Final-logo.png")}/> */}
         </div>
         <div className={classes.grow} />
         {/* <Button  href="#" variant={"outlined"} color={"secondary"} style={{marginRight: 24,fontSize:"10px"}}>

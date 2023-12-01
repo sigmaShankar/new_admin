@@ -1,29 +1,24 @@
 [
+    
     {
-        "Sr. No.": "1",
-        "Regulation Name": "Accuracy on the latest samples appear to be lower than general rate",
-        "Risk Description": "Data Accountability and Transparency Act 2020-BURDEN OF PROOF FOR DISPARATE IMPACT.",
-        "date": "2021-10-05"
-    },
-    {
-        "Sr. No.": "2",
+        "Sr": "1",
         "Regulation Name": "Negative bias towards the Female disproportionate to default rate",
         "Risk Description": "European AI Regulations-Article 5.\u2014 PROHIBITED ARTIFICIAL INTELLIGENCE PRACTICES",
-        "date": "2021-10-05"
+        "date": "2023-10-10"
     },
 
     {
-        "Sr. No.": "3",
+        "Sr": "2",
         "Regulation Name": "Negative bias towards the Female disproportionate to default rate",
         "Risk Description": "Data Accountability and Transparency Act 2020-BURDEN OF PROOF FOR DISPARATE IMPACT.",
-        "date": "2021-10-09"
+        "date": "2023-10-10"
     },
 
     {
-        "Sr. No.": "4",
+        "Sr": "3",
         "Regulation Name": "Privileged group (Male) is getting higher benefits when compared to unprivileged group (Female)",
         "Risk Description": "European AI Regulations-Article 5.\u2014 PROHIBITED ARTIFICIAL INTELLIGENCE PRACTICES",
-        "date": "2021-10-09"
+        "date": "2023-10-20"
     }
 
 

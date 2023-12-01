@@ -135,7 +135,7 @@
             "__typename": "Ethics",
             "run_id": "0",
             "id": "0",
-            "createdAt": "2021-07-22 07:28:01.558945"
+            "createdAt": "2023-10-25"
         },
         {
             "metrics": {
@@ -272,7 +272,7 @@
             "__typename": "Ethics",
             "run_id": "0",
             "id": "0",
-            "createdAt": "2021-07-22 07:28:01.558945"
+            "createdAt": "2023-10-25"
         },
         {
             "metrics": {
@@ -409,7 +409,7 @@
             "__typename": "Ethics",
             "run_id": "0",
             "id": "0",
-            "createdAt": "2021-07-22 07:28:01.558945"
+            "createdAt": "2023-10-25"
         },
         {
             "metrics": {
@@ -534,7 +534,7 @@
             "__typename": "Ethics",
             "run_id": "0",
             "id": "0",
-            "createdAt": "2021-07-22 07:28:01.558945"
+            "createdAt": "2023-10-25"
         },
         {
             "metrics": {
@@ -808,7 +808,7 @@
             "__typename": "Ethics",
             "run_id": "0",
             "id": "0",
-            "createdAt": "2021-07-22 07:28:01.558945"
+            "createdAt": "2023-10-25"
         },
         {
             "metrics": {
@@ -933,7 +933,7 @@
             "__typename": "Ethics",
             "run_id": "0",
             "id": "0",
-            "createdAt": "2021-07-22 07:28:01.558945"
+            "createdAt": "2023-10-25"
         }
     ]
 }

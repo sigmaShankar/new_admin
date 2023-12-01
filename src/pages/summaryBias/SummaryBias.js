@@ -6,6 +6,7 @@ import {
   OutlinedInput,
   MenuItem,
 } from "@material-ui/core";
+import MultiRangeSlider from "multi-range-slider-react";
 import { useTheme } from "@material-ui/styles";
 import {
   ResponsiveContainer,
@@ -15,7 +16,7 @@ import {
   Line,
   Area,
   YAxis,
-  XAxis,Tooltip,
+  XAxis, Tooltip,
   PieChart, Pie, Sector, Cell, Legend
 } from "recharts";
 import { DoneAll as DoneAllIcon, Notifications as NotificationsIcon } from "@material-ui/icons";
@@ -41,9 +42,9 @@ const mainChartData = getMainChartData();
 
 
 const data = [
-  {"name":"High","value":5},
-  {"name":"Medium","value":20},
-  {"name":"Low","value":3}
+  { "name": "High", "value": 5 },
+  { "name": "Medium", "value": 20 },
+  { "name": "Low", "value": 3 }
 ]
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
@@ -124,6 +125,13 @@ const renderActiveShape = (props) => {
 export default function SummaryBias(props) {
   var classes = useStyles();
   var theme = useTheme();
+  const [minValue, set_minValue] = useState(25);
+  const [maxValue, set_maxValue] = useState(75);
+  const handleInput = (e) => {
+    set_minValue(e.minValue);
+    set_maxValue(e.maxValue);
+  };
+
   var [modelValue, setModelValue] = useState(true);
   var [modelData, setModelData] = useState(null);
   var [modelDataSelect, setModelSelection] = useState(null);
@@ -227,7 +235,7 @@ export default function SummaryBias(props) {
       },
     }
   ];
-
+  const des = JSON.parse(localStorage.getItem('holder'))
   useEffect(() => {
     initValue()
 
@@ -299,7 +307,7 @@ export default function SummaryBias(props) {
 
         {modelData && (<>
           <Grid item md={6} sm={12} xs={6} style={{ marginBottom: "4vh" }}>
-            <h4>Fairness and Accuracy Over Time</h4>
+            <h4>Fairness and Accuracy Over Time &nbsp;<i title={des['fairness_acc_over_time']} style={{ cursor: "help", "font-size": "20px", color: "black" }} class="fa fa-info-circle" aria-hidden="true"></i></h4>
 
             <Widget
               bodyClass={classes.mainChartBody}
@@ -316,14 +324,14 @@ export default function SummaryBias(props) {
                     <div className={classes.mainChartHeaderLabel}>
                       <Dot color="warning" />
                       <Typography className={classes.mainChartLegentElement}>
-                      Accuracy
+                        Accuracy
                       </Typography>
                     </div>
 
                     <div className={classes.mainChartHeaderLabel}>
                       <Dot color="primary" />
                       <Typography className={classes.mainChartLegentElement}>
-                      Fairness Score
+                        Fairness Score
                       </Typography>
                     </div>
                   </div>
@@ -391,7 +399,7 @@ export default function SummaryBias(props) {
                       fill: theme.palette.warning.main,
                     }}
                   />
-            <Tooltip isAnimationActive={true} style={{ opacity: 0 }} />
+                  <Tooltip isAnimationActive={true} style={{ opacity: 0 }} />
 
                 </ComposedChart>
               </ResponsiveContainer>
@@ -399,11 +407,11 @@ export default function SummaryBias(props) {
           </Grid>
 
           <Grid item xs={6} md={6} sm={12} style={{ marginBottom: "4vh" }}>
-            <h4>Metric Impact Overview</h4>
+            <h4>Bias Metric Impact Overview&nbsp;<i title={des['metrics_impact_overview']} style={{ cursor: "help", "font-size": "20px", color: "black" }} class="fa fa-info-circle" aria-hidden="true"></i></h4>
             <Widget
               bodyClass={classes.mainChartBody}
             >
-              
+
               <ResponsiveContainer width="100%" minWidth={500} height={300}>
                 <PieChart width={600} height={800}>
                   <Pie
@@ -457,14 +465,33 @@ export default function SummaryBias(props) {
                 </Typography></b>
                 <div className={classes.serverOverviewElementChartWrapper}>
                   <ResponsiveContainer width="99%">
-                    <Typography
+                    {/* <Typography
                       color="#23284a"
                       variant="h6"
                       colorBrightness="secondary"
                       className={classes.serverOverviewElementText}
                     >
                       {modelData['Trans_Ip_Name']['Actual']}
-                    </Typography>
+                    </Typography> */}
+                    {/* <input type="range" id="range1" min="0" max="100" step="5" minValue={minValue} maxValue={maxValue}></input> */}
+                    <MultiRangeSlider
+                      style={{ boxShadow: "1px 1px 1px #fff", border: 'none', background: "#fff", color: "black" }}
+                      baseClassName="multi-range-slider-black"
+                      min={0}
+                      max={10}
+                      step={0.5}
+                      label={true}
+                      ruler={true}
+                      preventWheel={false}
+                      minValue={modelData['Trans_Ip_Name']['Actual']['min']}
+                      maxValue={modelData['Trans_Ip_Name']['Actual']['max']}
+                      // ruler = {false}
+                      subSteps={true}
+                      onInput={(e) => {
+                        handleInput(e);
+                      }}
+                      disabled
+                    />
                   </ResponsiveContainer>
                 </div>
               </div>
@@ -481,7 +508,7 @@ export default function SummaryBias(props) {
                 </Typography></b>
                 <div className={classes.serverOverviewElementChartWrapper}>
                   <ResponsiveContainer width="99%">
-                    <b>
+                    {/* <b>
                       <Typography
                         color="#23284a"
                         variant="h6"
@@ -490,7 +517,27 @@ export default function SummaryBias(props) {
                       >
                         {modelData['Trans_Ip_Name']['Mitigated']}
                       </Typography>
-                    </b>
+                    </b> */}
+
+                    <MultiRangeSlider
+                      style={{ boxShadow: "1px 1px 1px #fff", border: 'none', background: "#fff", color: "black" }}
+                      min={-1}
+                      baseClassName="multi-range-slider-black"
+                      max={1}
+                      step={0.1}
+                      minValue={modelData['Trans_Ip_Name']['Mitigated']['min']}
+                      maxValue={modelData['Trans_Ip_Name']['Mitigated']['max']}
+                      // ruler = {false}
+                      subSteps={true}
+                      label={true}
+                      ruler={true}
+                      preventWheel={false}
+                      onInput={(e) => {
+                        handleInput(e);
+                      }}
+                      disabled
+                    />
+
                   </ResponsiveContainer>
                 </div>
               </div>
@@ -507,14 +554,32 @@ export default function SummaryBias(props) {
                 </Typography></b>
                 <div className={classes.serverOverviewElementChartWrapper}>
                   <ResponsiveContainer width="99%">
-                    <Typography
+                    {/* <Typography
                       color="#23284a"
                       variant="h6"
                       colorBrightness="secondary"
                       className={classes.serverOverviewElementText}
                     >
                       {modelData['Trans_Ip_Name']['Acceptable Range']}
-                    </Typography>
+                    </Typography> */}
+                    <MultiRangeSlider
+                      style={{ boxShadow: "1px 1px 1px #fff", border: 'none', background: "#fff", color: "black" }}
+                      baseClassName="multi-range-slider-black"
+
+                      min={-5}
+                      max={5}
+                      step={1}
+                      minValue={modelData['Trans_Ip_Name']['Acceptable Range']['min']}
+                      maxValue={modelData['Trans_Ip_Name']['Acceptable Range']['max']}
+                      // ruler = {false}
+                      label={true}
+                      ruler={true}
+                      preventWheel={false}
+                      onInput={(e) => {
+                        handleInput(e);
+                      }}
+                      disabled
+                    />
                   </ResponsiveContainer>
                 </div>
               </div>

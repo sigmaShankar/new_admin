@@ -1,8 +1,8 @@
 {
     "Model_Name": "Model - Insurance Cross Sell Prediction",
     "Model_Description": "Model to predict whether the policyholders from the past year would also be interested in the Vehicle Insurance offer provided by the company.",
-    "Last_Trained_On": "May 1st 2022",
-    "No_Of_Risks": "3",
+    "Last_Trained_On": "Oct 25th 2023",
+    "No_Of_Risks": "2",
     "model_health_metrics": [
         {
             "name": "ACC",
@@ -18,7 +18,7 @@
         },
         {
             "name": "FPR",
-            "Value": 0.40
+            "Value": 0.4
         },
         {
             "name": "FNR",
@@ -26,7 +26,7 @@
         },
         {
             "name": "TNR",
-            "Value": 0.60
+            "Value": 0.6
         },
         {
             "name": "Recall",
@@ -44,18 +44,18 @@
         "Low": 0,
         "Fairness": [
             {
-                "Date": "05-Apr-22",
-                "Accuracy": 65.00,
+                "Date": "20-Sept-23",
+                "Accuracy": 65,
                 "Fainess_Score": 73.36
             },
             {
-                "Date": "15-Apr-22",
-                "Accuracy": 62.00,
+                "Date": "05-Oct-23",
+                "Accuracy": 62,
                 "Fainess_Score": 76.80
             },
             {
-                "Date": "01-May-22",
-                "Accuracy": 64.00,
+                "Date": "25-Oct-23",
+                "Accuracy": 64,
                 "Fainess_Score": 83.33
             }
         ],
@@ -106,7 +106,7 @@
                 },
                 {
                     "name": "Vintage",
-                    "Value": -0.00025
+                    "Value": -1e-05
                 },
                 {
                     "name": "Annual_Premium",
@@ -118,108 +118,108 @@
     "Transperency": {
         "Feature_Importance": [
             {
-                "name": "hours-per-week",
-                "Value": -0.081
+                "name": "Age",
+                "Value": -0.0977
             },
             {
-                "name": "educational-num",
-                "Value": -0.070
+                "name": "Region_Code",
+                "Value": -0.0101
             },
             {
-                "name": "age",
-                "Value": -0.048
+                "name": "Previously_Insured",
+                "Value": -0.0041
             },
             {
-                "name": "gender_Female",
-                "Value": 0.012
+                "name": "Vintage",
+                "Value": 0.0000
             },
             {
-                "name": "relationship_Not-in-family",
-                "Value": 0.012
+                "name": "Policy_Sales_Channel",
+                "Value": 0.0002
             },
             {
-                "name": "workclass_Private",
-                "Value": 0.015
+                "name": "Annual_Premium",
+                "Value": 0.0002
             },
             {
-                "name": "education_HS",
-                "Value": 0.015
+                "name": "Vehicle_Damage",
+                "Value": 0.0005
             },
             {
-                "name": "country_United",
-                "Value": 0.017
+                "name": "Vehicle_Age",
+                "Value": 0.0009
             },
             {
-                "name": "race_White",
-                "Value": 0.02
+                "name": "Driving_License",
+                "Value": 0.0183
             },
             {
-                "name": "marital-status_Never-married",
-                "Value": 0.02
+                "name": "Gender",
+                "Value": 0.1329
             }
         ],
         "Explainability_Metrics_desc": "SigmaRed's Responsible AI platform provides more than 60 XAI visualizations. They are accessible through the ML Explainability menu"
     },
     "risk": [
-        
-       {
-                "pillar": "Fairness",
-                "ids": 2,
-                "name": "Negative bias towards the Female disproportionate to default rate",
-                "impact": "High",
-                "date": "2022-05-01"
-            },
-            {
-                "pillar": "Fairness",
-                "ids": 3,
-                "name": "Privileged group is getting higher benefits when compared to unprivileged group",
-                "impact": "Medium",
-                "date": "2022-05-01"
-            }
+
+        {
+            "pillar": "Fairness",
+            "ids": 1,
+            "name": "Negative bias towards the Female disproportionate to default rate",
+            "impact": "High",
+            "date": "2023-10-10"
+        },
+        {
+            "pillar": "Fairness",
+            "ids": 2,
+            "name": "Privileged group is getting higher benefits when compared to unprivileged group",
+            "impact": "Medium",
+            "date": "2023-10-20"
+        }
     ],
     "Monitoring": {
         "Production_data_drift": [
             {
-                "Date": "02-Apr-22",
-                "Drift": 4.0
+                "Date": "01-Oct-23",
+                "Drift": 0.025
             },
             {
-                "Date": "25-Apr-22",
-                "Drift": 4.5
+                "Date": "20-Oct-23",
+                "Drift": 0.100
             },
             {
-                "Date": "05-May-22",
-                "Drift": 5.4
+                "Date": "25-Oct-23",
+                "Drift": 0.125
             }
         ],
         "dd_decsr": "The production data drift plot shows changes in the data inputs that may cause performance degradation of the model over a period of time. This drift is detected by measuring and comparing probability distributions of reference and production data using multiple, best in class, statistical methods.",
         "Production_monitoring_metrics": [
             {
                 "name": "od",
-                "Value": 2.30
+                "Value": 2.00
             },
             {
                 "name": "dd",
-                "Value": 5.4
+                "Value": 0.125
             },
             {
                 "name": "cd",
-                "Value": 0.0
+                "Value": 0.95
             },
             {
                 "name": "ae",
-                "Value": 0.23
+                "Value": 2
             },
             {
                 "name": "NaN",
-                "Value": 1.0
+                "Value": 0.0
             },
             {
                 "name": "Out_of_range",
-                "Value": 1.152
+                "Value": 0.001
             }
         ],
         "des": "The production monitoring metrics plot shows the percentage of outliers, drifted features, adversarial samples, NaN(null) values, and OOR(out of range) values in the latest production data."
     },
-    "Next_Evaluation_Date": "30-May-2022"
+    "Next_Evaluation_Date": "15-Nov-2023"
 }

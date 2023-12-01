@@ -67,11 +67,11 @@ const Index = (props) => {
     let tempRisk = [];
     let tempMitigation = [];
     let URL = ""
-    if (!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH"){
+    if (!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") {
       URL = (sessionStorage.getItem("currentModelName") == "Credit Lending") ? "credit_lending" : (sessionStorage.getItem("currentModelName") == "Fraud Detection") ? "child_fraud" : "credit_lending";
 
-    }else{
-     URL = (sessionStorage.getItem("currentModelName") == "Credit Lending") ? "credit_lendingDU" : (sessionStorage.getItem("currentModelName") == "Fraud Detection") ? "child_fraudDU" : {};
+    } else {
+      URL = (sessionStorage.getItem("currentModelName") == "Credit Lending") ? "credit_lendingDU" : (sessionStorage.getItem("currentModelName") == "Fraud Detection") ? "child_fraudDU" : {};
 
     }
     // URL = "credit_lending";
@@ -90,6 +90,7 @@ const Index = (props) => {
             selectedAlgo[key]["risk"].map(x => x['date_generated'] = key)
             selectedAlgo[key]["mitigation"].map(x => x['date_generated'] = key)
             // console.log(selectedAlgo[key]["risk"],key,'selectedAlgo[key]["risk"]]selectedAlgo[key]["risk"]]',selectedAlgo[key]["mitigation"]);
+            var mitigationSkill = [...tempRisk, selectedAlgo[key]["mitigation"]];
             tempRisk = [...tempRisk, selectedAlgo[key]["risk"]];
             tempMitigation = [...tempMitigation, selectedAlgo[key]["mitigation"]];
           }
@@ -141,8 +142,8 @@ const Index = (props) => {
   // let selectedAlgo =
 
 
-  
-  
+
+
 
   const [activeTab, setActiveTab] = useState("Ethics");
   const [title, setTitle] = useState("Risk");
@@ -154,7 +155,7 @@ const Index = (props) => {
   const columns_risk = [
     {
       name: "ids",
-      label: (!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH")?"Risk No.":"Risico Nr" ,
+      label: (!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Risk No." : "Risico Nr",
       options: {
         filter: true,
         sort: true,
@@ -162,7 +163,7 @@ const Index = (props) => {
     },
     {
       name: "pillar",
-      label: (!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH")?"Category":"Categorie",
+      label: (!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Category" : "Categorie",
       options: {
         filter: true,
         sort: false,
@@ -170,7 +171,7 @@ const Index = (props) => {
     },
     {
       name: "name",
-      label: (!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH")?"Risk Description":"Risicobeschrijving",
+      label: (!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Risk Description" : "Risicobeschrijving",
       options: {
         filter: true,
         sort: false,
@@ -178,7 +179,7 @@ const Index = (props) => {
     },
     {
       name: "impact",
-      label: (!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH")?"Criticality":"Kritiek",
+      label: (!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Criticality" : "Kritiek",
       options: {
         filter: true,
         customBodyRender: (value, tableMeta, updateValue) => {
@@ -218,7 +219,7 @@ const Index = (props) => {
     },
     {
       name: "date",
-      label: (!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH")?"Date ":"Datum en tijd ",
+      label: (!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Date " : "Datum en tijd ",
       options: {
         filter: true,
         customBodyRender: (value, tableMeta, updateValue) => {
@@ -286,34 +287,63 @@ const Index = (props) => {
   const [modalShow, setModalShow] = React.useState(false);
   const [popup, setPopup] = React.useState([]);
 
+
+  const [modalShow2, setModalShow2] = React.useState(false);
+  const [popup2, setPopup2] = React.useState([]);
+
+  // const mitigation_funtion = (id, date) => {
+  //   setPopup([])
+  //   console.log(date,"datedatedate",id,_risk)
+  //   let data = mitigation.filter((x) => x.date_generated == date);
+
+  //   console.log(data, 'datadaaatf', mitigation);
+  //   setPopup(data);
+  //   setModalShow(true);
+  // };
+
   const mitigation_funtion = (id, date) => {
-    setPopup([])
-    let data = mitigation.filter((x) => x.date_generated == date);
-    console.log(data, 'datadaaatf', mitigation);
-    setPopup(data);
-    setModalShow(true);
+    setPopup2([])
+    console.log(date, "datedatedate", id, _risk)
+    let data = _risk.filter((x) => x.ids == id);
+
+    console.log(Object.keys(data), 'datadaaatf', typeof data, data[0]);
+    setPopup2(data[0]?.description);
+    setTimeout(() => {
+      setModalShow2(true);
+
+    }, 1);
+  };
+
+  const mitigation_funtion2 = () => {
+    // setPopup([])
+    // // let data = mitigation.filter((x) => x.date_generated == date);
+    // console.log('datadaaatfdatadaaatfdatadaaatf', mitigation);
+    setPopup(mitigation);
+    setTimeout(() => {
+      setModalShow(true);
+    }, 1);
   };
 
   return (
     <>
       {/* { true ? <Header show={overall[0]} accuracy={accuracy[0]} type="ethics" /> : ""} */}
       {/* {((!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") && !props.headerDisplay) ? <Header show={overallEthics} show={overall[0]} accuracy={accuracy[0]} type="ethics"/> : (!props.headerDisplay) ?<HeaderDU show={overallEthics} /> : null} */}
-     
-     {/* Page content */}
-     {/* <Container  fluid>
+
+      {/* Page content */}
+      {/* <Container  fluid>
         <Row className="mt-5">
           <Col className="mb-5 mb-xl-0" xl="12"> */}
-            <Card className="shadow">
-              <CardHeader className="border-0" style={{backgroundColor:"black",color:"#fff"}}>
-                <Row className="align-items-center">
-                  <div className="col">
-                  {(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? <h5 className="mb-0">Risks - {(sessionStorage.getItem("currentModelName") == "Credit Lending")?"Credit Lending":"Insurance Cross Sell Prediction" } </h5>
-                   :
-                   <h5 className="mb-0">risico's - {(sessionStorage.getItem("currentModelName") == "Credit Lending")?"Kredietverlening":"Voorbeeld uitkeringsfraude" } </h5>
-                  }
-                  </div>
-                  <div className="col text-right">
-                    {/* <Button
+      <Card className="shadow">
+        <CardHeader className="border-0" style={{ backgroundColor: "black", color: "#fff" }}>
+          <Row className="align-items-center">
+            <div className="col">
+              {(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? <h5 className="mb-0">Risks - {(sessionStorage.getItem("currentModelName") == "Credit Lending") ? "Credit Lending" : "Insurance Cross Sell Prediction"} </h5>
+                :
+                <h5 className="mb-0">risico's - {(sessionStorage.getItem("currentModelName") == "Credit Lending") ? "Kredietverlening" : "Voorbeeld uitkeringsfraude"} </h5>
+              }
+            </div>
+            <div className="col text-right">
+              {/* <Button
                       color="primary"
                       href="#pablo"
                       onClick={() => _setTitle(secondTitle)}
@@ -321,62 +351,60 @@ const Index = (props) => {
                     >
                       {secondTitle}
                     </Button> */}
-                  </div>
-                </Row>
-              </CardHeader>
+            </div>
+          </Row>
+        </CardHeader>
+        <MyVerticallyCenteredModal2
+          show={modalShow2}
+          onHide={() => setModalShow2(false)}
+          popup={popup2}
+        // _approve={approve}
+        // title={activeTab}
+        />
 
-              <MyVerticallyCenteredModal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-                popup={popup}
-                _approve={approve}
-              // title={activeTab}
-              />
-              <div className="m-3">
-                {/* <Nav pills>
-                  <NavItem>
-                    <NavLink
-                      className={classnames({ active: activeTab === "Ethics" })}
-                      onClick={() => {
-                        toggle("Ethics");
-                        setModalShow(true)
-                      }}
-                    >
-                      Ethics
-                    </NavLink>
-                  </NavItem>
-                </Nav> */}
-              </div>
-              <MUIDataTable
-                data={_risk}
-                columns={columns_risk}
-                options={{
-                  print: false,
-                  filter: false,
-                  viewColumns:false,
-                  selectableRows: false,
-                  onRowClick: (rowData, rowState) => {
-                    // setAdd(rowData[1])
-                    //console.log("hello")
-                    mitigation_funtion(
-                      rowData[0],
-                      rowData[4]
-                    );
-                    console.log(rowData[0], rowData);
-                  },
-                }}
-              />
-            </Card>
-          {/* </Col>
+        <MyVerticallyCenteredModal
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+          popup={popup}
+        // _approve={approve}
+        // title={activeTab}
+        />
+        <div className="m-3">
+
+          <Button variant="contained" onClick={mitigation_funtion2} style={{ float: "right" }}>
+            Mitigation
+          </Button>
+
+        </div>
+        <MUIDataTable
+          data={_risk}
+          columns={columns_risk}
+          options={{
+            print: false,
+            filter: false,
+            viewColumns: false,
+            selectableRows: false,
+            onRowClick: (rowData, rowState) => {
+              // setAdd(rowData[1])
+              //console.log("hello")
+              mitigation_funtion(
+                rowData[0],
+                rowData[4]
+              );
+              console.log(rowData[0], rowData);
+            },
+          }}
+        />
+      </Card>
+      {/* </Col>
         </Row> */}
-        <ToastContainer />
+      <ToastContainer />
       {/* </Container> */}
     </>
   );
 };
 
-
-function MyVerticallyCenteredModal(props) {
+function MyVerticallyCenteredModal2(props) {
 
   return (
     <Modal
@@ -398,7 +426,7 @@ function MyVerticallyCenteredModal(props) {
             <CardHeader className="border-0">
               <Row className="align-items-center">
                 <div className="col">
-                  <h3 className="mb-0">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ?"Mitigations" :"Beperkingen"}</h3>
+                  <h3 className="mb-0">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Metrics Violations" : "Beperkingen"}</h3>
                 </div>
               </Row>
             </CardHeader>
@@ -408,12 +436,94 @@ function MyVerticallyCenteredModal(props) {
             >
               <thead className="thead-light">
                 <tr>
-                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ?"Name" :"Naam"}</th>
-                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ?"Scope" :"Toepassingsgebied"}</th>
-                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ?"Pillar Score" :"Pijlerscore"}</th>
-                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ?"Protected Group Acc" :"Beveiligde groepstoegang"}</th>
-                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ?"Overall Accuracy" :"Algemene nauwkeurigheid"}</th>
-                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ?"Decision" :"Besluit"}</th>
+                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Name" : "Naam"}</th>
+                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Description" : "Toepassingsgebied"}</th>
+                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Current Value" : "Pijlerscore"}</th>
+                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Normal Range" : "Beveiligde groepstoegang"}</th>
+                  {/* <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Overall Accuracy" : "Algemene nauwkeurigheid"}</th> */}
+                  {/* <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Decision" : "Besluit"}</th> */}
+                </tr>
+              </thead>
+              <tbody>
+                {props.popup.length ? (
+                  props.popup.map((mitigation, ind) => {
+                    return (
+                      <tr>
+                        <td>
+                          <b>{mitigation.metrics_name}</b>
+                        </td>
+                        <td>{mitigation.description}</td>
+                        <td style={{ paddingLeft: "1%" }}>{mitigation.current_value}</td>
+
+                        <td style={{ paddingLeft: "1%" }}>{mitigation.normal_range}</td>
+                        {/* <td style={{ paddingLeft: "4%" }}>{mitigation.OverAll_Acc}%</td> */}
+                        {/* <td>
+                          <button type="button" onClick={() => { { props._approve(mitigation.url) } }} class="btn btn-success">
+                            {(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Approve" : "Goedkeuren"}
+                          </button>
+                          <button type="button" class="btn btn-danger" onClick={props.onHide}>
+                            {(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Reject" : "afwijzen"}
+
+                          </button>
+                        </td> */}
+                      </tr>
+                    );
+                  })
+                ) : (
+                  <small>No data found</small>
+                )}
+              </tbody>
+            </Table>
+          </Card>
+        </Col>
+      </ModalBody>
+      <ModalFooter>
+        <Button color="secondary" onClick={props.onHide}>
+          Cancel
+        </Button>
+      </ModalFooter>
+    </Modal>
+  );
+}
+function MyVerticallyCenteredModal(props) {
+
+  return (
+    <Modal
+    style={{width: "1200px"}}
+      isOpen={props.show}
+      className="modal-xl"
+    // contentClassName="migitage-modal"
+    // toggle={toggle}
+    >
+      {/* <Modal
+      {...props}
+      size="modal-xl"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered */}
+      {/* > */}
+      {/* <ModalHeader toggle={toggle} className="m-3 h2" >Mitigations</ModalHeader> */}
+      <ModalBody>
+        <Col>
+          <Card className="shadow ">
+            <CardHeader className="border-0">
+              <Row className="align-items-center">
+                <div className="col">
+                  <h3 className="mb-0">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Metrics Violations" : "Beperkingen"}</h3>
+                </div>
+              </Row>
+            </CardHeader>
+            <Table
+              className="align-items-center mitigation-table table-flush"
+              responsive
+            >
+              <thead className="thead-light">
+                <tr>
+                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Name" : "Naam"}</th>
+                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Scope" : "Toepassingsgebied"}</th>
+                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Pillar Score" : "Pijlerscore"}</th>
+                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Protected Group Acc" : "Beveiligde groepstoegang"}</th>
+                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Overall Accuracy" : "Algemene nauwkeurigheid"}</th>
+                  <th scope="col">{(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Decision" : "Besluit"}</th>
                 </tr>
               </thead>
               <tbody>
@@ -425,17 +535,17 @@ function MyVerticallyCenteredModal(props) {
                           <b>{mitigation.name}</b>
                         </td>
                         <td>{mitigation.scope}</td>
-                        <td style={{ paddingLeft: "4%" }}>{mitigation.score}%</td>
+                        <td style={{ paddingLeft: "1%" }}>{mitigation.score}%<span><small style={{color:mitigation.scoreincrease_piller?'green':'red','font-style':'italic'}}>({mitigation.scoreincrease_piller?'+':'-'} {mitigation.scoreValue_pillar}%)</small></span></td>
 
-                        <td style={{ paddingLeft: "4%" }}>{mitigation.Biased_Group_Acc}%</td>
-                        <td style={{ paddingLeft: "4%" }}>{mitigation.OverAll_Acc}%</td>
+                        <td style={{ paddingLeft: "2%" }}>{mitigation.Biased_Group_Acc}%<span><small style={{color:mitigation.scoreincrease_accuracy?'green':'red','font-style':'italic'}}>({mitigation.scoreincrease_accuracy?'+':'-'} {mitigation.scoreValue_accuracy}%)</small></span></td>
+                        <td style={{ paddingLeft: "1%" }}>{mitigation.OverAll_Acc}%<span><small style={{color:mitigation.scoreincrease_Overall?'green':'red','font-style':'italic'}}>({mitigation.scoreincrease_Overall?'+':'-'} {mitigation.scoreValue_Overall}%)</small></span></td>
                         <td>
                           <button type="button" onClick={() => { { props._approve(mitigation.url) } }} class="btn btn-success">
-                          {(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ?"Approve" :"Goedkeuren"} 
+                            {(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Approve" : "Goedkeuren"}
                           </button>
                           <button type="button" class="btn btn-danger" onClick={props.onHide}>
-                          {(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ?"Reject" :"afwijzen"} 
-                            
+                            {(!sessionStorage.getItem("set") || sessionStorage.getItem("set") == "ENGLISH") ? "Reject" : "afwijzen"}
+
                           </button>
                         </td>
                       </tr>

@@ -1,0 +1,8 @@
+
+    {
+        "Fairness":"Represents the weighted score by using fairness metrics .More the scores better the model is",
+        "Accuracy":"Accuracy of model .More the scores better the model is",
+        "Metrics At High Risks":"Represents the number of bias metrics which currently above high risks range",
+        "fairness_acc_over_time":"Represents the fairness scores and accuracy over time",
+        "metrics_impact_overview":"Represents the number of bias metrics which are at high , medium, low risk range"
+    }

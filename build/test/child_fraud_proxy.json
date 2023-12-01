@@ -1,170 +1,170 @@
 {
-    "1621959903.557185": [
+    "1626945718.300504": [
         {
             "metrics": {
                 "balanced accuracy": {
-                    "normal": 0.79,
+                    "normal": 0.78,
                     "proxy": 0.78,
-                    "mitigated": 0.77
+                    "mitigated": 0.76
                 },
                 "statistical parity difference": {
-                    "normal": -0.05,
-                    "proxy": 0.43,
-                    "mitigated": 0.22
+                    "normal": -0.08,
+                    "proxy": -0.93,
+                    "mitigated": -0.82
                 },
                 "disparate impact ratio": {
-                    "normal": 0.91,
-                    "proxy": 3.36,
-                    "mitigated": 1.61
+                    "normal": 0.85,
+                    "proxy": 0.0,
+                    "mitigated": 0.13
                 },
                 "average odds difference": {
                     "normal": -0.03,
-                    "proxy": 0.31,
-                    "mitigated": 0.07
+                    "proxy": -0.95,
+                    "mitigated": -0.43
                 },
                 "equal opportunity difference": {
-                    "normal": -0.07,
-                    "proxy": 0.29,
-                    "mitigated": 0.01
+                    "normal": 0.01,
+                    "proxy": -0.99,
+                    "mitigated": -0.04
                 },
                 "theil index": {
-                    "normal": 0.1,
-                    "proxy": 0.1,
-                    "mitigated": 0.09
+                    "normal": 0.06,
+                    "proxy": 0.06,
+                    "mitigated": 0.06
                 },
                 "true positive rate difference": {
-                    "normal": -0.07,
-                    "proxy": 0.29,
-                    "mitigated": 0.01
+                    "normal": 0.01,
+                    "proxy": -0.99,
+                    "mitigated": -0.04
                 },
                 "false posiitve rate difference": {
-                    "normal": 0.01,
-                    "proxy": 0.33,
-                    "mitigated": 0.13
+                    "normal": -0.07,
+                    "proxy": -0.92,
+                    "mitigated": -0.81
                 },
                 "false negative rate difference": {
-                    "normal": 0.07,
-                    "proxy": -0.29,
-                    "mitigated": -0.01
+                    "normal": -0.01,
+                    "proxy": 0.99,
+                    "mitigated": 0.04
                 },
                 "false omission rate difference": {
-                    "normal": 0.02,
-                    "proxy": 0.02,
-                    "mitigated": 0.07
+                    "normal": -0.0,
+                    "proxy": -0.03,
+                    "mitigated": -0.0
                 },
                 "false discovery rate difference": {
-                    "normal": 0.09,
-                    "proxy": -0.03,
-                    "mitigated": -0.18
+                    "normal": 0.02,
+                    "proxy": -0.75,
+                    "mitigated": 0.19
                 },
                 "false posiitve rate ratio": {
-                    "normal": 1.05,
-                    "proxy": 4.31,
-                    "mitigated": 1.51
+                    "normal": 0.84,
+                    "proxy": 0.0,
+                    "mitigated": 0.12
                 },
                 "false negative rate ratio": {
-                    "normal": 1.76,
-                    "proxy": 0.24,
-                    "mitigated": 0.88
+                    "normal": 0.57,
+                    "proxy": 102.6,
+                    "mitigated": 38.31
                 },
                 "false omission rate ratio": {
-                    "normal": 1.38,
-                    "proxy": 1.21,
-                    "mitigated": 3.09
-                },
-                "false discovery rate ratio": {
-                    "normal": 1.26,
-                    "proxy": 0.94,
-                    "mitigated": 0.69
-                },
-                "accuracy": {
-                    "normal": 0.77,
-                    "proxy": 0.75,
-                    "mitigated": 0.73
-                },
-                "biased group acc": {
-                    "normal": 0.8,
-                    "proxy": 0.85,
-                    "mitigated": 0.76
-                },
-                "error rate": {
-                    "normal": 0.23,
-                    "proxy": 0.25,
-                    "mitigated": 0.27
-                },
-                "number of true positives": {
-                    "normal": 2237.0,
-                    "proxy": 2210.0,
-                    "mitigated": 2296.0
-                },
-                "number of false positives": {
-                    "normal": 1508.0,
-                    "proxy": 1665.0,
-                    "mitigated": 1906.0
-                },
-                "number of false negatives": {
-                    "normal": 384.0,
-                    "proxy": 360.0,
-                    "mitigated": 282.0
-                },
-                "number of true negatives": {
-                    "normal": 4029.0,
-                    "proxy": 3923.0,
-                    "mitigated": 3674.0
-                },
-                "true positive rate ": {
-                    "normal": 0.85,
-                    "proxy": 0.86,
-                    "mitigated": 0.89
-                },
-                "false posiitve rate": {
-                    "normal": 0.27,
-                    "proxy": 0.3,
-                    "mitigated": 0.34
-                },
-                "false negative rate": {
-                    "normal": 0.15,
-                    "proxy": 0.14,
-                    "mitigated": 0.11
-                },
-                "true negative rate ": {
-                    "normal": 0.73,
-                    "proxy": 0.7,
-                    "mitigated": 0.66
-                },
-                "precision": {
-                    "normal": 0.6,
-                    "proxy": 0.57,
-                    "mitigated": 0.55
-                },
-                "recall": {
-                    "normal": 0.85,
-                    "proxy": 0.86,
-                    "mitigated": 0.89
-                },
-                "sensitivity": {
-                    "normal": 0.85,
-                    "proxy": 0.86,
-                    "mitigated": 0.89
-                },
-                "specificity": {
-                    "normal": 0.73,
-                    "proxy": 0.7,
-                    "mitigated": 0.66
-                },
-                "false omission rate": {
-                    "normal": 0.09,
-                    "proxy": 0.08,
+                    "normal": 0.38,
+                    "proxy": 0.15,
                     "mitigated": 0.07
                 },
+                "false discovery rate ratio": {
+                    "normal": 1.02,
+                    "proxy": 0.0,
+                    "mitigated": 1.25
+                },
+                "accuracy": {
+                    "normal": 0.63,
+                    "proxy": 0.64,
+                    "mitigated": 0.58
+                },
+                "biased group accuracy": {
+                    "normal": 0.61,
+                    "proxy": 0.3,
+                    "mitigated": 0.28
+                },
+                "error rate": {
+                    "normal": 0.37,
+                    "proxy": 0.36,
+                    "mitigated": 0.42
+                },
+                "number of true positives": {
+                    "normal": 1026.0,
+                    "proxy": 1016.0,
+                    "mitigated": 1020.0
+                },
+                "number of false positives": {
+                    "normal": 3144.0,
+                    "proxy": 3048.0,
+                    "mitigated": 3642.0
+                },
+                "number of false negatives": {
+                    "normal": 22.0,
+                    "proxy": 31.0,
+                    "mitigated": 2.0
+                },
+                "number of true negatives": {
+                    "normal": 4384.0,
+                    "proxy": 4481.0,
+                    "mitigated": 3912.0
+                },
+                "true positive rate ": {
+                    "normal": 0.98,
+                    "proxy": 0.97,
+                    "mitigated": 1.0
+                },
+                "false posiitve rate": {
+                    "normal": 0.42,
+                    "proxy": 0.4,
+                    "mitigated": 0.48
+                },
+                "false negative rate": {
+                    "normal": 0.02,
+                    "proxy": 0.03,
+                    "mitigated": 0.0
+                },
+                "true negative rate ": {
+                    "normal": 0.58,
+                    "proxy": 0.6,
+                    "mitigated": 0.52
+                },
+                "precision": {
+                    "normal": 0.25,
+                    "proxy": 0.25,
+                    "mitigated": 0.22
+                },
+                "recall": {
+                    "normal": 0.98,
+                    "proxy": 0.97,
+                    "mitigated": 1.0
+                },
+                "sensitivity": {
+                    "normal": 0.98,
+                    "proxy": 0.97,
+                    "mitigated": 1.0
+                },
+                "specificity": {
+                    "normal": 0.58,
+                    "proxy": 0.6,
+                    "mitigated": 0.52
+                },
+                "false omission rate": {
+                    "normal": 0.0,
+                    "proxy": 0.01,
+                    "mitigated": 0.0
+                },
                 "false discovery rate": {
-                    "normal": 0.4,
-                    "proxy": 0.43,
-                    "mitigated": 0.45
+                    "normal": 0.75,
+                    "proxy": 0.75,
+                    "mitigated": 0.78
                 }
             },
             "algo": "Disparate impact remover",
-            "createdAt": "2021-05-25 16:25:03.557185",
+            "createdAt": "2021-07-22 09:21:58.300504",
             "__typename": "Ethics",
             "run_id": "0",
             "id": "0"
@@ -172,168 +172,168 @@
         {
             "metrics": {
                 "balanced accuracy": {
-                    "normal": 0.79,
+                    "normal": 0.78,
                     "proxy": 0.78,
-                    "mitigated": 0.77
+                    "mitigated": 0.76
                 },
                 "statistical parity difference": {
-                    "normal": -0.05,
-                    "proxy": 0.43,
-                    "mitigated": 0.22
+                    "normal": -0.08,
+                    "proxy": -0.93,
+                    "mitigated": -0.82
                 },
                 "disparate impact ratio": {
-                    "normal": 0.91,
-                    "proxy": 3.36,
-                    "mitigated": 1.61
+                    "normal": 0.85,
+                    "proxy": 0.0,
+                    "mitigated": 0.13
                 },
                 "average odds difference": {
                     "normal": -0.03,
-                    "proxy": 0.31,
-                    "mitigated": 0.07
+                    "proxy": -0.95,
+                    "mitigated": -0.43
                 },
                 "equal opportunity difference": {
-                    "normal": -0.07,
-                    "proxy": 0.29,
-                    "mitigated": 0.01
+                    "normal": 0.01,
+                    "proxy": -0.99,
+                    "mitigated": -0.04
                 },
                 "theil index": {
-                    "normal": 0.1,
-                    "proxy": 0.1,
-                    "mitigated": 0.09
+                    "normal": 0.06,
+                    "proxy": 0.06,
+                    "mitigated": 0.06
                 },
                 "true positive rate difference": {
-                    "normal": -0.07,
-                    "proxy": 0.29,
-                    "mitigated": 0.01
+                    "normal": 0.01,
+                    "proxy": -0.99,
+                    "mitigated": -0.04
                 },
                 "false posiitve rate difference": {
-                    "normal": 0.01,
-                    "proxy": 0.33,
-                    "mitigated": 0.13
+                    "normal": -0.07,
+                    "proxy": -0.92,
+                    "mitigated": -0.81
                 },
                 "false negative rate difference": {
-                    "normal": 0.07,
-                    "proxy": -0.29,
-                    "mitigated": -0.01
+                    "normal": -0.01,
+                    "proxy": 0.99,
+                    "mitigated": 0.04
                 },
                 "false omission rate difference": {
-                    "normal": 0.02,
-                    "proxy": 0.02,
-                    "mitigated": 0.07
+                    "normal": -0.0,
+                    "proxy": -0.03,
+                    "mitigated": -0.0
                 },
                 "false discovery rate difference": {
-                    "normal": 0.09,
-                    "proxy": -0.03,
-                    "mitigated": -0.18
+                    "normal": 0.02,
+                    "proxy": -0.75,
+                    "mitigated": 0.19
                 },
                 "false posiitve rate ratio": {
-                    "normal": 1.05,
-                    "proxy": 4.31,
-                    "mitigated": 1.51
+                    "normal": 0.84,
+                    "proxy": 0.0,
+                    "mitigated": 0.12
                 },
                 "false negative rate ratio": {
-                    "normal": 1.76,
-                    "proxy": 0.24,
-                    "mitigated": 0.88
+                    "normal": 0.57,
+                    "proxy": 102.6,
+                    "mitigated": 38.31
                 },
                 "false omission rate ratio": {
-                    "normal": 1.38,
-                    "proxy": 1.21,
-                    "mitigated": 3.09
-                },
-                "false discovery rate ratio": {
-                    "normal": 1.26,
-                    "proxy": 0.94,
-                    "mitigated": 0.69
-                },
-                "accuracy": {
-                    "normal": 0.77,
-                    "proxy": 0.75,
-                    "mitigated": 0.73
-                },
-                "biased group acc": {
-                    "normal": 0.8,
-                    "proxy": 0.85,
-                    "mitigated": 0.76
-                },
-                "error rate": {
-                    "normal": 0.23,
-                    "proxy": 0.25,
-                    "mitigated": 0.27
-                },
-                "number of true positives": {
-                    "normal": 2237.0,
-                    "proxy": 2210.0,
-                    "mitigated": 2296.0
-                },
-                "number of false positives": {
-                    "normal": 1508.0,
-                    "proxy": 1665.0,
-                    "mitigated": 1906.0
-                },
-                "number of false negatives": {
-                    "normal": 384.0,
-                    "proxy": 360.0,
-                    "mitigated": 282.0
-                },
-                "number of true negatives": {
-                    "normal": 4029.0,
-                    "proxy": 3923.0,
-                    "mitigated": 3674.0
-                },
-                "true positive rate ": {
-                    "normal": 0.85,
-                    "proxy": 0.86,
-                    "mitigated": 0.89
-                },
-                "false posiitve rate": {
-                    "normal": 0.27,
-                    "proxy": 0.3,
-                    "mitigated": 0.34
-                },
-                "false negative rate": {
-                    "normal": 0.15,
-                    "proxy": 0.14,
-                    "mitigated": 0.11
-                },
-                "true negative rate ": {
-                    "normal": 0.73,
-                    "proxy": 0.7,
-                    "mitigated": 0.66
-                },
-                "precision": {
-                    "normal": 0.6,
-                    "proxy": 0.57,
-                    "mitigated": 0.55
-                },
-                "recall": {
-                    "normal": 0.85,
-                    "proxy": 0.86,
-                    "mitigated": 0.89
-                },
-                "sensitivity": {
-                    "normal": 0.85,
-                    "proxy": 0.86,
-                    "mitigated": 0.89
-                },
-                "specificity": {
-                    "normal": 0.73,
-                    "proxy": 0.7,
-                    "mitigated": 0.66
-                },
-                "false omission rate": {
-                    "normal": 0.09,
-                    "proxy": 0.08,
+                    "normal": 0.38,
+                    "proxy": 0.15,
                     "mitigated": 0.07
                 },
+                "false discovery rate ratio": {
+                    "normal": 1.02,
+                    "proxy": 0.0,
+                    "mitigated": 1.25
+                },
+                "accuracy": {
+                    "normal": 0.63,
+                    "proxy": 0.64,
+                    "mitigated": 0.58
+                },
+                "biased group acc": {
+                    "normal": 0.61,
+                    "proxy": 0.3,
+                    "mitigated": 0.28
+                },
+                "error rate": {
+                    "normal": 0.37,
+                    "proxy": 0.36,
+                    "mitigated": 0.42
+                },
+                "number of true positives": {
+                    "normal": 1026.0,
+                    "proxy": 1016.0,
+                    "mitigated": 1020.0
+                },
+                "number of false positives": {
+                    "normal": 3144.0,
+                    "proxy": 3048.0,
+                    "mitigated": 3642.0
+                },
+                "number of false negatives": {
+                    "normal": 22.0,
+                    "proxy": 31.0,
+                    "mitigated": 2.0
+                },
+                "number of true negatives": {
+                    "normal": 4384.0,
+                    "proxy": 4481.0,
+                    "mitigated": 3912.0
+                },
+                "true positive rate ": {
+                    "normal": 0.98,
+                    "proxy": 0.97,
+                    "mitigated": 1.0
+                },
+                "false posiitve rate": {
+                    "normal": 0.42,
+                    "proxy": 0.4,
+                    "mitigated": 0.48
+                },
+                "false negative rate": {
+                    "normal": 0.02,
+                    "proxy": 0.03,
+                    "mitigated": 0.0
+                },
+                "true negative rate ": {
+                    "normal": 0.58,
+                    "proxy": 0.6,
+                    "mitigated": 0.52
+                },
+                "precision": {
+                    "normal": 0.25,
+                    "proxy": 0.25,
+                    "mitigated": 0.22
+                },
+                "recall": {
+                    "normal": 0.98,
+                    "proxy": 0.97,
+                    "mitigated": 1.0
+                },
+                "sensitivity": {
+                    "normal": 0.98,
+                    "proxy": 0.97,
+                    "mitigated": 1.0
+                },
+                "specificity": {
+                    "normal": 0.58,
+                    "proxy": 0.6,
+                    "mitigated": 0.52
+                },
+                "false omission rate": {
+                    "normal": 0.0,
+                    "proxy": 0.01,
+                    "mitigated": 0.0
+                },
                 "false discovery rate": {
-                    "normal": 0.4,
-                    "proxy": 0.43,
-                    "mitigated": 0.45
+                    "normal": 0.75,
+                    "proxy": 0.75,
+                    "mitigated": 0.78
                 }
             },
             "algo": "Reweighing",
-            "createdAt": "2021-05-25 16:25:03.557185",
+            "createdAt": "2021-07-22 09:21:58.300504",
             "__typename": "Ethics",
             "run_id": "0",
             "id": "0"

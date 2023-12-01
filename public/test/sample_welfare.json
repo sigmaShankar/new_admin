@@ -99,7 +99,7 @@
             ]
         }
     ],
-    "timestamp": "2021-06-08 23:09",
+    "timestamp": "2023-10-20 23:09",
     "name": "Monitoring Alert",
     "des": "Monitoring alerts indicate the percentage of outliers, drifted features, adversarial samples, NaN(null) values, and OOR(out of range) values in the production data. All the dropdown buttons contain the information about critical/Error log information of the respective metric module",
 },

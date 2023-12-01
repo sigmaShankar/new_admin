@@ -26,7 +26,7 @@
         },
         {
             "name": "Vintage",
-            "Value": -0.00025
+            "Value": -1e-05
         },
         {
             "name": "Annual_Premium",

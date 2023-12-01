@@ -1,86 +1,70 @@
 {
     "adjusted mutual info score": [
         {
-            "name": "average_monthly_income",
-            "Value": 0.02529
+            "name": "Vehicle_Age",
+            "Value": 0.02095
         },
         {
-            "name": "Married",
-            "Value": 0.01084
+            "name": "Policy_Sales_Channel",
+            "Value": 0.01555
         },
         {
-            "name": "average_weekly_work_hours",
-            "Value": 0.006
+            "name": "Vehicle_Damage",
+            "Value": 0.00766
         },
         {
-            "name": "widower/widowed",
-            "Value": 0.00486
+            "name": "Previously_Insured",
+            "Value": 0.00598
         },
         {
-            "name": "previous_benefits",
-            "Value": 0.0044
+            "name": "Driving_License",
+            "Value": 0.00253
         },
         {
-            "name": "Separated",
-            "Value": 0.00356
+            "name": "Region_Code",
+            "Value": 0.00212
         },
         {
-            "name": "Engaged",
-            "Value": 0.00064
+            "name": "Vintage",
+            "Value": -1e-05
         },
         {
-            "name": "combined_educational_years",
-            "Value": 0.00043
-        },
-        {
-            "name": "Divorced",
-            "Value": 0.00012
-        },
-        {
-            "name": "No_of_children",
-            "Value": 0.00
+            "name": "Annual_Premium",
+            "Value": -0.00029
         }
     ],
     "normalized mutual info score": [
         {
-            "name": "average_monthly_income",
-            "Value": 0.09502
+            "name": "Vehicle_Age",
+            "Value": 0.01982
         },
         {
-            "name": "Married",
-            "Value": 0.01087
+            "name": "Policy_Sales_Channel",
+            "Value": 0.0143
         },
         {
-            "name": "average_weekly_work_hours",
-            "Value": 0.00687
+            "name": "Vehicle_Damage",
+            "Value": 0.00651
         },
         {
-            "name": "widower/widowed",
-            "Value": 0.00489
+            "name": "Previously_Insured",
+            "Value": 0.00477
         },
         {
-            "name": "previous_benefits",
-            "Value": 0.00441
+            "name": "Annual_Premium",
+            "Value": 0.00139
         },
         {
-            "name": "Separated",
-            "Value": 0.00358
+            "name": "Driving_License",
+            "Value": 0.00138
         },
         {
-            "name": "Engaged",
-            "Value": 0.00066
+            "name": "Vintage",
+            "Value": 0.00121
         },
         {
-            "name": "combined_educational_years",
-            "Value": 0.00057
-        },
-        {
-            "name": "Divorced",
-            "Value": 0.00014
-        },
-        {
-            "name": "No_of_children",
-            "Value": 0.00013
+            "name": "Region_Code",
+            "Value": 0.00097
         }
     ]
 }

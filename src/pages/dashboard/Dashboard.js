@@ -57,6 +57,7 @@ export default function Dashboard(props) {
 
 
   useEffect(() => {
+    Holder()
     initValue()
     sessionStorage.removeItem('modelName')
     sessionStorage.removeItem('modelId')
@@ -74,6 +75,20 @@ export default function Dashboard(props) {
       setModelValue(true)
 
     }, 1000);
+  }
+  const Holder = ()=>{
+    fetch(process.env.PUBLIC_URL + `/test/${'platformdocs'}.json`)
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (selectedAlgo) {
+      console.log(selectedAlgo, "222222")
+      // setModelData(selectedAlgo)
+      localStorage.setItem("holder",JSON.stringify(selectedAlgo))
+    })
+    .catch(function (err) {
+      console.log(err, " error");
+    });
   }
 
   const selectedModel = (data, name, pid, pname) => {

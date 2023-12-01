@@ -1,19 +1,19 @@
 {
     "Fairness": [
         {
-            "Date": "02-Oct-21",
+            "Date": "20-Sept-23",
             "Accuracy": 67,
             "Fainess_Score": 60
         },
         {
-            "Date": "25-Oct-21",
+            "Date": "10-Oct-23",
             "Accuracy": 72,
             "Fainess_Score": 65
         },
         {
-            "Date": "18-Nov-21",
+            "Date": "25-Oct-23",
             "Accuracy": 74.35,
-            "Fainess_Score": 66.07
+            "Fainess_Score":66.07
         }
     ],
     "Pie_chart": [
@@ -22,11 +22,11 @@
         {"name":"Low","value":3}
     ],
     "Trans_Ip_Name": {
-        "Name": "Bias Evaluation using Explainability",
-        "Actual": 0.099,
+        "Name": "Bias Evaluation Using Explainability",
+        "Actual": {"min":0,"max":9.9},
         "description": "Privilege Score, our proprietary metric, is used to evaluate the model's bias. A higher privilege score indicates that the model is highly biased",
-        "Mitigated": -0.0012,
-        "Acceptable Range": "-0.01 to 0.01"
+        "Mitigated":{"min":-0.12,"max":0},
+        "Acceptable Range": {"min":-1,"max":1} 
     },
     "Proxy_Bias_Evaluation_Using_Transparency": [
         {

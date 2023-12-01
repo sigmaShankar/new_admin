@@ -1,124 +1,116 @@
 {
-    "Model_Name": "Sample Welfare Benefit Fraud",
-    "Model_Description": "Based on the parent's information, the model predicts the probability of committing a welfare benefit fraud",
-    "Last_Trained_On": "Nov 15th 2021",
-    "No_Of_Risks": "3",
+    "Model_Name": "Model - Insurance Cross Sell Prediction",
+    "Model_Description": "Model to predict whether the policyholders from the past year would also be interested in the Vehicle Insurance offer provided by the company.",
+    "Last_Trained_On": "Oct 25th 2023",
+    "No_Of_Risks": "2",
     "model_health_metrics": [
         {
             "name": "ACC",
-            "Value": 0.77
+            "Value": 0.64
         },
         {
-            "name": "Eror Rate",
-            "Value": 0.23
+            "name": "Error Rate",
+            "Value": 0.36
         },
         {
             "name": "TPR",
-            "Value": 0.84
+            "Value": 0.97
         },
         {
             "name": "FPR",
-            "Value": 0.27
+            "Value": 0.4
         },
         {
             "name": "FNR",
-            "Value": 0.16
+            "Value": 0.03
         },
         {
             "name": "TNR",
-            "Value": 0.73
+            "Value": 0.6
         },
         {
             "name": "Recall",
-            "Value": 0.84
+            "Value": 0.97
         },
         {
             "name": "Sensitivity",
-            "Value": 0.84
+            "Value": 0.97
         }
     ],
     "Fairness": {
-        "Fairness_Score": 91.07,
-        "High": 0,
+        "Fairness_Score": 83.33,
+        "High": 1,
         "Medium": 1,
         "Low": 0,
         "Fairness": [
             {
-                "Date": "05-Oct-21",
-                "Accuracy": 78,
-                "Fainess_Score": 83
+                "Date": "20-Sept-23",
+                "Accuracy": 65,
+                "Fainess_Score": 73.36
             },
             {
-                "Date": "23-Oct-21",
-                "Accuracy": 73,
-                "Fainess_Score": 85
+                "Date": "05-Oct-23",
+                "Accuracy": 62,
+                "Fainess_Score": 76.80
             },
             {
-                "Date": "15-Nov-21",
-                "Accuracy": 78,
-                "Fainess_Score": 91.07
+                "Date": "25-Oct-23",
+                "Accuracy": 64,
+                "Fainess_Score": 83.33
             }
         ],
         "Fairness_Metrics": [
             {
                 "name": "DIR",
-                "Value": 0.96
+                "Value": 0.82
             },
             {
                 "name": "SPD",
-                "Value": -0.02
+                "Value": -0.09
             },
             {
                 "name": "EOD",
-                "Value": -0.01
+                "Value": 0.01
             },
             {
                 "name": "theil index",
-                "Value": 0.1
+                "Value": 0.06
             }
         ],
-        "Fariness_Metrics_desc": "SigmaRed Reponsible AI platform provides more than 40 metrics, they can be accessible from ML Fairness menu",
+        "Fariness_Metrics_desc": "SigmaRed's Responsible AI platform provides more than 40 metrics. They are accessible through the ML Fairness menu",
         "proxy_Bias": {
             "adjusted_mutual_info_score": [
                 {
-                    "name": "average_monthly_income",
-                    "Value": 0.02529
+                    "name": "Vehicle_Age",
+                    "Value": 0.02095
                 },
                 {
-                    "name": "Married",
-                    "Value": 0.01084
+                    "name": "Policy_Sales_Channel",
+                    "Value": 0.01555
                 },
                 {
-                    "name": "average_weekly_work_hours",
-                    "Value": 0.006
+                    "name": "Vehicle_Damage",
+                    "Value": 0.00766
                 },
                 {
-                    "name": "widower/widowed",
-                    "Value": 0.00486
+                    "name": "Previously_Insured",
+                    "Value": 0.00598
                 },
                 {
-                    "name": "previous_benefits",
-                    "Value": 0.0044
+                    "name": "Driving_License",
+                    "Value": 0.00253
                 },
                 {
-                    "name": "Separated",
-                    "Value": 0.00356
+                    "name": "Region_Code",
+                    "Value": 0.00212
                 },
                 {
-                    "name": "Engaged",
-                    "Value": 0.00064
+                    "name": "Vintage",
+                    "Value": -1e-05
                 },
                 {
-                    "name": "combined_educational_years",
-                    "Value": 0.00043
-                },
-                {
-                    "name": "Divorced",
-                    "Value": 0.00012
-                },
-                {
-                    "name": "No_of_children",
-                    "Value": 0.00
+                    "name": "Annual_Premium",
+                    "Value": -0.00029
                 }
             ]
         }
@@ -126,99 +118,93 @@
     "Transperency": {
         "Feature_Importance": [
             {
-                "name": "Divorced",
-                "Value": -0.0143
+                "name": "Age",
+                "Value": -0.0977
             },
             {
-                "name": "Engaged",
-                "Value": -0.0123
+                "name": "Region_Code",
+                "Value": -0.0101
             },
             {
-                "name": "Married",
-                "Value": -0.006
+                "name": "Previously_Insured",
+                "Value": -0.0041
             },
             {
-                "name": "Previous_benefits",
-                "Value": -0.003
+                "name": "Vintage",
+                "Value": 0.0000
             },
             {
-                "name": "No_of_children",
-                "Value": 0.001
+                "name": "Policy_Sales_Channel",
+                "Value": 0.0002
             },
             {
-                "name": "Average_weekly_work_hours",
-                "Value": 0.010
+                "name": "Annual_Premium",
+                "Value": 0.0002
             },
             {
-                "name": "Dual_nationality",
-                "Value": 0.014
+                "name": "Vehicle_Damage",
+                "Value": 0.0005
             },
             {
-                "name": "Widower/widowed",
-                "Value": 0.020
+                "name": "Vehicle_Age",
+                "Value": 0.0009
             },
             {
-                "name": "Combined_educational_years",
-                "Value": 0.042
+                "name": "Driving_License",
+                "Value": 0.0183
             },
             {
-                "name": "Separated",
-                "Value": 0.138
+                "name": "Gender",
+                "Value": 0.1329
             }
         ],
         "Explainability_Metrics_desc": "SigmaRed's Responsible AI platform provides more than 60 XAI visualizations. They are accessible through the ML Explainability menu"
     },
     "risk": [
+
         {
             "pillar": "Fairness",
             "ids": 1,
-            "name": "Model is biased towards dual nationality citizens",
-            "impact": "Medium",
-            "date": "2021-11-15"
+            "name": "Negative bias towards the Female disproportionate to default rate",
+            "impact": "High",
+            "date": "2023-10-10"
         },
         {
-            "pillar": "Robustness",
+            "pillar": "Fairness",
             "ids": 2,
-            "name": "Model is having high false positive rates",
-            "impact": "High",
-            "date": "2021-11-08"
-        },
-        {
-            "pillar": "Robustness",
-            "ids": 3,
-            "name": "Accuracy on the latest samples appear to be lower than general rate",
-            "impact": "High",
-            "date": "2021-11-18"
+            "name": "Privileged group is getting higher benefits when compared to unprivileged group",
+            "impact": "Medium",
+            "date": "2023-10-20"
         }
     ],
     "Monitoring": {
         "Production_data_drift": [
             {
-                "Date": "02-Oct-21",
-                "Drift": 0
+                "Date": "01-Oct-23",
+                "Drift": 0.025
             },
             {
-                "Date": "25-Oct-21",
-                "Drift": 0
+                "Date": "20-Oct-23",
+                "Drift": 0.100
             },
             {
-                "Date": "03-Nov-21",
-                "Drift": 0
+                "Date": "25-Oct-23",
+                "Drift": 0.125
             }
         ],
         "dd_decsr": "The production data drift plot shows changes in the data inputs that may cause performance degradation of the model over a period of time. This drift is detected by measuring and comparing probability distributions of reference and production data using multiple, best in class, statistical methods.",
         "Production_monitoring_metrics": [
             {
                 "name": "od",
-                "Value": 2
+                "Value": 2.00
             },
             {
                 "name": "dd",
-                "Value": 0
+                "Value": 0.125
             },
             {
                 "name": "cd",
-                "Value": 0.79
+                "Value": 0.95
             },
             {
                 "name": "ae",
@@ -226,14 +212,14 @@
             },
             {
                 "name": "NaN",
-                "Value": 0
+                "Value": 0.0
             },
             {
                 "name": "Out_of_range",
-                "Value": 0.016
+                "Value": 0.001
             }
         ],
         "des": "The production monitoring metrics plot shows the percentage of outliers, drifted features, adversarial samples, NaN(null) values, and OOR(out of range) values in the latest production data."
     },
-    "Next_Evaluation_Date": "10-dec-2021"
+    "Next_Evaluation_Date": "15-Nov-2023"
 }

@@ -1,19 +1,19 @@
 {
     "Credit_Lending": [
         {
-            "Fairness": 68,
+            "Fairness": 67,
             "Robustness": 73,
-            "Date": "02-Oct-21"
+            "Date": "20-Sept-23"
         },
         {
-            "Fairness": 73,
+            "Fairness": 65,
             "Robustness": 68,
-            "Date": "25-Oct-21"
+            "Date": "10-Oct-23"
         },
         {
-            "Fairness": 75,
+            "Fairness": 66,
             "Robustness": 71,
-            "Date": "18-Nov-21"
+            "Date": "25-Oct-23"
         }
     ]
 }

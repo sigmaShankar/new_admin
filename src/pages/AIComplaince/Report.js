@@ -188,7 +188,7 @@ const Report = (props) => {
                     <Grid item md={5} sm={5} xs={5} >
 
                         <div >
-                            <img style={{ height: "6rem", width: "13rem" }} src={require("../../assets/Sigma-red-Final-logo.png")} />
+                            {/* <img style={{ height: "6rem", width: "13rem" }} src={require("../../assets/Sigma-red-Final-logo.png")} /> */}
                         </div>
                     </Grid>
                 </Grid>

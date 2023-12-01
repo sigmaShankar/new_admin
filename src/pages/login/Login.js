@@ -65,7 +65,7 @@ function Login(props) {
             centered
             > */}
             <div style={{display: "flex", borderBottom: "2px solid #093d62"}}>
-              <img src={require("./Sigma-red-Final-logo.png")} alt="logo"  style={{width:"100%",height:"16vh"}} />
+              {/* <img src={require("./Sigma-red-Final-logo.png")} alt="logo"  style={{width:"100%",height:"16vh"}} /> */}
               {/* <Tab
               style={{fontWeight: "bold"}} 
               label="Login" 
@@ -265,7 +265,7 @@ function Login(props) {
           )}
         </div>
         <Typography color="primary" className={classes.copyright}>
-        © Copyright 2021  Sigmared AI. All Rights Reserved
+        © Copyright 2023 All Rights Reserved
         </Typography>
       </div>
     </Grid>

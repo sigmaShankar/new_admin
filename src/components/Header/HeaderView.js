@@ -112,7 +112,7 @@ const Header = ({ classes, isSidebarOpened, toggleSidebar, ...props }) => (
           />
         )}
       </IconButton>
-      <Typography variant="h6" weight="medium" className={classes.logotype}>sigmared *</Typography>
+      <Typography variant="h6" weight="medium" className={classes.logotype}>*</Typography>
       <div className={classes.grow} />
       <div
         className={classNames(classes.search, {

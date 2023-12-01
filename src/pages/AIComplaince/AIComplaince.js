@@ -185,7 +185,7 @@ const columnsRiskRegister = [
   },
   {
     name: "Risk Description",
-    label: "Regulation Violated",
+    label: "Regulatory non-compliance",
     options: {
       filter: true,
       setCellHeaderProps: value => ({ style: { width: "40%" } }),
